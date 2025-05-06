@@ -1,0 +1,24 @@
+---
+title: "Google Drive"
+---
+
+## Overview
+
+Google Drive serves as our centralized storage hub for all expedition data, documents, and media.
+
+## Structure
+
+- Expeditions folder (primary organization unit)
+  - One subfolder per expedition
+  - Standard folders for data, presentations, plans, etc.
+- Projects folder for cross-expedition work
+- Manuscripts and publications
+- Presentations
+- Equipment inventory
+- Administrative documents
+
+## Best Practices
+
+- Consistent naming conventions
+- Proper access permissions
+- Regular organization and cleanup

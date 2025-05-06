@@ -1,0 +1,21 @@
+---
+title: "BigQuery"
+---
+
+## Overview
+
+BigQuery serves as our centralized database for integrated expedition data.
+
+## Data Structure
+
+- Organized by research method and expedition
+- Standardized schema across expeditions
+- Consistent field naming conventions
+
+## Workflow
+
+- Data collection in the field
+- Initial processing and validation
+- Import to BigQuery tables
+- Integration with R for analysis
+- Export for reporting and visualization

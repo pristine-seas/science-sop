@@ -1,0 +1,155 @@
+---
+title: "Pristine Seas Science Team SOP"
+subtitle: "Standard Operating Procedures for Research Excellence"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+execute:
+  echo: false
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+```
+
+::: {.callout-note appearance="simple"}
+## Living Document
+
+This SOP is maintained collaboratively and updated regularly. Last updated: `r format(Sys.Date(), "%B %d, %Y")`.
+:::
+
+![](assets/images/ocean_banner.jpg){fig-alt="Ocean research image" fig-align="center" width="100%"}
+
+## Introduction
+
+Welcome to the Pristine Seas Science Team Standard Operating Procedures (SOP). This document serves as the comprehensive guide for conducting scientific research across Pristine Seas expeditions and projects. It establishes standardized protocols, workflows, and best practices to ensure consistency, reproducibility, and quality in all research activities.
+
+### Our Mission
+
+Pristine Seas works to explore, document, and protect vital places in the ocean. As the scientific foundation of this mission, our team conducts rigorous research to assess marine ecosystems and provide the evidence needed to support conservation efforts.
+
+::: method-card
+### Core Research Methods
+
+Our team uses a diverse set of integrated scientific methods to study marine ecosystems:
+
+-   Benthic surveys to quantify bottom types and invertebrates
+-   Reef fish surveys to document fish communities
+-   Environmental DNA (eDNA) to assess overall biodiversity
+-   Baited Remote Underwater Video Systems (BRUVS) to quantify predatory species
+-   Seabird and marine mammal surveys
+-   Deep water surveys using ROVs, submersibles, and drop-cameras
+
+[Explore our methods →](field-methods/index.qmd)
+:::
+
+### Purpose of this SOP
+
+This SOP provides:
+
+1.  **Collaborative practices** to enhance team efficiency
+2.  **Standardized protocols** for data collection across expeditions
+3.  **Data management workflows** for organizing and storing data
+4.  **Analytical frameworks** for consistent data processing and analysis
+
+The SOP ensures that our scientific practices meet the highest standards of rigor, transparency, and reproducibility. By following these guidelines, we produce reliable data that can inform conservation decisions and contribute to our understanding of marine ecosystems.
+
+## Core Principles
+
+The Pristine Seas Science Team is guided by these fundamental principles in all our work:
+
+:::: {.columns}
+::: {.column width="33%"}
+<div class="principle-card principle-excellence">
+### Scientific Excellence
+
+- Curiosity
+- Rigor
+- Peer review
+- Impact driven
+
+</div>
+:::
+::: {.column width="33%"}
+<div class="principle-card principle-open">
+### Open Science
+
+- Reproducibilty
+- Transparency
+- FAIR data principles
+</div>
+:::
+::: {.column width="33%"}
+<div class="principle-card principle-collab">
+### Collaborative Research
+
+- Interdisciplinary approaches
+- Local scientist engagement
+- Broad partner network
+</div>
+:::
+::::
+
+## Collaborative Framework
+
+The Pristine Seas Science Team works across an integrated set of platforms:
+
+::::::: {style="display: flex; justify-content: space-between; flex-wrap: wrap;"}
+::: {.callout style="flex: 1; min-width: 200px; margin: 0.5em;"}
+### ![](assets/logos/github-mark.svg){width="30px"} GitHub
+
+Version control for code, analysis, and documentation
+:::
+
+::: {.callout style="flex: 1; min-width: 200px; margin: 0.5em;"}
+### ![](assets/logos/drive.svg){width="30px"} Google Drive
+
+Collaborative document editing and data storage
+:::
+
+::: {.callout style="flex: 1; min-width: 200px; margin: 0.5em;"}
+### ![](assets/logos/zotero.png){width="30px"} Zotero
+
+Reference management and bibliography
+:::
+
+::: {.callout style="flex: 1; min-width: 200px; margin: 0.5em;"}
+### ![](assets/logos/bigquery.svg){width="30px"} BigQuery
+
+Centralized database for expedition data
+:::
+:::::::
+
+[Learn more about our infrastructure →](collaborative-infra/index.qmd)
+
+## Get Started
+
+Ready to dive in? Explore these key sections:
+
+:::::: {style="display: flex; flex-wrap: wrap; gap: 1em;"}
+::: {.method-card .method-benthic style="flex: 1; min-width: 250px;"}
+### [Expedition Planning](expedition-planning/index.qmd)
+
+Prepare for successful field research with comprehensive planning guidelines
+:::
+
+::: {.method-card .method-fish style="flex: 1; min-width: 250px;"}
+### [Field Methods](field-methods/index.qmd)
+
+Standardized protocols for all Pristine Seas research methods
+:::
+
+::: {.method-card .method-edna style="flex: 1; min-width: 250px;"}
+### [Data Science](data-science/index.qmd)
+
+Data workflows, R package documentation, and analysis standards
+:::
+::::::
+
+::: {.method-card .method-media style="margin-top: 1em;"}
+### [Media Library](media-library/index.qmd)
+
+Protocols for media collection, organization, and metadata requirements
+:::

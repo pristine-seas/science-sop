@@ -1,0 +1,24 @@
+---
+title: "Zotero Library"
+---
+
+## Overview
+
+Zotero manages our scientific literature for both general reference and expedition-specific needs.
+
+## Organization
+
+- Main library with shared access
+- Collections organized by:
+  - Expeditions
+  - Research methods
+  - Ecosystems
+  - Geographic regions
+
+## Workflow
+
+- Add references with browser extension
+- Organize into appropriate collections
+- Add PDFs when available
+- Use consistent tagging system
+- Export citations for manuscripts

@@ -1,0 +1,454 @@
+---
+title: "Benthic Line Point Intercept"
+subtitle: "Quantifying benthic community composition"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(leaflet)
+library(gt)
+```
+
+## Introduction
+
+The Line Point Intercept (LPI) method is a fundamental component of Pristine Seas underwater visual surveys, providing quantitative data on benthic community composition and substrate cover. This method documents the relative abundance of key benthic categories, including corals, algae, and other sessile organisms, as well as abiotic substrate types.
+
+## Method Overview
+
+The LPI method involves recording the benthic organisms or substrate types that occur directly beneath points at regular intervals along a transect line. This approach provides an unbiased estimate of percent cover for different benthic categories.
+
+### Key Features
+
+- **Standardized points**: Data collected at fixed intervals (20 cm)
+- **Representative sampling**: Points distributed evenly along the entire transect
+- **Objective assessment**: Only what lies directly under each point is recorded
+- **Taxonomic resolution**: Identification to the lowest practical taxonomic level
+- **Division of labor**: Separate divers for coral and other benthic identifications
+
+## Field Implementation
+
+The LPI method requires two specialized divers working in tandem:
+
+1. **Benthic diver**: Identifies all algae, non-coral invertebrates, and abiotic substrates at each point. When a point lands on coral, the benthic diver marks it as "Hard coral" (or "Hard coral - bleached") without species identification.
+
+2. **Coral diver**: Focuses specifically on identifying all corals to species level at points previously marked as "Hard coral" by the benthic diver.
+
+This division of labor ensures both broad coverage of all substrate types and precise taxonomic resolution for corals.
+
+::: {.callout-note appearance="simple" title="**LPI Transect Specifications**"}
+- **Length**: 50 meters <span class="important-note">(Note: transects may be shorter due to time or decompression constraints)</span>
+- **Direction**: Parallel to shoreline
+- **Depth strata**: Constant (±1 m) standard depth strata (~5, 10 or 20 m)
+- **Points**: Sampled every 20 cm (250 points total)
+- **Sections**: Transects are divided into sections (5 of 10 m each)
+:::
+
+### Data Collection Procedure
+
+1. **Transect deployment**:
+   - Deploy transect tape parallel to shoreline
+   - Maintain consistent depth throughout
+   - Secure ends to maintain straight line
+
+2. **Point sampling**:
+   - Sample at 20 cm intervals along the transect (250 points total)
+   - Record what lies directly beneath each point
+   - Benthic diver identifies all non-coral points to lowest taxonomic level
+   - Coral diver identifies coral points to species level
+
+3. **Bleaching assessment**:
+   - For hard corals: differentiate between healthy, bleaching, and dead colonies
+   - For soft corals: distinguish bleached and non-bleached colonies
+
+4. **Photo documentation**:
+   - Take overview photo of transect
+   - Photograph representative points
+   - Document unusual or unidentified organisms
+
+5. **Explore**:
+   - Roam the station if time allows
+   - Document any notable off-transect taxa or observations
+   
+## Taxonomic Resolution
+
+The Pristine Seas LPI method employs world-class scientific divers who typically identify organisms to species or genus level immediately. However, for challenging identifications, we use a structured taxonomic resolution model that ensures scientific rigor throughout the identification process.
+
+```{mermaid}
+graph TD
+    classDef fieldName fill:#F8F9FA,stroke:#DEE2E6,stroke-width:2px,color:#000000,font-size:14px
+    classDef morphotaxon fill:#E9EDF9,stroke:#6C8EBF,stroke-width:2px,color:#000000,font-size:14px
+    classDef minTaxon fill:#D4E4F9,stroke:#3F75BF,stroke-width:2px,color:#000000,font-size:14px
+    classDef funcCat fill:#004165,stroke:#002E48,stroke-width:2px,color:#FFFFFF,font-size:14px
+    
+    A[Field Name<br>'blue branching coral'] --> B[Morphotaxon<br>'Acropora sp. blue']
+    B --> C[Lowest Defensible Taxonomic Rank<br>'Acropora sp.']
+    C --> D[Benthic Functional Category<br>'Hard Coral']
+    
+    class A fieldName
+    class B morphotaxon
+    class C minTaxon
+    class D funcCat
+    
+    style D fill:#EA9E8D,stroke:#D87F6A,stroke-width:2px,color:#000000
+```
+
+Our taxonomic resolution progresses through four distinct levels:
+
+1. **Field Names**: When species-level identification isn't immediately possible, divers use descriptive temporary placeholders based on distinguishing characteristics.
+   
+   *Example: "blue branching coral," "tall green algae," "orange encrusting sponge"*
+
+2. **Morphotaxa**: Field names are consolidated into taxonomic units that combine formal taxonomy with distinguishing field characteristics. This process begins onboard the expedition vessel and evolves as divers gain familiarity with local taxa.
+   
+   *Example: "Acropora sp. blue," "Halimeda sp. tall," "Clathria sp. orange"*
+
+3. **Lowest Defensible Taxonomic Rank**: Morphotaxa are mapped to the lowest taxonomic level that can be scientifically defended based on available evidence.
+   
+   *Example: "Acropora sp.," "Halimeda sp.," "Porifera"*
+
+4. **Benthic Functional Categories**: Taxonomic ranks are classified into ecological functional groups for ecosystem-level analyses. These are derived from standardized taxonomy reference lists.
+   
+   *Example: "Hard Coral," "Erect Algae," "Sponges"*
+
+::: {.callout-tip icon=true title="Taxonomic Identification Workflow" appearance="minimal"}
+
+###### A Progressive Workflow
+
+1. **During dives**
+   * Divers identify organisms to species level when possible
+   * For challenging taxa, descriptive field names are used as placeholders
+
+2. **Onboard processing**
+   * **Consolidation into morphotaxa** begins immediately onboard:
+     - Divers review photographs and compare observations
+     - Taxonomic knowledge improves progressively throughout expedition
+     - Field guides and reference materials guide identifications
+
+3. **Post-expedition refinement**
+   * Final taxonomic processing using expedition reference taxonomy lists:
+     - Morphotaxa → Lowest defensible taxonomic rank
+     - Taxonomic rank → Functional group
+     - For corals: Addition of morphology and life history classifications
+
+:::
+
+
+## Functional Categories
+
+We use the following standardized functional categories for analysis and visualization:
+
+:::: {.columns style="display: flex; flex-wrap: wrap;"}
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #EA9E8D; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #D87F6A;">
+<strong>Hard Coral</strong><br>
+Scleractinian corals with calcium carbonate skeletons<br>
+<em>Examples: Acropora spp., Porites spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #F1B6DA; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #E091BE;">
+<strong>CCA (Crustose Coralline Algae)</strong><br>
+Pink to red calcified encrusting algae<br>
+<em>Examples: Porolithon spp., Lithophyllum spp., Hydrolithon spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #000000; color: white; padding: 0.7em; border-radius: 5px; border-left: 10px solid #333333;">
+<strong>Cyanobacteria</strong><br>
+Photosynthetic bacterial mats<br>
+<em>Examples: Lyngbya spp., Oscillatoria spp., Symploca spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #B4D6D3; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #8EBFBA;">
+<strong>Soft Coral</strong><br>
+Non-reef building octocorals<br>
+<em>Examples: Sinularia spp., Sarcophyton spp., Lobophytum spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #F6C141; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #E3A413;">
+<strong>Sponges</strong><br>
+Porifera of various morphologies<br>
+<em>Examples: Xestospongia spp., Haliclona spp., Cliona spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #88B04B; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #6A8D2D;">
+<strong>Encrusting Algae</strong><br>
+Non-coralline encrusting macroalgae<br>
+<em>Examples: Peyssonnelia spp., Lobophora spp., Ralfsia spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #4DAF4A; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #378C34;">
+<strong>Erect Algae</strong><br>
+Upright macroalgae with distinct structure<br>
+<em>Examples: Sargassum spp., Turbinaria spp., Halimeda spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #8C6D31; color: white; padding: 0.7em; border-radius: 5px; border-left: 10px solid #6C4F18;">
+<strong>Turf</strong><br>
+Low-growing filamentous algal assemblages<br>
+<em>Examples: Mixed filamentous turf, cyanobacterial turf, red turf</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #7C4D8E; color: white; padding: 0.7em; border-radius: 5px; border-left: 10px solid #5C3168;">
+<strong>Other</strong><br>
+Organisms that don't fit main categories<br>
+<em>Examples: Ascidians, bryozoans, hydroids</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #BDBDBD; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #9D9D9D;">
+<strong>Sediment/Rubble/Barren</strong><br>
+Abiotic substrates and bare surfaces<br>
+<em>Examples: Sand, coral rubble, bare rock</em>
+</div>
+:::
+
+::::
+
+### Hard Corals
+
+Hard corals are classified using complementary systems that enable comprehensive analysis of community structure, ecological function, and resilience potential across survey sites.
+
+#### Life History Strategies
+
+Coral species exhibit distinct life history strategies that reflect evolutionary adaptations to different environmental conditions. We map our coral taxa to the four strategies proposed by Darling et al. (2012) primarily distinguished by colony morphology, growth rate, and reproductive mode. These strategies help predict species responses to disturbances and inform conservation approaches in the rapidly changing marine environment.
+
+::: {.panel-tabset}
+## Competitive {.bg-primary .text-white}
+**Traits**
+  
+  - Fast growth, broadcast spawning, large colonies with low skeletal density.
+  - Dominate favorable environments and outcompete others for space.
+
+**Disturbance tolerance: **Vulnerable to bleaching and physical damage with poor recovery capacity.
+
+**Examples:** *Acropora palmata*, *A. cervicornis*, *Pocillopora elegans*
+
+**Morphologies:** Branching, plating, corymbose forms creating complex habitats.
+
+## Weedy {.bg-warning .text-white}
+**Traits:** 
+
+  - Variable growth, brooding reproduction, high reproductive output, small colonies (<20cm). 
+  - Pioneer species colonizing disturbed areas.
+
+**Disturbance tolerance:** Moderate bleaching susceptibility but quick recovery through rapid recruitment and effective dispersal.
+
+**Examples:** *Pocillopora damicornis*, *Stylophora pistillata*, *Seriatopora hystrix*
+
+**Morphologies:** Small branching, digitate forms establishing rapidly on available substrate.
+
+## Stress-Tolerant {.bg-secondary .text-white}
+**Traits:** 
+
+  - Slow growth (<5 cm/year), broadcast spawning, conservative energy use, high skeletal density. 
+  - Long-lived colonies persisting in marginal environments.
+
+**Disturbance tolerance:** Resistant to acute stressors, withstand higher temperatures, slow but persistent recovery.
+
+**Examples:** *Porites lobata*, *Orbicella annularis*, *Siderastrea siderea*
+
+**Morphologies:** Massive, boulder, encrusting forms providing reef framework stability.
+
+## Generalist {.bg-success .text-white}
+**Traits:** 
+
+  - Moderate growth (5-15 cm/year), mixed reproduction strategies, balanced resource allocation. 
+  - Adaptable across environmental gradients.
+
+**Disturbance tolerance:** Intermediate thermal tolerance with moderate recovery capacity and variable stress responses.
+
+**Examples:** *Diploria labyrinthiformis*, *Pavona* spp., *Galaxea fascicularis*
+
+**Morphologies:** Massive, foliose, meandroid forms with moderate complexity.
+:::
+
+
+
+#### Morphology
+
+Coral morphology represents the physical structure and growth form that coral colonies develop, directly influencing their ecological function and response to environmental stressors. These distinct growth forms are key determinants in coral life history strategies and provide important insights into reef structural complexity, habitat provision, and resilience potential.
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem;">
+
+<div style="background-color: #E3F2FD; border-radius: 5px; padding: 0.75rem; border-top: 4px solid #2196F3; height: 100%;">
+<strong style="display: block; color: #0D47A1; margin-bottom: 0.25rem;">Branching</strong>
+<div style="font-size: 0.9rem;">Tree-like with thin branches<br><em>e.g., Acropora muricata</em></div>
+</div>
+
+<div style="background-color: #E8F5E9; border-radius: 5px; padding: 0.75rem; border-top: 4px solid #4CAF50; height: 100%;">
+<strong style="display: block; color: #1B5E20; margin-bottom: 0.25rem;">Tabular</strong>
+<div style="font-size: 0.9rem;">Horizontal plate-like growth<br><em>e.g., Acropora hyacinthus</em></div>
+</div>
+
+<div style="background-color: #FFF3E0; border-radius: 5px; padding: 0.75rem; border-top: 4px solid #FF9800; height: 100%;">
+<strong style="display: block; color: #E65100; margin-bottom: 0.25rem;">Massive</strong>
+<div style="font-size: 0.9rem;">Boulder-like, robust growth<br><em>e.g., Porites lobata</em></div>
+</div>
+
+<div style="background-color: #F3E5F5; border-radius: 5px; padding: 0.75rem; border-top: 4px solid #9C27B0; height: 100%;">
+<strong style="display: block; color: #4A148C; margin-bottom: 0.25rem;">Encrusting</strong>
+<div style="font-size: 0.9rem;">Growing flat against substrate<br><em>e.g., Montipora spumosa</em></div>
+</div>
+
+<div style="background-color: #E0F7FA; border-radius: 5px; padding: 0.75rem; border-top: 4px solid #00BCD4; height: 100%;">
+<strong style="display: block; color: #006064; margin-bottom: 0.25rem;">Foliose</strong>
+<div style="font-size: 0.9rem;">Leaf-like or whorl structure<br><em>e.g., Turbinaria reniformis</em></div>
+</div>
+
+<div style="background-color: #FFEBEE; border-radius: 5px; padding: 0.75rem; border-top: 4px solid #F44336; height: 100%;">
+<strong style="display: block; color: #B71C1C; margin-bottom: 0.25rem;">Solitary</strong>
+<div style="font-size: 0.9rem;">Individual polyps<br><em>e.g., Fungia fungites</em></div>
+</div>
+
+<div style="background-color: #FFFDE7; border-radius: 5px; padding: 0.75rem; border-top: 4px solid #FFEB3B; height: 100%;">
+<strong style="display: block; color: #F57F17; margin-bottom: 0.25rem;">Digitate</strong>
+<div style="font-size: 0.9rem;">Finger-like branches<br><em>e.g., Pocillopora meandrina</em></div>
+</div>
+
+<div style="background-color: #E8EAF6; border-radius: 5px; padding: 0.75rem; border-top: 4px solid #3F51B5; height: 100%;">
+<strong style="display: block; color: #1A237E; margin-bottom: 0.25rem;">Corymbose</strong>
+<div style="font-size: 0.9rem;">Table-like with branchlets<br><em>e.g., Acropora cytherea</em></div>
+</div>
+
+</div>
+
+## Data Processing
+
+### Data Entry
+
+LPI data are entered into standardized **Excel fieldbooks** that are store in the ship's NAS with the following structure:
+
+- `readme` sheet: Contains expedition info, data entry instructions, and guidelines
+- `stations` sheet: Records station information including sampling depths, survey lengths, and any deviations from protocol. 
+- `observations` sheet: Primary data entry for all LPI point intercepts
+
+### Processing Pipeline
+
+#### File Consolidation
+
+The workflow begins by reading all expedition fieldbooks across legs and divers, combining stations and observations into a unified dataset. This includes converting the data from a wide format (best for data entry in the field) to a long data format, best for anaysis and visualiztion. It also include merginbg the work of the benthic and coral divers. 
+
+:::{.callout-important}
+## Merging Benthic and Coral Diver Data
+
+This critical step integrates the specialized knowledge of both divers:
+
+1. Benthic diver identifies functional groups (e.g., "30 points as hard coral")
+2. Coral diver provides detailed taxonomic identification of corals
+3. We apportion the benthic diver's points based on the coral diver's proportional observations
+4. This maintains accurate functional group counts while maximizing taxonomic resolution
+:::
+
+#### Validation and Cleaning
+
+Station data is joined with the `uvs_sites_fieldbook` to validate site information including coordinates, habitat type, and spatial hierarchy. We check depth strata alignment across stations, standardizes formats, and verifies completeness of required fields. Transects are validated to confirm they contain the expected number of points, with exceptions flagged for review.
+
+All taxonomic entries undergo validation against master reference lists, with morphotaxa mapped to the appropriate classification hierarchy. 
+
+#### Benthic Cover Calculation
+
+From the cleaned data, we calculate percent cover by morphotaxa and functional group for each station. Additional metrics include species richness, diversity indices, and coral health indicators such as bleaching percentages. These station-level calculations are then aggregated to create site averages and region-wide metrics for comparative analysis.
+
+:::{.callout-important}
+## Core Output Files
+The pipeline generates four essential files: 
+
+  - **lpi_count**: raw but clean raw point contacts
+  - **lpi_cover_by_taxa**: total points and % cover by morphotaxa and station
+  - **lpi_station_summary**: % cover by functional category and station
+  - **lpi_taxa_summary.csv**: prevalence across regions, frequency of occurrence, and average cover values
+:::
+
+#### Database Integration
+
+Finally, the processed data is formatted for database ingestion with appropriate metadata tags and quality indicators. This standardized approach ensures consistent data structure across expeditions, facilitating long-term monitoring and comparative analysis of marine ecosystems worldwide.
+
+### Exploratory Data Analysis
+
+After completion of the data processing pipeline, we employ a separate `eda.qmd` file to conduct standardized yet flexible exploratory analyses. This approach balances consistency across expeditions with the need for location-specific insights.
+
+Our EDA workflow includes several core analyses that we produce for every expedition:
+
+**Biodiversity Assessment**
+- Species accumulation curves to evaluate sampling adequacy
+- Diversity indices (Shannon, Simpson) compared across sites
+- Species rank-abundance distributions to characterize community structure
+
+**Statistical Comparisons**
+- Tests for significant differences in diversity and cover metrics
+- Analyses stratified by region, habitat type, and depth
+- Focus on key functional groups (hard corals, macroalgae, cyanobacteria)
+
+**Community Composition**
+- Multivariate analyses of benthic communities (NMDS, cluster analysis)
+- Visualization of functional group proportions using consistent color palettes
+- Identification of indicator species for different habitat types
+
+**Coral Health**
+- Bleaching prevalence by species and depth
+- Disease incidence and severity metrics
+
+**Spatial Visualization**
+- Interactive maps of survey sites with embedded metrics
+- Geographic pattern analysis
+
+## Limitations
+
+While the Line Point Intercept (LPI) method offers efficiency and standardization for coral reef monitoring, several methodological trade-offs warrant consideration:
+
+##### Point spacing
+
+Some research suggests 20cm intervals may be too close. Studies comparing intervals found 50cm spacing reduces survey time while still detecting major cover trends, though at the cost of potentially missing rarer species (Facon et al., 2016; Kuo et al., 2022). Statistical power analyses indicate substantially larger sample sizes than typically used are needed to detect even moderate changes in cover regardless of spacing (Leujak & Ormond, 2007).
+
+##### Transect length
+
+The standard 50m transect represents a compromise between survey effort and habitat representation. Multiple shorter transects often provide better representation of reef spatial heterogeneity than fewer longer ones (Vallès et al., 2019). Linear methods inherently sample only a tiny proportion of reef area compared to quadrat approaches (0.33% vs 17.8% in some studies).
+
+##### Alternative methods
+
+For bleaching assessment specifically, quadrat methods have demonstrated advantages in capturing colony-level impacts and detecting more species than point methods (Brown et al., 2015; Coral Reef Alliance, 2024). Belt transects provide a reasonable compromise for characterizing both coral cover and condition.
+We continue using LPI methods for consistency with historical data while acknowledging these limitations in our analyses and reports.
+
+## References
+
+Coral Reef Alliance. (2024). Coral Bleaching On-Site Monitoring Tools.
+
+Darling ES, Alvarez-Filip L, Oliver TA, McClanahan TR, Côté IM. (2012). Evaluating life-history strategies of reef corals from species traits. Ecology Letters, 15(12), 1378-1386.
+
+Facon, M., et al. (2016). A comparative study of the accuracy and effectiveness of Line and Point Intercept Transect methods for coral reef monitoring in the southwestern Indian Ocean islands. Ecological Indicators, 60, 1045-1055.
+
+Kuo, C-Y., et al. (2022). Fine intervals are required when using point intercept transects to assess coral reef status. Frontiers in Marine Science, 9, 795512.
+
+Leujak, W., & Ormond, R.F.G. (2007). Comparative accuracy and efficiency of six coral community survey methods. Journal of Experimental Marine Biology and Ecology, 351(1-2), 168-187.
+
+Vallès, H., et al. (2019). Switching between standard coral reef benthic monitoring protocols is complicated: proof of concept. PeerJ, 7, e8167.
+

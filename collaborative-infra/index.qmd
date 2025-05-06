@@ -1,0 +1,54 @@
+---
+title: "Overview"
+---
+
+
+Our collaborative infrastructure is designed to support expedition-based workflows. Each tool serves a specific purpose in the research and data lifecycle.
+
+:::: {.columns}
+::: {.column width="50%"}
+<div class="collab-card">
+
+### ![](../assets/logos/drive.svg){width="30px"} Google Drive
+
+Centralized storage hub for all expedition data, documents, and media.
+
+[Details →](google-drive.qmd)
+</div>
+:::
+
+::: {.column width="50%"}
+<div class="collab-card">
+
+### ![](../assets/logos/github-mark.svg){width="30px"} GitHub
+
+Repository for each expedition and project's code and analysis.
+
+[Details →](github-workflow.qmd)
+</div>
+:::
+::::
+
+:::: {.columns}
+::: {.column width="50%"}
+<div class="collab-card">
+
+### ![](../assets/logos/zotero.png){width="30px"} Zotero
+
+Reference management for general and expedition-specific literature.
+
+[Details →](zotero.qmd)
+</div>
+:::
+
+::: {.column width="50%"}
+<div class="collab-card">
+
+### ![](../assets/logos/bigquery.svg){width="30px"} BigQuery
+
+Centralized database for integrated expedition data.
+
+[Details →](bigquery.qmd)
+</div>
+:::
+::::

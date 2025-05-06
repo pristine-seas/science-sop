@@ -1,0 +1,210 @@
+---
+title: "Overview"
+subtitle: "Standardized protocols for marine ecosystem assessment"
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+```
+
+The Pristine Seas Science Team employs a range of complementary research methods to document and study marine ecosystems. Each method provides unique insights into different components of ocean biodiversity, ecological processes, and ecosystem health.
+
+![](../assets/images/methods_infographic.png){fig-alt="Pristine Seas Science Methods" fig-align="center" width="100%"}
+
+This integrated research approach allows us to:
+
+  - Establish baselines for pristine and near-pristine marine ecosystems
+  - Document biodiversity across a wide range of habitats and trophic levels
+  - Assess ecosystem health and function
+  - Quantify human impacts on marine environments
+  
+These insights are fundamental for effective conservation and our job includes to translate them into actionable strategies for marine protection.
+
+## Core Methods
+
+<table style="width:100%; border-collapse: separate; border-spacing: 5px;">
+  <tr>
+    <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #0ea5e9; background-color:#f8fafc;">
+      <h3 style="margin:0 0 5px 0; color:#0ea5e9;">Benthic Surveys</h3>
+      <strong>Depths:</strong> 0-30m | <strong>Target:</strong> Benthos
+      <ul style="margin:5px 0; padding-left:20px;">
+        <li>Point-intercept transects</li>
+        <li>Invertebrate counts</li>
+        <li>Coral recruits counts</li>
+      </ul>
+      <a href="benthic-surveys.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #0ea5e9; border-radius:4px; color:#0ea5e9; text-decoration:none; font-size:0.8em;">Protocol →</a>
+    </td>
+    <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #6366f1; background-color:#f8fafc;">
+      <h3 style="margin:0 0 5px 0; color:#6366f1;">Fish Surveys</h3>
+      <strong>Depths:</strong> 0-30m | <strong>Target:</strong> Reef Fish
+      <ul style="margin:5px 0; padding-left:20px;">
+        <li>Belt transects</li>
+        <li>Species identification</li>
+        <li>Size and biomass estimation</li>
+      </ul>
+      <a href="fish-surveys.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #6366f1; border-radius:4px; color:#6366f1; text-decoration:none; font-size:0.8em;">Protocol →</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #8b5cf6; background-color:#f8fafc;">
+      <h3 style="margin:0 0 5px 0; color:#8b5cf6;">Environmental DNA</h3>
+      <strong>Depths:</strong> All zones | <strong>Target:</strong> All taxa
+      <ul style="margin:5px 0; padding-left:20px;">
+        <li>Water filtration</li>
+        <li>Sequence analysis</li>
+      </ul>
+      <a href="edna.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #8b5cf6; border-radius:4px; color:#8b5cf6; text-decoration:none; font-size:0.8em;">Protocol →</a>
+    </td>
+    <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #ec4899; background-color:#f8fafc;">
+      <h3 style="margin:0 0 5px 0; color:#ec4899;">Seabed BRUVS</h3>
+      <strong>Depths:</strong> 10-100m | <strong>Target:</strong> Reef Predators
+      <ul style="margin:5px 0; padding-left:20px;">
+        <li>Stereo baited remote video systems</li>
+        <li>Relative abundance (MaxN)</li>
+        <li>Length estimation</li>
+      </ul>
+      <a href="seabed-bruvs.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #ec4899; border-radius:4px; color:#ec4899; text-decoration:none; font-size:0.8em;">Protocol →</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #d946ef; background-color:#f8fafc;">
+      <h3 style="margin:0 0 5px 0; color:#d946ef;">Pelagic BRUVS</h3>
+      <strong>Depths:</strong> Surface | <strong>Target:</strong> Pelagic Predators
+      <ul style="margin:5px 0; padding-left:20px;">
+        <li>Stereo, Offshore, mid-water deployments</li>
+        <li>Species composition</li>
+        <li>MaxN and length estimates</li>
+      </ul>
+      <a href="pelagic-bruvs.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #d946ef; border-radius:4px; color:#d946ef; text-decoration:none; font-size:0.8em;">Protocol →</a>
+    </td>
+    <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #f59e0b; background-color:#f8fafc;">
+      <h3 style="margin:0 0 5px 0; color:#f59e0b;">Seabird Surveys</h3>
+      <strong>Zone:</strong> Surface | <strong>Target:</strong> Birds
+      <ul style="margin:5px 0; padding-left:20px;">
+        <li>Coastal transects</li>
+        <li>At-sea point counts</li>
+        <li>Nesting areas, density estimates, diversity</li>
+      </ul>
+      <a href="seabird-mammals.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #f59e0b; border-radius:4px; color:#f59e0b; text-decoration:none; font-size:0.8em;">Protocol →</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #14b8a6; background-color:#f8fafc;">
+      <h3 style="margin:0 0 5px 0; color:#14b8a6;">Marine Mammal Surveys</h3>
+      <strong>Zone:</strong> Surface | <strong>Target:</strong> Mammals
+      <ul style="margin:5px 0; padding-left:20px;">
+        <li>Visual timed transects</li>
+        <li>Aereal surveys</li>
+        <li>Photo identification</li>
+      </ul>
+      <a href="marine-mammals.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #14b8a6; border-radius:4px; color:#14b8a6; text-decoration:none; font-size:0.8em;">Protocol →</a>
+    </td>
+    <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #0f766e; background-color:#f8fafc;">
+      <h3 style="margin:0 0 5px 0; color:#0f766e;">ROV Surveys</h3>
+      <strong>Depths:</strong> to 1000m | <strong>Target:</strong> Deep biota
+      <ul style="margin:5px 0; padding-left:20px;">
+        <li>Exploratory dives</li>
+        <li>Horizontal video transects</li>
+        <li>Species and habitat documentation</li>
+      </ul>
+      <a href="rov-surveys.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #0f766e; border-radius:4px; color:#0f766e; text-decoration:none; font-size:0.8em;">Protocol →</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #10b981; background-color:#f8fafc;">
+      <h3 style="margin:0 0 5px 0; color:#10b981;">Submersible Surveys</h3>
+      <strong>Depths:</strong> to 1300m | <strong>Target:</strong> Deep biota
+      <ul style="margin:5px 0; padding-left:20px;">
+        <li>Exploratory dives</li>
+        <li>Horizontal video transects</li>
+        <li>In-situ observations and specimen collection</li>
+      </ul>
+      <a href="submersible.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #10b981; border-radius:4px; color:#10b981; text-decoration:none; font-size:0.8em;">Protocol →</a>
+    </td>
+    <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #06b6d4; background-color:#f8fafc;">
+      <h3 style="margin:0 0 5px 0; color:#06b6d4;">Deep Sea Cameras</h3>
+      <strong>Depths:</strong> to 6000m | <strong>Target:</strong> Deep sea biota
+      <ul style="margin:5px 0; padding-left:20px;">
+        <li>Deep sea scavengers</li>
+        <li>Community composition and relative abyundnce (MaxN)</li>
+        <li>New records and range extensions</li>
+      </ul>
+      <a href="drop-cameras.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #06b6d4; border-radius:4px; color:#06b6d4; text-decoration:none; font-size:0.8em;">Protocol →</a>
+    </td>
+  </tr>
+</table>
+
+## Integration
+
+Our field research strategically integrates multiple assessment methods to provide comprehensive ecosystem insights beyond what individual techniques can reveal. Sampling sites are carefully selected to maximize spatial and temporal alignment across methods, enabling analyses of relationships between different ecosystem components. 
+
+To ensure seamless data integration, all methods follow standardized protocols including uniform taxonomic references, consistent metadata structures, shared spatial hierarchies, and compatible statistical approaches. This standardization facilitates robust cross-method analyses that reveal critical ecological relationships and functions.
+
+::: {.callout-note title="Hierarchical spatial structure"}
+
+Our nested structure organizes all collected data into meaningful spatial contexts:
+
+* **Expedition**: A complete research campaign to a country or target area  
+  *Convention:* `[ISO3]_[YEAR]`  
+  *Examples:* PLW_2023, MDV_2024
+
+  * **Region**: Broad geographic or administrative area  
+    *Examples:* Temotu Province, Manus Province
+    
+    * **Subregion**: Intermediate unit like an island, atoll, gulf, or reef complex  
+      *Examples:* Duff Islands, Harengan
+      
+      * **Locality**: Local named feature such as a islet, community, village  
+        *Examples:* Taumako, Pinyang island
+        
+        * **Site**: Specific location where sampling methods are deployed  
+          *Convention:* `[ISO3]_[YEAR]_[METHOD]_[SITE]`  
+          *Examples:* PLW_2023_uvs_001, FJI_2023_pbruv_001
+          
+          * **Station**: A discrete sampling unit within a site, usually depth strata  
+            *Convention:* `[ISO3]_[YEAR]_[METHOD]_[SITE]_[STATION]`  
+            *Examples:* PLW_2023_uvs_001_10m, PLW_2023_uvs_001_20m
+            
+            * **Measurement/Observation**: Individual data points collected at a station  
+              *Examples:* Fish count, Coral cover percentage, remote video footage
+
+This allows for analyses at multiple scales while maintaining clear relationships between sampling elements.
+
+:::
+
+The Pristine Seas Science Database serves as the central repository for this integrated data architecture, preserving methodological connections while maintaining data integrity. Complete documentation of database structure and integration protocols is available [here](https://link-to-database-documentation).
+            
+## Data Processing
+
+Each field method follows specific processing workflows, but all adhere to a standardized framework that ensures data quality, reproducibility, and integration. Our data processing approach balances method-specific requirements with system-wide standards.
+
+#### Common Data Standards
+
+All methods implement these critical standards:
+
+* **Data Entry & Validation**
+  * Structured data entry forms with built-in validation rules
+  * Automated checks for impossible values and outlier detection
+* **Quality Control Procedures**
+  * Multi-stage verification process (field, office, database)
+  * Cross-method consistency checks for shared parameters
+* **File Naming & Organization**
+  * Consistent folder structure and file naming conventions
+  * Version control system
+* **Statistical Approaches**
+  * Standardized methods for handling zero-inflated ecological data
+  * Consistent treatment of temporal and spatial autocorrelation
+* **Database Integration**
+  * Automated (i wish) data ingestion pipelines for each method
+  * Relational table structures preserving cross-method linkages
+  * Metadata documentation
+
+#### Method-Specific Workflows
+
+Each method's processing workflow is fully documented and implemented in two Quarto scripts:
+
+1. **`pipeline_[method].qmd`**: Data transformation pipeline from raw collection, QAQC, and output of analysis-ready tables for ingestion into the DB
+2. **`eda_[method].qmd`**: Exploratory data analysis, visualization and statistics
+
+These reproducible scripts ensure consistent processing across expeditions and enable efficient onboarding of new team members to our data workflows.

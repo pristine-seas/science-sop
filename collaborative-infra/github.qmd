@@ -1,0 +1,21 @@
+---
+title: "GitHub"
+---
+
+## Overview
+
+Each expedition and project has its own GitHub repository for code and analysis.
+
+## Repository Structure
+
+- One repository per expedition or project
+- Standard directory structure for consistency
+- README with expedition overview and key information
+
+## Basic Workflow
+
+- Clone the expedition repository
+- Create branches for specific analyses
+- Commit code with clear messages
+- Create pull requests for review
+- Merge approved changes

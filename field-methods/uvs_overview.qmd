@@ -1,0 +1,292 @@
+---
+title: "Underwater Visual Surveys"
+subtitle: "Standardized protocols for in-situ marine ecosystem assessment"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(leaflet)
+library(gt)
+```
+
+## Introduction
+
+Underwater visual surveys (UVS) are the cornerstone of Pristine Seas ecological assessments, providing a comprehensive, quantitative foundation for understanding marine ecosystem structure and function. These standardized methods enable robust comparisons across sites, regions, and time periods, creating a powerful global dataset to inform science-based conservation.
+
+::: {.figure-container}
+:::: {.columns}
+::: {.column width="48%"}
+![](../assets/images/alan_blt.JPG){fig-alt="Diver conducting fish survey" width="100%"}
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+![](../assets/images/kike_lpi.JPG){fig-alt="Diver conducting benthic survey" width="100%"}
+:::
+::::
+
+*Figure 1: Pristine Seas divers conducting underwater visual surveys. Left: Fish belt transect survey. Right: Benthic survey using line point intercept method.*
+:::
+
+
+
+Through a multi-method approach, we capture the key components of marine ecosystem health: fish populations, benthic composition, invertebrate communities, and coral recruitment. This holistic assessment provides a scientific basis for identifying conservation priorities and designing effective marine protected areas.
+
+## Survey Components
+
+The Pristine Seas underwater visual survey framework integrates four complementary components:
+
+1. **Fish Belt Transects**: Quantify fish diversity, abundance, and biomass
+2. **Line Point Intercept (LPI)**: Assess benthic cover and composition
+3. **Invertebrate Counts**: Document mobile invertebrate abundance
+4. **Coral Recruit Surveys**: Measure coral recruitment and population dynamics
+
+These components are conducted along the same depth strata but on separate transects that are co-located as closely as possible within the same habitat and site. This approach allows for comprehensive sampling of each ecosystem element.
+
+## Survey Structure
+
+### Sites
+
+Each underwater visual survey location is designated as a **site**. Sites form the primary organizational unit for our surveys and are carefully selected to represent the full range of marine environments within the study area.
+
+**Site Selection Criteria:**
+
+- **Habitat representation**: Major habitat types present in the region (e.g., forereef, lagoon, backreef)
+- **Exposure gradient**: From protected/sheltered to exposed locations
+- **Protection status**: Both inside and outside protected areas when applicable
+- **Community input**: Locations identified by local knowledge as important
+- **Accessibility**: Practical considerations for safe dive operations
+
+### Stations
+
+Each site contains **stations** at different depths to capture vertical zonation patterns. Typically, two depths are surveyed at each site and the specific depths surveyed depend on local bathymetry, habitat distribution, and research priorities. In some locations, only one depth strata may be present or accessible. In this cases, the team may double the sampling effort at the single station. 
+
+::: {.callout-note title="Standard UVS depth strata"}
+
+Every survey station is assigned to one of three standardized depth strata with corresponding suffixes that build the station label:
+
+**Depth strata and suffixes:**
+
+- **Supershallow (`≤ 6 m`)** → `05m`  
+- **Shallow (`7–14 m`)** → `10m`  
+- **Deep (`≥ 15 m`)**  → `20m`
+
+**Station ID structure:** `[ISO3]_[YEAR]_uvs_[SITE]_[Depth_suffix]`
+
+**Examples:**
+
+- First survey of Fiji's 2025 expedition at 5.8 m → `FJI_2025_uvs_001_05m`
+- First survey of Fiji's 2025 expedition at 12 m → `FJI_2025_uvs_001_10m`
+
+This scheme ensures consistent stratification across all analyses, even with natural variation in survey depth.
+:::
+
+### Transects 
+
+At each station, survey methods use multiple standardized transects at consistent depth contours to derive robust station averages. These function as pseudoreplicates rather than independent samples, improving precision and accounting for small-scale spatial variation. Detailed specifications are provided in each method's dedicated section.
+
+## Field Operations
+
+The Pristine Seas underwater visual surveys involve careful coordination between multiple divers conducting complementary assessments at each site. This orchestrated approach maximizes data collection efficiency while maintaining scientific rigor and preventing interference between methods.
+
+### Dive Team
+
+::: {.grid}
+::: {.g-col-6}
+#### Fish Survey Team
+- 2 divers
+- Work independently at each depth strata
+- Rotate depths between dives
+:::
+::: {.g-col-6}
+#### Benthic Survey Unit
+- 3 divers (LPI, Coral, Inverts/Recruits)
+- Work as a coordinated unit across both strata
+:::
+:::
+
+### Schedule
+
+The typical expedition schedule includes three dives per day:
+
+- 2 morning dives (08:00-12:00)
+- 1 afternoon dive (14:00-16:00)
+
+### Choreography
+
+1. **Site preparation**:
+   - Dive boat positions at GPS coordinates
+   - Entry point marked with mooring or surface marker
+   - Team conducts pre-dive briefing
+   - YSI profile taken and surface eDNA samples collected if applicable
+
+2. **Descent sequence**:
+   - Team descends together to the deeper station and assess conditions
+   - If workable, teams separate to respective survey areas/strata
+
+3. **Fish Survey**:
+   - Each fish diver works at their assigned depth (2-3 transects)
+   - Collects photographic records of site and notable, hard to id species
+   - Notes noteworhtly off transect observations
+
+4. **Benthic Survey**:
+   - Team descends together to the 20m depth stratum
+   - If eDNA collection is planned, recruit/invert diver collects water samples first
+   - 50m transect line deployed by benthic diver.
+   - **Benthic diver (LPI)**: 
+     * Starts at 50m mark
+     * Works toward 0m recording points every 20cm
+   - **Coral diver**: 
+     * Starts at 0m mark
+     * Works toward 50m identifying coral species at points
+   - **Recruit/invert diver**:
+     * Starts at 45m mark with quadrat surveys (every 5m)
+     * After completing quadrats, stashes equipment
+     * Returns along transect recording invertebrates
+   - **Completion and transition**:
+     - Divers meet at transect end
+      - Team recovers transect reel and equipment
+      - Group ascends together to 10m depth stratum
+      - Entire process repeated at 10m depth
+
+5. **Exit coordination**:
+   - All divers return to mooring/entry point
+   - Team conducts safety stop together
+   - Surfaces at initial entry point
+
+6. **Post-dive procedures**:
+   - Team leader completes site documentation
+   - Each diver completes method-specific datasheets
+   - Equipment prepared for next dive
+   - Data entered into digital format at the end of the day.
+
+This coordinated approach ensures that comprehensive ecosystem data is collected at each station while maintaining methodological consistency and diver safety.
+
+## Documentation and Quality Control
+
+### UVS Sites Fieldbook
+
+The UVS Sites Fieldbook serves as the master reference document for all site information and survey activities. Maintained by the dive team lead, this document enables proper cross-referencing between datasets and ensures consistency across the expedition.
+
+::: {.callout-important appearance="simple" icon=true}
+## UVS Site Documentation Requirements
+
+**The dive team lead must record daily:**
+
+<div class="documentation-grid">
+<div class="documentation-item">
+<span class="documentation-icon">📍</span>
+<span class="documentation-text">**Location Details**<br>Region, subregion, locality, site name</span>
+</div>
+<div class="documentation-item">
+<span class="documentation-icon">🛰️</span>
+<span class="documentation-text">**Accurate Coordinates**<br>GPS coordinates (WGS84)</span>
+</div>
+<div class="documentation-item">
+<span class="documentation-icon">🌊</span>
+<span class="documentation-text">**Site Conditions**<br>Habitat type, exposure level</span>
+</div>
+<div class="documentation-item">
+<span class="documentation-icon">✅</span>
+<span class="documentation-text">**Protocol Completion**<br>Methods completed and deviations</span>
+</div>
+<div class="documentation-item">
+<span class="documentation-icon">📝</span>
+<span class="documentation-text">**Field Notes**<br>Notable observations or incidents</span>
+</div>
+</div>
+:::
+
+### Method - specific fielbooks
+
+
+### Photographic records
+
+### Quality Assurance Procedures
+
+To maintain data integrity across all UVS methods, we implement these key quality control measures:
+
+**Same-Day Data Entry**  
+Record all observations immediately after diving while details remain fresh and accurate
+
+**Daily QAQC Review**  
+Save data to the ship's NAS for quality checks, including mapping of survey sites to check accuracy and inform planning
+
+**Species Verification**  
+Confirm identifications using photographic evidence and our physical and digital reference library
+
+**Taxonomic Standardization**  
+Minimize taxonomic errors by using the team's taxonomic reference list for consistent species identification and database linkage
+
+**Source Documentation**  
+Archive original field datasheets securely for future reference and verification
+
+**Cross-Referenced Records**  
+Ensure consistency by validating all method-specific data against the UVS Sites Fieldbook
+
+## Integration for Reef Health Assessment
+
+The Pristine Seas methodology integrates data from all survey components to assess ecosystem health through a standardized set of ecological indicators.
+
+```{r}
+#| include: false
+
+library(gt)
+library(gtExtras)
+
+reef_indicators <- data.frame(
+  Indicator = c("Benthic Composition", "Degradation Indicators", "Fish Community", 
+               "Trophic Integrity", "Invertebrate Status", "Recovery Potential"),
+  Metrics = c("% hard coral and CCA cover", "% cyanobacteria cover", "Total fish biomass",
+             "% biomass of sharks and top predators", "Density of key commercial species", 
+             "Coral recruitment density"),
+  Significance = c("Foundation of reef structure and growth", "Early warning of environmental stress",
+                  "Overall ecosystem productivity", "Food web completeness", 
+                  "Resource extraction indicator", "Future reef trajectory")
+)
+
+reef_table <- gt(reef_indicators) %>%
+  # Start with NYTimes theme as base
+  gt_theme_nytimes() %>%
+  # Override with your color scheme
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = Indicator)
+  ) %>%
+  # Add your custom color for header
+  tab_style(
+    style = cell_fill(color = "#004165"),
+    locations = cells_column_labels()
+  ) %>%
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
+  ) %>%
+  # Customize striping with your colors
+  tab_options(
+    row.striping.background_color = "#f5f9fc",
+    table.border.top.color = "#004165",
+    table.border.top.width = px(3)
+  )
+```
+
+```{r}
+#| echo: false
+reef_table
+```
+
+These metrics provide a holistic assessment of marine ecosystem condition, enabling effective conservation planning and monitoring. We are currently developing a **composite reef health index** that integrates these indicators into a single, standardized measure to better communicate ecosystem status and facilitate comparative analyses.

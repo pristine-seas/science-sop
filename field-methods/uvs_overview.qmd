@@ -180,35 +180,40 @@ This coordinated approach ensures that comprehensive ecosystem data is collected
 
 ### UVS Sites Fieldbook
 
-The UVS Sites Fieldbook serves as the master reference document for all site information and survey activities. Maintained by the dive team lead, this document enables proper cross-referencing between datasets and ensures consistency across the expedition.
+The UVS Sites Fieldbook is the primary reference for recording site-specific information and survey activities during expeditions. Maintained by the dive team lead, it serves as the authoritative source for cross-referencing UVS datasets and ensuring data consistency.
 
-::: {.callout-important appearance="simple" icon=true}
-## UVS Site Documentation Requirements
+Daily records include:
 
-**The dive team lead must record daily:**
+- **Location Details:** Region, subregion, locality, site name  
+- **Accurate Coordinates:** GPS coordinates (WGS84)  
+- **Site Conditions:** Habitat type and exposure level  
+- **Protocol Completion:** Survey methods executed and any deviations noted  
+- **Field Notes:** Notable observations, incidents, and contextual informatio  
 
-<div class="documentation-grid">
-<div class="documentation-item">
-<span class="documentation-icon">📍</span>
-<span class="documentation-text">**Location Details**<br>Region, subregion, locality, site name</span>
-</div>
-<div class="documentation-item">
-<span class="documentation-icon">🛰️</span>
-<span class="documentation-text">**Accurate Coordinates**<br>GPS coordinates (WGS84)</span>
-</div>
-<div class="documentation-item">
-<span class="documentation-icon">🌊</span>
-<span class="documentation-text">**Site Conditions**<br>Habitat type, exposure level</span>
-</div>
-<div class="documentation-item">
-<span class="documentation-icon">✅</span>
-<span class="documentation-text">**Protocol Completion**<br>Methods completed and deviations</span>
-</div>
-<div class="documentation-item">
-<span class="documentation-icon">📝</span>
-<span class="documentation-text">**Field Notes**<br>Notable observations or incidents</span>
-</div>
-</div>
+All habitat types and exposure levels must be recorded using the controlled vocabulary specified below. This standardization is critical for understanding ecological patterns, enabling comparisons across sites, and assessing habitat-specific community structure and condition.
+
+
+::: {.callout-note title="Controlled vocabulary"}
+
+**`habitat`**
+
+- *fore reef* — Outer reef slope exposed to ocean swell.
+- *back reef* — Sheltered zone behind the reef crest  
+- *fringing reef* — Reef growing directly from the shoreline  
+- *patch reef* — Isolated reef outcrop within a lagoon or sandy area  
+- *reef flat* — Shallow, flat reef section, often exposed at low tide  
+- *channel* — Natural break or passage between reef structures  
+- *seagrass* — Vegetated, soft-bottom habitat dominated by seagrasses  
+- *rocky reef* — Reef formed by consolidated rock  
+- *other* — Habitat not captured by the above categories  
+
+**`exposure`**
+
+- *windward* — Facing prevailing winds and swell  
+- *leeward* — Sheltered from prevailing winds  
+- *lagoon* — Within an enclosed or semi-enclosed reef lagoon  
+- *other* — Exposure type not described above  
+
 :::
 
 ### Method - specific fielbooks

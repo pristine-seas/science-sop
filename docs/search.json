@@ -91,7 +91,7 @@
     "href": "collaborative-infra/drive.html",
     "title": "Google Drive",
     "section": "",
-    "text": "Google Drive serves as our centralized storage hub for all expedition data, documents, and media.",
+    "text": "Google Drive serves as the primary collaborative hub for the Pristine Seas Science Team. As the foundation of our digital infrastructure, Drive provides centralized storage, enables collaboration, and ensures continuity of our scientific work.\n\nCentral Repository: Primary and secondary data from field to analysis\nDocument Management: Expedition plans, permits, reports, and manuscripts\nCollaboration Platform: Real-time collaborative editing and review\nAsset Library: Visual materials, presentations, and resources",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -103,7 +103,7 @@
     "href": "collaborative-infra/drive.html#overview",
     "title": "Google Drive",
     "section": "",
-    "text": "Google Drive serves as our centralized storage hub for all expedition data, documents, and media.",
+    "text": "Google Drive serves as the primary collaborative hub for the Pristine Seas Science Team. As the foundation of our digital infrastructure, Drive provides centralized storage, enables collaboration, and ensures continuity of our scientific work.\n\nCentral Repository: Primary and secondary data from field to analysis\nDocument Management: Expedition plans, permits, reports, and manuscripts\nCollaboration Platform: Real-time collaborative editing and review\nAsset Library: Visual materials, presentations, and resources",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -115,7 +115,7 @@
     "href": "collaborative-infra/drive.html#structure",
     "title": "Google Drive",
     "section": "Structure",
-    "text": "Structure\n\nExpeditions folder (primary organization unit)\n\nOne subfolder per expedition\nStandard folders for data, presentations, plans, etc.\n\nProjects folder for cross-expedition work\nManuscripts and publications\nPresentations\nEquipment inventory\nAdministrative documents",
+    "text": "Structure\nThe Pristine Seas Drive has six main folders, each with a specific purpose:\nOur folder structure is designed around our core workflow, separating expedition-specific content from broader projects and reference materials. This organization helps maintain data integrity while enabling efficient cross-project analysis and knowledge sharing.\n📁 expeditions/\n   └── 📁 COL_2022/\n   └── 📁 PLW_2023/\n   └── 📁 MDV_2024/\n\n📁 projects/\n   └── 📁 prj-PLW-sixgill/\n   └── 📁 prj-EU-trawl/\n   └── 📁 prj-global-seamounts/\n\n📁 datasets/\n   └── 📁 global/\n   └── 📁 regional/\n\n📁 presentations/\n   └── 📁 expedition_reports/\n   └── 📁 conference_presentations/\n   └── 📁 visual_assets/\n\n📁 education/\n\n📁 legacy_data/",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -127,7 +127,7 @@
     "href": "collaborative-infra/drive.html#best-practices",
     "title": "Google Drive",
     "section": "Best Practices",
-    "text": "Best Practices\n\nConsistent naming conventions\nProper access permissions\nRegular organization and cleanup",
+    "text": "Best Practices\n\nKeep root folders clean - place files in appropriate subfolders\nUse consistent file types - prefer open formats where possible\nAdd context with README files - in each major folder\nClean up temporary files - don’t accumulate drafts\nLink to related resources - connect with GitHub repos and Zotero",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -517,7 +517,7 @@
     "href": "field-methods/uvs_overview.html#documentation-and-quality-control",
     "title": "Underwater Visual Surveys",
     "section": "Documentation and Quality Control",
-    "text": "Documentation and Quality Control\n\nUVS Sites Fieldbook\nThe UVS Sites Fieldbook serves as the master reference document for all site information and survey activities. Maintained by the dive team lead, this document enables proper cross-referencing between datasets and ensures consistency across the expedition.\n\n\n\n\n\n\nUVS Site Documentation Requirements\n\n\n\nThe dive team lead must record daily:\n\n\n📍 Location DetailsRegion, subregion, locality, site name\n\n\n🛰️ Accurate CoordinatesGPS coordinates (WGS84)\n\n\n🌊 Site ConditionsHabitat type, exposure level\n\n\n✅ Protocol CompletionMethods completed and deviations\n\n\n📝 Field NotesNotable observations or incidents\n\n\n\n\n\n\nQuality Assurance Procedures\nTo maintain data integrity across all UVS methods, we implement these key quality control measures:\nSame-Day Data Entry\nRecord all observations immediately after diving while details remain fresh and accurate\nDaily QAQC Review\nSave data to the ship’s NAS for quality checks, including mapping of survey sites to check accuracy and inform planning\nSpecies Verification\nConfirm identifications using photographic evidence and our physical and digital reference library\nTaxonomic Standardization\nMinimize taxonomic errors by using the team’s taxonomic reference list for consistent species identification and database linkage\nSource Documentation\nArchive original field datasheets securely for future reference and verification\nCross-Referenced Records\nEnsure consistency by validating all method-specific data against the UVS Sites Fieldbook",
+    "text": "Documentation and Quality Control\n\nUVS Sites Fieldbook\nThe UVS Sites Fieldbook serves as the master reference document for all site information and survey activities. Maintained by the dive team lead, this document enables proper cross-referencing between datasets and ensures consistency across the expedition.\n\n\n\n\n\n\nUVS Site Documentation Requirements\n\n\n\nThe dive team lead must record daily:\n\n\n📍 Location DetailsRegion, subregion, locality, site name\n\n\n🛰️ Accurate CoordinatesGPS coordinates (WGS84)\n\n\n🌊 Site ConditionsHabitat type, exposure level\n\n\n✅ Protocol CompletionMethods completed and deviations\n\n\n📝 Field NotesNotable observations or incidents\n\n\n\n\n\n\nMethod - specific fielbooks\n\n\nPhotographic records\n\n\nQuality Assurance Procedures\nTo maintain data integrity across all UVS methods, we implement these key quality control measures:\nSame-Day Data Entry\nRecord all observations immediately after diving while details remain fresh and accurate\nDaily QAQC Review\nSave data to the ship’s NAS for quality checks, including mapping of survey sites to check accuracy and inform planning\nSpecies Verification\nConfirm identifications using photographic evidence and our physical and digital reference library\nTaxonomic Standardization\nMinimize taxonomic errors by using the team’s taxonomic reference list for consistent species identification and database linkage\nSource Documentation\nArchive original field datasheets securely for future reference and verification\nCross-Referenced Records\nEnsure consistency by validating all method-specific data against the UVS Sites Fieldbook",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -829,6 +829,306 @@
       "Home",
       "Field Methods",
       "Benthic Line Point Intercept"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#drive-structure",
+    "href": "collaborative-infra/drive.html#drive-structure",
+    "title": "Google Drive",
+    "section": "Drive Structure",
+    "text": "Drive Structure\nThe Pristine Seas Google Drive follows a standardized organizational framework to ensure consistency across expeditions and streamline data management workflows. This structured approach facilitates efficient data retrieval, promotes collaboration, and preserves institutional knowledge.\n\nRoot-Level Organization\nThe root level of our Science Team Google Drive contains these primary folders that support different aspects of our research operations:\n\n\n\n expeditions/\n\n\n\n projects/\n\n\n\n datasets/\n\n\n\n presentations/\n\n\n\n education/\n\n\n\n legacy data/",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#folder-structure",
+    "href": "collaborative-infra/drive.html#folder-structure",
+    "title": "Google Drive",
+    "section": "Folder Structure",
+    "text": "Folder Structure\nEach expedition folder follows a consistent organization with the following components:\nexpeditions/\n└── iso3_year/\n    ├── readme.md                # Expedition overview\n    ├── data/                    # All expedition data\n    │   ├── primary/             # Data collected by team\n    │   │   ├── raw/             # Unmodified field data\n    │   │   ├── processed/       # QA/QC applied data\n    │   │   └── output/          # Analysis-ready data\n    │   └── secondary/           # Data from external sources\n    ├── documents/               # Administrative documents\n    ├── figures/                 # Maps and visualizations\n    ├── gis/                     # Spatial data\n    ├── media/                   # Photos, videos, audio\n    ├── presentations/           # Slide decks\n    ├── reports/                 # Expedition outputs\n    └── references/              # Literature and resources",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#root-level-organization",
+    "href": "collaborative-infra/drive.html#root-level-organization",
+    "title": "Google Drive",
+    "section": "",
+    "text": "The Drive is organized into these primary top-level folders, each serving a specific purpose within our research workflow:\n\n\nThe primary organizational unit and central hub for all expedition-specific work. Each expedition has a dedicated subfolder with a standardized internal structure for data, documents, and outputs.\nNaming convention: [ISO3]_[YEAR] (e.g., PLW_2023, COL_2022)\nPurpose: Contains all materials directly related to field expeditions, from planning through reporting\n\n\n\nHouses focused research initiatives that either relate to specific expeditions or address cross-cutting thematic areas. Projects maintain consistent internal organization while enabling flexibility for diverse research objectives.\nNaming convention: prj-[Focus]-[Description] (e.g., prj-PLW-sixgill, prj-EU-trawl)\nPurpose: Organizes materials for manuscripts, expedition-adjacent analyses, and broader research initiatives\n\n\n\nCollection of reference datasets that support multiple projects and expeditions, including both external resources and derived datasets with broad applicability.\nOrganization: Structured by geographic scope (global, regional) and thematic categories\nPurpose: Provides consistent access to important contextual data that informs multiple research efforts\n\n\n\nRepository of presentation materials, templates, and visual assets used across the team for internal reporting, external communication, and conference participation.\nOrganization: Categorized by purpose (expedition reports, conferences) with a dedicated visual assets section\nPurpose: Maintains institutional knowledge through documentation of past presentations and ensures visual consistency\n\n\n\nResources for educational initiatives and outreach programs that translate Pristine Seas research into accessible formats for diverse audiences.\nOrganization: Structured by target audience and delivery format\nPurpose: Supports the translation of scientific findings into educational materials with broader impact\n\n\n\nHistorical datasets that predate our current standardized system, maintained in their original structure until integration into the BigQuery database.\nOrganization: Preserved in original format with added documentation\nPurpose: Ensures valuable historical data remains accessible while pending standardization and integration",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#naming-conventions",
+    "href": "collaborative-infra/drive.html#naming-conventions",
+    "title": "Google Drive",
+    "section": "Naming Conventions",
+    "text": "Naming Conventions\n\n\n\n\n\n\nFile & Folder Naming\n\n\n\n\nFolder names use hyphens: project-name/, field-method/\nFile names use underscores: PLW_2023_expedition_sites.csv\nAlways use lowercase snake_case: expedition_report.pdf\n\nConsistent naming makes files easier to find, sort, and process.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#root-level-organization-1",
+    "href": "collaborative-infra/drive.html#root-level-organization-1",
+    "title": "Google Drive",
+    "section": "Root-Level Organization",
+    "text": "Root-Level Organization\nThe Drive is organized into these primary top-level folders, each serving a specific purpose within our research workflow:\n\n expeditions/\nThe primary organizational unit and central hub for all expedition-specific work. Each expedition has a dedicated subfolder with a standardized internal structure for data, documents, and outputs.\nNaming convention: [ISO3]_[YEAR] (e.g., PLW_2023, COL_2022)\nPurpose: Contains all materials directly related to field expeditions, from planning through reporting\n\n\n projects/\nHouses focused research initiatives that either relate to specific expeditions or address cross-cutting thematic areas. Projects maintain consistent internal organization while enabling flexibility for diverse research objectives.\nNaming convention: prj-[Focus]-[Description] (e.g., prj-PLW-sixgill, prj-EU-trawl)\nPurpose: Organizes materials for manuscripts, expedition-adjacent analyses, and broader research initiatives\n\n\n datasets/\nCollection of reference datasets that support multiple projects and expeditions, including both external resources and derived datasets with broad applicability.\nOrganization: Structured by geographic scope (global, regional) and thematic categories\nPurpose: Provides consistent access to important contextual data that informs multiple research efforts\n\n\n presentations/\nRepository of presentation materials, templates, and visual assets used across the team for internal reporting, external communication, and conference participation.\nOrganization: Categorized by purpose (expedition reports, conferences) with a dedicated visual assets section\nPurpose: Maintains institutional knowledge through documentation of past presentations and ensures visual consistency\n\n\n education/\nResources for educational initiatives and outreach programs that translate Pristine Seas research into accessible formats for diverse audiences.\nOrganization: Structured by target audience and delivery format\nPurpose: Supports the translation of scientific findings into educational materials with broader impact\n\n\n legacy_data/\nHistorical datasets that predate our current standardized system, maintained in their original structure until integration into the BigQuery database.\nOrganization: Preserved in original format with added documentation\nPurpose: Ensures valuable historical data remains accessible while pending standardization and integration",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#overview-1",
+    "href": "collaborative-infra/drive.html#overview-1",
+    "title": "Google Drive",
+    "section": "Overview",
+    "text": "Overview\nGoogle Drive serves as the primary collaborative hub for the Pristine Seas Science Team, providing centralized storage and organization for all expedition data, documents, presentations, and project materials. As the foundational component of our digital infrastructure, Drive enables seamless collaboration, ensures data accessibility across the team, and maintains the continuity of our scientific work.\nOur Drive implementation serves several critical functions:\n\nCentral Repository: Houses all primary and secondary data, from raw field observations to processed datasets\nDocument Management: Maintains all expedition and project documentation, including plans, permits, reports, and manuscripts\nKnowledge Base: Preserves institutional knowledge through standardized organization of past work\nCollaboration Platform: Facilitates real-time collaborative editing and review processes\nAsset Library: Organizes visual materials, presentations, and reference resources\n\nThis document outlines the standardized structure, naming conventions, and best practices for our Google Drive usage, ensuring consistency across expeditions and maximizing the utility of our shared resources.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#folder-structure-1",
+    "href": "collaborative-infra/drive.html#folder-structure-1",
+    "title": "Google Drive",
+    "section": "Folder Structure",
+    "text": "Folder Structure",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#structure-1",
+    "href": "collaborative-infra/drive.html#structure-1",
+    "title": "Google Drive",
+    "section": "Structure",
+    "text": "Structure\nThe Pristine Seas Drive has six main folders, each with a specific purpose:\nOur folder structure is designed around our core workflow, separating expedition-specific content from broader projects and reference materials. This organization helps maintain data integrity while enabling efficient cross-project analysis and knowledge sharing.\n📁 expeditions/\n   └── 📁 COL_2022/\n   └── 📁 PLW_2023/\n   └── 📁 MDV_2024/\n\n📁 projects/\n   └── 📁 prj-PLW-sixgill/\n   └── 📁 prj-EU-trawl/\n   └── 📁 prj-global-seamounts/\n\n📁 datasets/\n   └── 📁 global/\n   └── 📁 regional/\n\n📁 presentations/\n   └── 📁 expedition_reports/\n   └── 📁 conference_presentations/\n   └── 📁 visual_assets/\n\n📁 education/\n\n📁 legacy_data/\n:::",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#expeditions",
+    "href": "collaborative-infra/drive.html#expeditions",
+    "title": "Google Drive",
+    "section": "Expeditions",
+    "text": "Expeditions\nThe expeditions folder is the heart of our data organization system, containing all materials related to our field expeditions. Expeditions are given standardized ID (exp_id) that’s composed of the ISO alpha-3 country code and the year of the expedition. In rare case when multiple expeditions occur in the same country within the same year, we add descriptive suffixes.\n\n\n\n\n\n\nExpedition ID (exp_id)\n\n\n\nFormat: [iso3]_[year]\nExamples: COL_2022, PLW_2023, ARG_2018_yaganes, ARG_2018_burwood\n\n\nThis naming system ensures expeditions are easily identifiable, correctly sorted by location and date, and consistently referenced across our platforms.\nexpeditions/\n└── iso3-year/\n    ├── readme.md                # Expedition overview\n    ├── data/                    # All expedition data\n    │   ├── primary/             # Data collected by team\n    │   │   ├── raw/             # Unmodified field data\n    │   │   ├── processed/       # QA/QC applied data\n    │   │   └── output/          # Analysis-ready data\n    │   └── secondary/           # Data from external sources\n    ├── documents/               # Scouting and planning documents\n    ├── figures/                 # Maps and visualizations\n    ├── gis/                     # Spatial project\n    ├── media/                   # Photos, videos\n    ├── presentations/           # Slide decks\n    ├── reports/                 # Expedition outputs\n    └── references/              # Literature and resources\n\n\n\n\n\n\nNaming conventions\n\n\n\nAll folder and file names should follow these conventions:\n\nFolders: Use kebab-case (hyphens), capitalize only proper nouns\n\nExamples: esv-PLW-2024/, prj-cyprus-trawlers/\n\nFiles: Use snake_case (underscores), capitalize only proper nouns\n\nExamples: FJI_2025_science_report.docx, YSI_manual.pdf\n\nNames should be descriptive and consistent\n\n\n\n\ndata/\nThe data folder is organized by source and processing stage:\n\nprimary/secondary/\n\n\nData collected by our team during the expedition:\n\nraw/:\n\nOriginal, unmodified fieldbooks\nSite and species photos\nHighlights from remote camera systems\n\nprocessed/:\n\nQA/QC procedures applied\nStandardized formats\n\noutput/:\n\nFully validated datasets\nDatabase-ready structure\nDerived metrics included\n\n\nEach subfolder is organized by research method (benthic, fish, bruvs, edna, etc.)\n\n\nData from external sources relevant to the expedition:\n\nprevious-work/: Previous research\nspatial/: Habitat maps, administrative boundaries\n\n\n\n\n\n\ndocuments/\nEssential expedition documentation:\n\nplanning/\n\nScouting reports and initial assessments\nScience plans detailing research objectives\n\npermits/\n\nResearch authorization applications and approvals\nMemoranda of understanding with local partners\n\nmisc/\n\nMeeting notes from planning and field sessions\nContact lists for team members and stakeholders\n\n\n\n\nmedia/\nExpedition visual documentation organized by source:\n\nscience-collection/\n\nSelect photos taken by science team members\nOrganized by species groups and habitats\n\nmedia-team/\n\nProfessional photography from our media team\nunderwater/: Underwater imagery of marine environments\ntopside: Aerial and landscape documentation\npeople: Human elements including team and communities\n\nfield-edit/\n\nExpedition video produced by the media team\n\n\n\n\nreports/\nExpedition outputs for different audiences:\n\nscience/\n\nComprehensive scientific report\nTwo-page expedition summary\n\noutreach/\n\nCommunity and stakeholder reports\nPress materials\nStories from the expedition\n\nassets/\n\nHigh-resolution images, maps and figures (.pdf)\nPartner logos or branding materials\n\n\n\n\nOther Key Folders\n\nfigures/\n\nMaps showing expedition sites and spatial patterns in data\nData visualizations from analyses\n\nGIS/\n\nStores the GIS project files\n\npresentations/\n\nPre-expedition planning briefings\nPost-expedition debrief materials\nStakeholder and partner presentations\n\nreferences/\n\nRegional scientific literature\nDomain-specific research papers\nCultural and historical context",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#projects",
+    "href": "collaborative-infra/drive.html#projects",
+    "title": "Google Drive",
+    "section": "Projects",
+    "text": "Projects\nThe projects folder houses focused research initiatives and scientific papers that advance our mission. These may span global, regional, or expedition-specific contexts. Projects are given unique descriptive names that reflect their focus and objectives.\n\n\n\n\n\n\nProject ID\n\n\n\nEach project uses a standardized folder naming convention:\nFormat: prj-[descriptive]-[name]\nExamples: prj-coral-resilience, prj-shark-migration, prj-seamount-biodiversity\n\n\n\nStructure\nA typical project structure contains the following folders:\nprojects/\n└── prj-[descriptive]-[name]/\n    ├── data/              # Project data (may link to but not copy expedition data)\n    ├── documents/         # Reference documents, meeting notes,\n    ├── figures/           # Plots, maps, visualizations\n    └── presentations/     # Project presentations\n\n\n\n\n\n\nGitHub Integration\n\n\n\n\nCode Management Policy\nAll code and scripts must be stored exclusively in GitHub repositories, never in Google Drive.\n\nDrive: Documents, data, media, and presentations\nGitHub: All code, scripts, and computational workflows\n\n\n\nRepository Naming Conventions\n\nExpeditions: exp-[iso3]-[year] (e.g., exp-mdv-2024)\nProjects: prj-[descriptive]-[name] (e.g., prj-coral-resilience)\n\nThis clear separation ensures proper version control, enables code review, facilitates collaboration, and maintains the integrity of our scientific workflow.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#datasets",
+    "href": "collaborative-infra/drive.html#datasets",
+    "title": "Google Drive",
+    "section": "Datasets",
+    "text": "Datasets\nThe datasets folder contains reference data from external sources that supports our analyses and provides essential context for our research. We maintain these datasets in their original form while providing comprehensive documentation.\n\nStructure\ndatasets/\n├── datasets_inventory.xlsx   # Master catalog with metadata and documentation\n├── aquamaps-v10-2019/        # Original dataset as obtained from source\n├── global-distribution-seagrass/\n├── gebco-2024/               # Bathymetry and ocean topography\n└── [dataset-name]/           # Additional reference datasets\n\n\nDataset Documentation\nOur datasets_inventory.xlsx catalogs each dataset with essential metadata:\n\nSource information: Original creator, publication references, access date\nGeographic scope: Spatial coverage, resolution, and coordinate systems\nTemporal range: Time period covered and update frequency\nContent description: Key variables, measurements, and units\nUsage limitations: Licensing, restrictions, and attribution requirements\n\n\n\nKey Reference Datasets\n\nmarine-regions: Standardized marine boundaries and maritime zones\nmpa-atlas: Global marine protected area database\ngravity-cinner-et-al: Market gravity model for human pressure\nhuman-impacts-on-ocean: Cumulative human impact assessments\nmarine-biogeographic-realms: Major biogeographic divisions\nmarine-ecoregions-and-provinces: Ecological classification system\nseamounts-yesson-2019: Global seamount locations and characteristics",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#presentations",
+    "href": "collaborative-infra/drive.html#presentations",
+    "title": "Google Drive",
+    "section": "presentations/",
+    "text": "presentations/\nA repository of slide decks from previous presentations, including expedition debriefs, with a subfolder for visual assets (logos, etc.).",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#education",
+    "href": "collaborative-infra/drive.html#education",
+    "title": "Google Drive",
+    "section": "education/",
+    "text": "education/\nResources for educational initiatives (in development).",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#legacy_data",
+    "href": "collaborative-infra/drive.html#legacy_data",
+    "title": "Google Drive",
+    "section": "legacy_data/",
+    "text": "legacy_data/\nHistorical data pending integration into our database system.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#core-structure",
+    "href": "collaborative-infra/drive.html#core-structure",
+    "title": "Google Drive",
+    "section": "Core Structure",
+    "text": "Core Structure\nThe Pristine Seas Science Team Drive is organized into the following main folders:\nSCIENCE/\n├── expeditions/      # Primary repository for expedition data and documentation\n├── projects/         # Research projects and papers in support of our mission\n├── datasets/         # Useful and commoly used external datasets\n├── resources/          # Shared materials and assets\n│   ├── presentations/    # Slides for presentations, conferences, and meetings\n│   ├── media/            # Photos, videos for communications\n│   ├── illustrations/    # Scientific illustrations library\n│   ├── methods/          # Field protocols and standards\n│   ├── education/        # Training and outreach materials\n└── operations/       # Administrative content\n    ├── team/             # Team coordination\n    │   ├── meetings/        # Meeting notes and schedules\n    │   └── planning/        # Strategic documents\n    ├── equipment/        # Inventory and maintenance\n    ├── budgets/          # Financial planning",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#core-structure-1",
+    "href": "collaborative-infra/drive.html#core-structure-1",
+    "title": "Google Drive",
+    "section": "Core Structure",
+    "text": "Core Structure\n\n\n\n📂\n\nexpeditions/\n\n\n\nPrimary repository for all expedition-related data and documentation\n\n\n\n\n🔬\n\nprojects/\n\n\n\nCross-expedition research initiatives and collaborative analyses\n\n\n\n\n🗄️\n\ndatasets/\n\n\n\nReference datasets for global and regional analysis\n\n\n\n\n🎯\n\npresentations/\n\n\n\nArchive of presentation materials and visual assets\n\n\n\n\n📚\n\neducation/\n\n\n\nResources for training and outreach activities\n\n\n\n\n🗃️\n\nlegacy-data/\n\n\n\nHistorical data pending integration into standardized structure",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#naming-convention",
+    "href": "collaborative-infra/drive.html#naming-convention",
+    "title": "Google Drive",
+    "section": "Naming Convention",
+    "text": "Naming Convention\nEach expedition has a dedicated folder using the standardized naming convention:\n[iso3]_[year]\nWhere: - iso3 is the ISO 3166-1 alpha-3 country code in lowercase (e.g., mdv for Maldives) - year is the four-digit year of the expedition\nFor multi-country or targeted expeditions, additional descriptors may be added:\n[iso3]_[year]_[descriptor]\nExamples: - mdv_2024 (Maldives 2024) - fji_2023_northern (Fiji 2023 - Northern Islands) - plw_2023 (Palau 2023)\n\n\n\n\n\n\nNote\n\n\n\nThis standardized naming ensures that expedition folders sort chronologically within geographic regions and are immediately identifiable in the file system.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#key-components",
+    "href": "collaborative-infra/drive.html#key-components",
+    "title": "Google Drive",
+    "section": "Key Components",
+    "text": "Key Components\n\nreadme.md\nThis is the expedition overview document that serves as the landing page for anyone accessing the expedition folder. It contains:\n\nREADME.md Template\nExpedition: [iso3_year] - [Full Expedition Name]\nDates: [Start Date] - [End Date]\nLocation: [Country, Region]\nScience Team: - [Name] - [Role/Institution] - [Name] - [Role/Institution]\nExpedition Objectives: 1. [Primary research objective] 2. [Secondary research objective] 3. [Conservation/outreach objectives]\nMethods Deployed: - [Method 1] - [Brief description] - [Method 2] - [Brief description]\nKey Accomplishments: - [Summary of surveys completed] - [Notable findings or discoveries] - [Conservation outcomes]\nFolder Navigation: - data/ - [Description of key datasets] - documents/ - [Key documents to reference] - etc.\nContact Information: - Science Lead: [Name] - [Email] - Data Manager: [Name] - [Email]\n\n\n\ndata/\nThe data folder contains all scientific data collected during the expedition, organized by source and processing stage:\n\n\nprimary/\nData collected by the Pristine Seas team during the expedition.\nSubfolders:\n\nraw/ - Original, unmodified data files\nprocessed/ - Data that has undergone QA/QC procedures\noutput/ - Analysis-ready datasets for database ingestion\n\nEach of these subfolders is further organized by research method (benthic, fish, bruvs, edna, etc.).\n\n\nsecondary/\nData from external sources relevant to the expedition.\nSubfolders:\n\nenvironmental/ - Climate, oceanographic, or weather data\nhistorical/ - Previous research in the area\nmanagement/ - Protected area boundaries, regulations\n\nThese data provide context and complement the primary data collected by the team.\n\n\n\nData Organization Principles\n\n\nRaw Data\n\nOriginal, unmodified data files exactly as collected in the field\nInclude fieldbooks, photos, and metadata\nStore in original formats, even if non-standard\nNever modify these files; treat as immutable records\n\n\n\nProcessed Data\n\nData that has undergone QA/QC procedures\nStandardized formats with consistent headers\nClear documentation of processing steps\nTraceable link to raw data sources\n\n\n\nOutput Data\n\nFully validated, analysis-ready datasets\nStandardized structure ready for database ingestion\nIncludes derived metrics (e.g., biomass calculations)\n\n\n\n\n\n\nOther Key Folders\n\n\ndocuments/\nAdministrative and reference documents for the expedition.\nSubfolders:\n\nplanning/ - Scouting and science plans\npermits/ - Research permits, MOUs and authorizations\nmisc/ - Others\n\n\n\nfigures/\nVisual representations of expedition data and findings.\nSubfolders:\n\nmaps/ - Location maps and spatial representations\nplots/ - Data visualizations and statistics\n\n\n\ngis/\nSpatial data and GIS project resources.\nSubfolders:\n\nshapefiles/ - Vector data (points, lines, polygons)\nrasters/ - Gridded spatial data\nmetadata/ - Spatial data documentation\n\n\n\nmedia/\nVisual documentation of the expedition.\nSubfolders:\n\nfield-team/ - Photos taken by science team\nngs/ - Professional photography\nfield-edit/ - Video footage\n\n\n\npresentations/\nSlide decks and presentation materials.\nSubfolders:\n\nplanning/ - Pre-expedition briefings\ndebrief/ - Post-expedition summaries\nstakeholder/ - Materials for local partners\n\n\n\nreports/\nOfficial expedition outputs and reports.\nSubfolders: - science/ - Scientific report. - outreach/ - Public-facing summaries - assets/ - High resolution images and figures for reports\n\n\nreferences/\nExpedition-specific literature and resources.\nSubfolders match Zotero library\n\ngeneral/ - General location references\ndeep-sea/ - Relevant dep sea papers\nculture/ - Cultural references",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#implementation-guide",
+    "href": "collaborative-infra/drive.html#implementation-guide",
+    "title": "Google Drive",
+    "section": "Implementation Guide",
+    "text": "Implementation Guide\nTo maintain consistent Drive organization:\n\nCreate templates for new expeditions and projects\nTrain team members on file structure and naming conventions\nConduct regular audits to ensure compliance\nDesignate data champions for expeditions and methods\nDocument exceptions when standard structure cannot be followed",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#resources",
+    "href": "collaborative-infra/drive.html#resources",
+    "title": "Google Drive",
+    "section": "Resources",
+    "text": "Resources",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#operations",
+    "href": "collaborative-infra/drive.html#operations",
+    "title": "Google Drive",
+    "section": "Operations",
+    "text": "Operations",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#sec1",
+    "href": "collaborative-infra/drive.html#sec1",
+    "title": "Google Drive",
+    "section": "Section 1",
+    "text": "Section 1\nContent for section 1…\nNext: Section 2",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#sec2",
+    "href": "collaborative-infra/drive.html#sec2",
+    "title": "Google Drive",
+    "section": "Section 2",
+    "text": "Section 2\nContent for section 2…\nPrevious: Section 1 | Next: Section 3",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#sec3",
+    "href": "collaborative-infra/drive.html#sec3",
+    "title": "Google Drive",
+    "section": "Section 3",
+    "text": "Section 3\nContent for section 3…\nPrevious: Section 2",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/drive.html#github-integration",
+    "href": "collaborative-infra/drive.html#github-integration",
+    "title": "Google Drive",
+    "section": "GitHub Integration",
+    "text": "GitHub Integration\n::: {.callout-important appearance=“minimal” title = “GitHub Integration”}\n\nCode Management Policy\nAll code and scripts must be stored exclusively in GitHub repositories, never in Google Drive.\n\nDrive stores documents, data, and non-code assets\nGitHub provides version control, code review, and collaboration\n\n\nRepository Naming Conventions\n\nExpeditions: exp-[iso3]-[year] (e.g., exp-mdv-2024)\nProjects: prj-[descriptive]-[name] (e.g., prj-coral-resilience)\n\nThis separation ensures proper version tracking and reproducibility while maintaining a clean document management system. :::",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Google Drive"
     ]
   }
 ]

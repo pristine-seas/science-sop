@@ -13,7 +13,7 @@ Our collaborative infrastructure is designed to support expedition-based workflo
 
 Centralized storage hub for all expedition data, documents, and media.
 
-[Details →](google-drive.qmd)
+[Details →](drive.qmd)
 </div>
 :::
 
@@ -24,7 +24,7 @@ Centralized storage hub for all expedition data, documents, and media.
 
 Repository for each expedition and project's code and analysis.
 
-[Details →](github-workflow.qmd)
+[Details →](github.qmd)
 </div>
 :::
 ::::

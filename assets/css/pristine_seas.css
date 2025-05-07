@@ -584,3 +584,174 @@ img {
   font-weight: bold;
   font-style: italic;
 }
+
+
+
+/* Google Drive folder styles */
+.drive-folder {
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: 1px solid #e9ecef;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+}
+
+.drive-folder:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.drive-folder i {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #4285F4;
+}
+
+/* Permission grid styles */
+.permission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.permission-item {
+  padding: 1rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+}
+
+.permission-icon {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.permission-level {
+  grid-column: 2;
+  grid-row: 1;
+  font-weight: bold;
+}
+
+.permission-desc {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 0.9rem;
+}
+
+/* Integration card styles */
+.integration-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  height: 100%;
+  border: 1px solid #e9ecef;
+  transition: all 0.2s ease;
+}
+
+.integration-card:hover {
+  border-color: #4285F4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.integration-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.integration-header h3 {
+  margin: 0;
+  color: #004165;
+}
+
+.integration-card hr {
+  border: 0;
+  height: 1px;
+  background-color: #e9ecef;
+  margin: 0.75rem 0;
+}
+
+.integration-card ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Add font-awesome as well if not already included */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Code block styles for R integration examples */
+pre.r {
+  background-color: #f5f5f5;
+  border-left: 4px solid #4285F4;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Tables styling for permission and reference tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+table th {
+  background-color: #004165;
+  color: white;
+  text-align: left;
+  padding: 0.75rem;
+}
+
+table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Quick reference cards */
+.reference-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #004165;
+}
+
+.reference-card h4 {
+  margin-top: 0;
+  color: #004165;
+}
+
+/* Additional styles for the callouts */
+.callout-note.appearance-minimal {
+  background-color: #f8f9fa;
+  border-left: 5px solid #004165;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.callout-important.appearance-simple {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.callout-tip {
+  background-color: #d4edda;
+  border-left: 5px solid #28a745;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}

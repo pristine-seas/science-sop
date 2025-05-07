@@ -1,24 +1,282 @@
 ---
 title: "Google Drive"
+subtitle: "Centralized storage for the Pristine Seas Science Team"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(gt)
+```
 
 ## Overview
 
-Google Drive serves as our centralized storage hub for all expedition data, documents, and media.
+Google Drive serves as the primary collaborative hub for the Pristine Seas Science Team. As the foundation of our digital infrastructure, Drive provides centralized storage, enables collaboration, and ensures continuity of our scientific work.
 
-## Structure
+- **Central Repository**: Primary and secondary data from field to analysis
+- **Document Management**: Expedition plans, permits, reports, and manuscripts
+- **Collaboration Platform**: Real-time collaborative editing and review
+- **Asset Library**: Visual materials, presentations, and resources
 
-- Expeditions folder (primary organization unit)
-  - One subfolder per expedition
-  - Standard folders for data, presentations, plans, etc.
-- Projects folder for cross-expedition work
-- Manuscripts and publications
-- Presentations
-- Equipment inventory
-- Administrative documents
+## Core Structure
 
-## Best Practices
+The Pristine Seas Science Team Drive is organized into the following main folders:
 
-- Consistent naming conventions
-- Proper access permissions
-- Regular organization and cleanup
+```text
+SCIENCE/
+├── expeditions/      # Primary repository for expedition data and documentation
+├── projects/         # Research projects and papers in support of our mission
+├── datasets/         # Useful and commoly used external datasets
+├── resources/          # Shared materials and assets
+│   ├── presentations/    # Slides for presentations, conferences, and meetings
+│   ├── media/            # Photos, videos for communications
+│   ├── illustrations/    # Scientific illustrations library
+│   ├── methods/          # Field protocols and standards
+│   ├── education/        # Training and outreach materials
+└── operations/       # Administrative content
+    ├── team/             # Team coordination
+    │   ├── meetings/        # Meeting notes and schedules
+    │   └── planning/        # Strategic documents
+    ├── equipment/        # Inventory and maintenance
+    ├── budgets/          # Financial planning
+```
+
+## Expeditions
+
+The expeditions folder is the heart of our data organization system, containing all materials related to our field expeditions. Expeditions are given standardized ID (`exp_id`) that's composed of the **ISO alpha-3 country code** and the year of the expedition. In rare case when multiple expeditions occur in the same country within the same year, we add descriptive suffixes. 
+
+::: {.callout-note title="**Expedition ID** (`exp_id`)" appearance="minimal"}
+
+
+**Format**: [iso3]_[year]
+
+**Examples:** `COL_2022`, `PLW_2023`, `ARG_2018_yaganes`, `ARG_2018_burwood`
+
+:::
+
+This naming system ensures expeditions are easily identifiable, correctly sorted by location and date, and consistently referenced across our platforms. 
+```
+expeditions/
+└── iso3-year/
+    ├── readme.md                # Expedition overview
+    ├── data/                    # All expedition data
+    │   ├── primary/             # Data collected by team
+    │   │   ├── raw/             # Unmodified field data
+    │   │   ├── processed/       # QA/QC applied data
+    │   │   └── output/          # Analysis-ready data
+    │   └── secondary/           # Data from external sources
+    ├── documents/               # Scouting and planning documents
+    ├── figures/                 # Maps and visualizations
+    ├── gis/                     # Spatial project
+    ├── media/                   # Photos, videos
+    ├── presentations/           # Slide decks
+    ├── reports/                 # Expedition outputs
+    └── references/              # Literature and resources
+```
+
+::: {.callout-important title="**Naming conventions**" appearance="minimal"}
+All folder and file names should follow these conventions:
+
+ - **Folders**: Use `kebab-case` (hyphens), capitalize only proper nouns
+    - Examples: `esv-PLW-2024/`, `prj-cyprus-trawlers/`
+ - **Files**: Use `snake_case` (underscores), capitalize only proper nouns
+    - Examples: `FJI_2025_science_report.docx`, `YSI_manual.pdf`
+ - Names should be **descriptive** and consistent
+:::
+
+#### `data/`
+
+The data folder is organized by source and processing stage:
+
+::: {.panel-tabset}
+
+## primary/
+
+Data collected by our team during the expedition:
+
+- **raw/**: 
+  - Original, unmodified fieldbooks
+  - Site and species photos
+  - Highlights from remote camera systems
+- **processed/**: 
+  - QA/QC procedures applied
+  - Standardized formats
+- **output/**: 
+  - Fully validated datasets
+  - Database-ready structure
+  - Derived metrics included
+
+Each subfolder is organized by research method (benthic, fish, bruvs, edna, etc.)
+
+## secondary/
+
+Data from external sources relevant to the expedition:
+
+- **previous-work/**: Previous research
+- **spatial/**: Habitat maps, administrative boundaries
+
+:::
+
+#### `documents/`
+
+Essential expedition documentation:
+
+- **planning/**
+  - Scouting reports and initial assessments
+  - Science plans detailing research objectives
+
+- **permits/**
+  - Research authorization applications and approvals
+  - Memoranda of understanding with local partners
+
+- **misc/**
+  - Meeting notes from planning and field sessions
+  - Contact lists for team members and stakeholders
+
+#### `media/`
+
+Expedition visual documentation organized by source:
+
+- **science-collection/**
+  - Select photos taken by science team members
+  - Organized by species groups and habitats
+  
+- **media-team/**
+  - Professional photography from our media team
+  - `underwater/`: Underwater imagery of marine environments
+  - `topside`: Aerial and landscape documentation
+  - `people`:  Human elements including team and communities
+  
+- **field-edit/**
+  - Expedition video produced by the media team
+
+#### `reports/`
+
+Expedition outputs for different audiences:
+
+- **science/**
+  - Comprehensive scientific report
+  - Two-page expedition summary
+
+- **outreach/**
+  - Community and stakeholder reports
+  - Press materials
+  - Stories from the expedition
+  
+- **assets/**
+  - High-resolution images, maps and figures (.pdf)
+  - Partner logos or branding materials
+
+#### Other Key Folders
+
+- **figures/**
+  - Maps showing expedition sites and spatial patterns in data
+  - Data visualizations from analyses
+
+- **GIS/**
+  - Stores the GIS project files
+  
+- **presentations/**
+  - Pre-expedition planning briefings
+  - Post-expedition event materials
+  - Other stakeholder and partner presentations
+  
+- **references/**
+  - Regional scientific literature
+  - Domain-specific research papers
+  - Cultural and historical context
+
+## Projects
+
+The projects folder houses focused research initiatives and scientific papers that advance our mission. These may span global, regional, or expedition-specific contexts. Projects are given unique descriptive names that reflect their focus and objectives.
+
+::: {.callout-note title="**Project ID**" appearance="minimal"}
+Each project uses a standardized folder naming convention:
+
+**Format**: prj-[descriptive]-[name]
+
+**Examples:** `prj-SLI-resilience`, `prj-cachalote`, `prj-hawaii-lwr`
+:::
+
+### Structure
+
+A typical project structure contains the following folders:
+
+```
+projects/
+└── prj-[descriptive]-[name]/
+    ├── data/              # Project data (may link to but not copy expedition data)
+    ├── documents/         # Reference documents, meeting notes,
+    ├── figures/           # Plots, maps, visualizations
+    └── presentations/     # Project presentations
+```
+
+::: {.callout-important appearance="minimal" title="GitHub Integration"}
+### Code Management Policy
+
+All code and scripts must be stored **exclusively** in GitHub repositories, never in Google Drive.
+
+- Drive: Documents, data, media, and presentations
+- GitHub: All code, scripts, and computational workflows
+
+### Repository Naming Conventions
+
+- **Expeditions**: `exp-[iso3]-[year]` (e.g., `exp-MDV-2023`)
+- **Projects**: `prj-[descriptive]-[name]` (e.g., `prj-cachalote`)
+
+This clear separation ensures proper version control, enables code review, facilitates collaboration, and maintains the integrity of our scientific workflow.
+:::
+
+## Datasets
+
+The datasets folder contains reference data from external sources that supports our analyses and provides essential context for our research. We maintain these datasets in their original form while providing comprehensive documentation.
+
+### Structure
+
+```
+datasets/
+├── datasets_inventory.xlsx   # Master catalog with metadata and documentation
+├── aquamaps-v10-2019/        # Original dataset as obtained from source
+├── global-distribution-seagrass/
+├── gebco-2024/               # Bathymetry and ocean topography
+└── [dataset-name]/           # Additional reference datasets
+```
+
+### Dataset Documentation
+
+Our **datasets_inventory.xlsx** catalogs each dataset with essential metadata:
+
+- **Source information**: Original creator, publication references, access date
+- **Geographic scope**: Spatial coverage, resolution, and coordinate systems
+- **Temporal range**: Time period covered and update frequency
+- **Content description**: Key variables, measurements, and units
+- **Usage limitations**: Licensing, restrictions, and attribution requirements
+
+### Key Reference Datasets
+
+- **marine-regions**: Standardized marine boundaries and maritime zones
+- **mpa-atlas**: Global marine protected area database
+- **gravity-cinner-et-al**: Market gravity model for human pressure
+- **human-impacts-on-ocean**: Cumulative human impact assessments
+- **marine-biogeographic-realms**: Major biogeographic divisions
+- **marine-ecoregions-and-provinces**: Ecological classification system
+- **seamounts-yesson-2019**: Global seamount locations and characteristics
+
+## Resources
+
+
+
+## Operations
+
+

@@ -398,8 +398,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#core-structure" id="toc-core-structure" class="nav-link" data-scroll-target="#core-structure">Core Structure</a></li>
+  <li><a href="#expeditions" id="toc-expeditions" class="nav-link" data-scroll-target="#expeditions">Expeditions</a></li>
+  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects">Projects</a>
+  <ul class="collapse">
   <li><a href="#structure" id="toc-structure" class="nav-link" data-scroll-target="#structure">Structure</a></li>
-  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best Practices</a></li>
+  </ul></li>
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a>
+  <ul class="collapse">
+  <li><a href="#structure-1" id="toc-structure-1" class="nav-link" data-scroll-target="#structure-1">Structure</a></li>
+  <li><a href="#dataset-documentation" id="toc-dataset-documentation" class="nav-link" data-scroll-target="#dataset-documentation">Dataset Documentation</a></li>
+  <li><a href="#key-reference-datasets" id="toc-key-reference-datasets" class="nav-link" data-scroll-target="#key-reference-datasets">Key Reference Datasets</a></li>
+  </ul></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#operations" id="toc-operations" class="nav-link" data-scroll-target="#operations">Operations</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pristine-seas/sop/edit/main/collaborative-infra/drive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pristine-seas/sop/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -409,6 +421,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../collaborative-infra/index.html">Collaborative Infrastructure</a></li><li class="breadcrumb-item"><a href="../collaborative-infra/drive.html">Google Drive</a></li></ol></nav>
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Google Drive</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Centralized storage for the Pristine Seas Science Team</p>
 </div>
 
 
@@ -427,30 +440,321 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Google Drive serves as our centralized storage hub for all expedition data, documents, and media.</p>
+<p>Google Drive serves as the primary collaborative hub for the Pristine Seas Science Team. As the foundation of our digital infrastructure, Drive provides centralized storage, enables collaboration, and ensures continuity of our scientific work.</p>
+<ul>
+<li><strong>Central Repository</strong>: Primary and secondary data from field to analysis</li>
+<li><strong>Document Management</strong>: Expedition plans, permits, reports, and manuscripts</li>
+<li><strong>Collaboration Platform</strong>: Real-time collaborative editing and review</li>
+<li><strong>Asset Library</strong>: Visual materials, presentations, and resources</li>
+</ul>
 </section>
-<section id="structure" class="level2">
-<h2 class="anchored" data-anchor-id="structure">Structure</h2>
+<section id="core-structure" class="level2">
+<h2 class="anchored" data-anchor-id="core-structure">Core Structure</h2>
+<p>The Pristine Seas Science Team Drive is organized into the following main folders:</p>
+<pre class="text"><code>SCIENCE/
+├── expeditions/      # Primary repository for expedition data and documentation
+├── projects/         # Research projects and papers in support of our mission
+├── datasets/         # Useful and commoly used external datasets
+├── resources/          # Shared materials and assets
+│   ├── presentations/    # Slides for presentations, conferences, and meetings
+│   ├── media/            # Photos, videos for communications
+│   ├── illustrations/    # Scientific illustrations library
+│   ├── methods/          # Field protocols and standards
+│   ├── education/        # Training and outreach materials
+└── operations/       # Administrative content
+    ├── team/             # Team coordination
+    │   ├── meetings/        # Meeting notes and schedules
+    │   └── planning/        # Strategic documents
+    ├── equipment/        # Inventory and maintenance
+    ├── budgets/          # Financial planning</code></pre>
+</section>
+<section id="expeditions" class="level2">
+<h2 class="anchored" data-anchor-id="expeditions">Expeditions</h2>
+<p>The expeditions folder is the heart of our data organization system, containing all materials related to our field expeditions. Expeditions are given standardized ID (<code>exp_id</code>) that’s composed of the <strong>ISO alpha-3 country code</strong> and the year of the expedition. In rare case when multiple expeditions occur in the same country within the same year, we add descriptive suffixes.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="**Expedition ID** (`exp_id`)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Expedition ID</strong> (<code>exp_id</code>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Format</strong>: [iso3]_[year]</p>
+<p><strong>Examples:</strong> <code>COL_2022</code>, <code>PLW_2023</code>, <code>ARG_2018_yaganes</code>, <code>ARG_2018_burwood</code></p>
+</div>
+</div>
+<p>This naming system ensures expeditions are easily identifiable, correctly sorted by location and date, and consistently referenced across our platforms.</p>
+<pre><code>expeditions/
+└── iso3-year/
+    ├── readme.md                # Expedition overview
+    ├── data/                    # All expedition data
+    │   ├── primary/             # Data collected by team
+    │   │   ├── raw/             # Unmodified field data
+    │   │   ├── processed/       # QA/QC applied data
+    │   │   └── output/          # Analysis-ready data
+    │   └── secondary/           # Data from external sources
+    ├── documents/               # Scouting and planning documents
+    ├── figures/                 # Maps and visualizations
+    ├── gis/                     # Spatial project
+    ├── media/                   # Photos, videos
+    ├── presentations/           # Slide decks
+    ├── reports/                 # Expedition outputs
+    └── references/              # Literature and resources</code></pre>
+<div class="callout callout-style-simple callout-important no-icon callout-titled" title="**Naming conventions**">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Naming conventions</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All folder and file names should follow these conventions:</p>
 <ul>
-<li>Expeditions folder (primary organization unit)
+<li><strong>Folders</strong>: Use <code>kebab-case</code> (hyphens), capitalize only proper nouns
 <ul>
-<li>One subfolder per expedition</li>
-<li>Standard folders for data, presentations, plans, etc.</li>
+<li>Examples: <code>esv-PLW-2024/</code>, <code>prj-cyprus-trawlers/</code></li>
 </ul></li>
-<li>Projects folder for cross-expedition work</li>
-<li>Manuscripts and publications</li>
-<li>Presentations</li>
-<li>Equipment inventory</li>
-<li>Administrative documents</li>
+<li><strong>Files</strong>: Use <code>snake_case</code> (underscores), capitalize only proper nouns
+<ul>
+<li>Examples: <code>FJI_2025_science_report.docx</code>, <code>YSI_manual.pdf</code></li>
+</ul></li>
+<li>Names should be <strong>descriptive</strong> and consistent</li>
+</ul>
+</div>
+</div>
+<section id="data" class="level4">
+<h4 class="anchored" data-anchor-id="data"><code>data/</code></h4>
+<p>The data folder is organized by source and processing stage:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">primary/</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">secondary/</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Data collected by our team during the expedition:</p>
+<ul>
+<li><strong>raw/</strong>:
+<ul>
+<li>Original, unmodified fieldbooks</li>
+<li>Site and species photos</li>
+<li>Highlights from remote camera systems</li>
+</ul></li>
+<li><strong>processed/</strong>:
+<ul>
+<li>QA/QC procedures applied</li>
+<li>Standardized formats</li>
+</ul></li>
+<li><strong>output/</strong>:
+<ul>
+<li>Fully validated datasets</li>
+<li>Database-ready structure</li>
+<li>Derived metrics included</li>
+</ul></li>
+</ul>
+<p>Each subfolder is organized by research method (benthic, fish, bruvs, edna, etc.)</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Data from external sources relevant to the expedition:</p>
+<ul>
+<li><strong>previous-work/</strong>: Previous research</li>
+<li><strong>spatial/</strong>: Habitat maps, administrative boundaries</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="documents" class="level4">
+<h4 class="anchored" data-anchor-id="documents"><code>documents/</code></h4>
+<p>Essential expedition documentation:</p>
+<ul>
+<li><strong>planning/</strong>
+<ul>
+<li>Scouting reports and initial assessments</li>
+<li>Science plans detailing research objectives</li>
+</ul></li>
+<li><strong>permits/</strong>
+<ul>
+<li>Research authorization applications and approvals</li>
+<li>Memoranda of understanding with local partners</li>
+</ul></li>
+<li><strong>misc/</strong>
+<ul>
+<li>Meeting notes from planning and field sessions</li>
+<li>Contact lists for team members and stakeholders</li>
+</ul></li>
 </ul>
 </section>
-<section id="best-practices" class="level2">
-<h2 class="anchored" data-anchor-id="best-practices">Best Practices</h2>
+<section id="media" class="level4">
+<h4 class="anchored" data-anchor-id="media"><code>media/</code></h4>
+<p>Expedition visual documentation organized by source:</p>
 <ul>
-<li>Consistent naming conventions</li>
-<li>Proper access permissions</li>
-<li>Regular organization and cleanup</li>
+<li><strong>science-collection/</strong>
+<ul>
+<li>Select photos taken by science team members</li>
+<li>Organized by species groups and habitats</li>
+</ul></li>
+<li><strong>media-team/</strong>
+<ul>
+<li>Professional photography from our media team</li>
+<li><code>underwater/</code>: Underwater imagery of marine environments</li>
+<li><code>topside</code>: Aerial and landscape documentation</li>
+<li><code>people</code>: Human elements including team and communities</li>
+</ul></li>
+<li><strong>field-edit/</strong>
+<ul>
+<li>Expedition video produced by the media team</li>
+</ul></li>
 </ul>
+</section>
+<section id="reports" class="level4">
+<h4 class="anchored" data-anchor-id="reports"><code>reports/</code></h4>
+<p>Expedition outputs for different audiences:</p>
+<ul>
+<li><strong>science/</strong>
+<ul>
+<li>Comprehensive scientific report</li>
+<li>Two-page expedition summary</li>
+</ul></li>
+<li><strong>outreach/</strong>
+<ul>
+<li>Community and stakeholder reports</li>
+<li>Press materials</li>
+<li>Stories from the expedition</li>
+</ul></li>
+<li><strong>assets/</strong>
+<ul>
+<li>High-resolution images, maps and figures (.pdf)</li>
+<li>Partner logos or branding materials</li>
+</ul></li>
+</ul>
+</section>
+<section id="other-key-folders" class="level4">
+<h4 class="anchored" data-anchor-id="other-key-folders">Other Key Folders</h4>
+<ul>
+<li><strong>figures/</strong>
+<ul>
+<li>Maps showing expedition sites and spatial patterns in data</li>
+<li>Data visualizations from analyses</li>
+</ul></li>
+<li><strong>GIS/</strong>
+<ul>
+<li>Stores the GIS project files</li>
+</ul></li>
+<li><strong>presentations/</strong>
+<ul>
+<li>Pre-expedition planning briefings</li>
+<li>Post-expedition debrief materials</li>
+<li>Stakeholder and partner presentations</li>
+</ul></li>
+<li><strong>references/</strong>
+<ul>
+<li>Regional scientific literature</li>
+<li>Domain-specific research papers</li>
+<li>Cultural and historical context</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="projects" class="level2">
+<h2 class="anchored" data-anchor-id="projects">Projects</h2>
+<p>The projects folder houses focused research initiatives and scientific papers that advance our mission. These may span global, regional, or expedition-specific contexts. Projects are given unique descriptive names that reflect their focus and objectives.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="**Project ID**">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Project ID</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Each project uses a standardized folder naming convention:</p>
+<p><strong>Format</strong>: prj-[descriptive]-[name]</p>
+<p><strong>Examples:</strong> <code>prj-coral-resilience</code>, <code>prj-shark-migration</code>, <code>prj-seamount-biodiversity</code></p>
+</div>
+</div>
+<section id="structure" class="level3">
+<h3 class="anchored" data-anchor-id="structure">Structure</h3>
+<p>A typical project structure contains the following folders:</p>
+<pre><code>projects/
+└── prj-[descriptive]-[name]/
+    ├── data/              # Project data (may link to but not copy expedition data)
+    ├── documents/         # Reference documents, meeting notes,
+    ├── figures/           # Plots, maps, visualizations
+    └── presentations/     # Project presentations</code></pre>
+<div class="callout callout-style-simple callout-important no-icon callout-titled" title="GitHub Integration">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+GitHub Integration
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<section id="code-management-policy" class="level3">
+<h3 class="anchored" data-anchor-id="code-management-policy">Code Management Policy</h3>
+<p>All code and scripts must be stored <strong>exclusively</strong> in GitHub repositories, never in Google Drive.</p>
+<ul>
+<li>Drive: Documents, data, media, and presentations</li>
+<li>GitHub: All code, scripts, and computational workflows</li>
+</ul>
+</section>
+<section id="repository-naming-conventions" class="level3">
+<h3 class="anchored" data-anchor-id="repository-naming-conventions">Repository Naming Conventions</h3>
+<ul>
+<li><strong>Expeditions</strong>: <code>exp-[iso3]-[year]</code> (e.g., <code>exp-mdv-2024</code>)</li>
+<li><strong>Projects</strong>: <code>prj-[descriptive]-[name]</code> (e.g., <code>prj-coral-resilience</code>)</li>
+</ul>
+<p>This clear separation ensures proper version control, enables code review, facilitates collaboration, and maintains the integrity of our scientific workflow.</p>
+</section>
+</div>
+</div>
+</section>
+</section>
+<section id="datasets" class="level2">
+<h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
+<p>The datasets folder contains reference data from external sources that supports our analyses and provides essential context for our research. We maintain these datasets in their original form while providing comprehensive documentation.</p>
+<section id="structure-1" class="level3">
+<h3 class="anchored" data-anchor-id="structure-1">Structure</h3>
+<pre><code>datasets/
+├── datasets_inventory.xlsx   # Master catalog with metadata and documentation
+├── aquamaps-v10-2019/        # Original dataset as obtained from source
+├── global-distribution-seagrass/
+├── gebco-2024/               # Bathymetry and ocean topography
+└── [dataset-name]/           # Additional reference datasets</code></pre>
+</section>
+<section id="dataset-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-documentation">Dataset Documentation</h3>
+<p>Our <strong>datasets_inventory.xlsx</strong> catalogs each dataset with essential metadata:</p>
+<ul>
+<li><strong>Source information</strong>: Original creator, publication references, access date</li>
+<li><strong>Geographic scope</strong>: Spatial coverage, resolution, and coordinate systems</li>
+<li><strong>Temporal range</strong>: Time period covered and update frequency</li>
+<li><strong>Content description</strong>: Key variables, measurements, and units</li>
+<li><strong>Usage limitations</strong>: Licensing, restrictions, and attribution requirements</li>
+</ul>
+</section>
+<section id="key-reference-datasets" class="level3">
+<h3 class="anchored" data-anchor-id="key-reference-datasets">Key Reference Datasets</h3>
+<ul>
+<li><strong>marine-regions</strong>: Standardized marine boundaries and maritime zones</li>
+<li><strong>mpa-atlas</strong>: Global marine protected area database</li>
+<li><strong>gravity-cinner-et-al</strong>: Market gravity model for human pressure</li>
+<li><strong>human-impacts-on-ocean</strong>: Cumulative human impact assessments</li>
+<li><strong>marine-biogeographic-realms</strong>: Major biogeographic divisions</li>
+<li><strong>marine-ecoregions-and-provinces</strong>: Ecological classification system</li>
+<li><strong>seamounts-yesson-2019</strong>: Global seamount locations and characteristics</li>
+</ul>
+</section>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+</section>
+<section id="operations" class="level2">
+<h2 class="anchored" data-anchor-id="operations">Operations</h2>
 
 
 <!-- -->
@@ -916,30 +1220,284 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Google Drive"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Google Drive serves as our centralized storage hub for all expedition data, documents, and media.</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Structure</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Expeditions folder (primary organization unit)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>One subfolder per expedition</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Standard folders for data, presentations, plans, etc.</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Projects folder for cross-expedition work</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Manuscripts and publications</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Presentations</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Equipment inventory</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Administrative documents</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Best Practices</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Consistent naming conventions</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Proper access permissions</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Regular organization and cleanup</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Google Drive"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Centralized storage for the Pristine Seas Science Team"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: right</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: false</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup}</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="in">#| include: false</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="in">library(here)</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="in">library(knitr)</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="in">library(gt)</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>Google Drive serves as the primary collaborative hub for the Pristine Seas Science Team. As the foundation of our digital infrastructure, Drive provides centralized storage, enables collaboration, and ensures continuity of our scientific work.</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Central Repository**: Primary and secondary data from field to analysis</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Document Management**: Expedition plans, permits, reports, and manuscripts</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Collaboration Platform**: Real-time collaborative editing and review</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Asset Library**: Visual materials, presentations, and resources</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Core Structure</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>The Pristine Seas Science Team Drive is organized into the following main folders:</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="in">SCIENCE/</span></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a><span class="in">├── expeditions/      # Primary repository for expedition data and documentation</span></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a><span class="in">├── projects/         # Research projects and papers in support of our mission</span></span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a><span class="in">├── datasets/         # Useful and commoly used external datasets</span></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a><span class="in">├── resources/          # Shared materials and assets</span></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── presentations/    # Slides for presentations, conferences, and meetings</span></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── media/            # Photos, videos for communications</span></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── illustrations/    # Scientific illustrations library</span></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── methods/          # Field protocols and standards</span></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── education/        # Training and outreach materials</span></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="in">└── operations/       # Administrative content</span></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── team/             # Team coordination</span></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a><span class="in">    │   ├── meetings/        # Meeting notes and schedules</span></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a><span class="in">    │   └── planning/        # Strategic documents</span></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── equipment/        # Inventory and maintenance</span></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── budgets/          # Financial planning</span></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Expeditions</span></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>The expeditions folder is the heart of our data organization system, containing all materials related to our field expeditions. Expeditions are given standardized ID (<span class="in">`exp_id`</span>) that's composed of the **ISO alpha-3 country code** and the year of the expedition. In rare case when multiple expeditions occur in the same country within the same year, we add descriptive suffixes. </span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="**Expedition ID** (<span class="in">`exp_id`</span>)" appearance="minimal"}</span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>**Format**: <span class="co">[</span><span class="ot">iso3</span><span class="co">]</span>_<span class="co">[</span><span class="ot">year</span><span class="co">]</span></span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>**Examples:** <span class="in">`COL_2022`</span>, <span class="in">`PLW_2023`</span>, <span class="in">`ARG_2018_yaganes`</span>, <span class="in">`ARG_2018_burwood`</span></span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>This naming system ensures expeditions are easily identifiable, correctly sorted by location and date, and consistently referenced across our platforms. </span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a><span class="in">expeditions/</span></span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a><span class="in">└── iso3-year/</span></span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── readme.md                # Expedition overview</span></span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── data/                    # All expedition data</span></span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a><span class="in">    │   ├── primary/             # Data collected by team</span></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a><span class="in">    │   │   ├── raw/             # Unmodified field data</span></span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="in">    │   │   ├── processed/       # QA/QC applied data</span></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="in">    │   │   └── output/          # Analysis-ready data</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="in">    │   └── secondary/           # Data from external sources</span></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── documents/               # Scouting and planning documents</span></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── figures/                 # Maps and visualizations</span></span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── gis/                     # Spatial project</span></span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── media/                   # Photos, videos</span></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── presentations/           # Slide decks</span></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── reports/                 # Expedition outputs</span></span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a><span class="in">    └── references/              # Literature and resources</span></span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a>::: {.callout-important title="**Naming conventions**" appearance="minimal"}</span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a>All folder and file names should follow these conventions:</span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a><span class="ss"> - </span>**Folders**: Use <span class="in">`kebab-case`</span> (hyphens), capitalize only proper nouns</span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Examples: <span class="in">`esv-PLW-2024/`</span>, <span class="in">`prj-cyprus-trawlers/`</span></span>
+<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a><span class="ss"> - </span>**Files**: Use <span class="in">`snake_case`</span> (underscores), capitalize only proper nouns</span>
+<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Examples: <span class="in">`FJI_2025_science_report.docx`</span>, <span class="in">`YSI_manual.pdf`</span></span>
+<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a><span class="ss"> - </span>Names should be **descriptive** and consistent</span>
+<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a><span class="fu">#### `data/`</span></span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a>The data folder is organized by source and processing stage:</span>
+<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
+<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a><span class="fu">## primary/</span></span>
+<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a>Data collected by our team during the expedition:</span>
+<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**raw/**: </span>
+<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Original, unmodified fieldbooks</span>
+<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Site and species photos</span>
+<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Highlights from remote camera systems</span>
+<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**processed/**: </span>
+<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>QA/QC procedures applied</span>
+<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Standardized formats</span>
+<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**output/**: </span>
+<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Fully validated datasets</span>
+<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Database-ready structure</span>
+<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Derived metrics included</span>
+<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a>Each subfolder is organized by research method (benthic, fish, bruvs, edna, etc.)</span>
+<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a><span class="fu">## secondary/</span></span>
+<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a>Data from external sources relevant to the expedition:</span>
+<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**previous-work/**: Previous research</span>
+<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**spatial/**: Habitat maps, administrative boundaries</span>
+<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a><span class="fu">#### `documents/`</span></span>
+<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a>Essential expedition documentation:</span>
+<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**planning/**</span>
+<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Scouting reports and initial assessments</span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Science plans detailing research objectives</span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**permits/**</span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Research authorization applications and approvals</span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Memoranda of understanding with local partners</span>
+<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**misc/**</span>
+<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Meeting notes from planning and field sessions</span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Contact lists for team members and stakeholders</span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a><span class="fu">#### `media/`</span></span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a>Expedition visual documentation organized by source:</span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**science-collection/**</span>
+<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Select photos taken by science team members</span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Organized by species groups and habitats</span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**media-team/**</span>
+<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Professional photography from our media team</span>
+<span id="cb5-157"><a href="#cb5-157" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="in">`underwater/`</span>: Underwater imagery of marine environments</span>
+<span id="cb5-158"><a href="#cb5-158" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="in">`topside`</span>: Aerial and landscape documentation</span>
+<span id="cb5-159"><a href="#cb5-159" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="in">`people`</span>:  Human elements including team and communities</span>
+<span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**field-edit/**</span>
+<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Expedition video produced by the media team</span>
+<span id="cb5-163"><a href="#cb5-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-164"><a href="#cb5-164" aria-hidden="true" tabindex="-1"></a><span class="fu">#### `reports/`</span></span>
+<span id="cb5-165"><a href="#cb5-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-166"><a href="#cb5-166" aria-hidden="true" tabindex="-1"></a>Expedition outputs for different audiences:</span>
+<span id="cb5-167"><a href="#cb5-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-168"><a href="#cb5-168" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**science/**</span>
+<span id="cb5-169"><a href="#cb5-169" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Comprehensive scientific report</span>
+<span id="cb5-170"><a href="#cb5-170" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Two-page expedition summary</span>
+<span id="cb5-171"><a href="#cb5-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-172"><a href="#cb5-172" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**outreach/**</span>
+<span id="cb5-173"><a href="#cb5-173" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Community and stakeholder reports</span>
+<span id="cb5-174"><a href="#cb5-174" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Press materials</span>
+<span id="cb5-175"><a href="#cb5-175" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Stories from the expedition</span>
+<span id="cb5-176"><a href="#cb5-176" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-177"><a href="#cb5-177" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**assets/**</span>
+<span id="cb5-178"><a href="#cb5-178" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>High-resolution images, maps and figures (.pdf)</span>
+<span id="cb5-179"><a href="#cb5-179" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Partner logos or branding materials</span>
+<span id="cb5-180"><a href="#cb5-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-181"><a href="#cb5-181" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Other Key Folders</span></span>
+<span id="cb5-182"><a href="#cb5-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-183"><a href="#cb5-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**figures/**</span>
+<span id="cb5-184"><a href="#cb5-184" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Maps showing expedition sites and spatial patterns in data</span>
+<span id="cb5-185"><a href="#cb5-185" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Data visualizations from analyses</span>
+<span id="cb5-186"><a href="#cb5-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**GIS/**</span>
+<span id="cb5-188"><a href="#cb5-188" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Stores the GIS project files</span>
+<span id="cb5-189"><a href="#cb5-189" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-190"><a href="#cb5-190" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**presentations/**</span>
+<span id="cb5-191"><a href="#cb5-191" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Pre-expedition planning briefings</span>
+<span id="cb5-192"><a href="#cb5-192" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Post-expedition debrief materials</span>
+<span id="cb5-193"><a href="#cb5-193" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Stakeholder and partner presentations</span>
+<span id="cb5-194"><a href="#cb5-194" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-195"><a href="#cb5-195" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**references/**</span>
+<span id="cb5-196"><a href="#cb5-196" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Regional scientific literature</span>
+<span id="cb5-197"><a href="#cb5-197" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Domain-specific research papers</span>
+<span id="cb5-198"><a href="#cb5-198" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Cultural and historical context</span>
+<span id="cb5-199"><a href="#cb5-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-200"><a href="#cb5-200" aria-hidden="true" tabindex="-1"></a><span class="fu">## Projects</span></span>
+<span id="cb5-201"><a href="#cb5-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-202"><a href="#cb5-202" aria-hidden="true" tabindex="-1"></a>The projects folder houses focused research initiatives and scientific papers that advance our mission. These may span global, regional, or expedition-specific contexts. Projects are given unique descriptive names that reflect their focus and objectives.</span>
+<span id="cb5-203"><a href="#cb5-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-204"><a href="#cb5-204" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="**Project ID**" appearance="minimal"}</span>
+<span id="cb5-205"><a href="#cb5-205" aria-hidden="true" tabindex="-1"></a>Each project uses a standardized folder naming convention:</span>
+<span id="cb5-206"><a href="#cb5-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-207"><a href="#cb5-207" aria-hidden="true" tabindex="-1"></a>**Format**: prj-<span class="co">[</span><span class="ot">descriptive</span><span class="co">]</span>-<span class="co">[</span><span class="ot">name</span><span class="co">]</span></span>
+<span id="cb5-208"><a href="#cb5-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-209"><a href="#cb5-209" aria-hidden="true" tabindex="-1"></a>**Examples:** <span class="in">`prj-coral-resilience`</span>, <span class="in">`prj-shark-migration`</span>, <span class="in">`prj-seamount-biodiversity`</span></span>
+<span id="cb5-210"><a href="#cb5-210" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-211"><a href="#cb5-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-212"><a href="#cb5-212" aria-hidden="true" tabindex="-1"></a><span class="fu">### Structure</span></span>
+<span id="cb5-213"><a href="#cb5-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-214"><a href="#cb5-214" aria-hidden="true" tabindex="-1"></a>A typical project structure contains the following folders:</span>
+<span id="cb5-215"><a href="#cb5-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-216"><a href="#cb5-216" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-217"><a href="#cb5-217" aria-hidden="true" tabindex="-1"></a><span class="in">projects/</span></span>
+<span id="cb5-218"><a href="#cb5-218" aria-hidden="true" tabindex="-1"></a><span class="in">└── prj-[descriptive]-[name]/</span></span>
+<span id="cb5-219"><a href="#cb5-219" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── data/              # Project data (may link to but not copy expedition data)</span></span>
+<span id="cb5-220"><a href="#cb5-220" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── documents/         # Reference documents, meeting notes,</span></span>
+<span id="cb5-221"><a href="#cb5-221" aria-hidden="true" tabindex="-1"></a><span class="in">    ├── figures/           # Plots, maps, visualizations</span></span>
+<span id="cb5-222"><a href="#cb5-222" aria-hidden="true" tabindex="-1"></a><span class="in">    └── presentations/     # Project presentations</span></span>
+<span id="cb5-223"><a href="#cb5-223" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-224"><a href="#cb5-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-225"><a href="#cb5-225" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="minimal" title="GitHub Integration"}</span>
+<span id="cb5-226"><a href="#cb5-226" aria-hidden="true" tabindex="-1"></a><span class="fu">### Code Management Policy</span></span>
+<span id="cb5-227"><a href="#cb5-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-228"><a href="#cb5-228" aria-hidden="true" tabindex="-1"></a>All code and scripts must be stored **exclusively** in GitHub repositories, never in Google Drive.</span>
+<span id="cb5-229"><a href="#cb5-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-230"><a href="#cb5-230" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Drive: Documents, data, media, and presentations</span>
+<span id="cb5-231"><a href="#cb5-231" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>GitHub: All code, scripts, and computational workflows</span>
+<span id="cb5-232"><a href="#cb5-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-233"><a href="#cb5-233" aria-hidden="true" tabindex="-1"></a><span class="fu">### Repository Naming Conventions</span></span>
+<span id="cb5-234"><a href="#cb5-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-235"><a href="#cb5-235" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Expeditions**: <span class="in">`exp-[iso3]-[year]`</span> (e.g., <span class="in">`exp-mdv-2024`</span>)</span>
+<span id="cb5-236"><a href="#cb5-236" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Projects**: <span class="in">`prj-[descriptive]-[name]`</span> (e.g., <span class="in">`prj-coral-resilience`</span>)</span>
+<span id="cb5-237"><a href="#cb5-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-238"><a href="#cb5-238" aria-hidden="true" tabindex="-1"></a>This clear separation ensures proper version control, enables code review, facilitates collaboration, and maintains the integrity of our scientific workflow.</span>
+<span id="cb5-239"><a href="#cb5-239" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-240"><a href="#cb5-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-241"><a href="#cb5-241" aria-hidden="true" tabindex="-1"></a><span class="fu">## Datasets</span></span>
+<span id="cb5-242"><a href="#cb5-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-243"><a href="#cb5-243" aria-hidden="true" tabindex="-1"></a>The datasets folder contains reference data from external sources that supports our analyses and provides essential context for our research. We maintain these datasets in their original form while providing comprehensive documentation.</span>
+<span id="cb5-244"><a href="#cb5-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-245"><a href="#cb5-245" aria-hidden="true" tabindex="-1"></a><span class="fu">### Structure</span></span>
+<span id="cb5-246"><a href="#cb5-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-247"><a href="#cb5-247" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-248"><a href="#cb5-248" aria-hidden="true" tabindex="-1"></a><span class="in">datasets/</span></span>
+<span id="cb5-249"><a href="#cb5-249" aria-hidden="true" tabindex="-1"></a><span class="in">├── datasets_inventory.xlsx   # Master catalog with metadata and documentation</span></span>
+<span id="cb5-250"><a href="#cb5-250" aria-hidden="true" tabindex="-1"></a><span class="in">├── aquamaps-v10-2019/        # Original dataset as obtained from source</span></span>
+<span id="cb5-251"><a href="#cb5-251" aria-hidden="true" tabindex="-1"></a><span class="in">├── global-distribution-seagrass/</span></span>
+<span id="cb5-252"><a href="#cb5-252" aria-hidden="true" tabindex="-1"></a><span class="in">├── gebco-2024/               # Bathymetry and ocean topography</span></span>
+<span id="cb5-253"><a href="#cb5-253" aria-hidden="true" tabindex="-1"></a><span class="in">└── [dataset-name]/           # Additional reference datasets</span></span>
+<span id="cb5-254"><a href="#cb5-254" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-255"><a href="#cb5-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-256"><a href="#cb5-256" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dataset Documentation</span></span>
+<span id="cb5-257"><a href="#cb5-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-258"><a href="#cb5-258" aria-hidden="true" tabindex="-1"></a>Our **datasets_inventory.xlsx** catalogs each dataset with essential metadata:</span>
+<span id="cb5-259"><a href="#cb5-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-260"><a href="#cb5-260" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Source information**: Original creator, publication references, access date</span>
+<span id="cb5-261"><a href="#cb5-261" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Geographic scope**: Spatial coverage, resolution, and coordinate systems</span>
+<span id="cb5-262"><a href="#cb5-262" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Temporal range**: Time period covered and update frequency</span>
+<span id="cb5-263"><a href="#cb5-263" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Content description**: Key variables, measurements, and units</span>
+<span id="cb5-264"><a href="#cb5-264" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Usage limitations**: Licensing, restrictions, and attribution requirements</span>
+<span id="cb5-265"><a href="#cb5-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-266"><a href="#cb5-266" aria-hidden="true" tabindex="-1"></a><span class="fu">### Key Reference Datasets</span></span>
+<span id="cb5-267"><a href="#cb5-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-268"><a href="#cb5-268" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**marine-regions**: Standardized marine boundaries and maritime zones</span>
+<span id="cb5-269"><a href="#cb5-269" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**mpa-atlas**: Global marine protected area database</span>
+<span id="cb5-270"><a href="#cb5-270" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**gravity-cinner-et-al**: Market gravity model for human pressure</span>
+<span id="cb5-271"><a href="#cb5-271" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**human-impacts-on-ocean**: Cumulative human impact assessments</span>
+<span id="cb5-272"><a href="#cb5-272" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**marine-biogeographic-realms**: Major biogeographic divisions</span>
+<span id="cb5-273"><a href="#cb5-273" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**marine-ecoregions-and-provinces**: Ecological classification system</span>
+<span id="cb5-274"><a href="#cb5-274" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**seamounts-yesson-2019**: Global seamount locations and characteristics</span>
+<span id="cb5-275"><a href="#cb5-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-276"><a href="#cb5-276" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resources</span></span>
+<span id="cb5-277"><a href="#cb5-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-278"><a href="#cb5-278" aria-hidden="true" tabindex="-1"></a><span class="fu">## Operations</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

@@ -71,8 +71,9 @@ website:
           - collaborative-infra/index.qmd
           - collaborative-infra/drive.qmd
           - collaborative-infra/github.qmd
-          - collaborative-infra/zotero.qmd
           - collaborative-infra/bigquery.qmd
+          - collaborative-infra/zotero.qmd
+          - collaborative-infra/argo_NAS.qmd
       - section: "Field Methods"
         contents:
           - field-methods/index.qmd
@@ -86,15 +87,6 @@ website:
           - field-methods/rov-surveys.qmd
           - field-methods/submersible.qmd
           - field-methods/drop-cameras.qmd
-      - section: "Data Science"
-        contents:
-          - data-science/index.qmd
-          - data-science/coding-conventions.qmd
-          - data-science/project-structure.qmd
-          - data-science/analysis-templates.qmd
-          - data-science/reproducible-workflows.qmd
-          - data-science/data-processing.qmd
-          - data-science/analytical-tools.qmd
       - section: "Expedition Planning"
         contents:
           - expedition-planning/index.qmd

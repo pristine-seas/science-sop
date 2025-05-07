@@ -1,9 +1,18 @@
 ---
 title: "Overview"
+subtitle: "Tools for collaborative research"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
 
-
-Our collaborative infrastructure is designed to support expedition-based workflows. Each tool serves a specific purpose in the research and data lifecycle.
+Our collaborative infrastructure is designed to support expedition-based workflows, streamlining data collection, processing, and analysis across diverse environments. Each tool serves a specific role in our research and data lifecycle, from real-time field data entry to long-term archival and analysis. This interconnected system enables seamless collaboration, robust data management, and scientific rigor at every stage
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -33,22 +42,35 @@ Repository for each expedition and project's code and analysis.
 ::: {.column width="50%"}
 <div class="collab-card">
 
-### ![](../assets/logos/zotero.png){width="30px"} Zotero
+### ![](../assets/logos/bigquery.svg){width="30px"} BigQuery
 
-Reference management for general and expedition-specific literature.
+Centralized database for integrated data over 10+ years of expeditions.
 
-[Details →](zotero.qmd)
+[Details →](bigquery.qmd)
 </div>
 :::
 
 ::: {.column width="50%"}
 <div class="collab-card">
 
-### ![](../assets/logos/bigquery.svg){width="30px"} BigQuery
+### ![](../assets/logos/nas.svg){width="30px"} Argo NAS
 
-Centralized database for integrated expedition data.
+At-sea hub for collaborative work and file sharing.
 
-[Details →](bigquery.qmd)
+[Details →](argo_nas.qmd)
+</div>
+:::
+::::
+
+:::: {.columns}
+::: {.column width="50%"}
+<div class="collab-card">
+
+### ![](../assets/logos/zotero.png){width="30px"} Zotero
+
+Reference management for general and expedition-specific literature.
+
+[Details →](zotero.qmd)
 </div>
 :::
 ::::

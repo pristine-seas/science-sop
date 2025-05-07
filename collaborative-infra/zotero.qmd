@@ -1,24 +1,80 @@
 ---
-title: "Zotero Library"
+title: "Zotero"
+subtitle: "Reference management for general and expedition-specific literature"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(gt)
+```
 
 ## Overview
 
-Zotero manages our scientific literature for both general reference and expedition-specific needs.
+The Pristine Seas Science Team maintains a centralized Zotero library for managing scientific literature. This shared resource ensures all team members have access to relevant publications, enabling consistent citation practices and facilitating collaborative research and writing. The library integrates with our broader collaborative infrastructure, maintaining parallel organizational structures with Google Drive and GitHub repositories.
 
-## Organization
+## Library Structure
 
-- Main library with shared access
-- Collections organized by:
-  - Expeditions
-  - Research methods
-  - Ecosystems
-  - Geographic regions
+Our Zotero library follows a hierarchical organization that balances expedition-specific needs with thematic categorization:
 
-## Workflow
+- **Books**: Complete reference texts relevant to marine science and conservation
+- **Economic Reports**: Economic analyses and valuation studies of marine ecosystems
+- **Expedition References**: Literature specific to expedition locations (organized by expedition ID)
+  - One folder per expedition ID
+  - Thematic subfolders within each expedition (fisheries, benthic communities, regional context)
+- **Expedition Reports**: Archive of Pristine Seas expedition reports
+- **Projects**: References for research projects
+  - Uses consistent naming conventions that mirror Google Drive and GitHub structures
+- **PS Publications**: Pristine Seas scientific publications organized by year
+- **General References**: Thematic collections of literature organized by scientific domain
+  - Fisheries
+  - MPAs
+  - Mesophotic reefs
+  - Other thematic categories
+  
+## Workflow Integration
 
-- Add references with browser extension
-- Organize into appropriate collections
-- Add PDFs when available
-- Use consistent tagging system
-- Export citations for manuscripts
+### Pre-Expedition
+
+1. Science lead establishes a new collection for the expedition using the standard expedition ID
+2. Team contributes foundational literature about the expedition region including reports and documents from partners.
+3. Science lead exports and downloads key papers to Google Drive for sharing with external collaborators and the wider Pristine Seas team
+4. Key papers are flagged for required reading by expedition scientists
+
+### During Expedition
+
+1. Library from Google Drive is loaded into the ship's NAS for redundancy.
+2. Reference materials support species identification and ecological interpretation
+2. Zotero library remains accessible via laptops or tablets
+
+### Post-Expedition Analysis and Reporting
+
+1. Standardized citation of references in reports and publications
+2. Export of formatted bibliographies for scientific reports
+3. Addition of new Pristine Seas publications to the library
+
+## Best Practices
+
+### Organization
+
+- Follow standardized naming conventions for collections
+- Ensure all references include complete citation information
+- Attach PDF files of publications when available
+- Conduct annual review and cleanup of library organization
+
+### Citation Management
+
+- Use of the APA 7th Edition citation style for consistency across all publications
+- Utilization of the Google Docs Zotero plugin for collaborative manuscript writing
+- Direct citation insertion in Quarto documents via Zotero integration with RStudio

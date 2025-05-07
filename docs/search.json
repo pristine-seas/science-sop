@@ -39,7 +39,7 @@
     "href": "collaborative-infra/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Our collaborative infrastructure is designed to support expedition-based workflows. Each tool serves a specific purpose in the research and data lifecycle.\n\n\n\n Google Drive\nCentralized storage hub for all expedition data, documents, and media.\nDetails →\n\n\n\n GitHub\nRepository for each expedition and project’s code and analysis.\nDetails →\n\n\n\n\n\n\n Zotero\nReference management for general and expedition-specific literature.\nDetails →\n\n\n\n BigQuery\nCentralized database for integrated expedition data.\nDetails →",
+    "text": "Our collaborative infrastructure is designed to support expedition-based workflows, streamlining data collection, processing, and analysis across diverse environments. Each tool serves a specific role in our research and data lifecycle, from real-time field data entry to long-term archival and analysis. This interconnected system enables seamless collaboration, robust data management, and scientific rigor at every stage\n\n\n\n Google Drive\nCentralized storage hub for all expedition data, documents, and media.\nDetails →\n\n\n\n GitHub\nRepository for each expedition and project’s code and analysis.\nDetails →\n\n\n\n\n\n\n BigQuery\nCentralized database for integrated data over 10+ years of expeditions.\nDetails →\n\n\n\n Argo NAS\nAt-sea hub for collaborative work and file sharing.\nDetails →\n\n\n\n\n\n\n Zotero\nReference management for general and expedition-specific literature.\nDetails →",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -185,25 +185,25 @@
   {
     "objectID": "collaborative-infra/zotero.html",
     "href": "collaborative-infra/zotero.html",
-    "title": "Zotero Library",
+    "title": "Zotero",
     "section": "",
-    "text": "Zotero manages our scientific literature for both general reference and expedition-specific needs.",
+    "text": "The Pristine Seas Science Team maintains a centralized Zotero library for managing scientific literature. This shared resource ensures all team members have access to relevant publications, enabling consistent citation practices and facilitating collaborative research and writing. The library integrates with our broader collaborative infrastructure, maintaining parallel organizational structures with Google Drive and GitHub repositories.",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
-      "Zotero Library"
+      "Zotero"
     ]
   },
   {
     "objectID": "collaborative-infra/zotero.html#overview",
     "href": "collaborative-infra/zotero.html#overview",
-    "title": "Zotero Library",
+    "title": "Zotero",
     "section": "",
-    "text": "Zotero manages our scientific literature for both general reference and expedition-specific needs.",
+    "text": "The Pristine Seas Science Team maintains a centralized Zotero library for managing scientific literature. This shared resource ensures all team members have access to relevant publications, enabling consistent citation practices and facilitating collaborative research and writing. The library integrates with our broader collaborative infrastructure, maintaining parallel organizational structures with Google Drive and GitHub repositories.",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
-      "Zotero Library"
+      "Zotero"
     ]
   },
   {
@@ -1285,6 +1285,138 @@
       "Home",
       "Collaborative Infrastructure",
       "BigQuery"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/zotero.html#library-structure",
+    "href": "collaborative-infra/zotero.html#library-structure",
+    "title": "Zotero",
+    "section": "Library Structure",
+    "text": "Library Structure\nOur Zotero library follows a hierarchical organization that balances expedition-specific needs with thematic categorization:\n\nBooks: Complete reference texts relevant to marine science and conservation\nEconomic Reports: Economic analyses and valuation studies of marine ecosystems\nExpedition References: Literature specific to expedition locations (organized by expedition ID)\n\nOne folder per expedition ID\nThematic subfolders within each expedition (fisheries, benthic communities, regional context)\n\nExpedition Reports: Archive of Pristine Seas expedition reports\nProjects: References for research projects\n\nUses consistent naming conventions that mirror Google Drive and GitHub structures\n\nPS Publications: Pristine Seas scientific publications organized by year\nGeneral References: Thematic collections of literature organized by scientific domain\n\nFisheries\nMPAs\nMesophotic reefs\nOther thematic categories",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Zotero"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/zotero.html#workflow-integration",
+    "href": "collaborative-infra/zotero.html#workflow-integration",
+    "title": "Zotero",
+    "section": "Workflow Integration",
+    "text": "Workflow Integration\n\nPre-Expedition\n\nScience lead establishes a new collection for the expedition using the standard expedition ID\nTeam contributes foundational literature about the expedition region including reports and documents from partners.\nScience lead exports and downloads key papers to Google Drive for sharing with external collaborators and the wider Pristine Seas team\nKey papers are flagged for required reading by expedition scientists\n\n\n\nDuring Expedition\n\nLibrary from Google Drive is loaded into the ship’s NAS for redundancy.\nReference materials support species identification and ecological interpretation\nZotero library remains accessible via laptops or tablets\n\n\n\nPost-Expedition Analysis and Reporting\n\nStandardized citation of references in reports and publications\nExport of formatted bibliographies for scientific reports\nAddition of new Pristine Seas publications to the library",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Zotero"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/zotero.html#best-practices",
+    "href": "collaborative-infra/zotero.html#best-practices",
+    "title": "Zotero",
+    "section": "Best Practices",
+    "text": "Best Practices\n\nOrganization\n\nFollow standardized naming conventions for collections\nEnsure all references include complete citation information\nAttach PDF files of publications when available\nConduct annual review and cleanup of library organization\n\n\n\nCitation Management\n\nUse of the APA 7th Edition citation style for consistency across all publications\nUtilization of the Google Docs Zotero plugin for collaborative manuscript writing\nDirect citation insertion in Quarto documents via Zotero integration with RStudio",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Zotero"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/argo_NAS.html",
+    "href": "collaborative-infra/argo_NAS.html",
+    "title": "Argo NAS",
+    "section": "",
+    "text": "The Argo Network Attached Storage (NAS) serves as our primary data hub while at sea, providing high-capacity, RAID-configured local storage and file-sharing capabilities independent of internet connectivity. This system enables real-time collaboration, automated data backup, and efficient information exchange among all expedition members.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Argo NAS"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/argo_NAS.html#overview",
+    "href": "collaborative-infra/argo_NAS.html#overview",
+    "title": "Argo NAS",
+    "section": "",
+    "text": "The Argo Network Attached Storage (NAS) serves as our primary data hub while at sea, providing high-capacity, RAID-configured local storage and file-sharing capabilities independent of internet connectivity. This system enables real-time collaboration, automated data backup, and efficient information exchange among all expedition members.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Argo NAS"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/argo_NAS.html#system-architecture",
+    "href": "collaborative-infra/argo_NAS.html#system-architecture",
+    "title": "Argo NAS",
+    "section": "System Architecture",
+    "text": "System Architecture\nThe Argo NAS operates on a dedicated internal network accessible throughout the vessel, offering high-speed data transfer, automated synchronization, and robust storage redundancy. Each expedition member receives personalized access credentials with role-specific permission levels, ensuring appropriate access to data and collaboration spaces.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Argo NAS"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/argo_NAS.html#directory-structure",
+    "href": "collaborative-infra/argo_NAS.html#directory-structure",
+    "title": "Argo NAS",
+    "section": "Directory Structure",
+    "text": "Directory Structure\nFolders on the NAS mirror the structure of the matching expedition folder in Google Drive, ensuring a seamless transition between at-sea operations and post-expedition data management.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Argo NAS"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/argo_NAS.html#daily-workflow",
+    "href": "collaborative-infra/argo_NAS.html#daily-workflow",
+    "title": "Argo NAS",
+    "section": "Daily Workflow",
+    "text": "Daily Workflow\nThe NAS plays a central role in our daily expedition operations:\n\nData entry: Upload collected data and photos to the appropriate directories on the NAS (excluding remote camera footage)\nDaily backup: Automatic daily backup of all new uploads to ensure redundancy and data integrity\nEarly QAQC: Preliminary quality assurance and quality control (QA/QC) conducted by the data manager\nSpecies ID: Collaborative species identification and validation based on shared images and video\nPlanning: Preparation for the following day’s operations based on real-time sampling distribution updates\nHighlights: Sharing of daily highlights, including images, video clips, and key findings.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Argo NAS"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/argo_NAS.html#best-practices",
+    "href": "collaborative-infra/argo_NAS.html#best-practices",
+    "title": "Argo NAS",
+    "section": "Best Practices",
+    "text": "Best Practices\n\nFile Management\n\nFollow standard naming conventions for all folder and files:\n\nExample: benthos/site-photos/PLW-2023-uvs-001/..., sbruv/PLW_2023_sbruv_fieldbook.xlsx\n\nSave work to the NAS daily rather than keeping it on personal devices\nOrganize raw photos by station_id or date upon upload\n\n\n\nCollaborative Etiquette\n\nSave Frequently\nClose files when not in use to prevent access conflicts.\nShare your photos—contribute regularly to foster team collaboration",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Argo NAS"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/argo_NAS.html#support",
+    "href": "collaborative-infra/argo_NAS.html#support",
+    "title": "Argo NAS",
+    "section": "Support",
+    "text": "Support\nThe expedition’s data manager serves as the primary support contact for NAS-related issues, including troubleshooting, folder management, and QA/QC oversight.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Argo NAS"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/argo_NAS.html#post-expedition-data-management",
+    "href": "collaborative-infra/argo_NAS.html#post-expedition-data-management",
+    "title": "Argo NAS",
+    "section": "Post-Expedition Data Management",
+    "text": "Post-Expedition Data Management\nAt the conclusion of each expedition:\n\nAll data undergoes final validation and organization\nComplete dataset is backed up to portable drives\nThe full dataset (excluding raw footage) is synced to Google Drive.\nData is archived for future reference",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "Argo NAS"
     ]
   }
 ]

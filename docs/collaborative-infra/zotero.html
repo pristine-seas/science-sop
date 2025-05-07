@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pristine Seas Science Team SOP - Zotero Library</title>
+<title>Pristine Seas Science Team SOP - Zotero</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -169,7 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../collaborative-infra/index.html">Collaborative Infrastructure</a></li><li class="breadcrumb-item"><a href="../collaborative-infra/zotero.html">Zotero Library</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../collaborative-infra/index.html">Collaborative Infrastructure</a></li><li class="breadcrumb-item"><a href="../collaborative-infra/zotero.html">Zotero</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -218,14 +218,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../collaborative-infra/zotero.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Zotero Library</span></a>
+  <a href="../collaborative-infra/bigquery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BigQuery</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../collaborative-infra/bigquery.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">BigQuery</span></a>
+  <a href="../collaborative-infra/zotero.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Zotero</span></a>
   </div>
 </li>
       </ul>
@@ -398,17 +398,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#library-structure" id="toc-library-structure" class="nav-link" data-scroll-target="#library-structure">Library Structure</a></li>
+  <li><a href="#workflow-integration" id="toc-workflow-integration" class="nav-link" data-scroll-target="#workflow-integration">Workflow Integration</a>
+  <ul class="collapse">
+  <li><a href="#pre-expedition" id="toc-pre-expedition" class="nav-link" data-scroll-target="#pre-expedition">Pre-Expedition</a></li>
+  <li><a href="#during-expedition" id="toc-during-expedition" class="nav-link" data-scroll-target="#during-expedition">During Expedition</a></li>
+  <li><a href="#post-expedition-analysis-and-reporting" id="toc-post-expedition-analysis-and-reporting" class="nav-link" data-scroll-target="#post-expedition-analysis-and-reporting">Post-Expedition Analysis and Reporting</a></li>
+  </ul></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best Practices</a>
+  <ul class="collapse">
   <li><a href="#organization" id="toc-organization" class="nav-link" data-scroll-target="#organization">Organization</a></li>
-  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a></li>
+  <li><a href="#citation-management" id="toc-citation-management" class="nav-link" data-scroll-target="#citation-management">Citation Management</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pristine-seas/sop/edit/main/collaborative-infra/zotero.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pristine-seas/sop/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../collaborative-infra/index.html">Collaborative Infrastructure</a></li><li class="breadcrumb-item"><a href="../collaborative-infra/zotero.html">Zotero Library</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../collaborative-infra/index.html">Collaborative Infrastructure</a></li><li class="breadcrumb-item"><a href="../collaborative-infra/zotero.html">Zotero</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Zotero Library</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Zotero</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Reference management for general and expedition-specific literature</p>
 </div>
 
 
@@ -427,34 +438,85 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Zotero manages our scientific literature for both general reference and expedition-specific needs.</p>
+<p>The Pristine Seas Science Team maintains a centralized Zotero library for managing scientific literature. This shared resource ensures all team members have access to relevant publications, enabling consistent citation practices and facilitating collaborative research and writing. The library integrates with our broader collaborative infrastructure, maintaining parallel organizational structures with Google Drive and GitHub repositories.</p>
 </section>
-<section id="organization" class="level2">
-<h2 class="anchored" data-anchor-id="organization">Organization</h2>
+<section id="library-structure" class="level2">
+<h2 class="anchored" data-anchor-id="library-structure">Library Structure</h2>
+<p>Our Zotero library follows a hierarchical organization that balances expedition-specific needs with thematic categorization:</p>
 <ul>
-<li>Main library with shared access</li>
-<li>Collections organized by:
+<li><strong>Books</strong>: Complete reference texts relevant to marine science and conservation</li>
+<li><strong>Economic Reports</strong>: Economic analyses and valuation studies of marine ecosystems</li>
+<li><strong>Expedition References</strong>: Literature specific to expedition locations (organized by expedition ID)
 <ul>
-<li>Expeditions</li>
-<li>Research methods</li>
-<li>Ecosystems</li>
-<li>Geographic regions</li>
+<li>One folder per expedition ID</li>
+<li>Thematic subfolders within each expedition (fisheries, benthic communities, regional context)</li>
+</ul></li>
+<li><strong>Expedition Reports</strong>: Archive of Pristine Seas expedition reports</li>
+<li><strong>Projects</strong>: References for research projects
+<ul>
+<li>Uses consistent naming conventions that mirror Google Drive and GitHub structures</li>
+</ul></li>
+<li><strong>PS Publications</strong>: Pristine Seas scientific publications organized by year</li>
+<li><strong>General References</strong>: Thematic collections of literature organized by scientific domain
+<ul>
+<li>Fisheries</li>
+<li>MPAs</li>
+<li>Mesophotic reefs</li>
+<li>Other thematic categories</li>
 </ul></li>
 </ul>
 </section>
-<section id="workflow" class="level2">
-<h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
+<section id="workflow-integration" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-integration">Workflow Integration</h2>
+<section id="pre-expedition" class="level3">
+<h3 class="anchored" data-anchor-id="pre-expedition">Pre-Expedition</h3>
+<ol type="1">
+<li>Science lead establishes a new collection for the expedition using the standard expedition ID</li>
+<li>Team contributes foundational literature about the expedition region including reports and documents from partners.</li>
+<li>Science lead exports and downloads key papers to Google Drive for sharing with external collaborators and the wider Pristine Seas team</li>
+<li>Key papers are flagged for required reading by expedition scientists</li>
+</ol>
+</section>
+<section id="during-expedition" class="level3">
+<h3 class="anchored" data-anchor-id="during-expedition">During Expedition</h3>
+<ol type="1">
+<li>Library from Google Drive is loaded into the ship’s NAS for redundancy.</li>
+<li>Reference materials support species identification and ecological interpretation</li>
+<li>Zotero library remains accessible via laptops or tablets</li>
+</ol>
+</section>
+<section id="post-expedition-analysis-and-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="post-expedition-analysis-and-reporting">Post-Expedition Analysis and Reporting</h3>
+<ol type="1">
+<li>Standardized citation of references in reports and publications</li>
+<li>Export of formatted bibliographies for scientific reports</li>
+<li>Addition of new Pristine Seas publications to the library</li>
+</ol>
+</section>
+</section>
+<section id="best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices">Best Practices</h2>
+<section id="organization" class="level3">
+<h3 class="anchored" data-anchor-id="organization">Organization</h3>
 <ul>
-<li>Add references with browser extension</li>
-<li>Organize into appropriate collections</li>
-<li>Add PDFs when available</li>
-<li>Use consistent tagging system</li>
-<li>Export citations for manuscripts</li>
+<li>Follow standardized naming conventions for collections</li>
+<li>Ensure all references include complete citation information</li>
+<li>Attach PDF files of publications when available</li>
+<li>Conduct annual review and cleanup of library organization</li>
+</ul>
+</section>
+<section id="citation-management" class="level3">
+<h3 class="anchored" data-anchor-id="citation-management">Citation Management</h3>
+<ul>
+<li>Use of the APA 7th Edition citation style for consistency across all publications</li>
+<li>Utilization of the Google Docs Zotero plugin for collaborative manuscript writing</li>
+<li>Direct citation insertion in Quarto documents via Zotero integration with RStudio</li>
 </ul>
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -917,29 +979,85 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Zotero Library"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Zotero manages our scientific literature for both general reference and expedition-specific needs.</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Organization</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Main library with shared access</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Collections organized by:</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Expeditions</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Research methods</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Ecosystems</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Geographic regions</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## Workflow</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add references with browser extension</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Organize into appropriate collections</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add PDFs when available</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Use consistent tagging system</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Export citations for manuscripts</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Zotero"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Reference management for general and expedition-specific literature"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: right</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: false</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup}</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">#| include: false</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">library(here)</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="in">library(knitr)</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">library(gt)</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>The Pristine Seas Science Team maintains a centralized Zotero library for managing scientific literature. This shared resource ensures all team members have access to relevant publications, enabling consistent citation practices and facilitating collaborative research and writing. The library integrates with our broader collaborative infrastructure, maintaining parallel organizational structures with Google Drive and GitHub repositories.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Library Structure</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Our Zotero library follows a hierarchical organization that balances expedition-specific needs with thematic categorization:</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Books**: Complete reference texts relevant to marine science and conservation</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Economic Reports**: Economic analyses and valuation studies of marine ecosystems</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Expedition References**: Literature specific to expedition locations (organized by expedition ID)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>One folder per expedition ID</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Thematic subfolders within each expedition (fisheries, benthic communities, regional context)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Expedition Reports**: Archive of Pristine Seas expedition reports</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Projects**: References for research projects</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Uses consistent naming conventions that mirror Google Drive and GitHub structures</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**PS Publications**: Pristine Seas scientific publications organized by year</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**General References**: Thematic collections of literature organized by scientific domain</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Fisheries</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>MPAs</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Mesophotic reefs</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Other thematic categories</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## Workflow Integration</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pre-Expedition</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Science lead establishes a new collection for the expedition using the standard expedition ID</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Team contributes foundational literature about the expedition region including reports and documents from partners.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Science lead exports and downloads key papers to Google Drive for sharing with external collaborators and the wider Pristine Seas team</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Key papers are flagged for required reading by expedition scientists</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">### During Expedition</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Library from Google Drive is loaded into the ship's NAS for redundancy.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Reference materials support species identification and ecological interpretation</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Zotero library remains accessible via laptops or tablets</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">### Post-Expedition Analysis and Reporting</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Standardized citation of references in reports and publications</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Export of formatted bibliographies for scientific reports</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Addition of new Pristine Seas publications to the library</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Best Practices</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu">### Organization</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Follow standardized naming conventions for collections</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ensure all references include complete citation information</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Attach PDF files of publications when available</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Conduct annual review and cleanup of library organization</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="fu">### Citation Management</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Use of the APA 7th Edition citation style for consistency across all publications</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Utilization of the Google Docs Zotero plugin for collaborative manuscript writing</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Direct citation insertion in Quarto documents via Zotero integration with RStudio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

@@ -1,0 +1,65 @@
+---
+title: "Argo NAS"
+subtitle: "At-sea hub for collaborative work and file sharing"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+## Overview
+
+The Argo Network Attached Storage (NAS) serves as our primary data hub while at sea, providing high-capacity, RAID-configured local storage and file-sharing capabilities independent of internet connectivity. This system enables real-time collaboration, automated data backup, and efficient information exchange among all expedition members.
+
+## System Architecture
+
+The Argo NAS operates on a dedicated internal network accessible throughout the vessel, offering high-speed data transfer, automated synchronization, and robust storage redundancy. Each expedition member receives personalized access credentials with role-specific permission levels, ensuring appropriate access to data and collaboration spaces.
+
+## Directory Structure
+
+Folders on the NAS mirror the structure of the matching expedition folder in Google Drive, ensuring a seamless transition between at-sea operations and post-expedition data management.
+
+
+## Daily Workflow
+
+The NAS plays a central role in our daily expedition operations:
+
+1. **Data entry**: Upload collected data and photos to the appropriate directories on the NAS (excluding remote camera footage)
+2. **Daily backup**: Automatic daily backup of all new uploads to ensure redundancy and data integrity
+3. **Early QAQC**: Preliminary quality assurance and quality control (QA/QC) conducted by the data manager
+4. **Species ID**: Collaborative species identification and validation based on shared images and video
+5. **Planning**: Preparation for the following day's operations based on real-time sampling distribution updates
+6. **Highlights**: Sharing of daily highlights, including images, video clips, and key findings.
+
+## Best Practices
+
+### File Management
+
+- Follow standard naming conventions for all folder and files:
+  - Example: `benthos/site-photos/PLW-2023-uvs-001/...`, `sbruv/PLW_2023_sbruv_fieldbook.xlsx`
+- Save work to the NAS daily rather than keeping it on personal devices
+- Organize raw photos by `station_id` or date upon upload
+
+### Collaborative Etiquette
+
+- Save Frequently
+- Close files when not in use to prevent access conflicts.
+- Share your photos—contribute regularly to foster team collaboration
+
+## Support
+
+The expedition's data manager serves as the primary support contact for NAS-related issues, including troubleshooting, folder management, and QA/QC oversight.
+
+## Post-Expedition Data Management
+
+At the conclusion of each expedition:
+
+1. All data undergoes final validation and organization
+2. Complete dataset is backed up to portable drives
+3. The full dataset (excluding raw footage) is synced to Google Drive.
+4. Data is archived for future reference

@@ -1,0 +1,15 @@
+{
+  "hash": "f3daa20144c758289771eb4e3efceda0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Fish Belt Line Transect\"\nsubtitle: \"Quantifying reef fish diversity and biomass\"\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    toc-location: right\nexecute:\n  echo: true\n  warning: false\n  message: false\n---\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

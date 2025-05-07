@@ -33,7 +33,7 @@ These insights are fundamental for effective conservation and our job includes t
         <li>Invertebrate counts</li>
         <li>Coral recruits counts</li>
       </ul>
-      <a href="benthic-surveys.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #0ea5e9; border-radius:4px; color:#0ea5e9; text-decoration:none; font-size:0.8em;">Protocol →</a>
+      <a href="benthic_lpi.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #0ea5e9; border-radius:4px; color:#0ea5e9; text-decoration:none; font-size:0.8em;">Protocol →</a>
     </td>
     <td style="width:50%; vertical-align:top; padding:8px; border-left:3px solid #6366f1; background-color:#f8fafc;">
       <h3 style="margin:0 0 5px 0; color:#6366f1;">Fish Surveys</h3>
@@ -43,7 +43,7 @@ These insights are fundamental for effective conservation and our job includes t
         <li>Species identification</li>
         <li>Size and biomass estimation</li>
       </ul>
-      <a href="fish-surveys.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #6366f1; border-radius:4px; color:#6366f1; text-decoration:none; font-size:0.8em;">Protocol →</a>
+      <a href="fish_blt.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #6366f1; border-radius:4px; color:#6366f1; text-decoration:none; font-size:0.8em;">Protocol →</a>
     </td>
   </tr>
   <tr>

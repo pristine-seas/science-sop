@@ -1,0 +1,15 @@
+{
+  "hash": "18b09c8c66a1cdc45a6d2b5f7ffc25f1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Invertebrate Surveys\"\nsubtitle: \"Estimating the density of mobile reef inverts\"\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    toc-location: right\nexecute:\n  echo: true\n  warning: false\n  message: false\n---\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

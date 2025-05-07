@@ -1,21 +1,220 @@
 ---
 title: "GitHub"
+subtitle: "Version control and collaborative coding"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(gt)
+```
 
 ## Overview
 
-Each expedition and project has its own GitHub repository for code and analysis.
+GitHub serves as the foundation of our code management system, providing robust version control, collaborative workflows, and reproducible research capabilities. This central platform enables the Pristine Seas Science Team to maintain high standards of scientific rigor and transparency while facilitating efficient collaboration across our distributed team.
+
+### Core GitHub Benefits
+
+- **Version control**: Track changes over time with complete history
+- **Collaboration**: Multiple scientists can contribute to the same codebase
+- **Reproducibility**: Code tied to specific analyses or expeditions is preserved exactly as used
+- **Knowledge sharing**: Public repositories make methods transparent to the broader scientific community
+- **Quality control**: Pull request review system ensures code quality and consistency
+
+## Organization Structure
+
+The Pristine Seas Science Team maintains a dedicated GitHub organization (`pristine-seas`) that houses all our code repositories, documentation, and analytical frameworks.
+
+### Repository Types
+
+Our repositories fall into three main categories, each with specific naming conventions and purposes:
+
+::: {.callout-note appearance="minimal" icon=false}
+## Expedition Repositories
+
+**Naming convention**: `exp-[ISO3]-[YEAR]`
+
+**Purpose**: Code associated with an expedition, including data processing pipelines, analysis scripts, and report generation.
+
+**Examples**: 
+
+- `exp-PNG-2024` (Papua New Guinea 2024)
+- `exp-COL-2022` (Colombia 2022)
+- `exp-GAB-2023` (Gabon 2023)
+:::
+
+::: {.callout-note appearance="minimal" icon=false}
+## Project Repositories
+
+**Naming convention**: `prj-[Short-name]-[descriptor]`
+
+**Purpose**: Code for research projects, thematic analyses, scientific papers, and curiosities.
+
+**Examples**:
+
+- `prj-Cyprus-trawling` (Trawling impact analysis)
+- `prj-scandola-algae` (Mediterranean algae study)
+- `prj-global-sharks` (Global shark abundance patterns)
+:::
+
+::: {.callout-note appearance="minimal" icon=false}
+
+## Core Infrastructure Repositories
+
+**Naming convention**: Descriptive names
+
+**Purpose**: Central tools, packages, and resources.
+
+**Examples**:
+
+- `science-sop` (This Standard Operating Procedures documentation)
+- `legacy-db` (Legacy database build)
+- `PristineSeasR` (Pristine Seas R package)
+- `pristine-seas.github.io` (Science Team website)
+:::
 
 ## Repository Structure
 
-- One repository per expedition or project
-- Standard directory structure for consistency
-- README with expedition overview and key information
+Expedition repositories follow a standardized structure to ensure consistency and ease of navigation. This structure helps new team members quickly understand our workflow and facilitates efficient collaboration.
 
-## Basic Workflow
+```
+exp-[ISO3]-[YEAR]/
+├── .github/              # GitHub specific files (actions, templates)
+├── R/                    # R functions and utility scripts
+├── pipeline/             # Data processing pipelines
+│   ├── pipe_benthic.qmd    # Benthic data processing
+│   ├── pipe_fish.qmd       # Fish data processing
+│   ├── pipe_pbruv.qmd      # BRUVS data processing
+├── eda/                  # Exploratory data analysis
+│   ├── eda_lpi.qmd       # Benthic data analysis
+│   ├── eda_fish.qmd      # Fish data analysis
+│   └── eda_pbruv.qmd     # Pelagic BRUVS data analysis
+├── docs/                 # qmds are rendered here
+├── .gitignore            # Files to exclude from version control
+├── README.md             # Repository overview and instructions
+└── exp-[ISO3]-[YEAR].Rproj  # RStudio project file
+```
 
-- Clone the expedition repository
-- Create branches for specific analyses
-- Commit code with clear messages
-- Create pull requests for review
-- Merge approved changes
+Project and infrastructure repositories have flexible structures based on their specific needs, but should still maintain clear organization and documentation.
+
+
+::: {.callout-important appearance="simple"}
+## Data Storage Guidelines
+
+**We do not store data in GitHub repositories.** This is both a practical consideration (GitHub has file size limits) and a scientific best practice (data should be managed separately from code).
+
+Instead:
+
+- Raw data is stored in Google Drive (see [Google Drive](drive.qmd) documentation)
+- Processed data is stored in BigQuery (see [BigQuery](bigquery.qmd) documentation)
+:::
+
+
+## GitHub Workflow with R
+
+Our team primarily interacts with GitHub through RStudio, following the principles outlined in Jenny Bryan's "Happy Git with R" ([happygitwithr.com](https://happygitwithr.com/)). This approach simplifies version control while maintaining scientific rigor.
+
+### Basic Git Workflow in RStudio
+
+```{mermaid}
+graph LR
+    A[Clone Repository] --> B[Make Changes]
+    B --> C[Stage Changes]
+    C --> D[Commit Changes]
+    D --> E[Pull]
+    E --> F[Push]
+    style F fill:#d8f3dc,stroke:#95d5b2
+```
+
+The fundamental GitHub workflow for our team involves these key steps:
+
+1. **Clone**: Create a local copy of the repository
+   - In RStudio: File → New Project → Version Control → Git
+   - Enter repository URL: `https://github.com/pristine-seas/repository-name.git`
+
+2. **Make Changes**: Edit scripts, add analyses, or improve documentation
+
+3. **Stage**: Select which changes to include in your commit
+   - In RStudio: Use the Git pane to check boxes next to changed files
+
+4. **Commit**: Save your changes with a clear, descriptive message
+   - In RStudio: Click "Commit" in the Git pane
+   - Write a meaningful commit message that describes what you changed and why
+
+5. **Pull**: Incorporate any changes others have made
+   - In RStudio: Click "Pull" in the Git pane
+   - Address any conflicts if they arise
+
+6. **Push**: Share your changes with the team
+   - In RStudio: Click "Push" in the Git pane
+
+## Quarto Documents for Reproducible Research
+
+Our workflow heavily leverages Quarto documents (`.qmd` files) as the foundation for reproducible research. Quarto combines narrative text, code, and visualizations in a single document that serves as both lab notebook and reproducible pipeline.
+
+### Why We Use Quarto
+
+Quarto documents offer several advantages for scientific workflows:
+
+- **Code and narrative integration**: Seamlessly mix text with executable R code
+- **Reproducibility**: Anyone can re-run analyses and get identical results
+- **Self-documentation**: Methods are explicitly documented alongside the code
+- **Multiple output formats**: Generate HTML, PDF, Word, or presentations from the same source
+- **Version control friendly**: Text-based format works well with Git
+
+### Quarto in Our Repository Structure
+
+Our expedition repositories are organized around two main types of Quarto documents:
+
+1. **Pipeline documents** (`pipeline/` folder):
+   - Linear processing workflows from raw data to analysis-ready datasets
+   - Emphasize data cleaning, validation, and transformation
+   - Each document focuses on a specific data stream (benthic, fish, etc.)
+   - Final output is typically data tables ready for database ingestion
+
+2. **Exploratory Data Analysis (EDA) documents** (`eda/` folder):
+   - Scientific analysis of processed data
+   - Focus on visualization, statistical testing, and interpretation
+   - Often include publication-quality figures
+   - Can be method-specific or integrate across multiple methods
+
+## Embracing a Reproducibility Mindset
+
+Reproducibility is fundamental to scientific integrity and is a core value of the Pristine Seas Science Team. Beyond just technical practices, it requires a specific mindset when approaching our work.
+
+### Key Principles
+
+1. **Think of your future self**: Write code and documentation as if you'll need to understand it months from now with no memory of what you did
+   
+2. **Think of your teammates**: Assume someone else will need to use and understand your work without having you available to explain it
+
+3. **Documentation is not optional**: Clear documentation is as important as the code itself
+   - Document the "why" not just the "how"
+   - Explain analytical choices and their implications
+   - Note data quirks and handling decisions
+
+4. **No magic numbers**: Any constant or parameter should be explained and defined at the top of scripts
+
+5. **Embrace iteration**: Start with messy exploration, but refine toward reproducible pipelines
+   - Initial EDA can be exploratory
+   - Final analyses should be structured as reproducible workflows
+   - Improve code as clarity emerges
+
+### Practical Habits
+
+- **Start each analysis session by pulling** the latest code
+- **Commit frequently** with clear messages
+- **Review your own work** before considering it final
+- **Test with fresh environments** to ensure all dependencies are documented
+- **Keep raw data pristine** and document all transformations

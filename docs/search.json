@@ -139,7 +139,7 @@
     "href": "collaborative-infra/github.html",
     "title": "GitHub",
     "section": "",
-    "text": "Each expedition and project has its own GitHub repository for code and analysis.",
+    "text": "GitHub serves as the foundation of our code management system, providing robust version control, collaborative workflows, and reproducible research capabilities. This central platform enables the Pristine Seas Science Team to maintain high standards of scientific rigor and transparency while facilitating efficient collaboration across our distributed team.\n\n\n\nVersion control: Track changes over time with complete history\nCollaboration: Multiple scientists can contribute to the same codebase\nReproducibility: Code tied to specific analyses or expeditions is preserved exactly as used\nKnowledge sharing: Public repositories make methods transparent to the broader scientific community\nQuality control: Pull request review system ensures code quality and consistency",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -151,7 +151,7 @@
     "href": "collaborative-infra/github.html#overview",
     "title": "GitHub",
     "section": "",
-    "text": "Each expedition and project has its own GitHub repository for code and analysis.",
+    "text": "GitHub serves as the foundation of our code management system, providing robust version control, collaborative workflows, and reproducible research capabilities. This central platform enables the Pristine Seas Science Team to maintain high standards of scientific rigor and transparency while facilitating efficient collaboration across our distributed team.\n\n\n\nVersion control: Track changes over time with complete history\nCollaboration: Multiple scientists can contribute to the same codebase\nReproducibility: Code tied to specific analyses or expeditions is preserved exactly as used\nKnowledge sharing: Public repositories make methods transparent to the broader scientific community\nQuality control: Pull request review system ensures code quality and consistency",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -163,7 +163,7 @@
     "href": "collaborative-infra/github.html#repository-structure",
     "title": "GitHub",
     "section": "Repository Structure",
-    "text": "Repository Structure\n\nOne repository per expedition or project\nStandard directory structure for consistency\nREADME with expedition overview and key information",
+    "text": "Repository Structure\nExpedition repositories follow a standardized structure to ensure consistency and ease of navigation. This structure helps new team members quickly understand our workflow and facilitates efficient collaboration.\nexp-[ISO3]-[YEAR]/\n├── .github/              # GitHub specific files (actions, templates)\n├── R/                    # R functions and utility scripts\n├── pipeline/             # Data processing pipelines\n│   ├── pipe_benthic.qmd    # Benthic data processing\n│   ├── pipe_fish.qmd       # Fish data processing\n│   ├── pipe_pbruv.qmd      # BRUVS data processing\n├── eda/                  # Exploratory data analysis\n│   ├── eda_lpi.qmd       # Benthic data analysis\n│   ├── eda_fish.qmd      # Fish data analysis\n│   └── eda_pbruv.qmd     # Pelagic BRUVS data analysis\n├── docs/                 # qmds are rendered here\n├── .gitignore            # Files to exclude from version control\n├── README.md             # Repository overview and instructions\n└── exp-[ISO3]-[YEAR].Rproj  # RStudio project file\nProject and infrastructure repositories have flexible structures based on their specific needs, but should still maintain clear organization and documentation.\n\n\n\n\n\n\nData Storage Guidelines\n\n\n\nWe do not store data in GitHub repositories. This is both a practical consideration (GitHub has file size limits) and a scientific best practice (data should be managed separately from code).\nInstead:\n\nRaw data is stored in Google Drive (see Google Drive documentation)\nProcessed data is stored in BigQuery (see BigQuery documentation)",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -235,7 +235,7 @@
     "href": "collaborative-infra/bigquery.html",
     "title": "BigQuery",
     "section": "",
-    "text": "BigQuery serves as our centralized database for integrated expedition data.",
+    "text": "The Pristine Seas Science Database is a centralized, modular system hosted in Google BigQuery that serves as the foundation of our data management infrastructure. This system integrates ecological data collected across more than a decade of scientific expeditions, supporting high-integrity, reproducible research on marine biodiversity and informing global ocean conservation policy.\n\n\nGoogle BigQuery offers several advantages for marine ecological data:\n\nScalability: Handles our growing dataset spanning 40+ expeditions without performance degradation\nIntegration: Seamlessly connects with our R-based analysis workflows\nCollaboration: Enables standardized access across our distributed research team\nFuture-proofing: Provides a robust platform that can evolve with our research needs\n\nNote: BigQuery is were Global Fishing Watch data lives and we have access to the raw backend data.\n\n\n\nOur database implementation adheres to the FAIR data principles:\n\n\n\n\n\nUnique and unified IDs\nWoRMS-linked taxonomy\nConsistent spatial hierarchy\n\n\n\n\n\nQuery-ready BigQuery tables\nControlled access and permissions\nVaried connection options\n\n\n\n\n\nSpatial reference system\nHarmonized taxonomic backbone\nConsistent units (cm, g, m²)\n\n\n\n\n\nComprehensive metadata\nReproducible code\nClear provenance6",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -247,7 +247,7 @@
     "href": "collaborative-infra/bigquery.html#overview",
     "title": "BigQuery",
     "section": "",
-    "text": "BigQuery serves as our centralized database for integrated expedition data.",
+    "text": "The Pristine Seas Science Database is a centralized, modular system hosted in Google BigQuery that serves as the foundation of our data management infrastructure. This system integrates ecological data collected across more than a decade of scientific expeditions, supporting high-integrity, reproducible research on marine biodiversity and informing global ocean conservation policy.\n\n\nGoogle BigQuery offers several advantages for marine ecological data:\n\nScalability: Handles our growing dataset spanning 40+ expeditions without performance degradation\nIntegration: Seamlessly connects with our R-based analysis workflows\nCollaboration: Enables standardized access across our distributed research team\nFuture-proofing: Provides a robust platform that can evolve with our research needs\n\nNote: BigQuery is were Global Fishing Watch data lives and we have access to the raw backend data.\n\n\n\nOur database implementation adheres to the FAIR data principles:\n\n\n\n\n\nUnique and unified IDs\nWoRMS-linked taxonomy\nConsistent spatial hierarchy\n\n\n\n\n\nQuery-ready BigQuery tables\nControlled access and permissions\nVaried connection options\n\n\n\n\n\nSpatial reference system\nHarmonized taxonomic backbone\nConsistent units (cm, g, m²)\n\n\n\n\n\nComprehensive metadata\nReproducible code\nClear provenance6",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -932,7 +932,7 @@
     "href": "collaborative-infra/drive.html#expeditions",
     "title": "Google Drive",
     "section": "Expeditions",
-    "text": "Expeditions\nThe expeditions folder is the heart of our data organization system, containing all materials related to our field expeditions. Expeditions are given standardized ID (exp_id) that’s composed of the ISO alpha-3 country code and the year of the expedition. In rare case when multiple expeditions occur in the same country within the same year, we add descriptive suffixes.\n\n\n\n\n\n\nExpedition ID (exp_id)\n\n\n\nFormat: [iso3]_[year]\nExamples: COL_2022, PLW_2023, ARG_2018_yaganes, ARG_2018_burwood\n\n\nThis naming system ensures expeditions are easily identifiable, correctly sorted by location and date, and consistently referenced across our platforms.\nexpeditions/\n└── iso3-year/\n    ├── readme.md                # Expedition overview\n    ├── data/                    # All expedition data\n    │   ├── primary/             # Data collected by team\n    │   │   ├── raw/             # Unmodified field data\n    │   │   ├── processed/       # QA/QC applied data\n    │   │   └── output/          # Analysis-ready data\n    │   └── secondary/           # Data from external sources\n    ├── documents/               # Scouting and planning documents\n    ├── figures/                 # Maps and visualizations\n    ├── gis/                     # Spatial project\n    ├── media/                   # Photos, videos\n    ├── presentations/           # Slide decks\n    ├── reports/                 # Expedition outputs\n    └── references/              # Literature and resources\n\n\n\n\n\n\nNaming conventions\n\n\n\nAll folder and file names should follow these conventions:\n\nFolders: Use kebab-case (hyphens), capitalize only proper nouns\n\nExamples: esv-PLW-2024/, prj-cyprus-trawlers/\n\nFiles: Use snake_case (underscores), capitalize only proper nouns\n\nExamples: FJI_2025_science_report.docx, YSI_manual.pdf\n\nNames should be descriptive and consistent\n\n\n\n\ndata/\nThe data folder is organized by source and processing stage:\n\nprimary/secondary/\n\n\nData collected by our team during the expedition:\n\nraw/:\n\nOriginal, unmodified fieldbooks\nSite and species photos\nHighlights from remote camera systems\n\nprocessed/:\n\nQA/QC procedures applied\nStandardized formats\n\noutput/:\n\nFully validated datasets\nDatabase-ready structure\nDerived metrics included\n\n\nEach subfolder is organized by research method (benthic, fish, bruvs, edna, etc.)\n\n\nData from external sources relevant to the expedition:\n\nprevious-work/: Previous research\nspatial/: Habitat maps, administrative boundaries\n\n\n\n\n\n\ndocuments/\nEssential expedition documentation:\n\nplanning/\n\nScouting reports and initial assessments\nScience plans detailing research objectives\n\npermits/\n\nResearch authorization applications and approvals\nMemoranda of understanding with local partners\n\nmisc/\n\nMeeting notes from planning and field sessions\nContact lists for team members and stakeholders\n\n\n\n\nmedia/\nExpedition visual documentation organized by source:\n\nscience-collection/\n\nSelect photos taken by science team members\nOrganized by species groups and habitats\n\nmedia-team/\n\nProfessional photography from our media team\nunderwater/: Underwater imagery of marine environments\ntopside: Aerial and landscape documentation\npeople: Human elements including team and communities\n\nfield-edit/\n\nExpedition video produced by the media team\n\n\n\n\nreports/\nExpedition outputs for different audiences:\n\nscience/\n\nComprehensive scientific report\nTwo-page expedition summary\n\noutreach/\n\nCommunity and stakeholder reports\nPress materials\nStories from the expedition\n\nassets/\n\nHigh-resolution images, maps and figures (.pdf)\nPartner logos or branding materials\n\n\n\n\nOther Key Folders\n\nfigures/\n\nMaps showing expedition sites and spatial patterns in data\nData visualizations from analyses\n\nGIS/\n\nStores the GIS project files\n\npresentations/\n\nPre-expedition planning briefings\nPost-expedition debrief materials\nStakeholder and partner presentations\n\nreferences/\n\nRegional scientific literature\nDomain-specific research papers\nCultural and historical context",
+    "text": "Expeditions\nThe expeditions folder is the heart of our data organization system, containing all materials related to our field expeditions. Expeditions are given standardized ID (exp_id) that’s composed of the ISO alpha-3 country code and the year of the expedition. In rare case when multiple expeditions occur in the same country within the same year, we add descriptive suffixes.\n\n\n\n\n\n\nExpedition ID (exp_id)\n\n\n\nFormat: [iso3]_[year]\nExamples: COL_2022, PLW_2023, ARG_2018_yaganes, ARG_2018_burwood\n\n\nThis naming system ensures expeditions are easily identifiable, correctly sorted by location and date, and consistently referenced across our platforms.\nexpeditions/\n└── iso3-year/\n    ├── readme.md                # Expedition overview\n    ├── data/                    # All expedition data\n    │   ├── primary/             # Data collected by team\n    │   │   ├── raw/             # Unmodified field data\n    │   │   ├── processed/       # QA/QC applied data\n    │   │   └── output/          # Analysis-ready data\n    │   └── secondary/           # Data from external sources\n    ├── documents/               # Scouting and planning documents\n    ├── figures/                 # Maps and visualizations\n    ├── gis/                     # Spatial project\n    ├── media/                   # Photos, videos\n    ├── presentations/           # Slide decks\n    ├── reports/                 # Expedition outputs\n    └── references/              # Literature and resources\n\n\n\n\n\n\nNaming conventions\n\n\n\nAll folder and file names should follow these conventions:\n\nFolders: Use kebab-case (hyphens), capitalize only proper nouns\n\nExamples: esv-PLW-2024/, prj-cyprus-trawlers/\n\nFiles: Use snake_case (underscores), capitalize only proper nouns\n\nExamples: FJI_2025_science_report.docx, YSI_manual.pdf\n\nNames should be descriptive and consistent\n\n\n\n\ndata/\nThe data folder is organized by source and processing stage:\n\nprimary/secondary/\n\n\nData collected by our team during the expedition:\n\nraw/:\n\nOriginal, unmodified fieldbooks\nSite and species photos\nHighlights from remote camera systems\n\nprocessed/:\n\nQA/QC procedures applied\nStandardized formats\n\noutput/:\n\nFully validated datasets\nDatabase-ready structure\nDerived metrics included\n\n\nEach subfolder is organized by research method (benthic, fish, bruvs, edna, etc.)\n\n\nData from external sources relevant to the expedition:\n\nprevious-work/: Previous research\nspatial/: Habitat maps, administrative boundaries\n\n\n\n\n\n\ndocuments/\nEssential expedition documentation:\n\nplanning/\n\nScouting reports and initial assessments\nScience plans detailing research objectives\n\npermits/\n\nResearch authorization applications and approvals\nMemoranda of understanding with local partners\n\nmisc/\n\nMeeting notes from planning and field sessions\nContact lists for team members and stakeholders\n\n\n\n\nmedia/\nExpedition visual documentation organized by source:\n\nscience-collection/\n\nSelect photos taken by science team members\nOrganized by species groups and habitats\n\nmedia-team/\n\nProfessional photography from our media team\nunderwater/: Underwater imagery of marine environments\ntopside: Aerial and landscape documentation\npeople: Human elements including team and communities\n\nfield-edit/\n\nExpedition video produced by the media team\n\n\n\n\nreports/\nExpedition outputs for different audiences:\n\nscience/\n\nComprehensive scientific report\nTwo-page expedition summary\n\noutreach/\n\nCommunity and stakeholder reports\nPress materials\nStories from the expedition\n\nassets/\n\nHigh-resolution images, maps and figures (.pdf)\nPartner logos or branding materials\n\n\n\n\nOther Key Folders\n\nfigures/\n\nMaps showing expedition sites and spatial patterns in data\nData visualizations from analyses\n\nGIS/\n\nStores the GIS project files\n\npresentations/\n\nPre-expedition planning briefings\nPost-expedition event materials\nOther stakeholder and partner presentations\n\nreferences/\n\nRegional scientific literature\nDomain-specific research papers\nCultural and historical context",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -944,7 +944,7 @@
     "href": "collaborative-infra/drive.html#projects",
     "title": "Google Drive",
     "section": "Projects",
-    "text": "Projects\nThe projects folder houses focused research initiatives and scientific papers that advance our mission. These may span global, regional, or expedition-specific contexts. Projects are given unique descriptive names that reflect their focus and objectives.\n\n\n\n\n\n\nProject ID\n\n\n\nEach project uses a standardized folder naming convention:\nFormat: prj-[descriptive]-[name]\nExamples: prj-coral-resilience, prj-shark-migration, prj-seamount-biodiversity\n\n\n\nStructure\nA typical project structure contains the following folders:\nprojects/\n└── prj-[descriptive]-[name]/\n    ├── data/              # Project data (may link to but not copy expedition data)\n    ├── documents/         # Reference documents, meeting notes,\n    ├── figures/           # Plots, maps, visualizations\n    └── presentations/     # Project presentations\n\n\n\n\n\n\nGitHub Integration\n\n\n\n\nCode Management Policy\nAll code and scripts must be stored exclusively in GitHub repositories, never in Google Drive.\n\nDrive: Documents, data, media, and presentations\nGitHub: All code, scripts, and computational workflows\n\n\n\nRepository Naming Conventions\n\nExpeditions: exp-[iso3]-[year] (e.g., exp-mdv-2024)\nProjects: prj-[descriptive]-[name] (e.g., prj-coral-resilience)\n\nThis clear separation ensures proper version control, enables code review, facilitates collaboration, and maintains the integrity of our scientific workflow.",
+    "text": "Projects\nThe projects folder houses focused research initiatives and scientific papers that advance our mission. These may span global, regional, or expedition-specific contexts. Projects are given unique descriptive names that reflect their focus and objectives.\n\n\n\n\n\n\nProject ID\n\n\n\nEach project uses a standardized folder naming convention:\nFormat: prj-[descriptive]-[name]\nExamples: prj-SLI-resilience, prj-cachalote, prj-hawaii-lwr\n\n\n\nStructure\nA typical project structure contains the following folders:\nprojects/\n└── prj-[descriptive]-[name]/\n    ├── data/              # Project data (may link to but not copy expedition data)\n    ├── documents/         # Reference documents, meeting notes,\n    ├── figures/           # Plots, maps, visualizations\n    └── presentations/     # Project presentations\n\n\n\n\n\n\nGitHub Integration\n\n\n\n\nCode Management Policy\nAll code and scripts must be stored exclusively in GitHub repositories, never in Google Drive.\n\nDrive: Documents, data, media, and presentations\nGitHub: All code, scripts, and computational workflows\n\n\n\nRepository Naming Conventions\n\nExpeditions: exp-[iso3]-[year] (e.g., exp-MDV-2023)\nProjects: prj-[descriptive]-[name] (e.g., prj-cachalote)\n\nThis clear separation ensures proper version control, enables code review, facilitates collaboration, and maintains the integrity of our scientific workflow.",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -1129,6 +1129,162 @@
       "Home",
       "Collaborative Infrastructure",
       "Google Drive"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/github.html#github-workflow-with-r",
+    "href": "collaborative-infra/github.html#github-workflow-with-r",
+    "title": "GitHub",
+    "section": "GitHub Workflow with R",
+    "text": "GitHub Workflow with R\nOur team primarily interacts with GitHub through RStudio, following the principles outlined in Jenny Bryan’s “Happy Git with R” (happygitwithr.com). This approach simplifies version control while maintaining scientific rigor.\n\nBasic Git Workflow in RStudio\n\n\n\n\n\ngraph LR\n    A[Clone Repository] --&gt; B[Make Changes]\n    B --&gt; C[Stage Changes]\n    C --&gt; D[Commit Changes]\n    D --&gt; E[Pull]\n    E --&gt; F[Push]\n    style F fill:#d8f3dc,stroke:#95d5b2\n\n\n\n\n\n\nThe fundamental GitHub workflow for our team involves these key steps:\n\nClone: Create a local copy of the repository\n\nIn RStudio: File → New Project → Version Control → Git\nEnter repository URL: https://github.com/pristine-seas/repository-name.git\n\nMake Changes: Edit scripts, add analyses, or improve documentation\nStage: Select which changes to include in your commit\n\nIn RStudio: Use the Git pane to check boxes next to changed files\n\nCommit: Save your changes with a clear, descriptive message\n\nIn RStudio: Click “Commit” in the Git pane\nWrite a meaningful commit message that describes what you changed and why\n\nPull: Incorporate any changes others have made\n\nIn RStudio: Click “Pull” in the Git pane\nAddress any conflicts if they arise\n\nPush: Share your changes with the team\n\nIn RStudio: Click “Push” in the Git pane",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/github.html#getting-started-with-git-and-r",
+    "href": "collaborative-infra/github.html#getting-started-with-git-and-r",
+    "title": "GitHub",
+    "section": "Getting Started with Git and R",
+    "text": "Getting Started with Git and R\nNew team members should start with Jenny Bryan’s “Happy Git with R” guide, which is the definitive resource for R users working with Git:\n\n\n\n\n\n\nEssential Resources\n\n\n\n\nHappy Git and GitHub for the useR - Our primary reference\nInternal training sessions (see edu-r-training repository)\nTeam Slack #github-help channel for specific questions\n\n\n\n\nInitial Setup\nComplete these essential steps (detailed in Happy Git with R):\n\nInstall Git: Set up Git on your computer\nConnect Git and GitHub: Configure your username and credentials\nConnect RStudio to Git: Ensure RStudio can find your Git installation\nCache credentials: Set up a credential helper so you don’t need to authenticate repeatedly\n\n\n\nFirst-Time Repository Setup\nFor a new expedition or project:\n\nCreate repository on GitHub (typically done by team lead)\nClone repository in RStudio\nSet up project structure (use our template repository)\nCreate initial .gitignore file (include data directories)\nMake first commit and push",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/github.html#organization-structure",
+    "href": "collaborative-infra/github.html#organization-structure",
+    "title": "GitHub",
+    "section": "Organization Structure",
+    "text": "Organization Structure\nThe Pristine Seas Science Team maintains a dedicated GitHub organization (pristine-seas) that houses all our code repositories, documentation, and analytical frameworks.\n\nRepository Types\nOur repositories fall into three main categories, each with specific naming conventions and purposes:\n\n\n\n\n\n\nExpedition Repositories\n\n\n\nNaming convention: exp-[ISO3]-[YEAR]\nPurpose: Code associated with an expedition, including data processing pipelines, analysis scripts, and report generation.\nExamples:\n\nexp-PNG-2024 (Papua New Guinea 2024)\nexp-COL-2022 (Colombia 2022)\nexp-GAB-2023 (Gabon 2023)\n\n\n\n\n\n\n\n\n\nProject Repositories\n\n\n\nNaming convention: prj-[Short-name]-[descriptor]\nPurpose: Code for research projects, thematic analyses, scientific papers, and curiosities.\nExamples:\n\nprj-Cyprus-trawling (Trawling impact analysis)\nprj-scandola-algae (Mediterranean algae study)\nprj-global-sharks (Global shark abundance patterns)\n\n\n\n\n\n\n\n\n\nCore Infrastructure Repositories\n\n\n\nNaming convention: Descriptive names\nPurpose: Central tools, packages, and resources.\nExamples:\n\nscience-sop (This Standard Operating Procedures documentation)\nlegacy-db (Legacy database build)\nPristineSeasR (Pristine Seas R package)\npristine-seas.github.io (Science Team website)",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/github.html#getting-help",
+    "href": "collaborative-infra/github.html#getting-help",
+    "title": "GitHub",
+    "section": "Getting Help",
+    "text": "Getting Help\nTeam members can get GitHub assistance through:\n\nThe #github-help channel in the team Slack\nHappy Git with R’s Troubleshooting chapter\nDirect mentoring from experienced team members",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/github.html#quarto-documents-for-reproducible-research",
+    "href": "collaborative-infra/github.html#quarto-documents-for-reproducible-research",
+    "title": "GitHub",
+    "section": "Quarto Documents for Reproducible Research",
+    "text": "Quarto Documents for Reproducible Research\nOur workflow heavily leverages Quarto documents (.qmd files) as the foundation for reproducible research. Quarto combines narrative text, code, and visualizations in a single document that serves as both lab notebook and reproducible pipeline.\n\nWhy We Use Quarto\nQuarto documents offer several advantages for scientific workflows:\n\nCode and narrative integration: Seamlessly mix text with executable R code\nReproducibility: Anyone can re-run analyses and get identical results\nSelf-documentation: Methods are explicitly documented alongside the code\nMultiple output formats: Generate HTML, PDF, Word, or presentations from the same source\nVersion control friendly: Text-based format works well with Git\n\n\n\nQuarto in Our Repository Structure\nOur expedition repositories are organized around two main types of Quarto documents:\n\nPipeline documents (pipeline/ folder):\n\nLinear processing workflows from raw data to analysis-ready datasets\nEmphasize data cleaning, validation, and transformation\nEach document focuses on a specific data stream (benthic, fish, etc.)\nFinal output is typically data tables ready for database ingestion\n\nExploratory Data Analysis (EDA) documents (eda/ folder):\n\nScientific analysis of processed data\nFocus on visualization, statistical testing, and interpretation\nOften include publication-quality figures\nCan be method-specific or integrate across multiple methods",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/github.html#embracing-a-reproducibility-mindset",
+    "href": "collaborative-infra/github.html#embracing-a-reproducibility-mindset",
+    "title": "GitHub",
+    "section": "Embracing a Reproducibility Mindset",
+    "text": "Embracing a Reproducibility Mindset\nReproducibility is fundamental to scientific integrity and is a core value of the Pristine Seas Science Team. Beyond just technical practices, it requires a specific mindset when approaching our work.\n\nKey Principles\n\nThink of your future self: Write code and documentation as if you’ll need to understand it months from now with no memory of what you did\nThink of your teammates: Assume someone else will need to use and understand your work without having you available to explain it\nDocumentation is not optional: Clear documentation is as important as the code itself\n\nDocument the “why” not just the “how”\nExplain analytical choices and their implications\nNote data quirks and handling decisions\n\nNo magic numbers: Any constant or parameter should be explained and defined at the top of scripts\nEmbrace iteration: Start with messy exploration, but refine toward reproducible pipelines\n\nInitial EDA can be exploratory\nFinal analyses should be structured as reproducible workflows\nImprove code as clarity emerges\n\n\n\n\nPractical Habits\n\nStart each analysis session by pulling the latest code\nCommit frequently with clear messages\nReview your own work before considering it final\nTest with fresh environments to ensure all dependencies are documented\nKeep raw data pristine and document all transformations",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/bigquery.html#database-architecture",
+    "href": "collaborative-infra/bigquery.html#database-architecture",
+    "title": "BigQuery",
+    "section": "Database Architecture",
+    "text": "Database Architecture\nThe Pristine Seas Science Database is organized around two major dataset groups that balance flexibility with consistency:\n\nMethod Datasets: Specific to each survey technique (UVS, BRUVS, eDNA, etc.)\nReference Datasets: Shared taxonomic, spatial, and lookup tables providing a unified backbone\n\n\nDatabase Organization\n\n\n\n\n\ngraph LR\n    %% Main project node\n    pristine[\"pristine-seas\"] \n    \n    %% First level - dataset categories\n    reference_group[\"Reference Datasets\"]\n    method_group[\"Method Datasets\"]\n    \n    %% Reference datasets\n    exp[\"expeditions/\"]\n    tax[\"taxonomy/\"]\n    look[\"lookup/\"]\n    \n    %% Method datasets\n    uvs[\"uvs/\"]\n    pbruv[\"pbruv/\"]\n    sbruv[\"sbruv/\"]\n    edna[\"edna/\"]\n    other[\"Other Methods...\"]\n       %% UVS tables\n    sites[\"sites\"]\n    stations[\"stations\"]\n    \n    %% Fish transect tables\n    blt_group[\"Fish Belt Transect Tables\"]\n    blt1[\"blt_stations\"]\n    blt2[\"blt_observations\"]\n    blt3[\"blt_biomass_by_taxa\"]\n    \n    %% LPI tables\n    lpi_group[\"Benthic LPI Tables\"]\n    lpi1[\"lpi_stations\"]\n    lpi2[\"lpi_counts\"]\n    lpi3[\"lpi_cover_by_taxa\"]\n    \n    %% Taxonomy tables\n    fish[\"fish\"]\n    benthos[\"benthos\"]\n    inverts[\"inverts\"]\n    \n    %% Expeditions tables\n    info[\"info\"]\n    exp_sites[\"sites\"]\n    \n    %% Connections\n    pristine --&gt; reference_group\n    pristine --&gt; method_group\n    \n    reference_group --&gt; exp\n    reference_group --&gt; tax\n    reference_group --&gt; look\n    \n    method_group --&gt; uvs\n    method_group --&gt; pbruv\n    method_group --&gt; sbruv\n    method_group --&gt; edna\n    method_group --&gt; other\n    \n    uvs --&gt; sites\n    uvs --&gt; stations\n    uvs --&gt; blt_group\n    uvs --&gt; lpi_group\n    \n    blt_group --&gt; blt1\n    blt_group --&gt; blt2\n    blt_group --&gt; blt3\n    \n    lpi_group --&gt; lpi1\n    lpi_group --&gt; lpi2\n    lpi_group --&gt; lpi3\n    \n    tax --&gt; fish\n    tax --&gt; benthos\n    tax --&gt; inverts\n    \n    exp --&gt; info\n    exp --&gt; exp_sites\n    \n    %% Styling with improved visibility and contrast\n    classDef root fill:#004165,color:#ffffff,stroke:#002e48,stroke-width:2px,rx:8,ry:8\n    classDef group fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,stroke-dasharray: 5 5,rx:5,ry:5\n    classDef refDataset fill:#d4edda,color:#000000,stroke:#28a745,stroke-width:2px,rx:8,ry:8\n    classDef methodDataset fill:#cce5ff,color:#000000,stroke:#0d6efd,stroke-width:2px,rx:8,ry:8\n    classDef table fill:#ffffff,color:#000000,stroke:#6c757d,stroke-width:1px,rx:3,ry:3\n    classDef tableGroup fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,rx:3,ry:3\n    \n    class pristine root\n    class reference_group,method_group group\n    class exp,tax,look refDataset\n    class uvs,pbruv,sbruv,edna,other methodDataset\n    class sites,stations,info,exp_sites,blt1,blt2,blt3,lpi1,lpi2,lpi3,fish,benthos,inverts table\n    class blt_group,lpi_group tableGroup\n\n\n\n\n\n\nFor the complete database documenation please refer to the Pristine Seas Database Documentation.\n\n\nCommon Dataset Structures\nEach method dataset follows a consistent pattern with tables organized into logical categories that support various analytical needs. This standardized structure enables efficient querying, cross-method integration, and reproducible science.\n\n\n\n\n\n\nStandard Table Types\n\n\n\n\nSite Tables (sites, [method]_sites)\n\nOne row per survey site or deployment\nContains geographic coordinates, habitat descriptions, and sampling context\nLinks to the shared expeditions.sites table for spatial hierarchy\n\nStation Tables ([method]_stations)\n\nOne row per sampling unit (e.g., depth strata, replicate)\nIncludes sampling parameters, environmental conditions, and method-specific metadata\nFunctions as the primary unit for analysis and comparison\n\nObservation Tables ([method]_observations)\n\nContains individual records (e.g., fish counts, benthic points, video annotations)\nStores raw QAQC’d ecological data with taxonomic identifications\n\nSummary Tables ([method]_[metric]_by_[dimension])\n\nAggregated analysis-ready metrics (e.g., biomass by species, cover by category)\nPre-calculated to standardize common analytical outputs\nEnables efficient cross-site and cross-method comparisons",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "BigQuery"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/bigquery.html#data-flow-from-field-to-database",
+    "href": "collaborative-infra/bigquery.html#data-flow-from-field-to-database",
+    "title": "BigQuery",
+    "section": "Data Flow: From Field to Database",
+    "text": "Data Flow: From Field to Database\nThe integration of expedition data into BigQuery follows a standardized workflow that ensures data quality and consistency:\n\nField to Database Pipeline\n\n\n\n\n\ngraph LR\n    A[Field Collection] --&gt; B[Validation]\n    B --&gt; C[Storage on NAS]\n    C --&gt; D[Backup to Drive]\n    D --&gt; E[GitHub Pipeline]\n    E --&gt; F[QA/QC Checks]\n    F --&gt; G[BigQuery Ingestion]\n    G --&gt; H[Analysis-Ready Data]\n    \n    style A fill:#f8f9fa,stroke:#495057\n    style B fill:#f8f9fa,stroke:#495057\n    style C fill:#f8f9fa,stroke:#495057\n    style D fill:#e3f2fd,stroke:#1976d2\n    style E fill:#e8f5e9,stroke:#2e7d32\n    style F fill:#e8f5e9,stroke:#2e7d32\n    style G fill:#e3f2fd,stroke:#1976d2\n    style H fill:#e3f2fd,stroke:#1976d2\n\n\n\n\n\n\n\nProcess Steps\n\nField Collection: Researchers collect data using standardized methods and record in digital fieldbooks\nInitial Validation: Field-level data checks ensure completeness and basic quality\nNAS Storage: All expedition data is securely stored on the ship’s Network Attached Storage\nGoogle Drive Backup: Post-expedition, data is organized and backed up to Google Drive\nGitHub Pipeline Processing: Each method’s data undergoes standardized processing via code in expedition repositories\nQuality Assurance: Automated and manual checks verify data integrity and ecological plausibility\nDatabase Ingestion: Processed data is ingested into the appropriate BigQuery tables\nAnalysis: Data becomes available for standardized analysis workflows",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "BigQuery"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/bigquery.html#accessing-and-using-the-database",
+    "href": "collaborative-infra/bigquery.html#accessing-and-using-the-database",
+    "title": "BigQuery",
+    "section": "Accessing and Using the Database",
+    "text": "Accessing and Using the Database\nThe Pristine Seas Science Database is designed to be accessible through multiple interfaces, with R being our primary analysis environment.\nFor detailed database documentation, schemas, and comprehensive examples, refer to the Pristine Seas Database Documentation.\n\nAccess Management\nAccess to the Pristine Seas Science Database is managed through Google Cloud IAM:\n\nTeam Members: Full read access to all datasets\nCollaborators: Read access to specific datasets relevant to their work\nPartners: Access via shared exports or temporary read credentials\nPublic: Access to published, non-sensitive data via data packages\n\nTo request access, contact the database administrator with your Google account email and purpose.\n\n\nBest Practices\nWhen working with the Pristine Seas Science Database:\n\nMinimize data transfer: Filter data in BigQuery before collecting to R\nUse primary keys: Join tables using established keys (station_id, site_id)\nReproducible queries: Document your queries in Quarto documents\nAnalysis patterns: Build on established workflows in expedition repositories",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "BigQuery"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/bigquery.html#database-maintenance",
+    "href": "collaborative-infra/bigquery.html#database-maintenance",
+    "title": "BigQuery",
+    "section": "Database Maintenance",
+    "text": "Database Maintenance\nThe Pristine Seas Science Database is actively maintained to ensure data quality and accessibility:\n\nVersion Control\n\nMajor schema changes are versioned and documented\nLegacy data structures are preserved for backwards compatibility\nChanges are tracked in the pristine-seas/legacy-db repository\n\n\n\nQuality Control\n\nAutomated data validation checks run on ingestion\nTaxonomic and spatial hierarchies are constantly refined\nIssues can be reported via GitHub issues\n\n\n\nFuture Development\nThe database is continuously evolving to meet research needs:\n\nIntegration of climate and environmental layers\nEnhanced spatial analysis capabilities\nImproved performance for complex queries\nDevelopment of more user-friendly access tools\n\nFor detailed documentation on database structure, tables, and fields, please refer to the complete database documentation.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "BigQuery"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/bigquery.html#data-flow-field-to-database-pipeline",
+    "href": "collaborative-infra/bigquery.html#data-flow-field-to-database-pipeline",
+    "title": "BigQuery",
+    "section": "Data Flow: Field to Database Pipeline",
+    "text": "Data Flow: Field to Database Pipeline\nThe integration of expedition data into BigQuery follows a standardized workflow that ensures data quality and consistency:\n\n\n\n\n\nflowchart LR\n    subgraph Field[Field]\n        direction TB\n        A[Collection] --&gt; B[Validation]\n        B --&gt; C[Ship Storage]\n    end\n    \n    subgraph Process[Processing]\n        direction TB\n        D[Drive Backup] --&gt; E[Pipeline Processing]\n        E --&gt; F[Quality Control]\n    end\n    \n    subgraph Database[Database]\n        direction TB\n        G[BigQuery Ingestion] --&gt; H[Analysis-Ready Data]\n    end\n    \n    Field --&gt; Process\n    Process --&gt; Database\n    \n    classDef field fill:#004165,color:#ffffff,stroke-width:1px\n    classDef process fill:#8EBDC8,color:#000000,stroke-width:1px\n    classDef db fill:#E63946,color:#ffffff,stroke-width:1px\n    \n    class Field,A,B,C field\n    class Process,D,E,F process\n    class Database,G,H db\n\n\n\n\n\n\n\nProcess Steps\n\nField Collection: Researchers collect and record data using standardized methods and digital fieldbooks\nInitial Validation: Field-level data checks ensure completeness and quality\nNAS Storage: All expedition data is securely stored on the ship’s Network Attached Storage\nGoogle Drive Backup: Post-expedition, data is organized and backed up to Google Drive\nPipeline Processing: Each method’s data undergoes standardized processing via code in expedition repositories\nQuality Assurance: Automated and manual checks verify data integrity\nDatabase Ingestion: Processed data is ingested into the appropriate BigQuery tables\nAnalysis: Data becomes available for standardized analysis workflows",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "BigQuery"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/bigquery.html#access-and-use",
+    "href": "collaborative-infra/bigquery.html#access-and-use",
+    "title": "BigQuery",
+    "section": "Access and Use",
+    "text": "Access and Use\nThe Pristine Seas Science Database is designed to be accessible through multiple interfaces.\n\nRstudio\nThe most common way to interact with our BigQuery database is through R, using the familiar tidyverse workflow.\n\nEstablishing a Connection\nSetting up a connection is straightforward:\n\n# Load required packages\nlibrary(DBI)\nlibrary(bigrquery)\nlibrary(tidyverse)\n\n# Create a database connection\nbq_connection &lt;- DBI::dbConnect(bigrquery::bigquery(),\n                      project = \"pristine-seas\",\n                      billing = \"pristine-seas\")\n\nThis code establishes a connection to the entire database, allowing you to explore datasets and tables directly from the Connections pane in RStudio. The first time you run this code, you’ll be prompted to authenticate with your Google account.\n\n\nUsing dplyr Verbs\nThe real power comes from using familiar dplyr verbs directly with BigQuery tables—no SQL knowledge required:\n\ndf &lt;- tbl(bq_connection, \"taxonomy.fish\") |&gt; \n  group_by(family, genus) |&gt; \n  summarize(n_taxa = n_distinct(accepted_aphia_id),\n            .groups = \"drop\") |&gt; \n  arrange(desc(n_taxa)) |&gt; \n  head(30) |&gt; \n  collect()\n  \ndf |&gt; \n  ggplot()+\n  geom_col(aes(x = fct_reorder(family, n_taxa, sum), \n               y = n_taxa, \n               fill = genus), \n           show.legend = T)+\n  theme_minimal()+\n  coord_flip()+\n  labs(x = \"\", y = \"# Distinct Taxa\", fill = \"\",\n       title = \"Number of fish taxa in taxonomy.fish table\",\n       subtitle = \"By family and genus\")+\n  paletteer::scale_fill_paletteer_d(\"ggsci::default_igv\")\n\n\n\n\n\n\n\n\nWhat makes this approach powerful:\n\nBigQuery does the heavy lifting – All filtering, grouping, and summarizing happens in the database\nOnly results are transferred – Data never loads into memory until you call collect()\nFamiliar syntax – The same dplyr verbs you already use with local data frames\nReadable code – Complex queries expressed in clean, maintainable R code\n\n\n\n\nGoogle BigQuery Console\nThe database can also be accessed directly through the Google BigQuery Console:\n\nVisit console.cloud.google.com/bigquery\nNavigate to the pristine-seas project\nUse the query editor to write and execute SQL queries\nExplore tables, schemas, and query history\n\nThe console provides a user-friendly interface for exploring table structures, examining data samples, and running ad-hoc queries without writing code.\n\n\nAccess Management\nAccess to the Pristine Seas Science Database is managed through Google Cloud IAM:\n\nTeam Members: Full read access to all datasets\nCollaborators: Read access to specific datasets relevant to their work\nPartners: Access via shared exports or temporary read credentials\nPublic: Access to published, non-sensitive data via data packages (still TBD)\n\nTo request access, contact the database administrator with your Google account email and purpose.\n\n\nBest Practices\nWhen working with the Pristine Seas Science Database:\n\nMinimize data transfer: Filter data in BigQuery before collecting to R\nUse primary keys: Join tables using established keys (ps_station_id, ps_site_id)\nReproducible queries: Document your queries in Quarto documents\nAnalysis patterns: Build on established workflows in expedition repositories",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "BigQuery"
+    ]
+  },
+  {
+    "objectID": "collaborative-infra/bigquery.html#maintenance",
+    "href": "collaborative-infra/bigquery.html#maintenance",
+    "title": "BigQuery",
+    "section": "Maintenance",
+    "text": "Maintenance\nThe Pristine Seas Science Database is actively being developed and continously improved to meet the needs of our team.",
+    "crumbs": [
+      "Home",
+      "Collaborative Infrastructure",
+      "BigQuery"
     ]
   }
 ]

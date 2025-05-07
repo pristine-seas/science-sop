@@ -1,21 +1,349 @@
 ---
 title: "BigQuery"
+subtitle: "Centralized database for integrated expedition data"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(gt)
+```
 
 ## Overview
 
-BigQuery serves as our centralized database for integrated expedition data.
+The Pristine Seas Science Database is a centralized, modular system hosted in Google BigQuery that serves as the foundation of our data management infrastructure. This system integrates ecological data collected across more than a decade of scientific expeditions, supporting high-integrity, reproducible research on marine biodiversity and informing global ocean conservation policy.
 
-## Data Structure
+#### Why BigQuery?
 
-- Organized by research method and expedition
-- Standardized schema across expeditions
-- Consistent field naming conventions
+Google BigQuery offers several advantages for marine ecological data:
 
-## Workflow
+  - Scalability: Handles our growing dataset spanning 40+ expeditions without performance degradation
+  - Integration: Seamlessly connects with our R-based analysis workflows
+  - Collaboration: Enables standardized access across our distributed research team
+  - Future-proofing: Provides a robust platform that can evolve with our research needs
 
-- Data collection in the field
-- Initial processing and validation
-- Import to BigQuery tables
-- Integration with R for analysis
-- Export for reporting and visualization
+Note: BigQuery is were Global Fishing Watch data lives and we have access to the raw backend data. 
+
+#### FAIR Data Principles
+
+Our database implementation adheres to the FAIR data principles:
+
+::: {.grid}
+::: {.g-col-3}
+#### Findable
+- Unique and unified IDs
+- WoRMS-linked taxonomy
+- Consistent spatial hierarchy
+:::
+
+::: {.g-col-3}
+#### Accessible
+- Query-ready BigQuery tables
+- Controlled access and permissions
+- Varied connection options
+:::
+
+::: {.g-col-3}
+#### Interoperable
+- Spatial reference system
+- Harmonized taxonomic backbone
+- Consistent units (cm, g, m²)
+:::
+
+::: {.g-col-3}
+#### Reusable
+- Comprehensive metadata
+- Reproducible code
+- Clear provenance6
+:::
+:::
+
+## Database Architecture
+
+The Pristine Seas Science Database is organized around two major dataset groups that balance flexibility with consistency:
+
+1. **Method Datasets**: Specific to each survey technique (UVS, BRUVS, eDNA, etc.)
+2. **Reference Datasets**: Shared taxonomic, spatial, and lookup tables providing a unified backbone
+
+### Database Organization
+
+```{mermaid}
+graph LR
+    %% Main project node
+    pristine["pristine-seas"] 
+    
+    %% First level - dataset categories
+    reference_group["Reference Datasets"]
+    method_group["Method Datasets"]
+    
+    %% Reference datasets
+    exp["expeditions/"]
+    tax["taxonomy/"]
+    look["lookup/"]
+    
+    %% Method datasets
+    uvs["uvs/"]
+    pbruv["pbruv/"]
+    sbruv["sbruv/"]
+    edna["edna/"]
+    other["Other Methods..."]
+       %% UVS tables
+    sites["sites"]
+    stations["stations"]
+    
+    %% Fish transect tables
+    blt_group["Fish Belt Transect Tables"]
+    blt1["blt_stations"]
+    blt2["blt_observations"]
+    blt3["blt_biomass_by_taxa"]
+    
+    %% LPI tables
+    lpi_group["Benthic LPI Tables"]
+    lpi1["lpi_stations"]
+    lpi2["lpi_counts"]
+    lpi3["lpi_cover_by_taxa"]
+    
+    %% Taxonomy tables
+    fish["fish"]
+    benthos["benthos"]
+    inverts["inverts"]
+    
+    %% Expeditions tables
+    info["info"]
+    exp_sites["sites"]
+    
+    %% Connections
+    pristine --> reference_group
+    pristine --> method_group
+    
+    reference_group --> exp
+    reference_group --> tax
+    reference_group --> look
+    
+    method_group --> uvs
+    method_group --> pbruv
+    method_group --> sbruv
+    method_group --> edna
+    method_group --> other
+    
+    uvs --> sites
+    uvs --> stations
+    uvs --> blt_group
+    uvs --> lpi_group
+    
+    blt_group --> blt1
+    blt_group --> blt2
+    blt_group --> blt3
+    
+    lpi_group --> lpi1
+    lpi_group --> lpi2
+    lpi_group --> lpi3
+    
+    tax --> fish
+    tax --> benthos
+    tax --> inverts
+    
+    exp --> info
+    exp --> exp_sites
+    
+    %% Styling with improved visibility and contrast
+    classDef root fill:#004165,color:#ffffff,stroke:#002e48,stroke-width:2px,rx:8,ry:8
+    classDef group fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,stroke-dasharray: 5 5,rx:5,ry:5
+    classDef refDataset fill:#d4edda,color:#000000,stroke:#28a745,stroke-width:2px,rx:8,ry:8
+    classDef methodDataset fill:#cce5ff,color:#000000,stroke:#0d6efd,stroke-width:2px,rx:8,ry:8
+    classDef table fill:#ffffff,color:#000000,stroke:#6c757d,stroke-width:1px,rx:3,ry:3
+    classDef tableGroup fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,rx:3,ry:3
+    
+    class pristine root
+    class reference_group,method_group group
+    class exp,tax,look refDataset
+    class uvs,pbruv,sbruv,edna,other methodDataset
+    class sites,stations,info,exp_sites,blt1,blt2,blt3,lpi1,lpi2,lpi3,fish,benthos,inverts table
+    class blt_group,lpi_group tableGroup
+```
+
+For the complete database documenation please refer to the [Pristine Seas Database Documentation](https://pristine-seas.github.io/legacy-db/).
+
+### Common Dataset Structures
+
+Each method dataset follows a consistent pattern with tables organized into logical categories that support various analytical needs. This standardized structure enables efficient querying, cross-method integration, and reproducible science.
+
+::: {.callout-note appearance="simple"}
+## Standard Table Types
+
+- **Site Tables** (`sites`, `[method]_sites`)
+  - One row per survey site or deployment
+  - Contains geographic coordinates, habitat descriptions, and sampling context
+  - Links to the shared `expeditions.sites` table for spatial hierarchy
+  
+- **Station Tables** (`[method]_stations`)
+  - One row per sampling unit (e.g., depth strata, replicate)
+  - Includes sampling parameters, environmental conditions, and method-specific metadata
+  - Functions as the primary unit for analysis and comparison
+  
+- **Observation Tables** (`[method]_observations`)
+  - Contains individual records (e.g., fish counts, benthic points, video annotations)
+  - Stores raw QAQC'd ecological data with taxonomic identifications
+
+- **Summary Tables** (`[method]_[metric]_by_[dimension]`)
+  - Aggregated analysis-ready metrics (e.g., biomass by species, cover by category)
+  - Pre-calculated to standardize common analytical outputs
+  - Enables efficient cross-site and cross-method comparisons
+:::
+
+
+## Data Flow: Field to Database Pipeline
+
+The integration of expedition data into BigQuery follows a standardized workflow that ensures data quality and consistency:
+
+```{mermaid}
+flowchart LR
+    subgraph Field[Field]
+        direction TB
+        A[Collection] --> B[Validation]
+        B --> C[Ship Storage]
+    end
+    
+    subgraph Process[Processing]
+        direction TB
+        D[Drive Backup] --> E[Pipeline Processing]
+        E --> F[Quality Control]
+    end
+    
+    subgraph Database[Database]
+        direction TB
+        G[BigQuery Ingestion] --> H[Analysis-Ready Data]
+    end
+    
+    Field --> Process
+    Process --> Database
+    
+    classDef field fill:#004165,color:#ffffff,stroke-width:1px
+    classDef process fill:#8EBDC8,color:#000000,stroke-width:1px
+    classDef db fill:#E63946,color:#ffffff,stroke-width:1px
+    
+    class Field,A,B,C field
+    class Process,D,E,F process
+    class Database,G,H db
+```
+
+#### Process Steps
+
+1. **Field Collection**: Researchers collect and record data using standardized methods and digital fieldbooks
+2. **Initial Validation**: Field-level data checks ensure completeness and quality
+3. **NAS Storage**: All expedition data is securely stored on the ship's Network Attached Storage
+4. **Google Drive Backup**: Post-expedition, data is organized and backed up to Google Drive
+5. **Pipeline Processing**: Each method's data undergoes standardized processing via code in expedition repositories
+6. **Quality Assurance**: Automated and manual checks verify data integrity
+7. **Database Ingestion**: Processed data is ingested into the appropriate BigQuery tables
+8. **Analysis**: Data becomes available for standardized analysis workflows
+
+## Access and Use
+
+The Pristine Seas Science Database is designed to be accessible through multiple interfaces.
+
+### Rstudio
+
+The most common way to interact with our BigQuery database is through R, using the familiar tidyverse workflow.
+
+#### Establishing a Connection
+
+Setting up a connection is straightforward:
+
+```{r include = T, eval = T, echo = T, code-fold: false}
+#| code-fold: false
+# Load required packages
+library(DBI)
+library(bigrquery)
+library(tidyverse)
+
+# Create a database connection
+bq_connection <- DBI::dbConnect(bigrquery::bigquery(),
+                      project = "pristine-seas",
+                      billing = "pristine-seas")
+```
+
+This code establishes a connection to the entire database, allowing you to explore datasets and tables directly from the **Connections** pane in RStudio. The first time you run this code, you'll be prompted to authenticate with your Google account.
+ 
+#### Using dplyr Verbs
+
+The real power comes from using familiar dplyr verbs directly with BigQuery tables—no SQL knowledge required:
+
+```{r include = T, eval = T, echo = T}
+#| code-fold: false
+
+df <- tbl(bq_connection, "taxonomy.fish") |> 
+  group_by(family, genus) |> 
+  summarize(n_taxa = n_distinct(accepted_aphia_id),
+            .groups = "drop") |> 
+  arrange(desc(n_taxa)) |> 
+  head(30) |> 
+  collect()
+  
+df |> 
+  ggplot()+
+  geom_col(aes(x = fct_reorder(family, n_taxa, sum), 
+               y = n_taxa, 
+               fill = genus), 
+           show.legend = T)+
+  theme_minimal()+
+  coord_flip()+
+  labs(x = "", y = "# Distinct Taxa", fill = "",
+       title = "Number of fish taxa in taxonomy.fish table",
+       subtitle = "By family and genus")+
+  paletteer::scale_fill_paletteer_d("ggsci::default_igv")
+```
+
+What makes this approach powerful:
+
+1. **BigQuery does the heavy lifting** – All filtering, grouping, and summarizing happens in the database
+2. **Only results are transferred** – Data never loads into memory until you call `collect()`
+3. **Familiar syntax** – The same dplyr verbs you already use with local data frames
+4. **Readable code** – Complex queries expressed in clean, maintainable R code
+
+
+### Google BigQuery Console
+
+The database can also be accessed directly through the Google BigQuery Console:
+
+1. Visit [console.cloud.google.com/bigquery](https://console.cloud.google.com/bigquery)
+2. Navigate to the `pristine-seas` project
+3. Use the query editor to write and execute SQL queries
+4. Explore tables, schemas, and query history
+
+The console provides a user-friendly interface for exploring table structures, examining data samples, and running ad-hoc queries without writing code.
+
+### Access Management
+
+Access to the Pristine Seas Science Database is managed through Google Cloud IAM:
+
+- **Team Members**: Full read access to all datasets
+- **Collaborators**: Read access to specific datasets relevant to their work
+- **Partners**: Access via shared exports or temporary read credentials
+- **Public**: Access to published, non-sensitive data via data packages (still TBD)
+
+To request access, contact the database administrator with your Google account email and purpose.
+
+### Best Practices
+
+When working with the Pristine Seas Science Database:
+
+1. **Minimize data transfer**: Filter data in BigQuery before collecting to R
+2. **Use primary keys**: Join tables using established keys (`ps_station_id`, `ps_site_id`)
+3. **Reproducible queries**: Document your queries in Quarto documents
+4. **Analysis patterns**: Build on established workflows in expedition repositories
+
+## Maintenance
+
+The Pristine Seas Science Database is actively being developed and continously improved to meet the needs of our team. 

@@ -100,6 +100,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../assets/css/pristine_seas.css">
@@ -397,9 +400,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#core-github-benefits" id="toc-core-github-benefits" class="nav-link" data-scroll-target="#core-github-benefits">Core GitHub Benefits</a></li>
+  </ul></li>
+  <li><a href="#organization-structure" id="toc-organization-structure" class="nav-link" data-scroll-target="#organization-structure">Organization Structure</a>
+  <ul class="collapse">
+  <li><a href="#repository-types" id="toc-repository-types" class="nav-link" data-scroll-target="#repository-types">Repository Types</a></li>
+  </ul></li>
   <li><a href="#repository-structure" id="toc-repository-structure" class="nav-link" data-scroll-target="#repository-structure">Repository Structure</a></li>
-  <li><a href="#basic-workflow" id="toc-basic-workflow" class="nav-link" data-scroll-target="#basic-workflow">Basic Workflow</a></li>
+  <li><a href="#github-workflow-with-r" id="toc-github-workflow-with-r" class="nav-link" data-scroll-target="#github-workflow-with-r">GitHub Workflow with R</a>
+  <ul class="collapse">
+  <li><a href="#basic-git-workflow-in-rstudio" id="toc-basic-git-workflow-in-rstudio" class="nav-link" data-scroll-target="#basic-git-workflow-in-rstudio">Basic Git Workflow in RStudio</a></li>
+  </ul></li>
+  <li><a href="#quarto-documents-for-reproducible-research" id="toc-quarto-documents-for-reproducible-research" class="nav-link" data-scroll-target="#quarto-documents-for-reproducible-research">Quarto Documents for Reproducible Research</a>
+  <ul class="collapse">
+  <li><a href="#why-we-use-quarto" id="toc-why-we-use-quarto" class="nav-link" data-scroll-target="#why-we-use-quarto">Why We Use Quarto</a></li>
+  <li><a href="#quarto-in-our-repository-structure" id="toc-quarto-in-our-repository-structure" class="nav-link" data-scroll-target="#quarto-in-our-repository-structure">Quarto in Our Repository Structure</a></li>
+  </ul></li>
+  <li><a href="#embracing-a-reproducibility-mindset" id="toc-embracing-a-reproducibility-mindset" class="nav-link" data-scroll-target="#embracing-a-reproducibility-mindset">Embracing a Reproducibility Mindset</a>
+  <ul class="collapse">
+  <li><a href="#key-principles" id="toc-key-principles" class="nav-link" data-scroll-target="#key-principles">Key Principles</a></li>
+  <li><a href="#practical-habits" id="toc-practical-habits" class="nav-link" data-scroll-target="#practical-habits">Practical Habits</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pristine-seas/sop/edit/main/collaborative-infra/github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pristine-seas/sop/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -409,6 +432,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../collaborative-infra/index.html">Collaborative Infrastructure</a></li><li class="breadcrumb-item"><a href="../collaborative-infra/github.html">GitHub</a></li></ol></nav>
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">GitHub</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Version control and collaborative coding</p>
 </div>
 
 
@@ -427,29 +451,249 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Each expedition and project has its own GitHub repository for code and analysis.</p>
+<p>GitHub serves as the foundation of our code management system, providing robust version control, collaborative workflows, and reproducible research capabilities. This central platform enables the Pristine Seas Science Team to maintain high standards of scientific rigor and transparency while facilitating efficient collaboration across our distributed team.</p>
+<section id="core-github-benefits" class="level3">
+<h3 class="anchored" data-anchor-id="core-github-benefits">Core GitHub Benefits</h3>
+<ul>
+<li><strong>Version control</strong>: Track changes over time with complete history</li>
+<li><strong>Collaboration</strong>: Multiple scientists can contribute to the same codebase</li>
+<li><strong>Reproducibility</strong>: Code tied to specific analyses or expeditions is preserved exactly as used</li>
+<li><strong>Knowledge sharing</strong>: Public repositories make methods transparent to the broader scientific community</li>
+<li><strong>Quality control</strong>: Pull request review system ensures code quality and consistency</li>
+</ul>
+</section>
+</section>
+<section id="organization-structure" class="level2">
+<h2 class="anchored" data-anchor-id="organization-structure">Organization Structure</h2>
+<p>The Pristine Seas Science Team maintains a dedicated GitHub organization (<code>pristine-seas</code>) that houses all our code repositories, documentation, and analytical frameworks.</p>
+<section id="repository-types" class="level3">
+<h3 class="anchored" data-anchor-id="repository-types">Repository Types</h3>
+<p>Our repositories fall into three main categories, each with specific naming conventions and purposes:</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Expedition Repositories
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Naming convention</strong>: <code>exp-[ISO3]-[YEAR]</code></p>
+<p><strong>Purpose</strong>: Code associated with an expedition, including data processing pipelines, analysis scripts, and report generation.</p>
+<p><strong>Examples</strong>:</p>
+<ul>
+<li><code>exp-PNG-2024</code> (Papua New Guinea 2024)</li>
+<li><code>exp-COL-2022</code> (Colombia 2022)</li>
+<li><code>exp-GAB-2023</code> (Gabon 2023)</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Project Repositories
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Naming convention</strong>: <code>prj-[Short-name]-[descriptor]</code></p>
+<p><strong>Purpose</strong>: Code for research projects, thematic analyses, scientific papers, and curiosities.</p>
+<p><strong>Examples</strong>:</p>
+<ul>
+<li><code>prj-Cyprus-trawling</code> (Trawling impact analysis)</li>
+<li><code>prj-scandola-algae</code> (Mediterranean algae study)</li>
+<li><code>prj-global-sharks</code> (Global shark abundance patterns)</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Core Infrastructure Repositories
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Naming convention</strong>: Descriptive names</p>
+<p><strong>Purpose</strong>: Central tools, packages, and resources.</p>
+<p><strong>Examples</strong>:</p>
+<ul>
+<li><code>science-sop</code> (This Standard Operating Procedures documentation)</li>
+<li><code>legacy-db</code> (Legacy database build)</li>
+<li><code>PristineSeasR</code> (Pristine Seas R package)</li>
+<li><code>pristine-seas.github.io</code> (Science Team website)</li>
+</ul>
+</div>
+</div>
+</section>
 </section>
 <section id="repository-structure" class="level2">
 <h2 class="anchored" data-anchor-id="repository-structure">Repository Structure</h2>
+<p>Expedition repositories follow a standardized structure to ensure consistency and ease of navigation. This structure helps new team members quickly understand our workflow and facilitates efficient collaboration.</p>
+<pre><code>exp-[ISO3]-[YEAR]/
+├── .github/              # GitHub specific files (actions, templates)
+├── R/                    # R functions and utility scripts
+├── pipeline/             # Data processing pipelines
+│   ├── pipe_benthic.qmd    # Benthic data processing
+│   ├── pipe_fish.qmd       # Fish data processing
+│   ├── pipe_pbruv.qmd      # BRUVS data processing
+├── eda/                  # Exploratory data analysis
+│   ├── eda_lpi.qmd       # Benthic data analysis
+│   ├── eda_fish.qmd      # Fish data analysis
+│   └── eda_pbruv.qmd     # Pelagic BRUVS data analysis
+├── docs/                 # qmds are rendered here
+├── .gitignore            # Files to exclude from version control
+├── README.md             # Repository overview and instructions
+└── exp-[ISO3]-[YEAR].Rproj  # RStudio project file</code></pre>
+<p>Project and infrastructure repositories have flexible structures based on their specific needs, but should still maintain clear organization and documentation.</p>
+<div class="callout callout-style-simple callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Data Storage Guidelines
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>We do not store data in GitHub repositories.</strong> This is both a practical consideration (GitHub has file size limits) and a scientific best practice (data should be managed separately from code).</p>
+<p>Instead:</p>
 <ul>
-<li>One repository per expedition or project</li>
-<li>Standard directory structure for consistency</li>
-<li>README with expedition overview and key information</li>
+<li>Raw data is stored in Google Drive (see <a href="../collaborative-infra/drive.html">Google Drive</a> documentation)</li>
+<li>Processed data is stored in BigQuery (see <a href="../collaborative-infra/bigquery.html">BigQuery</a> documentation)</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="github-workflow-with-r" class="level2">
+<h2 class="anchored" data-anchor-id="github-workflow-with-r">GitHub Workflow with R</h2>
+<p>Our team primarily interacts with GitHub through RStudio, following the principles outlined in Jenny Bryan’s “Happy Git with R” (<a href="https://happygitwithr.com/">happygitwithr.com</a>). This approach simplifies version control while maintaining scientific rigor.</p>
+<section id="basic-git-workflow-in-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="basic-git-workflow-in-rstudio">Basic Git Workflow in RStudio</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    A[Clone Repository] --&gt; B[Make Changes]
+    B --&gt; C[Stage Changes]
+    C --&gt; D[Commit Changes]
+    D --&gt; E[Pull]
+    E --&gt; F[Push]
+    style F fill:#d8f3dc,stroke:#95d5b2
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>The fundamental GitHub workflow for our team involves these key steps:</p>
+<ol type="1">
+<li><p><strong>Clone</strong>: Create a local copy of the repository</p>
+<ul>
+<li>In RStudio: File → New Project → Version Control → Git</li>
+<li>Enter repository URL: <code>https://github.com/pristine-seas/repository-name.git</code></li>
+</ul></li>
+<li><p><strong>Make Changes</strong>: Edit scripts, add analyses, or improve documentation</p></li>
+<li><p><strong>Stage</strong>: Select which changes to include in your commit</p>
+<ul>
+<li>In RStudio: Use the Git pane to check boxes next to changed files</li>
+</ul></li>
+<li><p><strong>Commit</strong>: Save your changes with a clear, descriptive message</p>
+<ul>
+<li>In RStudio: Click “Commit” in the Git pane</li>
+<li>Write a meaningful commit message that describes what you changed and why</li>
+</ul></li>
+<li><p><strong>Pull</strong>: Incorporate any changes others have made</p>
+<ul>
+<li>In RStudio: Click “Pull” in the Git pane</li>
+<li>Address any conflicts if they arise</li>
+</ul></li>
+<li><p><strong>Push</strong>: Share your changes with the team</p>
+<ul>
+<li>In RStudio: Click “Push” in the Git pane</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="quarto-documents-for-reproducible-research" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-documents-for-reproducible-research">Quarto Documents for Reproducible Research</h2>
+<p>Our workflow heavily leverages Quarto documents (<code>.qmd</code> files) as the foundation for reproducible research. Quarto combines narrative text, code, and visualizations in a single document that serves as both lab notebook and reproducible pipeline.</p>
+<section id="why-we-use-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="why-we-use-quarto">Why We Use Quarto</h3>
+<p>Quarto documents offer several advantages for scientific workflows:</p>
+<ul>
+<li><strong>Code and narrative integration</strong>: Seamlessly mix text with executable R code</li>
+<li><strong>Reproducibility</strong>: Anyone can re-run analyses and get identical results</li>
+<li><strong>Self-documentation</strong>: Methods are explicitly documented alongside the code</li>
+<li><strong>Multiple output formats</strong>: Generate HTML, PDF, Word, or presentations from the same source</li>
+<li><strong>Version control friendly</strong>: Text-based format works well with Git</li>
 </ul>
 </section>
-<section id="basic-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="basic-workflow">Basic Workflow</h2>
+<section id="quarto-in-our-repository-structure" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-in-our-repository-structure">Quarto in Our Repository Structure</h3>
+<p>Our expedition repositories are organized around two main types of Quarto documents:</p>
+<ol type="1">
+<li><strong>Pipeline documents</strong> (<code>pipeline/</code> folder):
 <ul>
-<li>Clone the expedition repository</li>
-<li>Create branches for specific analyses</li>
-<li>Commit code with clear messages</li>
-<li>Create pull requests for review</li>
-<li>Merge approved changes</li>
+<li>Linear processing workflows from raw data to analysis-ready datasets</li>
+<li>Emphasize data cleaning, validation, and transformation</li>
+<li>Each document focuses on a specific data stream (benthic, fish, etc.)</li>
+<li>Final output is typically data tables ready for database ingestion</li>
+</ul></li>
+<li><strong>Exploratory Data Analysis (EDA) documents</strong> (<code>eda/</code> folder):
+<ul>
+<li>Scientific analysis of processed data</li>
+<li>Focus on visualization, statistical testing, and interpretation</li>
+<li>Often include publication-quality figures</li>
+<li>Can be method-specific or integrate across multiple methods</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="embracing-a-reproducibility-mindset" class="level2">
+<h2 class="anchored" data-anchor-id="embracing-a-reproducibility-mindset">Embracing a Reproducibility Mindset</h2>
+<p>Reproducibility is fundamental to scientific integrity and is a core value of the Pristine Seas Science Team. Beyond just technical practices, it requires a specific mindset when approaching our work.</p>
+<section id="key-principles" class="level3">
+<h3 class="anchored" data-anchor-id="key-principles">Key Principles</h3>
+<ol type="1">
+<li><p><strong>Think of your future self</strong>: Write code and documentation as if you’ll need to understand it months from now with no memory of what you did</p></li>
+<li><p><strong>Think of your teammates</strong>: Assume someone else will need to use and understand your work without having you available to explain it</p></li>
+<li><p><strong>Documentation is not optional</strong>: Clear documentation is as important as the code itself</p>
+<ul>
+<li>Document the “why” not just the “how”</li>
+<li>Explain analytical choices and their implications</li>
+<li>Note data quirks and handling decisions</li>
+</ul></li>
+<li><p><strong>No magic numbers</strong>: Any constant or parameter should be explained and defined at the top of scripts</p></li>
+<li><p><strong>Embrace iteration</strong>: Start with messy exploration, but refine toward reproducible pipelines</p>
+<ul>
+<li>Initial EDA can be exploratory</li>
+<li>Final analyses should be structured as reproducible workflows</li>
+<li>Improve code as clarity emerges</li>
+</ul></li>
+</ol>
+</section>
+<section id="practical-habits" class="level3">
+<h3 class="anchored" data-anchor-id="practical-habits">Practical Habits</h3>
+<ul>
+<li><strong>Start each analysis session by pulling</strong> the latest code</li>
+<li><strong>Commit frequently</strong> with clear messages</li>
+<li><strong>Review your own work</strong> before considering it final</li>
+<li><strong>Test with fresh environments</strong> to ensure all dependencies are documented</li>
+<li><strong>Keep raw data pristine</strong> and document all transformations</li>
 </ul>
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -911,27 +1155,227 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "GitHub"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Each expedition and project has its own GitHub repository for code and analysis.</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Repository Structure</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>One repository per expedition or project</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Standard directory structure for consistency</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>README with expedition overview and key information</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Basic Workflow</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Clone the expedition repository</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create branches for specific analyses</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Commit code with clear messages</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create pull requests for review</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Merge approved changes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "GitHub"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Version control and collaborative coding"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: right</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: false</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup}</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="in">#| include: false</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="in">library(here)</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="in">library(knitr)</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="in">library(gt)</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>GitHub serves as the foundation of our code management system, providing robust version control, collaborative workflows, and reproducible research capabilities. This central platform enables the Pristine Seas Science Team to maintain high standards of scientific rigor and transparency while facilitating efficient collaboration across our distributed team.</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="fu">### Core GitHub Benefits</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Version control**: Track changes over time with complete history</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Collaboration**: Multiple scientists can contribute to the same codebase</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Reproducibility**: Code tied to specific analyses or expeditions is preserved exactly as used</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Knowledge sharing**: Public repositories make methods transparent to the broader scientific community</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Quality control**: Pull request review system ensures code quality and consistency</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Organization Structure</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>The Pristine Seas Science Team maintains a dedicated GitHub organization (<span class="in">`pristine-seas`</span>) that houses all our code repositories, documentation, and analytical frameworks.</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="fu">### Repository Types</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>Our repositories fall into three main categories, each with specific naming conventions and purposes:</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal" icon=false}</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="fu">## Expedition Repositories</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>**Naming convention**: <span class="in">`exp-[ISO3]-[YEAR]`</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>**Purpose**: Code associated with an expedition, including data processing pipelines, analysis scripts, and report generation.</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>**Examples**: </span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`exp-PNG-2024`</span> (Papua New Guinea 2024)</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`exp-COL-2022`</span> (Colombia 2022)</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`exp-GAB-2023`</span> (Gabon 2023)</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal" icon=false}</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project Repositories</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>**Naming convention**: <span class="in">`prj-[Short-name]-[descriptor]`</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>**Purpose**: Code for research projects, thematic analyses, scientific papers, and curiosities.</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>**Examples**:</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`prj-Cyprus-trawling`</span> (Trawling impact analysis)</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`prj-scandola-algae`</span> (Mediterranean algae study)</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`prj-global-sharks`</span> (Global shark abundance patterns)</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal" icon=false}</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="fu">## Core Infrastructure Repositories</span></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>**Naming convention**: Descriptive names</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>**Purpose**: Central tools, packages, and resources.</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>**Examples**:</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`science-sop`</span> (This Standard Operating Procedures documentation)</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`legacy-db`</span> (Legacy database build)</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`PristineSeasR`</span> (Pristine Seas R package)</span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`pristine-seas.github.io`</span> (Science Team website)</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="fu">## Repository Structure</span></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>Expedition repositories follow a standardized structure to ensure consistency and ease of navigation. This structure helps new team members quickly understand our workflow and facilitates efficient collaboration.</span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="in">exp-[ISO3]-[YEAR]/</span></span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a><span class="in">├── .github/              # GitHub specific files (actions, templates)</span></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="in">├── R/                    # R functions and utility scripts</span></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a><span class="in">├── pipeline/             # Data processing pipelines</span></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── pipe_benthic.qmd    # Benthic data processing</span></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── pipe_fish.qmd       # Fish data processing</span></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── pipe_pbruv.qmd      # BRUVS data processing</span></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a><span class="in">├── eda/                  # Exploratory data analysis</span></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── eda_lpi.qmd       # Benthic data analysis</span></span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── eda_fish.qmd      # Fish data analysis</span></span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a><span class="in">│   └── eda_pbruv.qmd     # Pelagic BRUVS data analysis</span></span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="in">├── docs/                 # qmds are rendered here</span></span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a><span class="in">├── .gitignore            # Files to exclude from version control</span></span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a><span class="in">├── README.md             # Repository overview and instructions</span></span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a><span class="in">└── exp-[ISO3]-[YEAR].Rproj  # RStudio project file</span></span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a>Project and infrastructure repositories have flexible structures based on their specific needs, but should still maintain clear organization and documentation.</span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="simple"}</span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Storage Guidelines</span></span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a>**We do not store data in GitHub repositories.** This is both a practical consideration (GitHub has file size limits) and a scientific best practice (data should be managed separately from code).</span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a>Instead:</span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Raw data is stored in Google Drive (see <span class="co">[</span><span class="ot">Google Drive</span><span class="co">](drive.qmd)</span> documentation)</span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Processed data is stored in BigQuery (see <span class="co">[</span><span class="ot">BigQuery</span><span class="co">](bigquery.qmd)</span> documentation)</span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="fu">## GitHub Workflow with R</span></span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a>Our team primarily interacts with GitHub through RStudio, following the principles outlined in Jenny Bryan's "Happy Git with R" (<span class="co">[</span><span class="ot">happygitwithr.com</span><span class="co">](https://happygitwithr.com/)</span>). This approach simplifies version control while maintaining scientific rigor.</span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a><span class="fu">### Basic Git Workflow in RStudio</span></span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a><span class="in">graph LR</span></span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a><span class="in">    A[Clone Repository] --&gt; B[Make Changes]</span></span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a><span class="in">    B --&gt; C[Stage Changes]</span></span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a><span class="in">    C --&gt; D[Commit Changes]</span></span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a><span class="in">    D --&gt; E[Pull]</span></span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a><span class="in">    E --&gt; F[Push]</span></span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a><span class="in">    style F fill:#d8f3dc,stroke:#95d5b2</span></span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>The fundamental GitHub workflow for our team involves these key steps:</span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Clone**: Create a local copy of the repository</span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>In RStudio: File → New Project → Version Control → Git</span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Enter repository URL: <span class="in">`https://github.com/pristine-seas/repository-name.git`</span></span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Make Changes**: Edit scripts, add analyses, or improve documentation</span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Stage**: Select which changes to include in your commit</span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>In RStudio: Use the Git pane to check boxes next to changed files</span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Commit**: Save your changes with a clear, descriptive message</span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>In RStudio: Click "Commit" in the Git pane</span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Write a meaningful commit message that describes what you changed and why</span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Pull**: Incorporate any changes others have made</span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>In RStudio: Click "Pull" in the Git pane</span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Address any conflicts if they arise</span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**Push**: Share your changes with the team</span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>In RStudio: Click "Push" in the Git pane</span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a><span class="fu">## Quarto Documents for Reproducible Research</span></span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a>Our workflow heavily leverages Quarto documents (<span class="in">`.qmd`</span> files) as the foundation for reproducible research. Quarto combines narrative text, code, and visualizations in a single document that serves as both lab notebook and reproducible pipeline.</span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why We Use Quarto</span></span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a>Quarto documents offer several advantages for scientific workflows:</span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Code and narrative integration**: Seamlessly mix text with executable R code</span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Reproducibility**: Anyone can re-run analyses and get identical results</span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Self-documentation**: Methods are explicitly documented alongside the code</span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Multiple output formats**: Generate HTML, PDF, Word, or presentations from the same source</span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Version control friendly**: Text-based format works well with Git</span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a><span class="fu">### Quarto in Our Repository Structure</span></span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a>Our expedition repositories are organized around two main types of Quarto documents:</span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Pipeline documents** (<span class="in">`pipeline/`</span> folder):</span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Linear processing workflows from raw data to analysis-ready datasets</span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Emphasize data cleaning, validation, and transformation</span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Each document focuses on a specific data stream (benthic, fish, etc.)</span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Final output is typically data tables ready for database ingestion</span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Exploratory Data Analysis (EDA) documents** (<span class="in">`eda/`</span> folder):</span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Scientific analysis of processed data</span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Focus on visualization, statistical testing, and interpretation</span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Often include publication-quality figures</span>
+<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Can be method-specific or integrate across multiple methods</span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a><span class="fu">## Embracing a Reproducibility Mindset</span></span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a>Reproducibility is fundamental to scientific integrity and is a core value of the Pristine Seas Science Team. Beyond just technical practices, it requires a specific mindset when approaching our work.</span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a><span class="fu">### Key Principles</span></span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Think of your future self**: Write code and documentation as if you'll need to understand it months from now with no memory of what you did</span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Think of your teammates**: Assume someone else will need to use and understand your work without having you available to explain it</span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Documentation is not optional**: Clear documentation is as important as the code itself</span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Document the "why" not just the "how"</span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Explain analytical choices and their implications</span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Note data quirks and handling decisions</span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**No magic numbers**: Any constant or parameter should be explained and defined at the top of scripts</span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Embrace iteration**: Start with messy exploration, but refine toward reproducible pipelines</span>
+<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Initial EDA can be exploratory</span>
+<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Final analyses should be structured as reproducible workflows</span>
+<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Improve code as clarity emerges</span>
+<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a><span class="fu">### Practical Habits</span></span>
+<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Start each analysis session by pulling** the latest code</span>
+<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Commit frequently** with clear messages</span>
+<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Review your own work** before considering it final</span>
+<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Test with fresh environments** to ensure all dependencies are documented</span>
+<span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Keep raw data pristine** and document all transformations</span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

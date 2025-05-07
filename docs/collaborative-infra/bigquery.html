@@ -100,6 +100,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../assets/css/pristine_seas.css">
@@ -398,8 +401,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#data-structure" id="toc-data-structure" class="nav-link" data-scroll-target="#data-structure">Data Structure</a></li>
-  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a></li>
+  <li><a href="#database-architecture" id="toc-database-architecture" class="nav-link" data-scroll-target="#database-architecture">Database Architecture</a>
+  <ul class="collapse">
+  <li><a href="#database-organization" id="toc-database-organization" class="nav-link" data-scroll-target="#database-organization">Database Organization</a></li>
+  <li><a href="#common-dataset-structures" id="toc-common-dataset-structures" class="nav-link" data-scroll-target="#common-dataset-structures">Common Dataset Structures</a></li>
+  </ul></li>
+  <li><a href="#data-flow-field-to-database-pipeline" id="toc-data-flow-field-to-database-pipeline" class="nav-link" data-scroll-target="#data-flow-field-to-database-pipeline">Data Flow: Field to Database Pipeline</a></li>
+  <li><a href="#access-and-use" id="toc-access-and-use" class="nav-link" data-scroll-target="#access-and-use">Access and Use</a>
+  <ul class="collapse">
+  <li><a href="#rstudio" id="toc-rstudio" class="nav-link" data-scroll-target="#rstudio">Rstudio</a></li>
+  <li><a href="#google-bigquery-console" id="toc-google-bigquery-console" class="nav-link" data-scroll-target="#google-bigquery-console">Google BigQuery Console</a></li>
+  <li><a href="#access-management" id="toc-access-management" class="nav-link" data-scroll-target="#access-management">Access Management</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best Practices</a></li>
+  </ul></li>
+  <li><a href="#maintenance" id="toc-maintenance" class="nav-link" data-scroll-target="#maintenance">Maintenance</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pristine-seas/sop/edit/main/collaborative-infra/bigquery.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pristine-seas/sop/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -409,6 +424,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../collaborative-infra/index.html">Collaborative Infrastructure</a></li><li class="breadcrumb-item"><a href="../collaborative-infra/bigquery.html">BigQuery</a></li></ol></nav>
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">BigQuery</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Centralized database for integrated expedition data</p>
 </div>
 
 
@@ -427,25 +443,368 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>BigQuery serves as our centralized database for integrated expedition data.</p>
-</section>
-<section id="data-structure" class="level2">
-<h2 class="anchored" data-anchor-id="data-structure">Data Structure</h2>
+<p>The Pristine Seas Science Database is a centralized, modular system hosted in Google BigQuery that serves as the foundation of our data management infrastructure. This system integrates ecological data collected across more than a decade of scientific expeditions, supporting high-integrity, reproducible research on marine biodiversity and informing global ocean conservation policy.</p>
+<section id="why-bigquery" class="level4">
+<h4 class="anchored" data-anchor-id="why-bigquery">Why BigQuery?</h4>
+<p>Google BigQuery offers several advantages for marine ecological data:</p>
 <ul>
-<li>Organized by research method and expedition</li>
-<li>Standardized schema across expeditions</li>
-<li>Consistent field naming conventions</li>
+<li>Scalability: Handles our growing dataset spanning 40+ expeditions without performance degradation</li>
+<li>Integration: Seamlessly connects with our R-based analysis workflows</li>
+<li>Collaboration: Enables standardized access across our distributed research team</li>
+<li>Future-proofing: Provides a robust platform that can evolve with our research needs</li>
+</ul>
+<p>Note: BigQuery is were Global Fishing Watch data lives and we have access to the raw backend data.</p>
+</section>
+<section id="fair-data-principles" class="level4">
+<h4 class="anchored" data-anchor-id="fair-data-principles">FAIR Data Principles</h4>
+<p>Our database implementation adheres to the FAIR data principles:</p>
+</section>
+<div class="grid">
+<section id="findable" class="level4 g-col-3">
+<h4 class="anchored" data-anchor-id="findable">Findable</h4>
+<ul>
+<li>Unique and unified IDs</li>
+<li>WoRMS-linked taxonomy</li>
+<li>Consistent spatial hierarchy</li>
 </ul>
 </section>
-<section id="workflow" class="level2">
-<h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
+<section id="accessible" class="level4 g-col-3">
+<h4 class="anchored" data-anchor-id="accessible">Accessible</h4>
 <ul>
-<li>Data collection in the field</li>
-<li>Initial processing and validation</li>
-<li>Import to BigQuery tables</li>
-<li>Integration with R for analysis</li>
-<li>Export for reporting and visualization</li>
+<li>Query-ready BigQuery tables</li>
+<li>Controlled access and permissions</li>
+<li>Varied connection options</li>
 </ul>
+</section>
+<section id="interoperable" class="level4 g-col-3">
+<h4 class="anchored" data-anchor-id="interoperable">Interoperable</h4>
+<ul>
+<li>Spatial reference system</li>
+<li>Harmonized taxonomic backbone</li>
+<li>Consistent units (cm, g, m²)</li>
+</ul>
+</section>
+<section id="reusable" class="level4 g-col-3">
+<h4 class="anchored" data-anchor-id="reusable">Reusable</h4>
+<ul>
+<li>Comprehensive metadata</li>
+<li>Reproducible code</li>
+<li>Clear provenance6</li>
+</ul>
+</section>
+</div>
+</section>
+<section id="database-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="database-architecture">Database Architecture</h2>
+<p>The Pristine Seas Science Database is organized around two major dataset groups that balance flexibility with consistency:</p>
+<ol type="1">
+<li><strong>Method Datasets</strong>: Specific to each survey technique (UVS, BRUVS, eDNA, etc.)</li>
+<li><strong>Reference Datasets</strong>: Shared taxonomic, spatial, and lookup tables providing a unified backbone</li>
+</ol>
+<section id="database-organization" class="level3">
+<h3 class="anchored" data-anchor-id="database-organization">Database Organization</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    %% Main project node
+    pristine["pristine-seas"] 
+    
+    %% First level - dataset categories
+    reference_group["Reference Datasets"]
+    method_group["Method Datasets"]
+    
+    %% Reference datasets
+    exp["expeditions/"]
+    tax["taxonomy/"]
+    look["lookup/"]
+    
+    %% Method datasets
+    uvs["uvs/"]
+    pbruv["pbruv/"]
+    sbruv["sbruv/"]
+    edna["edna/"]
+    other["Other Methods..."]
+       %% UVS tables
+    sites["sites"]
+    stations["stations"]
+    
+    %% Fish transect tables
+    blt_group["Fish Belt Transect Tables"]
+    blt1["blt_stations"]
+    blt2["blt_observations"]
+    blt3["blt_biomass_by_taxa"]
+    
+    %% LPI tables
+    lpi_group["Benthic LPI Tables"]
+    lpi1["lpi_stations"]
+    lpi2["lpi_counts"]
+    lpi3["lpi_cover_by_taxa"]
+    
+    %% Taxonomy tables
+    fish["fish"]
+    benthos["benthos"]
+    inverts["inverts"]
+    
+    %% Expeditions tables
+    info["info"]
+    exp_sites["sites"]
+    
+    %% Connections
+    pristine --&gt; reference_group
+    pristine --&gt; method_group
+    
+    reference_group --&gt; exp
+    reference_group --&gt; tax
+    reference_group --&gt; look
+    
+    method_group --&gt; uvs
+    method_group --&gt; pbruv
+    method_group --&gt; sbruv
+    method_group --&gt; edna
+    method_group --&gt; other
+    
+    uvs --&gt; sites
+    uvs --&gt; stations
+    uvs --&gt; blt_group
+    uvs --&gt; lpi_group
+    
+    blt_group --&gt; blt1
+    blt_group --&gt; blt2
+    blt_group --&gt; blt3
+    
+    lpi_group --&gt; lpi1
+    lpi_group --&gt; lpi2
+    lpi_group --&gt; lpi3
+    
+    tax --&gt; fish
+    tax --&gt; benthos
+    tax --&gt; inverts
+    
+    exp --&gt; info
+    exp --&gt; exp_sites
+    
+    %% Styling with improved visibility and contrast
+    classDef root fill:#004165,color:#ffffff,stroke:#002e48,stroke-width:2px,rx:8,ry:8
+    classDef group fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,stroke-dasharray: 5 5,rx:5,ry:5
+    classDef refDataset fill:#d4edda,color:#000000,stroke:#28a745,stroke-width:2px,rx:8,ry:8
+    classDef methodDataset fill:#cce5ff,color:#000000,stroke:#0d6efd,stroke-width:2px,rx:8,ry:8
+    classDef table fill:#ffffff,color:#000000,stroke:#6c757d,stroke-width:1px,rx:3,ry:3
+    classDef tableGroup fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,rx:3,ry:3
+    
+    class pristine root
+    class reference_group,method_group group
+    class exp,tax,look refDataset
+    class uvs,pbruv,sbruv,edna,other methodDataset
+    class sites,stations,info,exp_sites,blt1,blt2,blt3,lpi1,lpi2,lpi3,fish,benthos,inverts table
+    class blt_group,lpi_group tableGroup
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>For the complete database documenation please refer to the <a href="https://pristine-seas.github.io/legacy-db/">Pristine Seas Database Documentation</a>.</p>
+</section>
+<section id="common-dataset-structures" class="level3">
+<h3 class="anchored" data-anchor-id="common-dataset-structures">Common Dataset Structures</h3>
+<p>Each method dataset follows a consistent pattern with tables organized into logical categories that support various analytical needs. This standardized structure enables efficient querying, cross-method integration, and reproducible science.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Standard Table Types
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Site Tables</strong> (<code>sites</code>, <code>[method]_sites</code>)
+<ul>
+<li>One row per survey site or deployment</li>
+<li>Contains geographic coordinates, habitat descriptions, and sampling context</li>
+<li>Links to the shared <code>expeditions.sites</code> table for spatial hierarchy</li>
+</ul></li>
+<li><strong>Station Tables</strong> (<code>[method]_stations</code>)
+<ul>
+<li>One row per sampling unit (e.g., depth strata, replicate)</li>
+<li>Includes sampling parameters, environmental conditions, and method-specific metadata</li>
+<li>Functions as the primary unit for analysis and comparison</li>
+</ul></li>
+<li><strong>Observation Tables</strong> (<code>[method]_observations</code>)
+<ul>
+<li>Contains individual records (e.g., fish counts, benthic points, video annotations)</li>
+<li>Stores raw QAQC’d ecological data with taxonomic identifications</li>
+</ul></li>
+<li><strong>Summary Tables</strong> (<code>[method]_[metric]_by_[dimension]</code>)
+<ul>
+<li>Aggregated analysis-ready metrics (e.g., biomass by species, cover by category)</li>
+<li>Pre-calculated to standardize common analytical outputs</li>
+<li>Enables efficient cross-site and cross-method comparisons</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="data-flow-field-to-database-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="data-flow-field-to-database-pipeline">Data Flow: Field to Database Pipeline</h2>
+<p>The integration of expedition data into BigQuery follows a standardized workflow that ensures data quality and consistency:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    subgraph Field[Field]
+        direction TB
+        A[Collection] --&gt; B[Validation]
+        B --&gt; C[Ship Storage]
+    end
+    
+    subgraph Process[Processing]
+        direction TB
+        D[Drive Backup] --&gt; E[Pipeline Processing]
+        E --&gt; F[Quality Control]
+    end
+    
+    subgraph Database[Database]
+        direction TB
+        G[BigQuery Ingestion] --&gt; H[Analysis-Ready Data]
+    end
+    
+    Field --&gt; Process
+    Process --&gt; Database
+    
+    classDef field fill:#004165,color:#ffffff,stroke-width:1px
+    classDef process fill:#8EBDC8,color:#000000,stroke-width:1px
+    classDef db fill:#E63946,color:#ffffff,stroke-width:1px
+    
+    class Field,A,B,C field
+    class Process,D,E,F process
+    class Database,G,H db
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="process-steps" class="level4">
+<h4 class="anchored" data-anchor-id="process-steps">Process Steps</h4>
+<ol type="1">
+<li><strong>Field Collection</strong>: Researchers collect and record data using standardized methods and digital fieldbooks</li>
+<li><strong>Initial Validation</strong>: Field-level data checks ensure completeness and quality</li>
+<li><strong>NAS Storage</strong>: All expedition data is securely stored on the ship’s Network Attached Storage</li>
+<li><strong>Google Drive Backup</strong>: Post-expedition, data is organized and backed up to Google Drive</li>
+<li><strong>Pipeline Processing</strong>: Each method’s data undergoes standardized processing via code in expedition repositories</li>
+<li><strong>Quality Assurance</strong>: Automated and manual checks verify data integrity</li>
+<li><strong>Database Ingestion</strong>: Processed data is ingested into the appropriate BigQuery tables</li>
+<li><strong>Analysis</strong>: Data becomes available for standardized analysis workflows</li>
+</ol>
+</section>
+</section>
+<section id="access-and-use" class="level2">
+<h2 class="anchored" data-anchor-id="access-and-use">Access and Use</h2>
+<p>The Pristine Seas Science Database is designed to be accessible through multiple interfaces.</p>
+<section id="rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio">Rstudio</h3>
+<p>The most common way to interact with our BigQuery database is through R, using the familiar tidyverse workflow.</p>
+<section id="establishing-a-connection" class="level4">
+<h4 class="anchored" data-anchor-id="establishing-a-connection">Establishing a Connection</h4>
+<p>Setting up a connection is straightforward:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load required packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DBI)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bigrquery)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a database connection</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>bq_connection <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(bigrquery<span class="sc">::</span><span class="fu">bigquery</span>(),</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                      <span class="at">project =</span> <span class="st">"pristine-seas"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                      <span class="at">billing =</span> <span class="st">"pristine-seas"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This code establishes a connection to the entire database, allowing you to explore datasets and tables directly from the <strong>Connections</strong> pane in RStudio. The first time you run this code, you’ll be prompted to authenticate with your Google account.</p>
+</section>
+<section id="using-dplyr-verbs" class="level4">
+<h4 class="anchored" data-anchor-id="using-dplyr-verbs">Using dplyr Verbs</h4>
+<p>The real power comes from using familiar dplyr verbs directly with BigQuery tables—no SQL knowledge required:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">tbl</span>(bq_connection, <span class="st">"taxonomy.fish"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(family, genus) <span class="sc">|&gt;</span> </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">n_taxa =</span> <span class="fu">n_distinct</span>(accepted_aphia_id),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_taxa)) <span class="sc">|&gt;</span> </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">30</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">collect</span>()</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(family, n_taxa, sum), </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>               <span class="at">y =</span> n_taxa, </span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>               <span class="at">fill =</span> genus), </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>           <span class="at">show.legend =</span> T)<span class="sc">+</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()<span class="sc">+</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> <span class="st">"# Distinct Taxa"</span>, <span class="at">fill =</span> <span class="st">""</span>,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Number of fish taxa in taxonomy.fish table"</span>,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"By family and genus"</span>)<span class="sc">+</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  paletteer<span class="sc">::</span><span class="fu">scale_fill_paletteer_d</span>(<span class="st">"ggsci::default_igv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="bigquery_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>What makes this approach powerful:</p>
+<ol type="1">
+<li><strong>BigQuery does the heavy lifting</strong> – All filtering, grouping, and summarizing happens in the database</li>
+<li><strong>Only results are transferred</strong> – Data never loads into memory until you call <code>collect()</code></li>
+<li><strong>Familiar syntax</strong> – The same dplyr verbs you already use with local data frames</li>
+<li><strong>Readable code</strong> – Complex queries expressed in clean, maintainable R code</li>
+</ol>
+</section>
+</section>
+<section id="google-bigquery-console" class="level3">
+<h3 class="anchored" data-anchor-id="google-bigquery-console">Google BigQuery Console</h3>
+<p>The database can also be accessed directly through the Google BigQuery Console:</p>
+<ol type="1">
+<li>Visit <a href="https://console.cloud.google.com/bigquery">console.cloud.google.com/bigquery</a></li>
+<li>Navigate to the <code>pristine-seas</code> project</li>
+<li>Use the query editor to write and execute SQL queries</li>
+<li>Explore tables, schemas, and query history</li>
+</ol>
+<p>The console provides a user-friendly interface for exploring table structures, examining data samples, and running ad-hoc queries without writing code.</p>
+</section>
+<section id="access-management" class="level3">
+<h3 class="anchored" data-anchor-id="access-management">Access Management</h3>
+<p>Access to the Pristine Seas Science Database is managed through Google Cloud IAM:</p>
+<ul>
+<li><strong>Team Members</strong>: Full read access to all datasets</li>
+<li><strong>Collaborators</strong>: Read access to specific datasets relevant to their work</li>
+<li><strong>Partners</strong>: Access via shared exports or temporary read credentials</li>
+<li><strong>Public</strong>: Access to published, non-sensitive data via data packages (still TBD)</li>
+</ul>
+<p>To request access, contact the database administrator with your Google account email and purpose.</p>
+</section>
+<section id="best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="best-practices">Best Practices</h3>
+<p>When working with the Pristine Seas Science Database:</p>
+<ol type="1">
+<li><strong>Minimize data transfer</strong>: Filter data in BigQuery before collecting to R</li>
+<li><strong>Use primary keys</strong>: Join tables using established keys (<code>ps_station_id</code>, <code>ps_site_id</code>)</li>
+<li><strong>Reproducible queries</strong>: Document your queries in Quarto documents</li>
+<li><strong>Analysis patterns</strong>: Build on established workflows in expedition repositories</li>
+</ol>
+</section>
+</section>
+<section id="maintenance" class="level2">
+<h2 class="anchored" data-anchor-id="maintenance">Maintenance</h2>
+<p>The Pristine Seas Science Database is actively being developed and continously improved to meet the needs of our team.</p>
 
 
 <!-- -->
@@ -911,27 +1270,356 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "BigQuery"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>BigQuery serves as our centralized database for integrated expedition data.</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Structure</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Organized by research method and expedition</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Standardized schema across expeditions</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Consistent field naming conventions</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Workflow</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data collection in the field</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Initial processing and validation</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Import to BigQuery tables</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Integration with R for analysis</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Export for reporting and visualization</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "BigQuery"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Centralized database for integrated expedition data"</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: right</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: false</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup}</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="in">#| include: false</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="in">library(here)</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="in">library(knitr)</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="in">library(gt)</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>The Pristine Seas Science Database is a centralized, modular system hosted in Google BigQuery that serves as the foundation of our data management infrastructure. This system integrates ecological data collected across more than a decade of scientific expeditions, supporting high-integrity, reproducible research on marine biodiversity and informing global ocean conservation policy.</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Why BigQuery?</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>Google BigQuery offers several advantages for marine ecological data:</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Scalability: Handles our growing dataset spanning 40+ expeditions without performance degradation</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Integration: Seamlessly connects with our R-based analysis workflows</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Collaboration: Enables standardized access across our distributed research team</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Future-proofing: Provides a robust platform that can evolve with our research needs</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>Note: BigQuery is were Global Fishing Watch data lives and we have access to the raw backend data. </span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="fu">#### FAIR Data Principles</span></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>Our database implementation adheres to the FAIR data principles:</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>::: {.grid}</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>::: {.g-col-3}</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Findable</span></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Unique and unified IDs</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>WoRMS-linked taxonomy</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Consistent spatial hierarchy</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>::: {.g-col-3}</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Accessible</span></span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Query-ready BigQuery tables</span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Controlled access and permissions</span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Varied connection options</span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>::: {.g-col-3}</span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Interoperable</span></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Spatial reference system</span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Harmonized taxonomic backbone</span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Consistent units (cm, g, m²)</span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>::: {.g-col-3}</span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Reusable</span></span>
+<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Comprehensive metadata</span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reproducible code</span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Clear provenance6</span>
+<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a><span class="fu">## Database Architecture</span></span>
+<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a>The Pristine Seas Science Database is organized around two major dataset groups that balance flexibility with consistency:</span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Method Datasets**: Specific to each survey technique (UVS, BRUVS, eDNA, etc.)</span>
+<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Reference Datasets**: Shared taxonomic, spatial, and lookup tables providing a unified backbone</span>
+<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a><span class="fu">### Database Organization</span></span>
+<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
+<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a><span class="in">graph LR</span></span>
+<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a><span class="in">    %% Main project node</span></span>
+<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a><span class="in">    pristine["pristine-seas"] </span></span>
+<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a><span class="in">    %% First level - dataset categories</span></span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a><span class="in">    reference_group["Reference Datasets"]</span></span>
+<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a><span class="in">    method_group["Method Datasets"]</span></span>
+<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a><span class="in">    %% Reference datasets</span></span>
+<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a><span class="in">    exp["expeditions/"]</span></span>
+<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a><span class="in">    tax["taxonomy/"]</span></span>
+<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a><span class="in">    look["lookup/"]</span></span>
+<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a><span class="in">    %% Method datasets</span></span>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a><span class="in">    uvs["uvs/"]</span></span>
+<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a><span class="in">    pbruv["pbruv/"]</span></span>
+<span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a><span class="in">    sbruv["sbruv/"]</span></span>
+<span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a><span class="in">    edna["edna/"]</span></span>
+<span id="cb3-102"><a href="#cb3-102" aria-hidden="true" tabindex="-1"></a><span class="in">    other["Other Methods..."]</span></span>
+<span id="cb3-103"><a href="#cb3-103" aria-hidden="true" tabindex="-1"></a><span class="in">       %% UVS tables</span></span>
+<span id="cb3-104"><a href="#cb3-104" aria-hidden="true" tabindex="-1"></a><span class="in">    sites["sites"]</span></span>
+<span id="cb3-105"><a href="#cb3-105" aria-hidden="true" tabindex="-1"></a><span class="in">    stations["stations"]</span></span>
+<span id="cb3-106"><a href="#cb3-106" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-107"><a href="#cb3-107" aria-hidden="true" tabindex="-1"></a><span class="in">    %% Fish transect tables</span></span>
+<span id="cb3-108"><a href="#cb3-108" aria-hidden="true" tabindex="-1"></a><span class="in">    blt_group["Fish Belt Transect Tables"]</span></span>
+<span id="cb3-109"><a href="#cb3-109" aria-hidden="true" tabindex="-1"></a><span class="in">    blt1["blt_stations"]</span></span>
+<span id="cb3-110"><a href="#cb3-110" aria-hidden="true" tabindex="-1"></a><span class="in">    blt2["blt_observations"]</span></span>
+<span id="cb3-111"><a href="#cb3-111" aria-hidden="true" tabindex="-1"></a><span class="in">    blt3["blt_biomass_by_taxa"]</span></span>
+<span id="cb3-112"><a href="#cb3-112" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-113"><a href="#cb3-113" aria-hidden="true" tabindex="-1"></a><span class="in">    %% LPI tables</span></span>
+<span id="cb3-114"><a href="#cb3-114" aria-hidden="true" tabindex="-1"></a><span class="in">    lpi_group["Benthic LPI Tables"]</span></span>
+<span id="cb3-115"><a href="#cb3-115" aria-hidden="true" tabindex="-1"></a><span class="in">    lpi1["lpi_stations"]</span></span>
+<span id="cb3-116"><a href="#cb3-116" aria-hidden="true" tabindex="-1"></a><span class="in">    lpi2["lpi_counts"]</span></span>
+<span id="cb3-117"><a href="#cb3-117" aria-hidden="true" tabindex="-1"></a><span class="in">    lpi3["lpi_cover_by_taxa"]</span></span>
+<span id="cb3-118"><a href="#cb3-118" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-119"><a href="#cb3-119" aria-hidden="true" tabindex="-1"></a><span class="in">    %% Taxonomy tables</span></span>
+<span id="cb3-120"><a href="#cb3-120" aria-hidden="true" tabindex="-1"></a><span class="in">    fish["fish"]</span></span>
+<span id="cb3-121"><a href="#cb3-121" aria-hidden="true" tabindex="-1"></a><span class="in">    benthos["benthos"]</span></span>
+<span id="cb3-122"><a href="#cb3-122" aria-hidden="true" tabindex="-1"></a><span class="in">    inverts["inverts"]</span></span>
+<span id="cb3-123"><a href="#cb3-123" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-124"><a href="#cb3-124" aria-hidden="true" tabindex="-1"></a><span class="in">    %% Expeditions tables</span></span>
+<span id="cb3-125"><a href="#cb3-125" aria-hidden="true" tabindex="-1"></a><span class="in">    info["info"]</span></span>
+<span id="cb3-126"><a href="#cb3-126" aria-hidden="true" tabindex="-1"></a><span class="in">    exp_sites["sites"]</span></span>
+<span id="cb3-127"><a href="#cb3-127" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-128"><a href="#cb3-128" aria-hidden="true" tabindex="-1"></a><span class="in">    %% Connections</span></span>
+<span id="cb3-129"><a href="#cb3-129" aria-hidden="true" tabindex="-1"></a><span class="in">    pristine --&gt; reference_group</span></span>
+<span id="cb3-130"><a href="#cb3-130" aria-hidden="true" tabindex="-1"></a><span class="in">    pristine --&gt; method_group</span></span>
+<span id="cb3-131"><a href="#cb3-131" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-132"><a href="#cb3-132" aria-hidden="true" tabindex="-1"></a><span class="in">    reference_group --&gt; exp</span></span>
+<span id="cb3-133"><a href="#cb3-133" aria-hidden="true" tabindex="-1"></a><span class="in">    reference_group --&gt; tax</span></span>
+<span id="cb3-134"><a href="#cb3-134" aria-hidden="true" tabindex="-1"></a><span class="in">    reference_group --&gt; look</span></span>
+<span id="cb3-135"><a href="#cb3-135" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-136"><a href="#cb3-136" aria-hidden="true" tabindex="-1"></a><span class="in">    method_group --&gt; uvs</span></span>
+<span id="cb3-137"><a href="#cb3-137" aria-hidden="true" tabindex="-1"></a><span class="in">    method_group --&gt; pbruv</span></span>
+<span id="cb3-138"><a href="#cb3-138" aria-hidden="true" tabindex="-1"></a><span class="in">    method_group --&gt; sbruv</span></span>
+<span id="cb3-139"><a href="#cb3-139" aria-hidden="true" tabindex="-1"></a><span class="in">    method_group --&gt; edna</span></span>
+<span id="cb3-140"><a href="#cb3-140" aria-hidden="true" tabindex="-1"></a><span class="in">    method_group --&gt; other</span></span>
+<span id="cb3-141"><a href="#cb3-141" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-142"><a href="#cb3-142" aria-hidden="true" tabindex="-1"></a><span class="in">    uvs --&gt; sites</span></span>
+<span id="cb3-143"><a href="#cb3-143" aria-hidden="true" tabindex="-1"></a><span class="in">    uvs --&gt; stations</span></span>
+<span id="cb3-144"><a href="#cb3-144" aria-hidden="true" tabindex="-1"></a><span class="in">    uvs --&gt; blt_group</span></span>
+<span id="cb3-145"><a href="#cb3-145" aria-hidden="true" tabindex="-1"></a><span class="in">    uvs --&gt; lpi_group</span></span>
+<span id="cb3-146"><a href="#cb3-146" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-147"><a href="#cb3-147" aria-hidden="true" tabindex="-1"></a><span class="in">    blt_group --&gt; blt1</span></span>
+<span id="cb3-148"><a href="#cb3-148" aria-hidden="true" tabindex="-1"></a><span class="in">    blt_group --&gt; blt2</span></span>
+<span id="cb3-149"><a href="#cb3-149" aria-hidden="true" tabindex="-1"></a><span class="in">    blt_group --&gt; blt3</span></span>
+<span id="cb3-150"><a href="#cb3-150" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-151"><a href="#cb3-151" aria-hidden="true" tabindex="-1"></a><span class="in">    lpi_group --&gt; lpi1</span></span>
+<span id="cb3-152"><a href="#cb3-152" aria-hidden="true" tabindex="-1"></a><span class="in">    lpi_group --&gt; lpi2</span></span>
+<span id="cb3-153"><a href="#cb3-153" aria-hidden="true" tabindex="-1"></a><span class="in">    lpi_group --&gt; lpi3</span></span>
+<span id="cb3-154"><a href="#cb3-154" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-155"><a href="#cb3-155" aria-hidden="true" tabindex="-1"></a><span class="in">    tax --&gt; fish</span></span>
+<span id="cb3-156"><a href="#cb3-156" aria-hidden="true" tabindex="-1"></a><span class="in">    tax --&gt; benthos</span></span>
+<span id="cb3-157"><a href="#cb3-157" aria-hidden="true" tabindex="-1"></a><span class="in">    tax --&gt; inverts</span></span>
+<span id="cb3-158"><a href="#cb3-158" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-159"><a href="#cb3-159" aria-hidden="true" tabindex="-1"></a><span class="in">    exp --&gt; info</span></span>
+<span id="cb3-160"><a href="#cb3-160" aria-hidden="true" tabindex="-1"></a><span class="in">    exp --&gt; exp_sites</span></span>
+<span id="cb3-161"><a href="#cb3-161" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-162"><a href="#cb3-162" aria-hidden="true" tabindex="-1"></a><span class="in">    %% Styling with improved visibility and contrast</span></span>
+<span id="cb3-163"><a href="#cb3-163" aria-hidden="true" tabindex="-1"></a><span class="in">    classDef root fill:#004165,color:#ffffff,stroke:#002e48,stroke-width:2px,rx:8,ry:8</span></span>
+<span id="cb3-164"><a href="#cb3-164" aria-hidden="true" tabindex="-1"></a><span class="in">    classDef group fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,stroke-dasharray: 5 5,rx:5,ry:5</span></span>
+<span id="cb3-165"><a href="#cb3-165" aria-hidden="true" tabindex="-1"></a><span class="in">    classDef refDataset fill:#d4edda,color:#000000,stroke:#28a745,stroke-width:2px,rx:8,ry:8</span></span>
+<span id="cb3-166"><a href="#cb3-166" aria-hidden="true" tabindex="-1"></a><span class="in">    classDef methodDataset fill:#cce5ff,color:#000000,stroke:#0d6efd,stroke-width:2px,rx:8,ry:8</span></span>
+<span id="cb3-167"><a href="#cb3-167" aria-hidden="true" tabindex="-1"></a><span class="in">    classDef table fill:#ffffff,color:#000000,stroke:#6c757d,stroke-width:1px,rx:3,ry:3</span></span>
+<span id="cb3-168"><a href="#cb3-168" aria-hidden="true" tabindex="-1"></a><span class="in">    classDef tableGroup fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,rx:3,ry:3</span></span>
+<span id="cb3-169"><a href="#cb3-169" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-170"><a href="#cb3-170" aria-hidden="true" tabindex="-1"></a><span class="in">    class pristine root</span></span>
+<span id="cb3-171"><a href="#cb3-171" aria-hidden="true" tabindex="-1"></a><span class="in">    class reference_group,method_group group</span></span>
+<span id="cb3-172"><a href="#cb3-172" aria-hidden="true" tabindex="-1"></a><span class="in">    class exp,tax,look refDataset</span></span>
+<span id="cb3-173"><a href="#cb3-173" aria-hidden="true" tabindex="-1"></a><span class="in">    class uvs,pbruv,sbruv,edna,other methodDataset</span></span>
+<span id="cb3-174"><a href="#cb3-174" aria-hidden="true" tabindex="-1"></a><span class="in">    class sites,stations,info,exp_sites,blt1,blt2,blt3,lpi1,lpi2,lpi3,fish,benthos,inverts table</span></span>
+<span id="cb3-175"><a href="#cb3-175" aria-hidden="true" tabindex="-1"></a><span class="in">    class blt_group,lpi_group tableGroup</span></span>
+<span id="cb3-176"><a href="#cb3-176" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-177"><a href="#cb3-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-178"><a href="#cb3-178" aria-hidden="true" tabindex="-1"></a>For the complete database documenation please refer to the <span class="co">[</span><span class="ot">Pristine Seas Database Documentation</span><span class="co">](https://pristine-seas.github.io/legacy-db/)</span>.</span>
+<span id="cb3-179"><a href="#cb3-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-180"><a href="#cb3-180" aria-hidden="true" tabindex="-1"></a><span class="fu">### Common Dataset Structures</span></span>
+<span id="cb3-181"><a href="#cb3-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-182"><a href="#cb3-182" aria-hidden="true" tabindex="-1"></a>Each method dataset follows a consistent pattern with tables organized into logical categories that support various analytical needs. This standardized structure enables efficient querying, cross-method integration, and reproducible science.</span>
+<span id="cb3-183"><a href="#cb3-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-184"><a href="#cb3-184" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple"}</span>
+<span id="cb3-185"><a href="#cb3-185" aria-hidden="true" tabindex="-1"></a><span class="fu">## Standard Table Types</span></span>
+<span id="cb3-186"><a href="#cb3-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-187"><a href="#cb3-187" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Site Tables** (<span class="in">`sites`</span>, <span class="in">`[method]_sites`</span>)</span>
+<span id="cb3-188"><a href="#cb3-188" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>One row per survey site or deployment</span>
+<span id="cb3-189"><a href="#cb3-189" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Contains geographic coordinates, habitat descriptions, and sampling context</span>
+<span id="cb3-190"><a href="#cb3-190" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Links to the shared <span class="in">`expeditions.sites`</span> table for spatial hierarchy</span>
+<span id="cb3-191"><a href="#cb3-191" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-192"><a href="#cb3-192" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Station Tables** (<span class="in">`[method]_stations`</span>)</span>
+<span id="cb3-193"><a href="#cb3-193" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>One row per sampling unit (e.g., depth strata, replicate)</span>
+<span id="cb3-194"><a href="#cb3-194" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Includes sampling parameters, environmental conditions, and method-specific metadata</span>
+<span id="cb3-195"><a href="#cb3-195" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Functions as the primary unit for analysis and comparison</span>
+<span id="cb3-196"><a href="#cb3-196" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-197"><a href="#cb3-197" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Observation Tables** (<span class="in">`[method]_observations`</span>)</span>
+<span id="cb3-198"><a href="#cb3-198" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Contains individual records (e.g., fish counts, benthic points, video annotations)</span>
+<span id="cb3-199"><a href="#cb3-199" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Stores raw QAQC'd ecological data with taxonomic identifications</span>
+<span id="cb3-200"><a href="#cb3-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-201"><a href="#cb3-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Summary Tables** (<span class="in">`[method]_[metric]_by_[dimension]`</span>)</span>
+<span id="cb3-202"><a href="#cb3-202" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Aggregated analysis-ready metrics (e.g., biomass by species, cover by category)</span>
+<span id="cb3-203"><a href="#cb3-203" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Pre-calculated to standardize common analytical outputs</span>
+<span id="cb3-204"><a href="#cb3-204" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Enables efficient cross-site and cross-method comparisons</span>
+<span id="cb3-205"><a href="#cb3-205" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-206"><a href="#cb3-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-207"><a href="#cb3-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-208"><a href="#cb3-208" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Flow: Field to Database Pipeline</span></span>
+<span id="cb3-209"><a href="#cb3-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-210"><a href="#cb3-210" aria-hidden="true" tabindex="-1"></a>The integration of expedition data into BigQuery follows a standardized workflow that ensures data quality and consistency:</span>
+<span id="cb3-211"><a href="#cb3-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-214"><a href="#cb3-214" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
+<span id="cb3-215"><a href="#cb3-215" aria-hidden="true" tabindex="-1"></a><span class="in">flowchart LR</span></span>
+<span id="cb3-216"><a href="#cb3-216" aria-hidden="true" tabindex="-1"></a><span class="in">    subgraph Field[Field]</span></span>
+<span id="cb3-217"><a href="#cb3-217" aria-hidden="true" tabindex="-1"></a><span class="in">        direction TB</span></span>
+<span id="cb3-218"><a href="#cb3-218" aria-hidden="true" tabindex="-1"></a><span class="in">        A[Collection] --&gt; B[Validation]</span></span>
+<span id="cb3-219"><a href="#cb3-219" aria-hidden="true" tabindex="-1"></a><span class="in">        B --&gt; C[Ship Storage]</span></span>
+<span id="cb3-220"><a href="#cb3-220" aria-hidden="true" tabindex="-1"></a><span class="in">    end</span></span>
+<span id="cb3-221"><a href="#cb3-221" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-222"><a href="#cb3-222" aria-hidden="true" tabindex="-1"></a><span class="in">    subgraph Process[Processing]</span></span>
+<span id="cb3-223"><a href="#cb3-223" aria-hidden="true" tabindex="-1"></a><span class="in">        direction TB</span></span>
+<span id="cb3-224"><a href="#cb3-224" aria-hidden="true" tabindex="-1"></a><span class="in">        D[Drive Backup] --&gt; E[Pipeline Processing]</span></span>
+<span id="cb3-225"><a href="#cb3-225" aria-hidden="true" tabindex="-1"></a><span class="in">        E --&gt; F[Quality Control]</span></span>
+<span id="cb3-226"><a href="#cb3-226" aria-hidden="true" tabindex="-1"></a><span class="in">    end</span></span>
+<span id="cb3-227"><a href="#cb3-227" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-228"><a href="#cb3-228" aria-hidden="true" tabindex="-1"></a><span class="in">    subgraph Database[Database]</span></span>
+<span id="cb3-229"><a href="#cb3-229" aria-hidden="true" tabindex="-1"></a><span class="in">        direction TB</span></span>
+<span id="cb3-230"><a href="#cb3-230" aria-hidden="true" tabindex="-1"></a><span class="in">        G[BigQuery Ingestion] --&gt; H[Analysis-Ready Data]</span></span>
+<span id="cb3-231"><a href="#cb3-231" aria-hidden="true" tabindex="-1"></a><span class="in">    end</span></span>
+<span id="cb3-232"><a href="#cb3-232" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-233"><a href="#cb3-233" aria-hidden="true" tabindex="-1"></a><span class="in">    Field --&gt; Process</span></span>
+<span id="cb3-234"><a href="#cb3-234" aria-hidden="true" tabindex="-1"></a><span class="in">    Process --&gt; Database</span></span>
+<span id="cb3-235"><a href="#cb3-235" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-236"><a href="#cb3-236" aria-hidden="true" tabindex="-1"></a><span class="in">    classDef field fill:#004165,color:#ffffff,stroke-width:1px</span></span>
+<span id="cb3-237"><a href="#cb3-237" aria-hidden="true" tabindex="-1"></a><span class="in">    classDef process fill:#8EBDC8,color:#000000,stroke-width:1px</span></span>
+<span id="cb3-238"><a href="#cb3-238" aria-hidden="true" tabindex="-1"></a><span class="in">    classDef db fill:#E63946,color:#ffffff,stroke-width:1px</span></span>
+<span id="cb3-239"><a href="#cb3-239" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
+<span id="cb3-240"><a href="#cb3-240" aria-hidden="true" tabindex="-1"></a><span class="in">    class Field,A,B,C field</span></span>
+<span id="cb3-241"><a href="#cb3-241" aria-hidden="true" tabindex="-1"></a><span class="in">    class Process,D,E,F process</span></span>
+<span id="cb3-242"><a href="#cb3-242" aria-hidden="true" tabindex="-1"></a><span class="in">    class Database,G,H db</span></span>
+<span id="cb3-243"><a href="#cb3-243" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-244"><a href="#cb3-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-245"><a href="#cb3-245" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Process Steps</span></span>
+<span id="cb3-246"><a href="#cb3-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-247"><a href="#cb3-247" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Field Collection**: Researchers collect and record data using standardized methods and digital fieldbooks</span>
+<span id="cb3-248"><a href="#cb3-248" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Initial Validation**: Field-level data checks ensure completeness and quality</span>
+<span id="cb3-249"><a href="#cb3-249" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**NAS Storage**: All expedition data is securely stored on the ship's Network Attached Storage</span>
+<span id="cb3-250"><a href="#cb3-250" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Google Drive Backup**: Post-expedition, data is organized and backed up to Google Drive</span>
+<span id="cb3-251"><a href="#cb3-251" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Pipeline Processing**: Each method's data undergoes standardized processing via code in expedition repositories</span>
+<span id="cb3-252"><a href="#cb3-252" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**Quality Assurance**: Automated and manual checks verify data integrity</span>
+<span id="cb3-253"><a href="#cb3-253" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>**Database Ingestion**: Processed data is ingested into the appropriate BigQuery tables</span>
+<span id="cb3-254"><a href="#cb3-254" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>**Analysis**: Data becomes available for standardized analysis workflows</span>
+<span id="cb3-255"><a href="#cb3-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-256"><a href="#cb3-256" aria-hidden="true" tabindex="-1"></a><span class="fu">## Access and Use</span></span>
+<span id="cb3-257"><a href="#cb3-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-258"><a href="#cb3-258" aria-hidden="true" tabindex="-1"></a>The Pristine Seas Science Database is designed to be accessible through multiple interfaces.</span>
+<span id="cb3-259"><a href="#cb3-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-260"><a href="#cb3-260" aria-hidden="true" tabindex="-1"></a><span class="fu">### Rstudio</span></span>
+<span id="cb3-261"><a href="#cb3-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-262"><a href="#cb3-262" aria-hidden="true" tabindex="-1"></a>The most common way to interact with our BigQuery database is through R, using the familiar tidyverse workflow.</span>
+<span id="cb3-263"><a href="#cb3-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-264"><a href="#cb3-264" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Establishing a Connection</span></span>
+<span id="cb3-265"><a href="#cb3-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-266"><a href="#cb3-266" aria-hidden="true" tabindex="-1"></a>Setting up a connection is straightforward:</span>
+<span id="cb3-267"><a href="#cb3-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-268"><a href="#cb3-268" aria-hidden="true" tabindex="-1"></a><span class="in">```{r include = T, eval = T, echo = T, code-fold: false}</span></span>
+<span id="cb3-269"><a href="#cb3-269" aria-hidden="true" tabindex="-1"></a><span class="in">#| code-fold: false</span></span>
+<span id="cb3-270"><a href="#cb3-270" aria-hidden="true" tabindex="-1"></a><span class="in"># Load required packages</span></span>
+<span id="cb3-271"><a href="#cb3-271" aria-hidden="true" tabindex="-1"></a><span class="in">library(DBI)</span></span>
+<span id="cb3-272"><a href="#cb3-272" aria-hidden="true" tabindex="-1"></a><span class="in">library(bigrquery)</span></span>
+<span id="cb3-273"><a href="#cb3-273" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb3-274"><a href="#cb3-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-275"><a href="#cb3-275" aria-hidden="true" tabindex="-1"></a><span class="in"># Create a database connection</span></span>
+<span id="cb3-276"><a href="#cb3-276" aria-hidden="true" tabindex="-1"></a><span class="in">bq_connection &lt;- DBI::dbConnect(bigrquery::bigquery(),</span></span>
+<span id="cb3-277"><a href="#cb3-277" aria-hidden="true" tabindex="-1"></a><span class="in">                      project = "pristine-seas",</span></span>
+<span id="cb3-278"><a href="#cb3-278" aria-hidden="true" tabindex="-1"></a><span class="in">                      billing = "pristine-seas")</span></span>
+<span id="cb3-279"><a href="#cb3-279" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-280"><a href="#cb3-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-281"><a href="#cb3-281" aria-hidden="true" tabindex="-1"></a>This code establishes a connection to the entire database, allowing you to explore datasets and tables directly from the **Connections** pane in RStudio. The first time you run this code, you'll be prompted to authenticate with your Google account.</span>
+<span id="cb3-282"><a href="#cb3-282" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb3-283"><a href="#cb3-283" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Using dplyr Verbs</span></span>
+<span id="cb3-284"><a href="#cb3-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-285"><a href="#cb3-285" aria-hidden="true" tabindex="-1"></a>The real power comes from using familiar dplyr verbs directly with BigQuery tables—no SQL knowledge required:</span>
+<span id="cb3-286"><a href="#cb3-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-287"><a href="#cb3-287" aria-hidden="true" tabindex="-1"></a><span class="in">```{r include = T, eval = T, echo = T}</span></span>
+<span id="cb3-288"><a href="#cb3-288" aria-hidden="true" tabindex="-1"></a><span class="in">#| code-fold: false</span></span>
+<span id="cb3-289"><a href="#cb3-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-290"><a href="#cb3-290" aria-hidden="true" tabindex="-1"></a><span class="in">df &lt;- tbl(bq_connection, "taxonomy.fish") |&gt; </span></span>
+<span id="cb3-291"><a href="#cb3-291" aria-hidden="true" tabindex="-1"></a><span class="in">  group_by(family, genus) |&gt; </span></span>
+<span id="cb3-292"><a href="#cb3-292" aria-hidden="true" tabindex="-1"></a><span class="in">  summarize(n_taxa = n_distinct(accepted_aphia_id),</span></span>
+<span id="cb3-293"><a href="#cb3-293" aria-hidden="true" tabindex="-1"></a><span class="in">            .groups = "drop") |&gt; </span></span>
+<span id="cb3-294"><a href="#cb3-294" aria-hidden="true" tabindex="-1"></a><span class="in">  arrange(desc(n_taxa)) |&gt; </span></span>
+<span id="cb3-295"><a href="#cb3-295" aria-hidden="true" tabindex="-1"></a><span class="in">  head(30) |&gt; </span></span>
+<span id="cb3-296"><a href="#cb3-296" aria-hidden="true" tabindex="-1"></a><span class="in">  collect()</span></span>
+<span id="cb3-297"><a href="#cb3-297" aria-hidden="true" tabindex="-1"></a><span class="in">  </span></span>
+<span id="cb3-298"><a href="#cb3-298" aria-hidden="true" tabindex="-1"></a><span class="in">df |&gt; </span></span>
+<span id="cb3-299"><a href="#cb3-299" aria-hidden="true" tabindex="-1"></a><span class="in">  ggplot()+</span></span>
+<span id="cb3-300"><a href="#cb3-300" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_col(aes(x = fct_reorder(family, n_taxa, sum), </span></span>
+<span id="cb3-301"><a href="#cb3-301" aria-hidden="true" tabindex="-1"></a><span class="in">               y = n_taxa, </span></span>
+<span id="cb3-302"><a href="#cb3-302" aria-hidden="true" tabindex="-1"></a><span class="in">               fill = genus), </span></span>
+<span id="cb3-303"><a href="#cb3-303" aria-hidden="true" tabindex="-1"></a><span class="in">           show.legend = T)+</span></span>
+<span id="cb3-304"><a href="#cb3-304" aria-hidden="true" tabindex="-1"></a><span class="in">  theme_minimal()+</span></span>
+<span id="cb3-305"><a href="#cb3-305" aria-hidden="true" tabindex="-1"></a><span class="in">  coord_flip()+</span></span>
+<span id="cb3-306"><a href="#cb3-306" aria-hidden="true" tabindex="-1"></a><span class="in">  labs(x = "", y = "# Distinct Taxa", fill = "",</span></span>
+<span id="cb3-307"><a href="#cb3-307" aria-hidden="true" tabindex="-1"></a><span class="in">       title = "Number of fish taxa in taxonomy.fish table",</span></span>
+<span id="cb3-308"><a href="#cb3-308" aria-hidden="true" tabindex="-1"></a><span class="in">       subtitle = "By family and genus")+</span></span>
+<span id="cb3-309"><a href="#cb3-309" aria-hidden="true" tabindex="-1"></a><span class="in">  paletteer::scale_fill_paletteer_d("ggsci::default_igv")</span></span>
+<span id="cb3-310"><a href="#cb3-310" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-311"><a href="#cb3-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-312"><a href="#cb3-312" aria-hidden="true" tabindex="-1"></a>What makes this approach powerful:</span>
+<span id="cb3-313"><a href="#cb3-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-314"><a href="#cb3-314" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**BigQuery does the heavy lifting** – All filtering, grouping, and summarizing happens in the database</span>
+<span id="cb3-315"><a href="#cb3-315" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Only results are transferred** – Data never loads into memory until you call <span class="in">`collect()`</span></span>
+<span id="cb3-316"><a href="#cb3-316" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Familiar syntax** – The same dplyr verbs you already use with local data frames</span>
+<span id="cb3-317"><a href="#cb3-317" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Readable code** – Complex queries expressed in clean, maintainable R code</span>
+<span id="cb3-318"><a href="#cb3-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-319"><a href="#cb3-319" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-320"><a href="#cb3-320" aria-hidden="true" tabindex="-1"></a><span class="fu">### Google BigQuery Console</span></span>
+<span id="cb3-321"><a href="#cb3-321" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-322"><a href="#cb3-322" aria-hidden="true" tabindex="-1"></a>The database can also be accessed directly through the Google BigQuery Console:</span>
+<span id="cb3-323"><a href="#cb3-323" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-324"><a href="#cb3-324" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Visit <span class="co">[</span><span class="ot">console.cloud.google.com/bigquery</span><span class="co">](https://console.cloud.google.com/bigquery)</span></span>
+<span id="cb3-325"><a href="#cb3-325" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Navigate to the <span class="in">`pristine-seas`</span> project</span>
+<span id="cb3-326"><a href="#cb3-326" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Use the query editor to write and execute SQL queries</span>
+<span id="cb3-327"><a href="#cb3-327" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Explore tables, schemas, and query history</span>
+<span id="cb3-328"><a href="#cb3-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-329"><a href="#cb3-329" aria-hidden="true" tabindex="-1"></a>The console provides a user-friendly interface for exploring table structures, examining data samples, and running ad-hoc queries without writing code.</span>
+<span id="cb3-330"><a href="#cb3-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-331"><a href="#cb3-331" aria-hidden="true" tabindex="-1"></a><span class="fu">### Access Management</span></span>
+<span id="cb3-332"><a href="#cb3-332" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-333"><a href="#cb3-333" aria-hidden="true" tabindex="-1"></a>Access to the Pristine Seas Science Database is managed through Google Cloud IAM:</span>
+<span id="cb3-334"><a href="#cb3-334" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-335"><a href="#cb3-335" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Team Members**: Full read access to all datasets</span>
+<span id="cb3-336"><a href="#cb3-336" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Collaborators**: Read access to specific datasets relevant to their work</span>
+<span id="cb3-337"><a href="#cb3-337" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Partners**: Access via shared exports or temporary read credentials</span>
+<span id="cb3-338"><a href="#cb3-338" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Public**: Access to published, non-sensitive data via data packages (still TBD)</span>
+<span id="cb3-339"><a href="#cb3-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-340"><a href="#cb3-340" aria-hidden="true" tabindex="-1"></a>To request access, contact the database administrator with your Google account email and purpose.</span>
+<span id="cb3-341"><a href="#cb3-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-342"><a href="#cb3-342" aria-hidden="true" tabindex="-1"></a><span class="fu">### Best Practices</span></span>
+<span id="cb3-343"><a href="#cb3-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-344"><a href="#cb3-344" aria-hidden="true" tabindex="-1"></a>When working with the Pristine Seas Science Database:</span>
+<span id="cb3-345"><a href="#cb3-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-346"><a href="#cb3-346" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Minimize data transfer**: Filter data in BigQuery before collecting to R</span>
+<span id="cb3-347"><a href="#cb3-347" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Use primary keys**: Join tables using established keys (<span class="in">`ps_station_id`</span>, <span class="in">`ps_site_id`</span>)</span>
+<span id="cb3-348"><a href="#cb3-348" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Reproducible queries**: Document your queries in Quarto documents</span>
+<span id="cb3-349"><a href="#cb3-349" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Analysis patterns**: Build on established workflows in expedition repositories</span>
+<span id="cb3-350"><a href="#cb3-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-351"><a href="#cb3-351" aria-hidden="true" tabindex="-1"></a><span class="fu">## Maintenance</span></span>
+<span id="cb3-352"><a href="#cb3-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-353"><a href="#cb3-353" aria-hidden="true" tabindex="-1"></a>The Pristine Seas Science Database is actively being developed and continously improved to meet the needs of our team. </span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

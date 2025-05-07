@@ -20,7 +20,7 @@ library(tidyverse)
 This SOP is maintained collaboratively and updated regularly. Last updated: `r format(Sys.Date(), "%B %d, %Y")`.
 :::
 
-![](assets/images/ocean_banner.jpg){fig-alt="Ocean research image" fig-align="center" width="100%"}
+![](assets/images/team.jpg){fig-alt="Ocean research image" fig-align="center" width="100%"}
 
 ## Introduction
 

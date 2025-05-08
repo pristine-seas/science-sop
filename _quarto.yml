@@ -84,21 +84,30 @@ website:
       - section: "Field Methods"
         contents:
           - field-methods/index.qmd
-          - field-methods/uvs_overview.qmd
-          - text: "Benthic Surveys"
+          - text: "Underwater Visual Surveys (UVS)"
             contents:
-              - field-methods/benthic_overview.qmd
-              - field-methods/benthic_lpi.qmd
-              - field-methods/benthic_inverts.qmd
-              - field-methods/benthic_recruits.qmd
-          - field-methods/fish-surveys.qmd
-          - field-methods/edna.qmd
-          - field-methods/seabed-bruvs.qmd
-          - field-methods/pelagic-bruvs.qmd
+              - field-methods/uvs_overview.qmd
+              - text: "Benthos"
+                contents:
+                  - field-methods/benthic_overview.qmd
+                  - field-methods/benthic_lpi.qmd
+                  - field-methods/benthic_inverts.qmd
+                  - field-methods/benthic_recruits.qmd
+              - text: "Fish"
+                contents:
+                  - field-methods/fish-surveys.qmd
+          - text: "BRUVS Surveys"
+            contents:
+              - text: "Seabed"
+                href: field-methods/seabed-bruvs.qmd
+              - text: "Pelagic"
+                href: field-methods/pelagic-bruvs.qmd
+          - text: "Deep-Sea"
+            contents:
+              - field-methods/rov-surveys.qmd
+              - field-methods/submersible.qmd
+              - field-methods/drop-cameras.qmd
           - field-methods/seabird-mammals.qmd
-          - field-methods/rov-surveys.qmd
-          - field-methods/submersible.qmd
-          - field-methods/drop-cameras.qmd
       - section: "Expedition Planning"
         contents:
           - expedition-planning/index.qmd

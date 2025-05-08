@@ -365,25 +365,27 @@
   {
     "objectID": "field-methods/uvs_overview.html",
     "href": "field-methods/uvs_overview.html",
-    "title": "Underwater Visual Surveys",
+    "title": "Overview",
     "section": "",
     "text": "Underwater visual surveys (UVS) are the cornerstone of Pristine Seas ecological assessments, providing a comprehensive, quantitative foundation for understanding marine ecosystem structure and function. These standardized methods enable robust comparisons across sites, regions, and time periods, creating a powerful global dataset to inform science-based conservation.\n\n\n\n\n\n\n\n\n\n\nFigure 1: Pristine Seas divers conducting underwater visual surveys. Left: Fish belt transect survey. Right: Benthic survey using line point intercept method.\n\nThrough a multi-method approach, we capture the key components of marine ecosystem health: fish populations, benthic composition, invertebrate communities, and coral recruitment. This holistic assessment provides a scientific basis for identifying conservation priorities and designing effective marine protected areas.",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys"
+      "Underwater Visual Surveys (UVS)",
+      "Overview"
     ]
   },
   {
     "objectID": "field-methods/uvs_overview.html#introduction",
     "href": "field-methods/uvs_overview.html#introduction",
-    "title": "Underwater Visual Surveys",
+    "title": "Overview",
     "section": "",
     "text": "Underwater visual surveys (UVS) are the cornerstone of Pristine Seas ecological assessments, providing a comprehensive, quantitative foundation for understanding marine ecosystem structure and function. These standardized methods enable robust comparisons across sites, regions, and time periods, creating a powerful global dataset to inform science-based conservation.\n\n\n\n\n\n\n\n\n\n\nFigure 1: Pristine Seas divers conducting underwater visual surveys. Left: Fish belt transect survey. Right: Benthic survey using line point intercept method.\n\nThrough a multi-method approach, we capture the key components of marine ecosystem health: fish populations, benthic composition, invertebrate communities, and coral recruitment. This holistic assessment provides a scientific basis for identifying conservation priorities and designing effective marine protected areas.",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys"
+      "Underwater Visual Surveys (UVS)",
+      "Overview"
     ]
   },
   {
@@ -479,49 +481,53 @@
   {
     "objectID": "field-methods/uvs_overview.html#survey-components",
     "href": "field-methods/uvs_overview.html#survey-components",
-    "title": "Underwater Visual Surveys",
+    "title": "Overview",
     "section": "Survey Components",
     "text": "Survey Components\nThe Pristine Seas underwater visual survey framework integrates four complementary components:\n\nFish Belt Transects: Quantify fish diversity, abundance, and biomass\nLine Point Intercept (LPI): Assess benthic cover and composition\nInvertebrate Counts: Document mobile invertebrate abundance\nCoral Recruit Surveys: Measure coral recruitment and population dynamics\n\nThese components are conducted along the same depth strata but on separate transects that are co-located as closely as possible within the same habitat and site. This approach allows for comprehensive sampling of each ecosystem element.",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys"
+      "Underwater Visual Surveys (UVS)",
+      "Overview"
     ]
   },
   {
     "objectID": "field-methods/uvs_overview.html#survey-structure",
     "href": "field-methods/uvs_overview.html#survey-structure",
-    "title": "Underwater Visual Surveys",
+    "title": "Overview",
     "section": "Survey Structure",
     "text": "Survey Structure\n\nSites\nEach underwater visual survey location is designated as a site. Sites form the primary organizational unit for our surveys and are carefully selected to represent the full range of marine environments within the study area.\nSite Selection Criteria:\n\nHabitat representation: Major habitat types present in the region (e.g., forereef, lagoon, backreef)\nExposure gradient: From protected/sheltered to exposed locations\nProtection status: Both inside and outside protected areas when applicable\nCommunity input: Locations identified by local knowledge as important\nAccessibility: Practical considerations for safe dive operations\n\n\n\nStations\nEach site contains stations at different depths to capture vertical zonation patterns. Typically, two depths are surveyed at each site and the specific depths surveyed depend on local bathymetry, habitat distribution, and research priorities. In some locations, only one depth strata may be present or accessible. In this cases, the team may double the sampling effort at the single station.\n\n\n\n\n\n\nStandard UVS depth strata\n\n\n\nEvery survey station is assigned to one of three standardized depth strata with corresponding suffixes that build the station label:\nDepth strata and suffixes:\n\nSupershallow (≤ 6 m) → 05m\n\nShallow (7–14 m) → 10m\n\nDeep (≥ 15 m) → 20m\n\nStation ID structure: [ISO3]_[YEAR]_uvs_[SITE]_[Depth_suffix]\nExamples:\n\nFirst survey of Fiji’s 2025 expedition at 5.8 m → FJI_2025_uvs_001_05m\nFirst survey of Fiji’s 2025 expedition at 12 m → FJI_2025_uvs_001_10m\n\nThis scheme ensures consistent stratification across all analyses, even with natural variation in survey depth.\n\n\n\n\nTransects\nAt each station, survey methods use multiple standardized transects at consistent depth contours to derive robust station averages. These function as pseudoreplicates rather than independent samples, improving precision and accounting for small-scale spatial variation. Detailed specifications are provided in each method’s dedicated section.",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys"
+      "Underwater Visual Surveys (UVS)",
+      "Overview"
     ]
   },
   {
     "objectID": "field-methods/uvs_overview.html#field-operations",
     "href": "field-methods/uvs_overview.html#field-operations",
-    "title": "Underwater Visual Surveys",
+    "title": "Overview",
     "section": "Field Operations",
     "text": "Field Operations\nThe Pristine Seas underwater visual surveys involve careful coordination between multiple divers conducting complementary assessments at each site. This orchestrated approach maximizes data collection efficiency while maintaining scientific rigor and preventing interference between methods.\n\nDive Team\n\n\nFish Survey Team\n\n2 divers\nWork independently at each depth strata\nRotate depths between dives\n\n\n\nBenthic Survey Unit\n\n3 divers (LPI, Coral, Inverts/Recruits)\nWork as a coordinated unit across both strata\n\n\n\n\n\nSchedule\nThe typical expedition schedule includes three dives per day:\n\n2 morning dives (08:00-12:00)\n1 afternoon dive (14:00-16:00)\n\n\n\nChoreography\n\nSite preparation:\n\nDive boat positions at GPS coordinates\nEntry point marked with mooring or surface marker\nTeam conducts pre-dive briefing\nYSI profile taken and surface eDNA samples collected if applicable\n\nDescent sequence:\n\nTeam descends together to the deeper station and assess conditions\nIf workable, teams separate to respective survey areas/strata\n\nFish Survey:\n\nEach fish diver works at their assigned depth (2-3 transects)\nCollects photographic records of site and notable, hard to id species\nNotes noteworhtly off transect observations\n\nBenthic Survey:\n\nTeam descends together to the 20m depth stratum\nIf eDNA collection is planned, recruit/invert diver collects water samples first\n50m transect line deployed by benthic diver.\nBenthic diver (LPI):\n\nStarts at 50m mark\nWorks toward 0m recording points every 20cm\n\nCoral diver:\n\nStarts at 0m mark\nWorks toward 50m identifying coral species at points\n\nRecruit/invert diver:\n\nStarts at 45m mark with quadrat surveys (every 5m)\nAfter completing quadrats, stashes equipment\nReturns along transect recording invertebrates\n\nCompletion and transition:\n\nDivers meet at transect end\nTeam recovers transect reel and equipment\nGroup ascends together to 10m depth stratum\nEntire process repeated at 10m depth\n\n\nExit coordination:\n\nAll divers return to mooring/entry point\nTeam conducts safety stop together\nSurfaces at initial entry point\n\nPost-dive procedures:\n\nTeam leader completes site documentation\nEach diver completes method-specific datasheets\nEquipment prepared for next dive\nData entered into digital format at the end of the day.\n\n\nThis coordinated approach ensures that comprehensive ecosystem data is collected at each station while maintaining methodological consistency and diver safety.",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys"
+      "Underwater Visual Surveys (UVS)",
+      "Overview"
     ]
   },
   {
     "objectID": "field-methods/uvs_overview.html#documentation-and-quality-control",
     "href": "field-methods/uvs_overview.html#documentation-and-quality-control",
-    "title": "Underwater Visual Surveys",
+    "title": "Overview",
     "section": "Documentation and Quality Control",
     "text": "Documentation and Quality Control\n\nUVS Sites Fieldbook\nThe UVS Sites Fieldbook is the primary reference for recording site-specific information and survey activities during expeditions. Maintained by the dive team lead, it serves as the authoritative source for cross-referencing UVS datasets and ensuring data consistency.\nDaily records include:\n\nLocation Details: Region, subregion, locality, site name\n\nAccurate Coordinates: GPS coordinates (WGS84)\n\nSite Conditions: Habitat type and exposure level\n\nProtocol Completion: Survey methods executed and any deviations noted\n\nField Notes: Notable observations, incidents, and contextual informatio\n\nAll habitat types and exposure levels must be recorded using the controlled vocabulary specified below. This standardization is critical for understanding ecological patterns, enabling comparisons across sites, and assessing habitat-specific community structure and condition.\n\n\n\n\n\n\nControlled vocabulary\n\n\n\nhabitat\n\nfore reef — Outer reef slope exposed to ocean swell.\nback reef — Sheltered zone behind the reef crest\n\nfringing reef — Reef growing directly from the shoreline\n\npatch reef — Isolated reef outcrop within a lagoon or sandy area\n\nreef flat — Shallow, flat reef section, often exposed at low tide\n\nchannel — Natural break or passage between reef structures\n\nseagrass — Vegetated, soft-bottom habitat dominated by seagrasses\n\nrocky reef — Reef formed by consolidated rock\n\nother — Habitat not captured by the above categories\n\nexposure\n\nwindward — Facing prevailing winds and swell\n\nleeward — Sheltered from prevailing winds\n\nlagoon — Within an enclosed or semi-enclosed reef lagoon\n\nother — Exposure type not described above\n\n\n\n\n\nMethod - specific fielbooks\n\n\nPhotographic records\n\n\nQuality Assurance Procedures\nTo maintain data integrity across all UVS methods, we implement these key quality control measures:\nSame-Day Data Entry\nRecord all observations immediately after diving while details remain fresh and accurate\nDaily QAQC Review\nSave data to the ship’s NAS for quality checks, including mapping of survey sites to check accuracy and inform planning\nSpecies Verification\nConfirm identifications using photographic evidence and our physical and digital reference library\nTaxonomic Standardization\nMinimize taxonomic errors by using the team’s taxonomic reference list for consistent species identification and database linkage\nSource Documentation\nArchive original field datasheets securely for future reference and verification\nCross-Referenced Records\nEnsure consistency by validating all method-specific data against the UVS Sites Fieldbook",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys"
+      "Underwater Visual Surveys (UVS)",
+      "Overview"
     ]
   },
   {
@@ -533,7 +539,8 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Surveys",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
       "Line Point Intercept"
     ]
   },
@@ -546,7 +553,8 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Surveys",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
       "Line Point Intercept"
     ]
   },
@@ -559,7 +567,8 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Surveys",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
       "Line Point Intercept"
     ]
   },
@@ -572,7 +581,8 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Surveys",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
       "Line Point Intercept"
     ]
   },
@@ -645,7 +655,8 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Surveys",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
       "Line Point Intercept"
     ]
   },
@@ -718,7 +729,8 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Surveys",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
       "Line Point Intercept"
     ]
   },
@@ -731,7 +743,8 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Surveys",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
       "Line Point Intercept"
     ]
   },
@@ -768,7 +781,8 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Surveys",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
       "Line Point Intercept"
     ]
   },
@@ -794,13 +808,14 @@
   {
     "objectID": "field-methods/uvs_overview.html#integration-for-reef-health-assessment",
     "href": "field-methods/uvs_overview.html#integration-for-reef-health-assessment",
-    "title": "Underwater Visual Surveys",
+    "title": "Overview",
     "section": "Integration for Reef Health Assessment",
     "text": "Integration for Reef Health Assessment\nThe Pristine Seas methodology integrates data from all survey components to assess ecosystem health through a standardized set of ecological indicators.\n\n\n\n\n\n\n\n\nIndicator\nMetrics\nSignificance\n\n\n\n\nBenthic Composition\n% hard coral and CCA cover\nFoundation of reef structure and growth\n\n\nDegradation Indicators\n% cyanobacteria cover\nEarly warning of environmental stress\n\n\nFish Community\nTotal fish biomass\nOverall ecosystem productivity\n\n\nTrophic Integrity\n% biomass of sharks and top predators\nFood web completeness\n\n\nInvertebrate Status\nDensity of key commercial species\nResource extraction indicator\n\n\nRecovery Potential\nCoral recruitment density\nFuture reef trajectory\n\n\n\n\n\n\n\nThese metrics provide a holistic assessment of marine ecosystem condition, enabling effective conservation planning and monitoring. We are currently developing a composite reef health index that integrates these indicators into a single, standardized measure to better communicate ecosystem status and facilitate comparative analyses.",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys"
+      "Underwater Visual Surveys (UVS)",
+      "Overview"
     ]
   },
   {
@@ -836,7 +851,8 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Surveys",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
       "Line Point Intercept"
     ]
   },
@@ -1433,20 +1449,40 @@
     "href": "field-methods/benthic_overview.html#method-overview",
     "title": "Overview",
     "section": "Method Overview",
-    "text": "Method Overview"
+    "text": "Method Overview",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Benthic Surveys",
+      "Overview"
+    ]
   },
   {
     "objectID": "field-methods/benthic_inverts.html#method-overview",
     "href": "field-methods/benthic_inverts.html#method-overview",
     "title": "Inverts",
     "section": "Method Overview",
-    "text": "Method Overview"
+    "text": "Method Overview",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
+      "Inverts"
+    ]
   },
   {
     "objectID": "field-methods/benthic_recruits.html#method-overview",
     "href": "field-methods/benthic_recruits.html#method-overview",
     "title": "Recruits",
     "section": "Method Overview",
-    "text": "Method Overview"
+    "text": "Method Overview",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
+      "Recruits"
+    ]
   }
 ]

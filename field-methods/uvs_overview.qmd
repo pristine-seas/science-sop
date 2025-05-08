@@ -1,5 +1,5 @@
 ---
-title: "Underwater Visual Surveys"
+title: "Overview"
 subtitle: "Standardized protocols for in-situ marine ecosystem assessment"
 format:
   html:

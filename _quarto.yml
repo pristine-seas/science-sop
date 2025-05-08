@@ -94,9 +94,10 @@ website:
                   - field-methods/benthic_inverts.qmd
                   - field-methods/benthic_recruits.qmd
               - text: "Fish"
-                contents:
-                  - field-methods/fish-surveys.qmd
-          - text: "BRUVS Surveys"
+                href: field-methods/fish-surveys.qmd
+              - text: "YSI"
+                href: field-methods/ysi.qmd
+          - text: "BRUVS"
             contents:
               - text: "Seabed"
                 href: field-methods/seabed-bruvs.qmd
@@ -107,7 +108,16 @@ website:
               - field-methods/rov-surveys.qmd
               - field-methods/submersible.qmd
               - field-methods/drop-cameras.qmd
-          - field-methods/seabird-mammals.qmd
+          - text: "eDNA"
+            contents:
+              - text: "Shallow water"
+                href: field-methods/edna_shallow.qmd
+              - text: "Deep-sea"
+                href: field-methods/edna_deep.qmd
+          - text: "Seabirds"
+            href: field-methods/seabirds.qmd
+          - text: "Other"
+            href: field-methods/other.qmd
       - section: "Expedition Planning"
         contents:
           - expedition-planning/index.qmd
@@ -150,6 +160,11 @@ format:
     fig-cap-location: bottom
     link-external-icon: true
     link-external-newwindow: true
+    grid:
+      sidebar-width: 280px
+      body-width: 1000px
+      margin-width: 200px
+      gutter-width: 1.5rem
 
 execute:
   freeze: auto

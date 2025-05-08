@@ -22,18 +22,19 @@ library(gt)
 
 ## Introduction
 
-Coral recruitment is a fundamental process driving reef recovery, resilience, and long-term persistence. The Pristine Seas coral recruit survey methodology provides standardized protocols for quantifying juvenile coral abundance, taxonomic composition, and size distribution across different habitats and depths. These surveys complement our benthic composition data (LPI) by documenting the recruitment processes that determine future reef trajectories, especially in the context of increasing disturbance frequency.
+Coral recruitment is a fundamental process driving reef recovery, resilience, and long-term persistence. The Pristine Seas coral recruit survey methodology provides standardized protocols for quantifying juvenile coral abundance, taxonomic composition, and size distribution across different habitats and depths. 
 
 ## Overview
 
-The coral recruit survey method involves systematically examining fixed-area quadrats along a transect to identify and measure recently settled corals (recruits) and juvenile colonies. This approach provides quantitative data on recruitment intensity, taxonomic patterns, and early post-settlement survival, enabling assessments of reef recovery potential.
+The coral recruit survey protocol involves systematically examining fixed-area quadrats along a transect to identify and measure juvenile coral colonies. This approach provides quantitative data on recruitment density, taxonomic patterns, and early post-settlement survival, enabling assessments of reef recovery potential.
 
 ### Key Features
 
-- **Standardized quadrats**: Fixed-area sampling units (25 × 25 cm)
+- **Standardized quadrats**: Fixed-area sampling units (50 × 50 cm)
 - **Systematic placement**: Regular intervals along the LPI transect
 - **Size-based approach**: Focus on colonies ≤5 cm maximum diameter
 - **Taxonomic resolution**: Identification to genus or species level when possible
+- **Photographic documentation**: Each quadrat is photographed before examination
 - **Integration**: Same transect line used for LPI and invertebrate surveys
 
 ## Field Implementation
@@ -41,7 +42,7 @@ The coral recruit survey method involves systematically examining fixed-area qua
 The recruit survey is typically conducted by the recruit/invert diver as part of the three-person benthic survey team. This specialized diver completes both the coral recruit and invertebrate surveys during a single dive, performing these tasks in sequence.
 
 ::: {.callout-note appearance="simple" title="**Coral Recruit Survey Specifications**"}
-- **Quadrat dimensions**: 25 × 25 cm (0.0625 m²)
+- **Quadrat dimensions**: 50 × 50 cm (0.25 m²)
 - **Quadrat placement**: Every 5 m along the transect (10 quadrats total)
 - **Placement positions**: 0, 5, 10, 15, 20, 25, 30, 35, 40, and 45 m marks
 - **Timing**: Conducted before invertebrate surveys
@@ -55,26 +56,30 @@ The recruit survey is typically conducted by the recruit/invert diver as part of
    - Begin at the 0 m mark and proceed along the transect
 
 2. **Quadrat placement**:
-   - Place the quadrat on the substrate at each 5 m interval along the transect
-   - Position the corner of the quadrat at the corresponding meter mark
+   - Place the quadrat on the substrate at each 5 m interval along the transect (0, 5, 10, ..., 40, and 45 m marks)
+   - The combined survey area across all quadrats is 2.5 m² per transect
 
-3. **Quadrat examination**:
+3. **Quadrat documentation**:
+   - Before searching for juveniles, take a photograph looking down into each quadrat
+
+4. **Quadrat examination**:
    - Systematically search the entire quadrat area
-   - Search for colonies ≤5 cm diameter (both established juveniles and recent recruits)
+   - Focus on colonies ≤5 cm maximum diameter that have a distinct tissue and skeletal boundary
+   - Exclude fragments or remnants of larger colonies
 
 4. **Data recording**:
-   - For each coral recruit/juvenile within the quadrat:
+   - For each juvenile coral within the quadrat:
      * Identify to lowest possible taxonomic level (genus or species)
-     * Measure maximum diameter (to nearest mm)
-     * Note attachment substrate type
-     * Document any partial mortality, bleaching, or disease
+     * Measure maximum diameter to the nearest 0.5 mm (for colonies larger than 0.5 cm)
+     * Note the quadrat number to link records back to the quadrat image
+     * Document attachment substrate type
+     * Note any partial mortality, bleaching, or disease
    - Record quadrat-level information:
-     * Rugosity category (low, medium, high)
      * Dominant substrate type
      * Approximate sediment cover (%)
 
 5. **Photo documentation**:
-   - Photograph unidentified or unusual recruits
+   - Photograph unidentified or unusual recruits for later verification
    - Take reference images of representative recruits
    - Capture full quadrat images
 
@@ -84,93 +89,31 @@ The recruit survey is typically conducted by the recruit/invert diver as part of
 
 ## Taxonomic Resolution
 
-Coral recruits and juveniles are often difficult to identify to species level due to their small size and undeveloped morphological features. The recruit survey employs a pragmatic approach to taxonomic resolution:
+Juvenile corals are often difficult to identify to species level due to their small size and undeveloped morphological features. Given these constraints, our survey employs a pragmatic approach to taxonomic resolution.
 
 1. **Genus-level identification** for most recruits
 2. **Species-level identification** when morphological features are sufficiently developed
 3. **Family-level grouping** for the smallest recruits (≤1 cm)
 4. **Photographic documentation** for verification and training purposes
 
-### Common Juvenile Coral Characteristics
-
-The identification of coral juveniles requires specialized knowledge of early colony morphology. Common characteristics used for identification include:
-
-#### Acroporidae
-- **Acropora**: Early radial corallites, pale margins, initial branch formation
-- **Montipora**: Thin plating or encrusting growth, fine surface texture
-
-#### Pocilloporidae
-- **Pocillopora**: Verrucae (wart-like bumps) begin to form early
-- **Stylophora**: Initial branches are thick and blunt
-- **Seriatopora**: More delicate early polyp formations than other pocilloporids
-
-#### Poritidae
-- **Porites**: Characteristic porous surface, often mound-shaped
-- **Goniopora**: Extended polyps when active, visible 24 septal arrangement
-
-#### Agariciidae
-- **Pavona**: Early formation of distinct ridges and valleys
-- **Leptoseris**: Extremely thin, encrusting colonies with fine septocostae
-
-## Attachment Substrate
-
-The substrate to which coral recruits are attached is recorded using these categories:
-
-:::: {.columns style="display: flex; flex-wrap: wrap;"}
-
-::: {.column width="33%" style="padding: 0.5em;"}
-<div style="background-color: #E3F2FD; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #2196F3;">
-<strong>CCA (Crustose Coralline Algae)</strong><br>
-Pink to red calcified encrusting algae
-</div>
-:::
-
-::: {.column width="33%" style="padding: 0.5em;"}
-<div style="background-color: #E8F5E9; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #4CAF50;">
-<strong>Macroalgae Base</strong><br>
-Attached to base of macroalgal holdfasts
-</div>
-:::
-
-::: {.column width="33%" style="padding: 0.5em;"}
-<div style="background-color: #FFF3E0; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #FF9800;">
-<strong>Bare Substrate</strong><br>
-Directly attached to exposed rock or pavement
-</div>
-:::
-
-::: {.column width="33%" style="padding: 0.5em;"}
-<div style="background-color: #FFFDE7; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #FFEB3B;">
-<strong>Coral Rubble</strong><br>
-Attached to fragments of dead coral
-</div>
-:::
-
-::: {.column width="33%" style="padding: 0.5em;"}
-<div style="background-color: #F3E5F5; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #9C27B0;">
-<strong>Dead Coral (intact)</strong><br>
-Attached to intact dead coral structure
-</div>
-:::
-
-::: {.column width="33%" style="padding: 0.5em;"}
-<div style="background-color: #E1F5FE; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #03A9F4;">
-<strong>Other</strong><br>
-Attached to other organisms or substrates
-</div>
-:::
-
-::::
-
 ## Data Processing
 
 ### Data Entry
 
-Coral recruit data are entered into standardized Excel fieldbooks with the following structure:
+Coral recruit data are recorded in standardized Excel fieldbooks on the same day of data collection, while information and memory are fresh. The `ISO3_YEAR_recruits_fieldbook.xlsx` is organized as follows:
 
 - `readme` sheet: Contains expedition info, data entry instructions, and guidelines
 - `stations` sheet: Records station information including sampling depths, habitat types, and any deviations from protocol
 - `recruits` sheet: Primary data entry for all coral recruits, including , size measurements and substrate type, and quadrat level info
+
+::: {.callout-important appearance="simple" title="**Quadrat Image Organization**"}
+
+The systematic organization of quadrat images is essential for later reference and quality control
+
+  - All images should be named following the convention: [exp_id]_[site]_[depth]_[quadrat#].jpg
+  - Images should be stored in a folder structure mirroring the site>station hierarchy
+
+:::
 
 ### Processing Pipeline
 
@@ -248,23 +191,6 @@ These limitations can be addressed through:
 - Adequate sample sizes (minimum of 10 quadrats per depth)
 - Integration with longer-term monitoring where applicable
 - Size-based classification to distinguish cohorts
-
-## Special Considerations
-
-### Morphological Plasticity
-
-Juvenile corals often display different morphologies than adult colonies of the same species, requiring specialized identification skills. Characteristics used for adult coral identification may not be apparent in recruits, necessitating a focus on skeletal structures and early growth patterns.
-
-### Ecological Significance
-
-While coral recruitment is essential for reef recovery, it does not guarantee successful reef replenishment. The survival and growth of recruits into reproductively active adult colonies depend on multiple factors including:
-
-- Herbivore abundance (algal control)
-- Predation pressure
-- Environmental conditions
-- Frequency of disturbance events
-
-Therefore, recruitment data should be interpreted alongside other ecological indicators.
 
 ## References
 

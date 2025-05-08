@@ -86,14 +86,14 @@ website:
         collapsible: true
         contents:
           - field-methods/index.qmd
-          - text: "Underwater Visual Surveys (UVS)"
+          - section: "Underwater Visual Surveys (UVS)"
+            href: field-methods/uvs_overview.qmd
             collapsible: true
             contents:
-              - field-methods/uvs_overview.qmd
-              - text: "Benthos"
+              - section: "Benthos"
+                href: field-methods/benthic_overview.qmd
                 collapsible: true
                 contents:
-                  - field-methods/benthic_overview.qmd
                   - field-methods/benthic_lpi.qmd
                   - field-methods/benthic_inverts.qmd
                   - field-methods/benthic_recruits.qmd
@@ -101,14 +101,16 @@ website:
                 href: field-methods/uvs_fish.qmd
               - text: "YSI"
                 href: field-methods/ysi.qmd
-          - text: "BRUVS"
+          - section: "BRUVS"
+            href: field-methods/seabed-bruvs.qmd
             collapsible: true
             contents:
               - text: "Seabed"
                 href: field-methods/seabed-bruvs.qmd
               - text: "Pelagic"
                 href: field-methods/pelagic-bruvs.qmd
-          - text: "Deep-Sea"
+          - section: "Deep-Sea"
+            href: field-methods/rov-surveys.qmd
             collapsible: true
             contents:
               - text: "ROV Surveys"
@@ -117,7 +119,8 @@ website:
                 href: field-methods/submersible.qmd
               - text: "Deep-Sea Cameras"
                 href: field-methods/drop-cameras.qmd
-          - text: "eDNA"
+          - section: "eDNA"
+            href: field-methods/edna_shallow.qmd
             collapsible: true
             contents:
               - text: "Shallow Water"
@@ -150,7 +153,7 @@ website:
           - appendices/species-guides.qmd
           - appendices/manuals.qmd
           - appendices/partners.qmd
-  
+          
   page-footer:
     left: "© 2025 Pristine Seas"
     right:

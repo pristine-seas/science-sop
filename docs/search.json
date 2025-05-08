@@ -371,8 +371,7 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys (UVS)",
-      "Overview"
+      "Underwater Visual Surveys (UVS)"
     ]
   },
   {
@@ -384,8 +383,7 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys (UVS)",
-      "Overview"
+      "Underwater Visual Surveys (UVS)"
     ]
   },
   {
@@ -487,8 +485,7 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys (UVS)",
-      "Overview"
+      "Underwater Visual Surveys (UVS)"
     ]
   },
   {
@@ -500,8 +497,7 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys (UVS)",
-      "Overview"
+      "Underwater Visual Surveys (UVS)"
     ]
   },
   {
@@ -513,8 +509,7 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys (UVS)",
-      "Overview"
+      "Underwater Visual Surveys (UVS)"
     ]
   },
   {
@@ -526,8 +521,7 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys (UVS)",
-      "Overview"
+      "Underwater Visual Surveys (UVS)"
     ]
   },
   {
@@ -777,7 +771,7 @@
     "href": "field-methods/benthic_lpi.html#data-processing",
     "title": "Line Point Intercept",
     "section": "Data Processing",
-    "text": "Data Processing\n\nData Entry\nLPI data are entered into standardized Excel fieldbooks that are store in the ship’s NAS with the following structure:\n\nreadme sheet: Contains expedition info, data entry instructions, and guidelines\nstations sheet: Records station information including sampling depths, survey lengths, and any deviations from protocol.\nobservations sheet: Primary data entry for all LPI point intercepts\n\n\n\nProcessing Pipeline\n\nFile Consolidation\nThe workflow begins by reading all expedition fieldbooks across legs and divers, combining stations and observations into a unified dataset. This includes converting the data from a wide format (best for data entry in the field) to a long data format, best for anaysis and visualiztion. It also include merginbg the work of the benthic and coral divers.\n\n\n\n\n\n\nMerging Benthic and Coral Diver Data\n\n\n\nThis critical step integrates the specialized knowledge of both divers:\n\nBenthic diver identifies functional groups (e.g., “30 points as hard coral”)\nCoral diver provides detailed taxonomic identification of corals\nWe apportion the benthic diver’s points based on the coral diver’s proportional observations\nThis maintains accurate functional group counts while maximizing taxonomic resolution\n\n\n\n\n\nValidation and Cleaning\nStation data is joined with the uvs_sites_fieldbook to validate site information including coordinates, habitat type, and spatial hierarchy. We check depth strata alignment across stations, standardizes formats, and verifies completeness of required fields. Transects are validated to confirm they contain the expected number of points, with exceptions flagged for review.\nAll taxonomic entries undergo validation against master reference lists, with morphotaxa mapped to the appropriate classification hierarchy.\n\n\nBenthic Cover Calculation\nFrom the cleaned data, we calculate percent cover by morphotaxa and functional group for each station. Additional metrics include species richness, diversity indices, and coral health indicators such as bleaching percentages. These station-level calculations are then aggregated to create site averages and region-wide metrics for comparative analysis.\n\n\n\n\n\n\nCore Output Files\n\n\n\nThe pipeline generates four essential files:\n\nlpi_count: raw but clean raw point contacts\nlpi_cover_by_taxa: total points and % cover by morphotaxa and station\nlpi_station_summary: % cover by functional category and station\nlpi_taxa_summary.csv: prevalence across regions, frequency of occurrence, and average cover values\n\n\n\n\n\nDatabase Integration\nFinally, the processed data is formatted for database ingestion with appropriate metadata tags and quality indicators. This standardized approach ensures consistent data structure across expeditions, facilitating long-term monitoring and comparative analysis of marine ecosystems worldwide.\n\n\n\nExploratory Data Analysis\nAfter completion of the data processing pipeline, we employ a separate eda.qmd file to conduct standardized yet flexible exploratory analyses. This approach balances consistency across expeditions with the need for location-specific insights.\nOur EDA workflow includes several core analyses that we produce for every expedition:\nBiodiversity Assessment - Species accumulation curves to evaluate sampling adequacy - Diversity indices (Shannon, Simpson) compared across sites - Species rank-abundance distributions to characterize community structure\nStatistical Comparisons - Tests for significant differences in diversity and cover metrics - Analyses stratified by region, habitat type, and depth - Focus on key functional groups (hard corals, macroalgae, cyanobacteria)\nCommunity Composition - Multivariate analyses of benthic communities (NMDS, cluster analysis) - Visualization of functional group proportions using consistent color palettes - Identification of indicator species for different habitat types\nCoral Health - Bleaching prevalence by species and depth - Disease incidence and severity metrics\nSpatial Visualization - Interactive maps of survey sites with embedded metrics - Geographic pattern analysis",
+    "text": "Data Processing\n\nData Entry\nLPI data are recorded in standardized Excel fieldbooks on the same day of data collection, while information and memory are fresh. The ISO3_YEAR_lpi_fieldbook.xlsx is organized as follows:\n\nreadme sheet: Contains expedition info, data entry instructions, and guidelines\nstations sheet: Records station information including sampling depths, survey lengths, and any deviations from protocol.\nobservations sheet: Primary data entry for all LPI point intercepts\n\n\n\nProcessing Pipeline\n\nFile Consolidation\nThe workflow begins by reading all expedition fieldbooks across legs and divers, combining stations and observations into a unified dataset. This includes converting the data from a wide format (best for data entry in the field) to a long data format, best for anaysis and visualiztion. It also include merginbg the work of the benthic and coral divers.\n\n\n\n\n\n\nMerging Benthic and Coral Diver Data\n\n\n\nThis critical step integrates the specialized knowledge of both divers:\n\nBenthic diver identifies functional groups (e.g., “30 points as hard coral”)\nCoral diver provides detailed taxonomic identification of corals\nWe apportion the benthic diver’s points based on the coral diver’s proportional observations\nThis maintains accurate functional group counts while maximizing taxonomic resolution\n\n\n\n\n\nValidation and Cleaning\nStation data is joined with the uvs_sites_fieldbook to validate site information including coordinates, habitat type, and spatial hierarchy. We check depth strata alignment across stations, standardizes formats, and verifies completeness of required fields. Transects are validated to confirm they contain the expected number of points, with exceptions flagged for review.\nAll taxonomic entries undergo validation against master reference lists, with morphotaxa mapped to the appropriate classification hierarchy.\n\n\nBenthic Cover Calculation\nFrom the cleaned data, we calculate percent cover by morphotaxa and functional group for each station. Additional metrics include species richness, diversity indices, and coral health indicators such as bleaching percentages. These station-level calculations are then aggregated to create site averages and region-wide metrics for comparative analysis.\n\n\n\n\n\n\nCore Output Files\n\n\n\nThe pipeline generates four essential files:\n\nlpi_count: raw but clean raw point contacts\nlpi_cover_by_taxa: total points and % cover by morphotaxa and station\nlpi_station_summary: % cover by functional category and station\nlpi_taxa_summary.csv: prevalence across regions, frequency of occurrence, and average cover values\n\n\n\n\n\nDatabase Integration\nFinally, the processed data is formatted for database ingestion with appropriate metadata tags and quality indicators. This standardized approach ensures consistent data structure across expeditions, facilitating long-term monitoring and comparative analysis of marine ecosystems worldwide.\n\n\n\nExploratory Data Analysis\nAfter completion of the data processing pipeline, we employ a separate eda.qmd file to conduct standardized yet flexible exploratory analyses. This approach balances consistency across expeditions with the need for location-specific insights.\nOur EDA workflow includes several core analyses that we produce for every expedition:\nBiodiversity Assessment - Species accumulation curves to evaluate sampling adequacy - Diversity indices (Shannon, Simpson) compared across sites - Species rank-abundance distributions to characterize community structure\nStatistical Comparisons - Tests for significant differences in diversity and cover metrics - Analyses stratified by region, habitat type, and depth - Focus on key functional groups (hard corals, macroalgae, cyanobacteria)\nCommunity Composition - Multivariate analyses of benthic communities (NMDS, cluster analysis) - Visualization of functional group proportions using consistent color palettes - Identification of indicator species for different habitat types\nCoral Health - Bleaching prevalence by species and depth - Disease incidence and severity metrics\nSpatial Visualization - Interactive maps of survey sites with embedded metrics - Geographic pattern analysis",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -814,8 +808,7 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Underwater Visual Surveys (UVS)",
-      "Overview"
+      "Underwater Visual Surveys (UVS)"
     ]
   },
   {
@@ -1453,7 +1446,8 @@
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Surveys",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
       "Overview"
     ]
   },
@@ -1588,7 +1582,7 @@
     "href": "field-methods/benthic_inverts.html#data-processing",
     "title": "Invertebrates",
     "section": "Data Processing",
-    "text": "Data Processing\n\nData Entry and Management\nInvertebrate data are entered into standardized Excel fieldbooks with the following structure:\n\nreadme sheet: Contains expedition info, data entry instructions, and guidelines\nstations sheet: Records station information including sampling depths, habitat types, and protocol details\nobservations sheet: Primary data entry for all invertebrate observations, including counts and measurements\n\n\n\nProcessing Pipeline\nThe data processing workflow follows these key steps:\n\n1. File Consolidation\n\nMerge data across expedition legs and divers\nStandardize taxonomic entries and size measurements\nIntegrate with site metadata from the UVS Sites Fieldbook\nVerify data completeness across all stations\n\n\n\n2. Data Validation and Quality Control\n\nFlag missing data or outliers for review\nCross-check taxonomic entries\nVerify transect lengths and search times\n\n\n\n3. Standardization and Calculation\n\nCalculate density metrics (individuals/m²) for each taxon\nCompute biomass estimates for key species (where length-weight relationships exist)\nGenerate summary statistics by taxonomic group, site, and region\n\n\n\n4. Database Integration\n\nFormat processed data for BigQuery ingestion\nEnsure consistency with other UVS components\n\n\n\n\nCore Output Files\nThe pipeline generates several essential files:\n\ninverts_observations.csv: Cleaned observations with standardized taxonomy\ninverts_density_by_taxa.csv: Density calculations by taxa and station\ninverts_stations.csv: Aggregate metrics by station (richness, total density, key taxa densities)\ninverts_taxa_summary.csv: Regional occurrence patterns and average densities by taxa",
+    "text": "Data Processing\n\nData Entry and Management\nInvertenbrates data are recorded in standardized Excel fieldbooks on the same day of data collection, while information and memory are fresh. The ISO3_YEAR_inverts_fieldbook.xlsx is organized as follows:\n\nreadme sheet: Contains expedition info, data entry instructions, and guidelines\nstations sheet: Records station information including sampling depths, habitat types, and protocol details\nobservations sheet: Primary data entry for all invertebrate observations, including counts and measurements\n\n\n\nProcessing Pipeline\nThe data processing workflow follows these key steps:\n\n1. File Consolidation\n\nMerge data across expedition legs and divers\nStandardize taxonomic entries and size measurements\nIntegrate with site metadata from the UVS Sites Fieldbook\nVerify data completeness across all stations\n\n\n\n2. Data Validation and Quality Control\n\nFlag missing data or outliers for review\nCross-check taxonomic entries\nVerify transect lengths and search times\n\n\n\n3. Standardization and Calculation\n\nCalculate density metrics (individuals/m²) for each taxon\nCompute biomass estimates for key species (where length-weight relationships exist)\nGenerate summary statistics by taxonomic group, site, and region\n\n\n\n4. Database Integration\n\nFormat processed data for BigQuery ingestion\nEnsure consistency with other UVS components\n\n\n\n\nCore Output Files\nThe pipeline generates several essential files:\n\ninverts_observations.csv: Cleaned observations with standardized taxonomy\ninverts_density_by_taxa.csv: Density calculations by taxa and station\ninverts_stations.csv: Aggregate metrics by station (richness, total density, key taxa densities)\ninverts_taxa_summary.csv: Regional occurrence patterns and average densities by taxa",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1630,7 +1624,7 @@
     "href": "field-methods/benthic_recruits.html",
     "title": "Coral Recruits",
     "section": "",
-    "text": "Coral recruitment is a fundamental process driving reef recovery, resilience, and long-term persistence. The Pristine Seas coral recruit survey methodology provides standardized protocols for quantifying juvenile coral abundance, taxonomic composition, and size distribution across different habitats and depths. These surveys complement our benthic composition data (LPI) by documenting the recruitment processes that determine future reef trajectories, especially in the context of increasing disturbance frequency.",
+    "text": "Coral recruitment is a fundamental process driving reef recovery, resilience, and long-term persistence. The Pristine Seas coral recruit survey methodology provides standardized protocols for quantifying juvenile coral abundance, taxonomic composition, and size distribution across different habitats and depths.",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1644,7 +1638,7 @@
     "href": "field-methods/benthic_recruits.html#introduction",
     "title": "Coral Recruits",
     "section": "",
-    "text": "Coral recruitment is a fundamental process driving reef recovery, resilience, and long-term persistence. The Pristine Seas coral recruit survey methodology provides standardized protocols for quantifying juvenile coral abundance, taxonomic composition, and size distribution across different habitats and depths. These surveys complement our benthic composition data (LPI) by documenting the recruitment processes that determine future reef trajectories, especially in the context of increasing disturbance frequency.",
+    "text": "Coral recruitment is a fundamental process driving reef recovery, resilience, and long-term persistence. The Pristine Seas coral recruit survey methodology provides standardized protocols for quantifying juvenile coral abundance, taxonomic composition, and size distribution across different habitats and depths.",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1658,7 +1652,7 @@
     "href": "field-methods/benthic_recruits.html#overview",
     "title": "Coral Recruits",
     "section": "Overview",
-    "text": "Overview\nThe coral recruit survey method involves systematically examining fixed-area quadrats along a transect to identify and measure recently settled corals (recruits) and juvenile colonies. This approach provides quantitative data on recruitment intensity, taxonomic patterns, and early post-settlement survival, enabling assessments of reef recovery potential.\n\nKey Features\n\nStandardized quadrats: Fixed-area sampling units (25 × 25 cm)\nSystematic placement: Regular intervals along the LPI transect\nSize-based approach: Focus on colonies ≤5 cm maximum diameter\nTaxonomic resolution: Identification to genus or species level when possible\nIntegration: Same transect line used for LPI and invertebrate surveys",
+    "text": "Overview\nThe coral recruit survey protocol involves systematically examining fixed-area quadrats along a transect to identify and measure juvenile coral colonies. This approach provides quantitative data on recruitment density, taxonomic patterns, and early post-settlement survival, enabling assessments of reef recovery potential.\n\nKey Features\n\nStandardized quadrats: Fixed-area sampling units (50 × 50 cm)\nSystematic placement: Regular intervals along the LPI transect\nSize-based approach: Focus on colonies ≤5 cm maximum diameter\nTaxonomic resolution: Identification to genus or species level when possible\nPhotographic documentation: Each quadrat is photographed before examination\nIntegration: Same transect line used for LPI and invertebrate surveys",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1672,7 +1666,7 @@
     "href": "field-methods/benthic_recruits.html#field-implementation",
     "title": "Coral Recruits",
     "section": "Field Implementation",
-    "text": "Field Implementation\nThe recruit survey is typically conducted by the recruit/invert diver as part of the three-person benthic survey team. This specialized diver completes both the coral recruit and invertebrate surveys during a single dive, performing these tasks in sequence.\n\n\n\n\n\n\nCoral Recruit Survey Specifications\n\n\n\n\nQuadrat dimensions: 25 × 25 cm (0.0625 m²)\nQuadrat placement: Every 5 m along the transect (10 quadrats total)\nPlacement positions: 0, 5, 10, 15, 20, 25, 30, 35, 40, and 45 m marks\nTiming: Conducted before invertebrate surveys\nTarget size range: Corals ≤5 cm maximum diameter\n\n\n\n\nData Collection Procedure\n\nDeployment coordination:\n\nThe recruit survey utilizes the same 50 m transect line deployed for the LPI survey\nBegin at the 0 m mark and proceed along the transect\n\nQuadrat placement:\n\nPlace the quadrat on the substrate at each 5 m interval along the transect\nPosition the corner of the quadrat at the corresponding meter mark\n\nQuadrat examination:\n\nSystematically search the entire quadrat area\nSearch for colonies ≤5 cm diameter (both established juveniles and recent recruits)\n\nData recording:\n\nFor each coral recruit/juvenile within the quadrat:\n\nIdentify to lowest possible taxonomic level (genus or species)\nMeasure maximum diameter (to nearest mm)\nNote attachment substrate type\nDocument any partial mortality, bleaching, or disease\n\nRecord quadrat-level information:\n\nRugosity category (low, medium, high)\nDominant substrate type\nApproximate sediment cover (%)\n\n\nPhoto documentation:\n\nPhotograph unidentified or unusual recruits\nTake reference images of representative recruits\nCapture full quadrat images\n\nCompletion and transition:\n\nAfter examining all 10 quadrats, stow equipment securely\nTransition to invertebrate surveys (working back along the same transect)",
+    "text": "Field Implementation\nThe recruit survey is typically conducted by the recruit/invert diver as part of the three-person benthic survey team. This specialized diver completes both the coral recruit and invertebrate surveys during a single dive, performing these tasks in sequence.\n\n\n\n\n\n\nCoral Recruit Survey Specifications\n\n\n\n\nQuadrat dimensions: 50 × 50 cm (0.25 m²)\nQuadrat placement: Every 5 m along the transect (10 quadrats total)\nPlacement positions: 0, 5, 10, 15, 20, 25, 30, 35, 40, and 45 m marks\nTiming: Conducted before invertebrate surveys\nTarget size range: Corals ≤5 cm maximum diameter\n\n\n\n\nData Collection Procedure\n\nDeployment coordination:\n\nThe recruit survey utilizes the same 50 m transect line deployed for the LPI survey\nBegin at the 0 m mark and proceed along the transect\n\nQuadrat placement:\n\nPlace the quadrat on the substrate at each 5 m interval along the transect (0, 5, 10, …, 40, and 45 m marks)\nThe combined survey area across all quadrats is 2.5 m² per transect\n\nQuadrat documentation:\n\nBefore searching for juveniles, take a photograph looking down into each quadrat\n\nQuadrat examination:\n\nSystematically search the entire quadrat area\nFocus on colonies ≤5 cm maximum diameter that have a distinct tissue and skeletal boundary\nExclude fragments or remnants of larger colonies\n\nData recording:\n\nFor each juvenile coral within the quadrat:\n\nIdentify to lowest possible taxonomic level (genus or species)\nMeasure maximum diameter to the nearest 0.5 mm (for colonies larger than 0.5 cm)\nNote the quadrat number to link records back to the quadrat image\nDocument attachment substrate type\nNote any partial mortality, bleaching, or disease\n\nRecord quadrat-level information:\n\nDominant substrate type\nApproximate sediment cover (%)\n\n\nPhoto documentation:\n\nPhotograph unidentified or unusual recruits for later verification\nTake reference images of representative recruits\nCapture full quadrat images\n\nCompletion and transition:\n\nAfter examining all 10 quadrats, stow equipment securely\nTransition to invertebrate surveys (working back along the same transect)",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1686,7 +1680,7 @@
     "href": "field-methods/benthic_recruits.html#taxonomic-resolution",
     "title": "Coral Recruits",
     "section": "Taxonomic Resolution",
-    "text": "Taxonomic Resolution\nCoral recruits and juveniles are often difficult to identify to species level due to their small size and undeveloped morphological features. The recruit survey employs a pragmatic approach to taxonomic resolution:\n\nGenus-level identification for most recruits\nSpecies-level identification when morphological features are sufficiently developed\nFamily-level grouping for the smallest recruits (≤1 cm)\nPhotographic documentation for verification and training purposes\n\n\nCommon Juvenile Coral Characteristics\nThe identification of coral juveniles requires specialized knowledge of early colony morphology. Common characteristics used for identification include:\n\nAcroporidae\n\nAcropora: Early radial corallites, pale margins, initial branch formation\nMontipora: Thin plating or encrusting growth, fine surface texture\n\n\n\nPocilloporidae\n\nPocillopora: Verrucae (wart-like bumps) begin to form early\nStylophora: Initial branches are thick and blunt\nSeriatopora: More delicate early polyp formations than other pocilloporids\n\n\n\nPoritidae\n\nPorites: Characteristic porous surface, often mound-shaped\nGoniopora: Extended polyps when active, visible 24 septal arrangement\n\n\n\nAgariciidae\n\nPavona: Early formation of distinct ridges and valleys\nLeptoseris: Extremely thin, encrusting colonies with fine septocostae",
+    "text": "Taxonomic Resolution\nJuvenile corals are often difficult to identify to species level due to their small size and undeveloped morphological features. Given these constraints, our survey employs a pragmatic approach to taxonomic resolution.\n\nGenus-level identification for most recruits\nSpecies-level identification when morphological features are sufficiently developed\nFamily-level grouping for the smallest recruits (≤1 cm)\nPhotographic documentation for verification and training purposes",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1714,7 +1708,7 @@
     "href": "field-methods/benthic_recruits.html#data-processing",
     "title": "Coral Recruits",
     "section": "Data Processing",
-    "text": "Data Processing\n\nData Entry\nCoral recruit data are entered into standardized Excel fieldbooks with the following structure:\n\nreadme sheet: Contains expedition info, data entry instructions, and guidelines\nstations sheet: Records station information including sampling depths, habitat types, and any deviations from protocol\nrecruits sheet: Primary data entry for all coral recruits, including , size measurements and substrate type, and quadrat level info\n\n\n\nProcessing Pipeline\nThe data processing workflow follows these key steps:\n\nFile Consolidation:\n\nMerge data across expedition legs and divers\nStandardize taxonomic names\nIntegrate with site metadata from the UVS Sites Fieldbook\n\nData Validation:\n\nVerify completeness of required fields\nFlag outliers for size measurements\nCross-reference taxonomic entries against adult coral taxa observed in LPI\nEnsure consistent species identifications across observers\n\nDensity Calculation:\n\nCalculate recruit density per unit area (recruits/m²)\nGenerate summary statistics by taxa, size class, site, and region\nCreate standardized density metrics for comparisons\n\nSize Structure Analysis:\n\nGroup recruits into standardized size classes\nAnalyze size frequency distributions by taxa and site\nCalculate size-based demographic metrics\n\nDatabase Integration:\n\nFormat processed data for database ingestion\nApply appropriate metadata tags and quality indicators\nEnsure consistency with other UVS components\n\n\n\n\nCore Output Files\nThe pipeline generates several essential files:\n\nrecruits_observations.csv: Cleaned observations with standardized taxonomy\nrecruits_density_by_taxa.csv: Density calculations by taxa, size class, and station\nrecruits_station_summary.csv: Aggregate metrics by station\nrecruits_taxa_summary.csv: Occurrence and density by taxa across regions",
+    "text": "Data Processing\n\nData Entry\nCoral recruit data are recorded in standardized Excel fieldbooks on the same day of data collection, while information and memory are fresh. The ISO3_YEAR_recruits_fieldbook.xlsx is organized as follows:\n\nreadme sheet: Contains expedition info, data entry instructions, and guidelines\nstations sheet: Records station information including sampling depths, habitat types, and any deviations from protocol\nrecruits sheet: Primary data entry for all coral recruits, including , size measurements and substrate type, and quadrat level info\n\n\n\n\n\n\n\nQuadrat Image Organization\n\n\n\nThe systematic organization of quadrat images is essential for later reference and quality control\n\nAll images should be named following the convention: [exp_id][site][depth]_[quadrat#].jpg\nImages should be stored in a folder structure mirroring the site&gt;station hierarchy\n\n\n\n\n\nProcessing Pipeline\nThe data processing workflow follows these key steps:\n\nFile Consolidation:\n\nMerge data across expedition legs and divers\nStandardize taxonomic names\nIntegrate with site metadata from the UVS Sites Fieldbook\n\nData Validation:\n\nVerify completeness of required fields\nFlag outliers for size measurements\nCross-reference taxonomic entries against adult coral taxa observed in LPI\nEnsure consistent species identifications across observers\n\nDensity Calculation:\n\nCalculate recruit density per unit area (recruits/m²)\nGenerate summary statistics by taxa, size class, site, and region\nCreate standardized density metrics for comparisons\n\nSize Structure Analysis:\n\nGroup recruits into standardized size classes\nAnalyze size frequency distributions by taxa and site\nCalculate size-based demographic metrics\n\nDatabase Integration:\n\nFormat processed data for database ingestion\nApply appropriate metadata tags and quality indicators\nEnsure consistency with other UVS components\n\n\n\n\nCore Output Files\nThe pipeline generates several essential files:\n\nrecruits_observations.csv: Cleaned observations with standardized taxonomy\nrecruits_density_by_taxa.csv: Density calculations by taxa, size class, and station\nrecruits_station_summary.csv: Aggregate metrics by station\nrecruits_taxa_summary.csv: Occurrence and density by taxa across regions",
     "crumbs": [
       "Home",
       "Field Methods",

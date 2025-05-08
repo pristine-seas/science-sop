@@ -345,7 +345,7 @@ Coral morphology represents the physical structure and growth form that coral co
 
 ### Data Entry
 
-LPI data are entered into standardized **Excel fieldbooks** that are store in the ship's NAS with the following structure:
+LPI data are recorded in standardized Excel fieldbooks on the same day of data collection, while information and memory are fresh. The `ISO3_YEAR_lpi_fieldbook.xlsx` is organized as follows:
 
 - `readme` sheet: Contains expedition info, data entry instructions, and guidelines
 - `stations` sheet: Records station information including sampling depths, survey lengths, and any deviations from protocol. 

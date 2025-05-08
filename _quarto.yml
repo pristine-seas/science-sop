@@ -74,6 +74,7 @@ website:
     search: true
     contents:
       - section: "Collaborative Infrastructure"
+        collapsible: true
         contents:
           - collaborative-infra/index.qmd
           - collaborative-infra/drive.qmd
@@ -82,43 +83,53 @@ website:
           - collaborative-infra/zotero.qmd
           - collaborative-infra/argo_NAS.qmd
       - section: "Field Methods"
+        collapsible: true
         contents:
           - field-methods/index.qmd
           - text: "Underwater Visual Surveys (UVS)"
+            collapsible: true
             contents:
               - field-methods/uvs_overview.qmd
               - text: "Benthos"
+                collapsible: true
                 contents:
                   - field-methods/benthic_overview.qmd
                   - field-methods/benthic_lpi.qmd
                   - field-methods/benthic_inverts.qmd
                   - field-methods/benthic_recruits.qmd
               - text: "Fish"
-                href: field-methods/fish-surveys.qmd
+                href: field-methods/uvs_fish.qmd
               - text: "YSI"
                 href: field-methods/ysi.qmd
           - text: "BRUVS"
+            collapsible: true
             contents:
               - text: "Seabed"
                 href: field-methods/seabed-bruvs.qmd
               - text: "Pelagic"
                 href: field-methods/pelagic-bruvs.qmd
           - text: "Deep-Sea"
+            collapsible: true
             contents:
-              - field-methods/rov-surveys.qmd
-              - field-methods/submersible.qmd
-              - field-methods/drop-cameras.qmd
+              - text: "ROV Surveys"
+                href: field-methods/rov-surveys.qmd
+              - text: "Submersible Surveys"
+                href: field-methods/submersible.qmd
+              - text: "Deep-Sea Cameras"
+                href: field-methods/drop-cameras.qmd
           - text: "eDNA"
+            collapsible: true
             contents:
-              - text: "Shallow water"
+              - text: "Shallow Water"
                 href: field-methods/edna_shallow.qmd
-              - text: "Deep-sea"
+              - text: "Deep-Sea"
                 href: field-methods/edna_deep.qmd
           - text: "Seabirds"
             href: field-methods/seabirds.qmd
           - text: "Other"
             href: field-methods/other.qmd
       - section: "Expedition Planning"
+        collapsible: true
         contents:
           - expedition-planning/index.qmd
           - expedition-planning/science-lead.qmd
@@ -126,12 +137,14 @@ website:
           - expedition-planning/site-selection.qmd
           - expedition-planning/permits-mou.qmd
       - section: "Media Library"
+        collapsible: true
         contents:
           - media-library/index.qmd
           - media-library/collection.qmd
           - media-library/organization.qmd
           - media-library/metadata.qmd
       - section: "Appendices"
+        collapsible: true
         contents:
           - appendices/index.qmd
           - appendices/species-guides.qmd

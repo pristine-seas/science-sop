@@ -1,6 +1,6 @@
 ---
-title: "Inverts"
-subtitle: ""
+title: "Invertebrates"
+subtitle: "Quantifying mobile invertebrate communities"
 format:
   html:
     toc: true
@@ -12,8 +12,286 @@ execute:
   message: false
 ---
 
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(gt)
+```
 
 ## Introduction
 
+Mobile invertebrates are key components of marine ecosystems, performing vital ecological functions and serving as indicators of ecosystem health. The Pristine Seas invertebrate survey methodology provides standardized protocols for quantifying the abundance, size distribution, and diversity of conspicuous mobile invertebrates across different habitats and depths. These surveys complement our benthic composition data (LPI) by documenting the mobile fauna that contribute to reef processes such as herbivory, predation, and bioerosion.
 
-## Method Overview
+## Overview
+
+The invertebrate survey method involves systematically searching a defined belt transect area to identify, count, and measure key mobile invertebrate species. This approach provides quantitative data on invertebrate density, biomass, and community composition, enabling rigorous spatial and temporal comparisons.
+
+### Key Features
+
+- **Defined search area**: 50 m × 1 m belt transect (50 m²)
+- **Taxonomic focus**: Conspicuous echinoderms, mollusks, crustaceans, and other mobile invertebrates
+- **Size estimation**: Measurements of key species (e.g., giant clams, trochus snails) 
+- **Standardized effort**: Consistent search time and methods across stations
+- **Integration**: Same transect line as LPI and recruitment surveys
+
+## Field Implementation
+
+The invertebrate survey is typically conducted by the recruit/invert diver as part of the three-person benthic survey team. This specialized diver completes both the invertebrate and coral recruit surveys during a single dive, performing these tasks in sequence.
+
+::: {.callout-note appearance="simple" title="**Invertebrate Survey Specifications**"}
+- **Transect dimensions**: 50 m × 1 m (50 m²)
+- **Search width**: 0.5 m on each side of the transect line
+- **Survey direction**: From end (50 m) to start (0 m) of the transect
+- **Timing**: Conducted after completing coral recruit quadrats
+- **Typical duration**: 15-20 minutes per transect
+:::
+
+### Data Collection Procedure
+
+1. **Deployment coordination**:
+   - The invertebrate survey utilizes the same 50 m transect line deployed for the LPI survey
+   - After completing coral recruit quadrats, the diver transitions to invertebrate surveys
+
+2. **Survey method**:
+   - Begin at the end of the transect (50 m mark)
+   - Search 0.5 m on either side of the transect (1 m total width)
+   - Move systematically along the transect toward the start (0 m)
+
+3. **Target taxa**:
+   - Focus on conspicuous mobile invertebrates (see Target Taxa section)
+   - Record species-level identifications when possible
+   - For challenging identifications, use higher taxonomic groupings with descriptive modifiers
+
+4. **Data recording**:
+   - Count individuals by species or lowest identifiable taxonomic level
+   - Measure or estimate size for speicfic taxa (length, width, or diameter as appropriate)
+   - Note unusual behavior, aggregations, habitat associations, or rare species
+
+5. **Photo documentation**:
+   - Photograph unusual or unidentified specimens
+   - Capture representative individuals of key species
+
+## Target Taxa
+
+
+The invertebrate survey focuses on conspicuous mobile invertebrates that can be reliably observed through visual census. While the specific target taxa may vary by region, the following groups are consistently surveyed:
+
+### Echinoderms
+
+:::: {.columns style="display: flex; flex-wrap: wrap;"}
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #FFF3E0; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #FF9800;">
+<strong>Sea Stars (Asteroidea)</strong><br>
+Count all individuals, measure diameter<br>
+<em>Examples: Acanthaster spp., Linckia spp., Culcita spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #E0F7FA; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #00BCD4;">
+<strong>Sea Urchins (Echinoidea)</strong><br>
+Count all individuals, measure test diameter<br>
+<em>Examples: Diadema spp., Echinometra spp., Tripneustes spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #F3E5F5; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #9C27B0;">
+<strong>Sea Cucumbers (Holothuroidea)</strong><br>
+Count all individuals, measure length<br>
+<em>Examples: Holothuria spp., Stichopus spp., Actinopyga spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #E8F5E9; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #4CAF50;">
+<strong>Feather Stars (Crinoidea)</strong><br>
+Count all individuals, note color morphs<br>
+<em>Examples: Comanthus spp., Oxycomanthus spp.</em>
+</div>
+:::
+
+::::
+
+### Mollusks
+
+:::: {.columns style="display: flex; flex-wrap: wrap;"}
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #FFF3E0; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #FF9800;">
+<strong>Giant Clams (Tridacnidae)</strong><br>
+Count all individuals, measure shell length<br>
+<em>Examples: Tridacna spp., Hippopus spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #E0F7FA; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #00BCD4;">
+<strong>Nudibranchs</strong><br>
+Count all individuals, note distinctive species<br>
+<em>Examples: Chromodoris spp., Phyllidia spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #F3E5F5; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #9C27B0;">
+<strong>Octopuses and Cuttlefish</strong><br>
+Count all individuals, estimate size<br>
+<em>Examples: Octopus spp., Sepia spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #E8F5E9; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #4CAF50;">
+<strong>Conch and Large Gastropods</strong><br>
+Count all individuals, measure shell length<br>
+<em>Examples: Lambis spp., Charonia spp., Cassis spp.</em>
+</div>
+:::
+
+::::
+
+### Crustaceans
+
+:::: {.columns style="display: flex; flex-wrap: wrap;"}
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #FFF3E0; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #FF9800;">
+<strong>Lobsters</strong><br>
+Count all individuals, measure carapace length<br>
+<em>Examples: Panulirus spp., Enoplometopus spp.</em>
+</div>
+:::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #E0F7FA; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #00BCD4;">
+<strong>Large Crabs</strong><br>
+Count all individuals, measure carapace width<br>
+<em>Examples: Carpilius spp., Etisus spp.</em>
+</div>
+:::
+
+::::
+
+## Special Considerations
+
+### Crown-of-Thorns Starfish
+
+In regions where Acanthaster outbreaks are a concern, additional data may be collected, including:
+
+- Size (diameter) of each individual
+- Feeding activity (active feeding, moving, or stationary)
+- Condition (healthy, injured, or diseased)
+- Aggregation characteristics (isolated or clustered)
+
+### Giant Clams
+
+For all Tridacnidae encountered:
+
+- Record species-level identification
+- Measure maximum shell length (cm)
+- Note substrate type and position (embedded, loose, etc.)
+- Document any signs of harvesting or damage
+
+### Commercially Valuable Species
+
+For species targeted by local fisheries:
+
+- Record precise size measurements
+- Document evidence of harvesting pressure
+- Note habitat associations and aggregation behaviors
+
+## Taxonomic Resolution
+
+The invertebrate survey employs the same taxonomic resolution model used across all Pristine Seas benthic methods.
+
+1. **Field Names**: Descriptive placeholders used during the survey
+2. **Morphotaxa**: Consolidation of field names into taxonomic units with distinguishing characteristics
+3. **Lowest Defensible Taxonomic Rank**: Mapping to formal taxonomy based on available evidence
+4. **Functional Group**: Classification into ecological functional roles
+
+## Data Processing
+
+### Data Entry
+
+Invertebrate data are entered into standardized Excel fieldbooks with the following structure:
+
+- `readme` sheet: Contains expedition info, data entry instructions, and guidelines
+- `stations` sheet: Records station information including sampling depths and any deviations from protocol
+- `observations` sheet: Primary data entry for all invertebrate observations, including counts and measurements
+
+### Processing Pipeline
+
+The data processing workflow follows these key steps:
+
+1. **File Consolidation**:
+   - Merge data across expedition legs and divers
+   - Standardize taxonomic names and size measurements
+   - Integrate with site metadata from the UVS Sites Fieldbook
+
+2. **Data Validation**:
+   - Verify completeness of required fields
+   - Flag outliers for size measurements
+   - Cross-reference taxonomic entries against reference lists
+
+3. **Density Calculation**:
+   - Calculate abundance per unit area (individuals/m²)
+   - Generate summary statistics by taxa, site, and region
+   - Create standardized density metrics for comparisons
+
+4. **Database Integration**:
+   - Format processed data for database ingestion
+   - Ensure consistency with other UVS components
+
+### Core Output Files
+
+The pipeline generates several essential files:
+
+- **inverts_observations.csv**: Cleaned observations with standardized taxonomy
+- **inverts_density_by_taxa.csv**: Density calculations by taxa and station
+- **inverts_station_summary.csv**: Aggregate metrics by station
+- **inverts_taxa_summary.csv**: Occurrence and abundance by taxa across regions
+
+## Exploratory Data Analysis
+
+Standard analyses conducted for invertebrate data may include:
+
+- **Community Composition**:
+  - Taxonomic richness and diversity indices
+  - Multivariate analyses (NMDS, cluster analysis)
+  - Functional group proportions
+
+- **Statistical Comparisons**:
+  - Tests for significant differences by region, habitat, and depth
+  - Analysis of key indicator species abundance patterns
+  - Correlation with benthic cover metrics from LPI
+
+- **Spatial Visualization**:
+  - Density maps for key taxa
+  - Geographic distribution patterns
+
+- **Size Structure**:
+  - Size frequency distributions for key species
+  - Comparative size analysis across protection levels
+
+## Limitations
+
+While the belt transect methodology is effective for surveying many mobile invertebrates, several limitations should be considered:
+
+- **Cryptic species**: Many invertebrates are cryptic or nocturnal and may be underrepresented in daytime surveys
+- **Substrate complexity**: Detection probability varies with habitat complexity
+- **Diver influence**: Some mobile species actively avoid or are attracted to divers
+- **Taxonomic challenges**: Invertebrate identification often requires specialized expertise
+- **Temporal variability**: Many invertebrates show significant diurnal or seasonal patterns
+
+These limitations are addressed through:
+
+- Consistent survey timing and methods
+- Standardized observer training
+- Photographic documentation for verification
+- Conservative taxonomic resolution approach
+- Integration with other survey methods (e.g., eDNA)
+

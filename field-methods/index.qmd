@@ -135,11 +135,13 @@ These insights are fundamental for effective conservation and our job includes t
   </tr>
 </table>
 
-## Integration
+## Methods Integration
 
 Our field research strategically integrates multiple assessment methods to provide comprehensive ecosystem insights beyond what individual techniques can reveal. Sampling sites are carefully selected to maximize spatial and temporal alignment across methods, enabling analyses of relationships between different ecosystem components. 
 
 To ensure seamless data integration, all methods follow standardized protocols including uniform taxonomic references, consistent metadata structures, shared spatial hierarchies, and compatible statistical approaches. This standardization facilitates robust cross-method analyses that reveal critical ecological relationships and functions.
+
+#### Spatial Hierarchy
 
 ::: {.callout-note title="Hierarchical spatial structure"}
 
@@ -174,7 +176,7 @@ This allows for analyses at multiple scales while maintaining clear relationship
 
 :::
 
-#### Sampling Hierarchy
+#### Sampling model
 
 The table below outlines the spatial sampling structure for each method in the Pristine Seas Science Database. It defines the hierarchical relationship from sites to observations, ensuring clarity and consistency across protocols.
 
@@ -234,7 +236,7 @@ methods_hierarchy %>%
   gt() %>%
   gt_theme_nytimes() %>%
   tab_header(
-    title = md("**Pristine Seas Sampling Hierarchy**"),
+    title = md("**Pristine Seas Sampling Model**"),
     subtitle = "Site > Station > Transect > Observation"
   ) %>%
   cols_label(
@@ -254,40 +256,128 @@ methods_hierarchy %>%
   )
 ```
 
-
-
 The Pristine Seas Science Database serves as the central repository for this integrated data architecture, preserving methodological connections while maintaining data integrity. Complete documentation of database structure and integration protocols is available [here](https://link-to-database-documentation).
-            
-## Data Processing
+
+## General Data Worklow
+
+```{mermaid}
+flowchart LR
+    subgraph Field["🔍 Field Collection"]
+        direction TB
+        A[Data Collection] --> B[Field Validation]
+        B --> C[Daily Entry]
+    end
+    
+    subgraph Process["🔄 Data Processing"]
+        direction TB
+        D[File Consolidation] --> E[Standardization & QA/QC]
+        E --> F[Integration & Cleaning]
+    end
+    
+    subgraph Analysis["📊 Data Analysis"]
+        direction TB
+        G[Exploratory Analysis] --> H[Statistical Testing]
+        H --> I[Visualization & Reporting]
+    end
+    
+    subgraph Database["🗄️ Database Integration"]
+        direction TB
+        J[Formatting for Ingestion] --> K[BigQuery Tables]
+        K --> L[Cross-Method Integration]
+    end
+    
+    Field --> Process
+    Process --> Analysis
+    Process --> Database
+    Database --> Analysis
+    
+    style Field fill:#004165,color:#ffffff
+    style Process fill:#8EBDC8,color:#000000
+    style Analysis fill:#EA9E8D,color:#000000
+    style Database fill:#F6C141,color:#000000
+```
+
+### Collection 
+
+Field data collection is the foundation of our scientific process. Each method has specific protocols detailed in its respective section, but all follow these core principles:
+
+  - **Standardized fieldbooks** with method-specific templates
+  - **Consistent metadata** across all observations (site IDs, coordinates, date/time, observers)
+  - **Controlled vocabularies** for habitat types, substrate categories, and taxonomic classifications
+  - **Photographic documentation** to supplement written observations
+  - **Fixed sampling designs** to ensure statistical validity and comparison across sites
+
+#### Daily Data Entry
+
+Data are entered into digital formats as soon as possible after collection:
+
+  - Same-day entry while observations are fresh in memory
+  - Method-specific fieldbooks with built-in validation rules, autocopmletion, and flags
+  - Follow consistent folder structure and naming conventions: [ISO3]_[YEAR]_[METHOD]_fieldbook.xlsx
+  - Work on the NAS - data is automatically backed up to the ship's Network Attached Storage 
+  - Daily review by the data manager to identify potential issues
+
+::: {.callout-important appearance="simple" title="Photo Management Best Practices"}
+Proper image management is essential for scientific documentation and communication. 
+Follow these three key practices:
+
+1. **Station-Based Organization**: Structure folders by station to ensure all photos are organized by location and depth
+
+2. **Curate Selections**: Build a collection of high-quality, labeled images for species identification, notable observations, and habitat documentation to contribute to our reference library and for use in reports
+
+3. **Consistent Naming**: Use our standard formats for naming image folders and individual photos
+   - **Folders**: `[ISO3]-[YEAR]-[METHOD]-[STATION_ID]`  
+     Examples: 
+     - Quadrats: `data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/`
+     - Fish: `data/fish/photos/PLW-2023-uvs-001-20m/`
+     - Inverts: `data/benthos/inverts/photos/PLW-2023-uvs-001-10m/`
+     - Birds: `data/birds/photos/PLW-2023-birds-001/`
+   
+   - **Selected Images**: `[ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[OBSERVATION].jpg`  
+     Examples: 
+     - Birds: `media/science-collection/birds/PLW_2023_birds_001_frigatebird.jpg`
+     - Fish: `media/science-collection/fish/PLW_2023_uvs_001_20m_acanthurus_lineatus.jpg`
+     - Submersible: `media/science-collection/sub/PLW_2023_sub_08_gorgonian_fan.jpg`
+   
+   - **Field Photos**: Only selected highlights need full labeling; other field photos can remain as-is if stored in properly labeled station folders  
+     Examples: 
+     - Quadrats: `data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/q3_IMG0042.jpg`
+     - Birds: `data/birds/photos/PLW-2023-birds-001/canon_2023-08-01_12-00-00.jpg`
+
+Backup to the NAS daily. Data manager will transfer to Google Drive upon expedition completion.
+:::
+
+
+### Processing
 
 Each field method follows specific processing workflows, but all adhere to a standardized framework that ensures data quality, reproducibility, and integration. Our data processing approach balances method-specific requirements with system-wide standards.
 
-#### Common Data Standards
-
-All methods implement these critical standards:
-
-* **Data Entry & Validation**
-  * Structured data entry forms with built-in validation rules
-  * Automated checks for impossible values and outlier detection
 * **Quality Control Procedures**
   * Multi-stage verification process (field, office, database)
   * Cross-method consistency checks for shared parameters
-* **File Naming & Organization**
-  * Consistent folder structure and file naming conventions
-  * Version control system
-* **Statistical Approaches**
-  * Standardized methods for handling zero-inflated ecological data
-  * Consistent treatment of temporal and spatial autocorrelation
+  
 * **Database Integration**
   * Automated (i wish) data ingestion pipelines for each method
   * Relational table structures preserving cross-method linkages
   * Metadata documentation
 
-#### Method-Specific Workflows
-
 Each method's processing workflow is fully documented and implemented in two Quarto scripts:
 
 1. **`pipeline_[method].qmd`**: Data transformation pipeline from raw collection, QAQC, and output of analysis-ready tables for ingestion into the DB
+
+#### 
+
 2. **`eda_[method].qmd`**: Exploratory data analysis, visualization and statistics
 
+All methods implement these critical standards:
+
+
+  * Version control system
+* **Statistical Approaches**
+  * Standardized methods for handling zero-inflated ecological data
+  * Consistent treatment of temporal and spatial autocorrelation
 These reproducible scripts ensure consistent processing across expeditions and enable efficient onboarding of new team members to our data workflows.
+
+
+
+

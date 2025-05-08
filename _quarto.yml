@@ -32,7 +32,14 @@ website:
           - text: "Underwater Visual Surveys"
             href: field-methods/uvs_overview.qmd
           - text: "Benthic Surveys"
-            href: field-methods/benthic_lpi.qmd
+            href: field-methods/benthic_overview.qmd
+            menu:
+              - text: "LPI"
+                href: field-methods/benthic_lpi.qmd
+              - text: "Inverts"
+                href: field-methods/benthic_inverts.qmd
+              - text: "Recruits"
+                href: field-methods/benthic_recuirts.qmd 
           - text: "Fish Surveys"
             href: field-methods/fish-surveys.qmd
           - text: "eDNA"
@@ -49,12 +56,12 @@ website:
             href: field-methods/submersible.qmd
           - text: "Deep Sea Cameras"
             href: field-methods/drop-cameras.qmd
-      - text: "Data Science"
-        href: data-science/index.qmd
       - text: "Expedition Planning"
         href: expedition-planning/index.qmd
       - text: "Media Library"
         href: media-library/index.qmd
+      - text: "Other Resources"
+        href: other/index.qmd
     
     right:
       - icon: github
@@ -78,7 +85,12 @@ website:
         contents:
           - field-methods/index.qmd
           - field-methods/uvs_overview.qmd
-          - field-methods/benthic_lpi.qmd
+          - text: "Benthic Surveys"
+            contents:
+              - field-methods/benthic_overview.qmd
+              - field-methods/benthic_lpi.qmd
+              - field-methods/benthic_inverts.qmd
+              - field-methods/benthic_recruits.qmd
           - field-methods/fish-surveys.qmd
           - field-methods/edna.qmd
           - field-methods/seabed-bruvs.qmd

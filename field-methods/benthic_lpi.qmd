@@ -1,5 +1,5 @@
 ---
-title: "Benthic Line Point Intercept"
+title: "Line Point Intercept"
 subtitle: "Quantifying benthic community composition"
 format:
   html:

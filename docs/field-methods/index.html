@@ -135,16 +135,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Field Methods</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../data-science/index.qmd"> 
-<span class="menu-text">Data Science</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../expedition-planning/index.qmd"> 
 <span class="menu-text">Expedition Planning</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../media-library/index.qmd"> 
 <span class="menu-text">Media Library</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../other/index.qmd"> 
+<span class="menu-text">Other Resources</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -257,12 +257,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Underwater Visual Surveys</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false">
+ <span class="menu-text">Benthic Surveys</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field-methods/benthic_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../field-methods/benthic_lpi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Benthic Line Point Intercept</span></a>
+ <span class="menu-text">Line Point Intercept</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field-methods/benthic_inverts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inverts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field-methods/benthic_recruits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recruits</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
           <li class="sidebar-item">
  <span class="menu-text">field-methods/fish-surveys.qmd</span>
   </li>
@@ -452,7 +481,7 @@ Species identification
 Size and biomass estimation
 </li>
 </ul>
-<a href="../field-methods/fish_blt.html" style="display:inline-block; padding:2px 8px; border:1px solid #6366f1; border-radius:4px; color:#6366f1; text-decoration:none; font-size:0.8em;">Protocol →</a>
+<a href="fish_blt.qmd" style="display:inline-block; padding:2px 8px; border:1px solid #6366f1; border-radius:4px; color:#6366f1; text-decoration:none; font-size:0.8em;">Protocol →</a>
 </td>
 </tr>
 <tr>
@@ -655,7 +684,552 @@ Hierarchical spatial structure
 <p>This allows for analyses at multiple scales while maintaining clear relationships between sampling elements.</p>
 </div>
 </div>
+<section id="sampling-hierarchy" class="level4">
+<h4 class="anchored" data-anchor-id="sampling-hierarchy">Sampling Hierarchy</h4>
+<p>The table below outlines the spatial sampling structure for each method in the Pristine Seas Science Database. It defines the hierarchical relationship from sites to observations, ensuring clarity and consistency across protocols.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tshfzcxgkw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#tshfzcxgkw table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#tshfzcxgkw thead, #tshfzcxgkw tbody, #tshfzcxgkw tfoot, #tshfzcxgkw tr, #tshfzcxgkw td, #tshfzcxgkw th {
+  border-style: none;
+}
+
+#tshfzcxgkw p {
+  margin: 0;
+  padding: 0;
+}
+
+#tshfzcxgkw .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#tshfzcxgkw .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#tshfzcxgkw .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#tshfzcxgkw .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#tshfzcxgkw .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#tshfzcxgkw .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tshfzcxgkw .gt_col_headings {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-bottom-color: #334422;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#tshfzcxgkw .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#tshfzcxgkw .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#tshfzcxgkw .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#tshfzcxgkw .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#tshfzcxgkw .gt_column_spanner {
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-bottom-color: #334422;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#tshfzcxgkw .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#tshfzcxgkw .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#tshfzcxgkw .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#tshfzcxgkw .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#tshfzcxgkw .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#tshfzcxgkw .gt_row {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#tshfzcxgkw .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tshfzcxgkw .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#tshfzcxgkw .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#tshfzcxgkw .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#tshfzcxgkw .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tshfzcxgkw .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#tshfzcxgkw .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#tshfzcxgkw .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tshfzcxgkw .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tshfzcxgkw .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#tshfzcxgkw .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tshfzcxgkw .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#tshfzcxgkw .gt_table_body {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #FFFFFF;
+}
+
+#tshfzcxgkw .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#tshfzcxgkw .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tshfzcxgkw .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#tshfzcxgkw .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tshfzcxgkw .gt_left {
+  text-align: left;
+}
+
+#tshfzcxgkw .gt_center {
+  text-align: center;
+}
+
+#tshfzcxgkw .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#tshfzcxgkw .gt_font_normal {
+  font-weight: normal;
+}
+
+#tshfzcxgkw .gt_font_bold {
+  font-weight: bold;
+}
+
+#tshfzcxgkw .gt_font_italic {
+  font-style: italic;
+}
+
+#tshfzcxgkw .gt_super {
+  font-size: 65%;
+}
+
+#tshfzcxgkw .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#tshfzcxgkw .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#tshfzcxgkw .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#tshfzcxgkw .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#tshfzcxgkw .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#tshfzcxgkw .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#tshfzcxgkw .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#tshfzcxgkw .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#tshfzcxgkw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_heading">
+<th colspan="5" class="gt_heading gt_title gt_font_normal" style="font-family: 'Libre Franklin'; font-weight: 800"><strong>Pristine Seas Sampling Hierarchy</strong></th>
+</tr>
+<tr class="odd gt_heading">
+<th colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Site &gt; Station &gt; Transect &gt; Observation</th>
+</tr>
+<tr class="header gt_col_headings">
+<th id="Method" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase; font-size: 16px; font-weight: bold" scope="col">Method</th>
+<th id="Site" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase; font-size: 16px; font-weight: bold" scope="col">Site</th>
+<th id="Station" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase; font-size: 16px; font-weight: bold" scope="col">Station</th>
+<th id="Transect" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase; font-size: 16px; font-weight: bold" scope="col">Transect</th>
+<th id="Observation" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="color: #A9A9A9; font-family: 'Source Sans Pro'; text-transform: uppercase; font-size: 16px; font-weight: bold" scope="col">Observation</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Method" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">UVS</td>
+<td class="gt_row gt_left" headers="Site" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Dive survey</td>
+<td class="gt_row gt_left" headers="Station" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Depth strata</td>
+<td class="gt_row gt_left" headers="Transect" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">BLT (3), LPI (1), Inverts (1), Recruits (10)</td>
+<td class="gt_row gt_left" headers="Observation" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Counts, biomass, cover</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Method" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">eDNA</td>
+<td class="gt_row gt_left" headers="Site" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Water collection site</td>
+<td class="gt_row gt_left" headers="Station" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Depth strata</td>
+<td class="gt_row gt_left" headers="Transect" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Water bags or pumps</td>
+<td class="gt_row gt_left" headers="Observation" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Species DNA</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Method" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Pelagic BRUVS</td>
+<td class="gt_row gt_left" headers="Site" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">5-rig BRUVS deployment</td>
+<td class="gt_row gt_left" headers="Station" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Rig</td>
+<td class="gt_row gt_left" headers="Transect" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">N/A</td>
+<td class="gt_row gt_left" headers="Observation" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Species ID, length, MaxN</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Method" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Seabed BRUVS</td>
+<td class="gt_row gt_left" headers="Site" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Single BRUVS deployment</td>
+<td class="gt_row gt_left" headers="Station" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Single station</td>
+<td class="gt_row gt_left" headers="Transect" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">N/A</td>
+<td class="gt_row gt_left" headers="Observation" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Species ID, length, MaxN</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Method" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Submersible Surveys</td>
+<td class="gt_row gt_left" headers="Site" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Sub dive</td>
+<td class="gt_row gt_left" headers="Station" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Depth strata</td>
+<td class="gt_row gt_left" headers="Transect" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Video transects</td>
+<td class="gt_row gt_left" headers="Observation" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Species ID, counts, habitat</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Method" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Deep-Sea Cameras</td>
+<td class="gt_row gt_left" headers="Site" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Single camera deployment</td>
+<td class="gt_row gt_left" headers="Station" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Single station</td>
+<td class="gt_row gt_left" headers="Transect" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">N/A</td>
+<td class="gt_row gt_left" headers="Observation" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Species ID, abundance</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Method" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">ROV Surveys</td>
+<td class="gt_row gt_left" headers="Site" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">ROV dive</td>
+<td class="gt_row gt_left" headers="Station" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Depth strata</td>
+<td class="gt_row gt_left" headers="Transect" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Video transects</td>
+<td class="gt_row gt_left" headers="Observation" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Species ID, counts, habitat</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Method" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">YSI Loggers</td>
+<td class="gt_row gt_left" headers="Site" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Logger deployment</td>
+<td class="gt_row gt_left" headers="Station" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Single profile</td>
+<td class="gt_row gt_left" headers="Transect" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">N/A</td>
+<td class="gt_row gt_left" headers="Observation" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Temp, salinity, DO, pH</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Method" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Bird Surveys</td>
+<td class="gt_row gt_left" headers="Site" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Survey point</td>
+<td class="gt_row gt_left" headers="Station" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Single survey</td>
+<td class="gt_row gt_left" headers="Transect" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Walking transect or point count</td>
+<td class="gt_row gt_left" headers="Observation" style="font-family: 'Source Sans Pro'; font-weight: 400; font-size: 12px">Species counts, behavior</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
 <p>The Pristine Seas Science Database serves as the central repository for this integrated data architecture, preserving methodological connections while maintaining data integrity. Complete documentation of database structure and integration protocols is available <a href="https://link-to-database-documentation">here</a>.</p>
+</section>
 </section>
 <section id="data-processing" class="level2">
 <h2 class="anchored" data-anchor-id="data-processing">Data Processing</h2>
@@ -1339,43 +1913,126 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>This allows for analyses at multiple scales while maintaining clear relationships between sampling elements.</span>
 <span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>The Pristine Seas Science Database serves as the central repository for this integrated data architecture, preserving methodological connections while maintaining data integrity. Complete documentation of database structure and integration protocols is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://link-to-database-documentation)</span>.</span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Processing</span></span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>Each field method follows specific processing workflows, but all adhere to a standardized framework that ensures data quality, reproducibility, and integration. Our data processing approach balances method-specific requirements with system-wide standards.</span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Common Data Standards</span></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>All methods implement these critical standards:</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Data Entry &amp; Validation**</span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Structured data entry forms with built-in validation rules</span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Automated checks for impossible values and outlier detection</span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Quality Control Procedures**</span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Multi-stage verification process (field, office, database)</span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Cross-method consistency checks for shared parameters</span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**File Naming &amp; Organization**</span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Consistent folder structure and file naming conventions</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Version control system</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Statistical Approaches**</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Standardized methods for handling zero-inflated ecological data</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Consistent treatment of temporal and spatial autocorrelation</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Database Integration**</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Automated (i wish) data ingestion pipelines for each method</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Relational table structures preserving cross-method linkages</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Metadata documentation</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Method-Specific Workflows</span></span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>Each method's processing workflow is fully documented and implemented in two Quarto scripts:</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**`pipeline_[method].qmd`**: Data transformation pipeline from raw collection, QAQC, and output of analysis-ready tables for ingestion into the DB</span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**`eda_[method].qmd`**: Exploratory data analysis, visualization and statistics</span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>These reproducible scripts ensure consistent processing across expeditions and enable efficient onboarding of new team members to our data workflows.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Sampling Hierarchy</span></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>The table below outlines the spatial sampling structure for each method in the Pristine Seas Science Database. It defines the hierarchical relationship from sites to observations, ensuring clarity and consistency across protocols.</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="in">```{r echo = F}</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="in">library(gt)</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="in">library(gtExtras)</span></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="in">methods_hierarchy &lt;- data.frame(</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="in">  Method = c('UVS',</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="in">             'eDNA', </span></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="in">             'Pelagic BRUVS', </span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="in">             'Seabed BRUVS', </span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="in">             'Submersible Surveys', </span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="in">             'Deep-Sea Cameras', </span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="in">             'ROV Surveys', </span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="in">             'YSI Loggers', </span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="in">             'Bird Surveys'),</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="in">  Site = c('Dive survey',</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="in">           'Water collection site',</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="in">           '5-rig BRUVS deployment',</span></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="in">           'Single BRUVS deployment',</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="in">           'Sub dive',</span></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="in">           'Single camera deployment',</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="in">           'ROV dive',</span></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="in">           'Logger deployment',</span></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="in">           'Survey point'),</span></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="in">  Station = c('Depth strata',</span></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="in">              'Depth strata',</span></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="in">              'Rig',</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="in">              'Single station',</span></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="in">              'Depth strata',</span></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="in">              'Single station',</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="in">              'Depth strata',</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="in">              'Single profile',</span></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="in">              'Single survey'),</span></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="in">  Transect = c('BLT (3), LPI (1), Inverts (1), Recruits (10)',</span></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="in">               'Water bags or pumps',</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="in">               'N/A',</span></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="in">               'N/A',</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="in">               'Video transects',</span></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="in">               'N/A',</span></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="in">               'Video transects',</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="in">               'N/A',</span></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="in">               'Walking transect or point count'),</span></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="in">  Observation = c('Counts, biomass, cover',</span></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="in">                  'Species DNA',</span></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a><span class="in">                  'Species ID, length, MaxN',</span></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="in">                  'Species ID, length, MaxN',</span></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="in">                  'Species ID, counts, habitat',</span></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="in">                  'Species ID, abundance',</span></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="in">                  'Species ID, counts, habitat',</span></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="in">                  'Temp, salinity, DO, pH',</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="in">                  'Species counts, behavior')</span></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="in">methods_hierarchy %&gt;%</span></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="in">  gt() %&gt;%</span></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="in">  gt_theme_nytimes() %&gt;%</span></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="in">  tab_header(</span></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="in">    title = md("**Pristine Seas Sampling Hierarchy**"),</span></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="in">    subtitle = "Site &gt; Station &gt; Transect &gt; Observation"</span></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="in">  ) %&gt;%</span></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="in">  cols_label(</span></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="in">    Method = "Method",</span></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="in">    Site = "Site",</span></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="in">    Station = "Station",</span></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="in">    Transect = "Transect",</span></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="in">    Observation = "Observation"</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="in">  ) %&gt;%</span></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="in">  tab_style(</span></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="in">    style = cell_text(weight = "bold", size = px(16)),</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="in">    locations = cells_column_labels()</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="in">  ) %&gt;%</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="in">  tab_style(</span></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="in">    style = cell_text(size = px(12)),</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="in">    locations = cells_body()</span></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="in">  )</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>The Pristine Seas Science Database serves as the central repository for this integrated data architecture, preserving methodological connections while maintaining data integrity. Complete documentation of database structure and integration protocols is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://link-to-database-documentation)</span>.</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Processing</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>Each field method follows specific processing workflows, but all adhere to a standardized framework that ensures data quality, reproducibility, and integration. Our data processing approach balances method-specific requirements with system-wide standards.</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Common Data Standards</span></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>All methods implement these critical standards:</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Data Entry &amp; Validation**</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Structured data entry forms with built-in validation rules</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Automated checks for impossible values and outlier detection</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Quality Control Procedures**</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Multi-stage verification process (field, office, database)</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Cross-method consistency checks for shared parameters</span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**File Naming &amp; Organization**</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Consistent folder structure and file naming conventions</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Version control system</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Statistical Approaches**</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Standardized methods for handling zero-inflated ecological data</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Consistent treatment of temporal and spatial autocorrelation</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Database Integration**</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Automated (i wish) data ingestion pipelines for each method</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Relational table structures preserving cross-method linkages</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Metadata documentation</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Method-Specific Workflows</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>Each method's processing workflow is fully documented and implemented in two Quarto scripts:</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**`pipeline_[method].qmd`**: Data transformation pipeline from raw collection, QAQC, and output of analysis-ready tables for ingestion into the DB</span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**`eda_[method].qmd`**: Exploratory data analysis, visualization and statistics</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>These reproducible scripts ensure consistent processing across expeditions and enable efficient onboarding of new team members to our data workflows.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

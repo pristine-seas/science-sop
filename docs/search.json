@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Pristine Seas Science Team SOP",
     "section": "",
-    "text": "Living Document\n\n\n\nThis SOP is maintained collaboratively and updated regularly. Last updated: May 07, 2025."
+    "text": "Living Document\n\n\n\nThis SOP is maintained collaboratively and updated regularly. Last updated: May 08, 2025."
   },
   {
     "objectID": "index.html#introduction",
@@ -331,7 +331,7 @@
     "href": "field-methods/index.html#integration",
     "title": "Overview",
     "section": "Integration",
-    "text": "Integration\nOur field research strategically integrates multiple assessment methods to provide comprehensive ecosystem insights beyond what individual techniques can reveal. Sampling sites are carefully selected to maximize spatial and temporal alignment across methods, enabling analyses of relationships between different ecosystem components.\nTo ensure seamless data integration, all methods follow standardized protocols including uniform taxonomic references, consistent metadata structures, shared spatial hierarchies, and compatible statistical approaches. This standardization facilitates robust cross-method analyses that reveal critical ecological relationships and functions.\n\n\n\n\n\n\nHierarchical spatial structure\n\n\n\nOur nested structure organizes all collected data into meaningful spatial contexts:\n\nExpedition: A complete research campaign to a country or target area\nConvention: [ISO3]_[YEAR]\nExamples: PLW_2023, MDV_2024\n\nRegion: Broad geographic or administrative area\nExamples: Temotu Province, Manus Province\n\nSubregion: Intermediate unit like an island, atoll, gulf, or reef complex\nExamples: Duff Islands, Harengan\n\nLocality: Local named feature such as a islet, community, village\nExamples: Taumako, Pinyang island\n\nSite: Specific location where sampling methods are deployed\nConvention: [ISO3]_[YEAR]_[METHOD]_[SITE]\nExamples: PLW_2023_uvs_001, FJI_2023_pbruv_001\n\nStation: A discrete sampling unit within a site, usually depth strata\nConvention: [ISO3]_[YEAR]_[METHOD]_[SITE]_[STATION]\nExamples: PLW_2023_uvs_001_10m, PLW_2023_uvs_001_20m\n\nMeasurement/Observation: Individual data points collected at a station\nExamples: Fish count, Coral cover percentage, remote video footage\n\n\n\n\n\n\n\nThis allows for analyses at multiple scales while maintaining clear relationships between sampling elements.\n\n\nThe Pristine Seas Science Database serves as the central repository for this integrated data architecture, preserving methodological connections while maintaining data integrity. Complete documentation of database structure and integration protocols is available here.",
+    "text": "Integration\nOur field research strategically integrates multiple assessment methods to provide comprehensive ecosystem insights beyond what individual techniques can reveal. Sampling sites are carefully selected to maximize spatial and temporal alignment across methods, enabling analyses of relationships between different ecosystem components.\nTo ensure seamless data integration, all methods follow standardized protocols including uniform taxonomic references, consistent metadata structures, shared spatial hierarchies, and compatible statistical approaches. This standardization facilitates robust cross-method analyses that reveal critical ecological relationships and functions.\n\n\n\n\n\n\nHierarchical spatial structure\n\n\n\nOur nested structure organizes all collected data into meaningful spatial contexts:\n\nExpedition: A complete research campaign to a country or target area\nConvention: [ISO3]_[YEAR]\nExamples: PLW_2023, MDV_2024\n\nRegion: Broad geographic or administrative area\nExamples: Temotu Province, Manus Province\n\nSubregion: Intermediate unit like an island, atoll, gulf, or reef complex\nExamples: Duff Islands, Harengan\n\nLocality: Local named feature such as a islet, community, village\nExamples: Taumako, Pinyang island\n\nSite: Specific location where sampling methods are deployed\nConvention: [ISO3]_[YEAR]_[METHOD]_[SITE]\nExamples: PLW_2023_uvs_001, FJI_2023_pbruv_001\n\nStation: A discrete sampling unit within a site, usually depth strata\nConvention: [ISO3]_[YEAR]_[METHOD]_[SITE]_[STATION]\nExamples: PLW_2023_uvs_001_10m, PLW_2023_uvs_001_20m\n\nMeasurement/Observation: Individual data points collected at a station\nExamples: Fish count, Coral cover percentage, remote video footage\n\n\n\n\n\n\n\nThis allows for analyses at multiple scales while maintaining clear relationships between sampling elements.\n\n\n\nSampling Hierarchy\nThe table below outlines the spatial sampling structure for each method in the Pristine Seas Science Database. It defines the hierarchical relationship from sites to observations, ensuring clarity and consistency across protocols.\n\n\n\n\n\n\n\n\nPristine Seas Sampling Hierarchy\n\n\nSite &gt; Station &gt; Transect &gt; Observation\n\n\nMethod\nSite\nStation\nTransect\nObservation\n\n\n\n\nUVS\nDive survey\nDepth strata\nBLT (3), LPI (1), Inverts (1), Recruits (10)\nCounts, biomass, cover\n\n\neDNA\nWater collection site\nDepth strata\nWater bags or pumps\nSpecies DNA\n\n\nPelagic BRUVS\n5-rig BRUVS deployment\nRig\nN/A\nSpecies ID, length, MaxN\n\n\nSeabed BRUVS\nSingle BRUVS deployment\nSingle station\nN/A\nSpecies ID, length, MaxN\n\n\nSubmersible Surveys\nSub dive\nDepth strata\nVideo transects\nSpecies ID, counts, habitat\n\n\nDeep-Sea Cameras\nSingle camera deployment\nSingle station\nN/A\nSpecies ID, abundance\n\n\nROV Surveys\nROV dive\nDepth strata\nVideo transects\nSpecies ID, counts, habitat\n\n\nYSI Loggers\nLogger deployment\nSingle profile\nN/A\nTemp, salinity, DO, pH\n\n\nBird Surveys\nSurvey point\nSingle survey\nWalking transect or point count\nSpecies counts, behavior\n\n\n\n\n\n\n\nThe Pristine Seas Science Database serves as the central repository for this integrated data architecture, preserving methodological connections while maintaining data integrity. Complete documentation of database structure and integration protocols is available here.",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -527,49 +527,53 @@
   {
     "objectID": "field-methods/benthic_lpi.html",
     "href": "field-methods/benthic_lpi.html",
-    "title": "Benthic Line Point Intercept",
+    "title": "Line Point Intercept",
     "section": "",
     "text": "The Line Point Intercept (LPI) method is a fundamental component of Pristine Seas underwater visual surveys, providing quantitative data on benthic community composition and substrate cover. This method documents the relative abundance of key benthic categories, including corals, algae, and other sessile organisms, as well as abiotic substrate types.",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Line Point Intercept"
+      "Benthic Surveys",
+      "Line Point Intercept"
     ]
   },
   {
     "objectID": "field-methods/benthic_lpi.html#introduction",
     "href": "field-methods/benthic_lpi.html#introduction",
-    "title": "Benthic Line Point Intercept",
+    "title": "Line Point Intercept",
     "section": "",
     "text": "The Line Point Intercept (LPI) method is a fundamental component of Pristine Seas underwater visual surveys, providing quantitative data on benthic community composition and substrate cover. This method documents the relative abundance of key benthic categories, including corals, algae, and other sessile organisms, as well as abiotic substrate types.",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Line Point Intercept"
+      "Benthic Surveys",
+      "Line Point Intercept"
     ]
   },
   {
     "objectID": "field-methods/benthic_lpi.html#method-overview",
     "href": "field-methods/benthic_lpi.html#method-overview",
-    "title": "Benthic Line Point Intercept",
+    "title": "Line Point Intercept",
     "section": "Method Overview",
     "text": "Method Overview\nThe LPI method involves recording the benthic organisms or substrate types that occur directly beneath points at regular intervals along a transect line. This approach provides an unbiased estimate of percent cover for different benthic categories.\n\nKey Features\n\nStandardized points: Data collected at fixed intervals (20 cm)\nRepresentative sampling: Points distributed evenly along the entire transect\nObjective assessment: Only what lies directly under each point is recorded\nTaxonomic resolution: Identification to the lowest practical taxonomic level\nDivision of labor: Separate divers for coral and other benthic identifications",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Line Point Intercept"
+      "Benthic Surveys",
+      "Line Point Intercept"
     ]
   },
   {
     "objectID": "field-methods/benthic_lpi.html#field-implementation",
     "href": "field-methods/benthic_lpi.html#field-implementation",
-    "title": "Benthic Line Point Intercept",
+    "title": "Line Point Intercept",
     "section": "Field Implementation",
     "text": "Field Implementation\nThe LPI method requires two specialized divers working in tandem:\n\nBenthic diver: Identifies all algae, non-coral invertebrates, and abiotic substrates at each point. When a point lands on coral, the benthic diver marks it as “Hard coral” (or “Hard coral - bleached”) without species identification.\nCoral diver: Focuses specifically on identifying all corals to species level at points previously marked as “Hard coral” by the benthic diver.\n\nThis division of labor ensures both broad coverage of all substrate types and precise taxonomic resolution for corals.\n\n\n\n\n\n\nLPI Transect Specifications\n\n\n\n\nLength: 50 meters (Note: transects may be shorter due to time or decompression constraints)\nDirection: Parallel to shoreline\nDepth strata: Constant (±1 m) standard depth strata (~5, 10 or 20 m)\nPoints: Sampled every 20 cm (250 points total)\nSections: Transects are divided into sections (5 of 10 m each)\n\n\n\n\nData Collection Procedure\n\nTransect deployment:\n\nDeploy transect tape parallel to shoreline\nMaintain consistent depth throughout\nSecure ends to maintain straight line\n\nPoint sampling:\n\nSample at 20 cm intervals along the transect (250 points total)\nRecord what lies directly beneath each point\nBenthic diver identifies all non-coral points to lowest taxonomic level\nCoral diver identifies coral points to species level\n\nBleaching assessment:\n\nFor hard corals: differentiate between healthy, bleaching, and dead colonies\nFor soft corals: distinguish bleached and non-bleached colonies\n\nPhoto documentation:\n\nTake overview photo of transect\nPhotograph representative points\nDocument unusual or unidentified organisms\n\nExplore:\n\nRoam the station if time allows\nDocument any notable off-transect taxa or observations",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Line Point Intercept"
+      "Benthic Surveys",
+      "Line Point Intercept"
     ]
   },
   {
@@ -635,13 +639,14 @@
   {
     "objectID": "field-methods/benthic_lpi.html#references",
     "href": "field-methods/benthic_lpi.html#references",
-    "title": "Benthic Line Point Intercept",
+    "title": "Line Point Intercept",
     "section": "References",
     "text": "References\nCoral Reef Alliance. (2024). Coral Bleaching On-Site Monitoring Tools.\nDarling ES, Alvarez-Filip L, Oliver TA, McClanahan TR, Côté IM. (2012). Evaluating life-history strategies of reef corals from species traits. Ecology Letters, 15(12), 1378-1386.\nFacon, M., et al. (2016). A comparative study of the accuracy and effectiveness of Line and Point Intercept Transect methods for coral reef monitoring in the southwestern Indian Ocean islands. Ecological Indicators, 60, 1045-1055.\nKuo, C-Y., et al. (2022). Fine intervals are required when using point intercept transects to assess coral reef status. Frontiers in Marine Science, 9, 795512.\nLeujak, W., & Ormond, R.F.G. (2007). Comparative accuracy and efficiency of six coral community survey methods. Journal of Experimental Marine Biology and Ecology, 351(1-2), 168-187.\nVallès, H., et al. (2019). Switching between standard coral reef benthic monitoring protocols is complicated: proof of concept. PeerJ, 7, e8167.",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Line Point Intercept"
+      "Benthic Surveys",
+      "Line Point Intercept"
     ]
   },
   {
@@ -707,25 +712,27 @@
   {
     "objectID": "field-methods/benthic_lpi.html#taxonomic-resolution",
     "href": "field-methods/benthic_lpi.html#taxonomic-resolution",
-    "title": "Benthic Line Point Intercept",
+    "title": "Line Point Intercept",
     "section": "Taxonomic Resolution",
     "text": "Taxonomic Resolution\nThe Pristine Seas LPI method employs world-class scientific divers who typically identify organisms to species or genus level immediately. However, for challenging identifications, we use a structured taxonomic resolution model that ensures scientific rigor throughout the identification process.\n\n\nCode\ngraph TD\n    classDef fieldName fill:#F8F9FA,stroke:#DEE2E6,stroke-width:2px,color:#000000,font-size:14px\n    classDef morphotaxon fill:#E9EDF9,stroke:#6C8EBF,stroke-width:2px,color:#000000,font-size:14px\n    classDef minTaxon fill:#D4E4F9,stroke:#3F75BF,stroke-width:2px,color:#000000,font-size:14px\n    classDef funcCat fill:#004165,stroke:#002E48,stroke-width:2px,color:#FFFFFF,font-size:14px\n    \n    A[Field Name&lt;br&gt;'blue branching coral'] --&gt; B[Morphotaxon&lt;br&gt;'Acropora sp. blue']\n    B --&gt; C[Lowest Defensible Taxonomic Rank&lt;br&gt;'Acropora sp.']\n    C --&gt; D[Benthic Functional Category&lt;br&gt;'Hard Coral']\n    \n    class A fieldName\n    class B morphotaxon\n    class C minTaxon\n    class D funcCat\n    \n    style D fill:#EA9E8D,stroke:#D87F6A,stroke-width:2px,color:#000000\n\n\n\n\n\ngraph TD\n    classDef fieldName fill:#F8F9FA,stroke:#DEE2E6,stroke-width:2px,color:#000000,font-size:14px\n    classDef morphotaxon fill:#E9EDF9,stroke:#6C8EBF,stroke-width:2px,color:#000000,font-size:14px\n    classDef minTaxon fill:#D4E4F9,stroke:#3F75BF,stroke-width:2px,color:#000000,font-size:14px\n    classDef funcCat fill:#004165,stroke:#002E48,stroke-width:2px,color:#FFFFFF,font-size:14px\n    \n    A[Field Name&lt;br&gt;'blue branching coral'] --&gt; B[Morphotaxon&lt;br&gt;'Acropora sp. blue']\n    B --&gt; C[Lowest Defensible Taxonomic Rank&lt;br&gt;'Acropora sp.']\n    C --&gt; D[Benthic Functional Category&lt;br&gt;'Hard Coral']\n    \n    class A fieldName\n    class B morphotaxon\n    class C minTaxon\n    class D funcCat\n    \n    style D fill:#EA9E8D,stroke:#D87F6A,stroke-width:2px,color:#000000\n\n\n\n\n\n\nOur taxonomic resolution progresses through four distinct levels:\n\nField Names: When species-level identification isn’t immediately possible, divers use descriptive temporary placeholders based on distinguishing characteristics.\nExample: “blue branching coral,” “tall green algae,” “orange encrusting sponge”\nMorphotaxa: Field names are consolidated into taxonomic units that combine formal taxonomy with distinguishing field characteristics. This process begins onboard the expedition vessel and evolves as divers gain familiarity with local taxa.\nExample: “Acropora sp. blue,” “Halimeda sp. tall,” “Clathria sp. orange”\nLowest Defensible Taxonomic Rank: Morphotaxa are mapped to the lowest taxonomic level that can be scientifically defended based on available evidence.\nExample: “Acropora sp.,” “Halimeda sp.,” “Porifera”\nBenthic Functional Categories: Taxonomic ranks are classified into ecological functional groups for ecosystem-level analyses. These are derived from standardized taxonomy reference lists.\nExample: “Hard Coral,” “Erect Algae,” “Sponges”\n\n\n\n\n\n\n\nTaxonomic Identification Workflow\n\n\n\nA Progressive Workflow\n\nDuring dives\n\nDivers identify organisms to species level when possible\nFor challenging taxa, descriptive field names are used as placeholders\n\nOnboard processing\n\nConsolidation into morphotaxa begins immediately onboard:\n\nDivers review photographs and compare observations\nTaxonomic knowledge improves progressively throughout expedition\nField guides and reference materials guide identifications\n\n\nPost-expedition refinement\n\nFinal taxonomic processing using expedition reference taxonomy lists:\n\nMorphotaxa → Lowest defensible taxonomic rank\nTaxonomic rank → Functional group\nFor corals: Addition of morphology and life history classifications",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Line Point Intercept"
+      "Benthic Surveys",
+      "Line Point Intercept"
     ]
   },
   {
     "objectID": "field-methods/benthic_lpi.html#functional-categories",
     "href": "field-methods/benthic_lpi.html#functional-categories",
-    "title": "Benthic Line Point Intercept",
+    "title": "Line Point Intercept",
     "section": "Functional Categories",
     "text": "Functional Categories\nWe use the following standardized functional categories for analysis and visualization:\n\n\n\nHard Coral Scleractinian corals with calcium carbonate skeletons Examples: Acropora spp., Porites spp.\n\n\n\nCCA (Crustose Coralline Algae) Pink to red calcified encrusting algae Examples: Porolithon spp., Lithophyllum spp., Hydrolithon spp.\n\n\n\nCyanobacteria Photosynthetic bacterial mats Examples: Lyngbya spp., Oscillatoria spp., Symploca spp.\n\n\n\nSoft Coral Non-reef building octocorals Examples: Sinularia spp., Sarcophyton spp., Lobophytum spp.\n\n\n\nSponges Porifera of various morphologies Examples: Xestospongia spp., Haliclona spp., Cliona spp.\n\n\n\nEncrusting Algae Non-coralline encrusting macroalgae Examples: Peyssonnelia spp., Lobophora spp., Ralfsia spp.\n\n\n\nErect Algae Upright macroalgae with distinct structure Examples: Sargassum spp., Turbinaria spp., Halimeda spp.\n\n\n\nTurf Low-growing filamentous algal assemblages Examples: Mixed filamentous turf, cyanobacterial turf, red turf\n\n\n\nOther Organisms that don’t fit main categories Examples: Ascidians, bryozoans, hydroids\n\n\n\nSediment/Rubble/Barren Abiotic substrates and bare surfaces Examples: Sand, coral rubble, bare rock\n\n\n\n\nHard Corals\nHard corals are classified using complementary systems that enable comprehensive analysis of community structure, ecological function, and resilience potential across survey sites.\n\nLife History Strategies\nCoral species exhibit distinct life history strategies that reflect evolutionary adaptations to different environmental conditions. We map our coral taxa to the four strategies proposed by Darling et al. (2012) primarily distinguished by colony morphology, growth rate, and reproductive mode. These strategies help predict species responses to disturbances and inform conservation approaches in the rapidly changing marine environment.\n\nCompetitiveWeedyStress-TolerantGeneralist\n\n\nTraits\n\nFast growth, broadcast spawning, large colonies with low skeletal density.\nDominate favorable environments and outcompete others for space.\n\nDisturbance tolerance: Vulnerable to bleaching and physical damage with poor recovery capacity.\nExamples: Acropora palmata, A. cervicornis, Pocillopora elegans\nMorphologies: Branching, plating, corymbose forms creating complex habitats.\n\n\nTraits:\n\nVariable growth, brooding reproduction, high reproductive output, small colonies (&lt;20cm).\nPioneer species colonizing disturbed areas.\n\nDisturbance tolerance: Moderate bleaching susceptibility but quick recovery through rapid recruitment and effective dispersal.\nExamples: Pocillopora damicornis, Stylophora pistillata, Seriatopora hystrix\nMorphologies: Small branching, digitate forms establishing rapidly on available substrate.\n\n\nTraits:\n\nSlow growth (&lt;5 cm/year), broadcast spawning, conservative energy use, high skeletal density.\nLong-lived colonies persisting in marginal environments.\n\nDisturbance tolerance: Resistant to acute stressors, withstand higher temperatures, slow but persistent recovery.\nExamples: Porites lobata, Orbicella annularis, Siderastrea siderea\nMorphologies: Massive, boulder, encrusting forms providing reef framework stability.\n\n\nTraits:\n\nModerate growth (5-15 cm/year), mixed reproduction strategies, balanced resource allocation.\nAdaptable across environmental gradients.\n\nDisturbance tolerance: Intermediate thermal tolerance with moderate recovery capacity and variable stress responses.\nExamples: Diploria labyrinthiformis, Pavona spp., Galaxea fascicularis\nMorphologies: Massive, foliose, meandroid forms with moderate complexity.\n\n\n\n\n\nMorphology\nCoral morphology represents the physical structure and growth form that coral colonies develop, directly influencing their ecological function and response to environmental stressors. These distinct growth forms are key determinants in coral life history strategies and provide important insights into reef structural complexity, habitat provision, and resilience potential.\n\n\nBranching\n\nTree-like with thin branchese.g., Acropora muricata\n\n\n\nTabular\n\nHorizontal plate-like growthe.g., Acropora hyacinthus\n\n\n\nMassive\n\nBoulder-like, robust growthe.g., Porites lobata\n\n\n\nEncrusting\n\nGrowing flat against substratee.g., Montipora spumosa\n\n\n\nFoliose\n\nLeaf-like or whorl structuree.g., Turbinaria reniformis\n\n\n\nSolitary\n\nIndividual polypse.g., Fungia fungites\n\n\n\nDigitate\n\nFinger-like branchese.g., Pocillopora meandrina\n\n\n\nCorymbose\n\nTable-like with branchletse.g., Acropora cytherea",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Line Point Intercept"
+      "Benthic Surveys",
+      "Line Point Intercept"
     ]
   },
   {
@@ -755,13 +762,14 @@
   {
     "objectID": "field-methods/benthic_lpi.html#data-processing",
     "href": "field-methods/benthic_lpi.html#data-processing",
-    "title": "Benthic Line Point Intercept",
+    "title": "Line Point Intercept",
     "section": "Data Processing",
     "text": "Data Processing\n\nData Entry\nLPI data are entered into standardized Excel fieldbooks that are store in the ship’s NAS with the following structure:\n\nreadme sheet: Contains expedition info, data entry instructions, and guidelines\nstations sheet: Records station information including sampling depths, survey lengths, and any deviations from protocol.\nobservations sheet: Primary data entry for all LPI point intercepts\n\n\n\nProcessing Pipeline\n\nFile Consolidation\nThe workflow begins by reading all expedition fieldbooks across legs and divers, combining stations and observations into a unified dataset. This includes converting the data from a wide format (best for data entry in the field) to a long data format, best for anaysis and visualiztion. It also include merginbg the work of the benthic and coral divers.\n\n\n\n\n\n\nMerging Benthic and Coral Diver Data\n\n\n\nThis critical step integrates the specialized knowledge of both divers:\n\nBenthic diver identifies functional groups (e.g., “30 points as hard coral”)\nCoral diver provides detailed taxonomic identification of corals\nWe apportion the benthic diver’s points based on the coral diver’s proportional observations\nThis maintains accurate functional group counts while maximizing taxonomic resolution\n\n\n\n\n\nValidation and Cleaning\nStation data is joined with the uvs_sites_fieldbook to validate site information including coordinates, habitat type, and spatial hierarchy. We check depth strata alignment across stations, standardizes formats, and verifies completeness of required fields. Transects are validated to confirm they contain the expected number of points, with exceptions flagged for review.\nAll taxonomic entries undergo validation against master reference lists, with morphotaxa mapped to the appropriate classification hierarchy.\n\n\nBenthic Cover Calculation\nFrom the cleaned data, we calculate percent cover by morphotaxa and functional group for each station. Additional metrics include species richness, diversity indices, and coral health indicators such as bleaching percentages. These station-level calculations are then aggregated to create site averages and region-wide metrics for comparative analysis.\n\n\n\n\n\n\nCore Output Files\n\n\n\nThe pipeline generates four essential files:\n\nlpi_count: raw but clean raw point contacts\nlpi_cover_by_taxa: total points and % cover by morphotaxa and station\nlpi_station_summary: % cover by functional category and station\nlpi_taxa_summary.csv: prevalence across regions, frequency of occurrence, and average cover values\n\n\n\n\n\nDatabase Integration\nFinally, the processed data is formatted for database ingestion with appropriate metadata tags and quality indicators. This standardized approach ensures consistent data structure across expeditions, facilitating long-term monitoring and comparative analysis of marine ecosystems worldwide.\n\n\n\nExploratory Data Analysis\nAfter completion of the data processing pipeline, we employ a separate eda.qmd file to conduct standardized yet flexible exploratory analyses. This approach balances consistency across expeditions with the need for location-specific insights.\nOur EDA workflow includes several core analyses that we produce for every expedition:\nBiodiversity Assessment - Species accumulation curves to evaluate sampling adequacy - Diversity indices (Shannon, Simpson) compared across sites - Species rank-abundance distributions to characterize community structure\nStatistical Comparisons - Tests for significant differences in diversity and cover metrics - Analyses stratified by region, habitat type, and depth - Focus on key functional groups (hard corals, macroalgae, cyanobacteria)\nCommunity Composition - Multivariate analyses of benthic communities (NMDS, cluster analysis) - Visualization of functional group proportions using consistent color palettes - Identification of indicator species for different habitat types\nCoral Health - Bleaching prevalence by species and depth - Disease incidence and severity metrics\nSpatial Visualization - Interactive maps of survey sites with embedded metrics - Geographic pattern analysis",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Line Point Intercept"
+      "Benthic Surveys",
+      "Line Point Intercept"
     ]
   },
   {
@@ -769,7 +777,7 @@
     "href": "index.html#collaborative-framework",
     "title": "Pristine Seas Science Team SOP",
     "section": "Collaborative Framework",
-    "text": "Collaborative Framework\nThe Pristine Seas Science Team works across an integrated set of platforms:\n\n\n\n\n\n\n\n GitHub\n\n\n\nVersion control for code, analysis, and documentation\n\n\n\n\n\n\n\n\n Google Drive\n\n\n\nCollaborative document editing and data storage\n\n\n\n\n\n\n\n\n Zotero\n\n\n\nReference management and bibliography\n\n\n\n\n\n\n\n\n BigQuery\n\n\n\nCentralized database for expedition data\n\n\n\nLearn more about our infrastructure →"
+    "text": "Collaborative Framework\nThe Pristine Seas Science Team works across an integrated set of platforms:\n\n\n\n\n\n\n\n GitHub\n\n\n\nVersion control for code, analysis, and documentation\n\n\n\n\n\n\n\n\n Google Drive\n\n\n\nCollaborative document editing and data storage\n\n\n\n\n\n\n\n\n Zotero\n\n\n\nReference management and bibliography\n\n\n\n\n\n\n\n\n\n\n BigQuery\n\n\n\nCentralized database for expedition data\n\n\n\n\n\n\n\n\n Argo NAS\n\n\n\nAt-sea hub for collaborative work\n\n\n\nLearn more about our collaborative tools →"
   },
   {
     "objectID": "field-methods/index.html#expedition",
@@ -822,13 +830,14 @@
   {
     "objectID": "field-methods/benthic_lpi.html#limitations",
     "href": "field-methods/benthic_lpi.html#limitations",
-    "title": "Benthic Line Point Intercept",
+    "title": "Line Point Intercept",
     "section": "Limitations",
     "text": "Limitations\nWhile the Line Point Intercept (LPI) method offers efficiency and standardization for coral reef monitoring, several methodological trade-offs warrant consideration:\n\nPoint spacing\nSome research suggests 20cm intervals may be too close. Studies comparing intervals found 50cm spacing reduces survey time while still detecting major cover trends, though at the cost of potentially missing rarer species (Facon et al., 2016; Kuo et al., 2022). Statistical power analyses indicate substantially larger sample sizes than typically used are needed to detect even moderate changes in cover regardless of spacing (Leujak & Ormond, 2007).\n\n\nTransect length\nThe standard 50m transect represents a compromise between survey effort and habitat representation. Multiple shorter transects often provide better representation of reef spatial heterogeneity than fewer longer ones (Vallès et al., 2019). Linear methods inherently sample only a tiny proportion of reef area compared to quadrat approaches (0.33% vs 17.8% in some studies).\n\n\nAlternative methods\nFor bleaching assessment specifically, quadrat methods have demonstrated advantages in capturing colony-level impacts and detecting more species than point methods (Brown et al., 2015; Coral Reef Alliance, 2024). Belt transects provide a reasonable compromise for characterizing both coral cover and condition. We continue using LPI methods for consistency with historical data while acknowledging these limitations in our analyses and reports.",
     "crumbs": [
       "Home",
       "Field Methods",
-      "Benthic Line Point Intercept"
+      "Benthic Surveys",
+      "Line Point Intercept"
     ]
   },
   {
@@ -1208,7 +1217,7 @@
     "href": "collaborative-infra/bigquery.html#database-architecture",
     "title": "BigQuery",
     "section": "Database Architecture",
-    "text": "Database Architecture\nThe Pristine Seas Science Database is organized around two major dataset groups that balance flexibility with consistency:\n\nMethod Datasets: Specific to each survey technique (UVS, BRUVS, eDNA, etc.)\nReference Datasets: Shared taxonomic, spatial, and lookup tables providing a unified backbone\n\n\nDatabase Organization\n\n\n\n\n\ngraph LR\n    %% Main project node\n    pristine[\"pristine-seas\"] \n    \n    %% First level - dataset categories\n    reference_group[\"Reference Datasets\"]\n    method_group[\"Method Datasets\"]\n    \n    %% Reference datasets\n    exp[\"expeditions/\"]\n    tax[\"taxonomy/\"]\n    look[\"lookup/\"]\n    \n    %% Method datasets\n    uvs[\"uvs/\"]\n    pbruv[\"pbruv/\"]\n    sbruv[\"sbruv/\"]\n    edna[\"edna/\"]\n    other[\"Other Methods...\"]\n       %% UVS tables\n    sites[\"sites\"]\n    stations[\"stations\"]\n    \n    %% Fish transect tables\n    blt_group[\"Fish Belt Transect Tables\"]\n    blt1[\"blt_stations\"]\n    blt2[\"blt_observations\"]\n    blt3[\"blt_biomass_by_taxa\"]\n    \n    %% LPI tables\n    lpi_group[\"Benthic LPI Tables\"]\n    lpi1[\"lpi_stations\"]\n    lpi2[\"lpi_counts\"]\n    lpi3[\"lpi_cover_by_taxa\"]\n    \n    %% Taxonomy tables\n    fish[\"fish\"]\n    benthos[\"benthos\"]\n    inverts[\"inverts\"]\n    \n    %% Expeditions tables\n    info[\"info\"]\n    exp_sites[\"sites\"]\n    \n    %% Connections\n    pristine --&gt; reference_group\n    pristine --&gt; method_group\n    \n    reference_group --&gt; exp\n    reference_group --&gt; tax\n    reference_group --&gt; look\n    \n    method_group --&gt; uvs\n    method_group --&gt; pbruv\n    method_group --&gt; sbruv\n    method_group --&gt; edna\n    method_group --&gt; other\n    \n    uvs --&gt; sites\n    uvs --&gt; stations\n    uvs --&gt; blt_group\n    uvs --&gt; lpi_group\n    \n    blt_group --&gt; blt1\n    blt_group --&gt; blt2\n    blt_group --&gt; blt3\n    \n    lpi_group --&gt; lpi1\n    lpi_group --&gt; lpi2\n    lpi_group --&gt; lpi3\n    \n    tax --&gt; fish\n    tax --&gt; benthos\n    tax --&gt; inverts\n    \n    exp --&gt; info\n    exp --&gt; exp_sites\n    \n    %% Styling with improved visibility and contrast\n    classDef root fill:#004165,color:#ffffff,stroke:#002e48,stroke-width:2px,rx:8,ry:8\n    classDef group fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,stroke-dasharray: 5 5,rx:5,ry:5\n    classDef refDataset fill:#d4edda,color:#000000,stroke:#28a745,stroke-width:2px,rx:8,ry:8\n    classDef methodDataset fill:#cce5ff,color:#000000,stroke:#0d6efd,stroke-width:2px,rx:8,ry:8\n    classDef table fill:#ffffff,color:#000000,stroke:#6c757d,stroke-width:1px,rx:3,ry:3\n    classDef tableGroup fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,rx:3,ry:3\n    \n    class pristine root\n    class reference_group,method_group group\n    class exp,tax,look refDataset\n    class uvs,pbruv,sbruv,edna,other methodDataset\n    class sites,stations,info,exp_sites,blt1,blt2,blt3,lpi1,lpi2,lpi3,fish,benthos,inverts table\n    class blt_group,lpi_group tableGroup\n\n\n\n\n\n\nFor the complete database documenation please refer to the Pristine Seas Database Documentation.\n\n\nCommon Dataset Structures\nEach method dataset follows a consistent pattern with tables organized into logical categories that support various analytical needs. This standardized structure enables efficient querying, cross-method integration, and reproducible science.\n\n\n\n\n\n\nStandard Table Types\n\n\n\n\nSite Tables (sites, [method]_sites)\n\nOne row per survey site or deployment\nContains geographic coordinates, habitat descriptions, and sampling context\nLinks to the shared expeditions.sites table for spatial hierarchy\n\nStation Tables ([method]_stations)\n\nOne row per sampling unit (e.g., depth strata, replicate)\nIncludes sampling parameters, environmental conditions, and method-specific metadata\nFunctions as the primary unit for analysis and comparison\n\nObservation Tables ([method]_observations)\n\nContains individual records (e.g., fish counts, benthic points, video annotations)\nStores raw QAQC’d ecological data with taxonomic identifications\n\nSummary Tables ([method]_[metric]_by_[dimension])\n\nAggregated analysis-ready metrics (e.g., biomass by species, cover by category)\nPre-calculated to standardize common analytical outputs\nEnables efficient cross-site and cross-method comparisons",
+    "text": "Database Architecture\nThe Pristine Seas Science Database is organized around two major dataset groups that balance flexibility with consistency:\n\nMethod Datasets: Specific to each survey technique (UVS, BRUVS, eDNA, etc.)\nReference Datasets: Shared taxonomic, spatial, and lookup tables providing a unified backbone\n\n\nDatabase Organization\n\n\n\n\n\ngraph LR\n    %% Main project node\n    pristine[\"pristine-seas\"] \n    \n    %% First level - dataset categories\n    reference_group[\"Reference Datasets\"]\n    method_group[\"Method Datasets\"]\n    \n    %% Reference datasets\n    exp[\"expeditions/\"]\n    tax[\"taxonomy/\"]\n    look[\"lookup/\"]\n    \n    %% Method datasets\n    uvs[\"uvs/\"]\n    pbruv[\"pbruv/\"]\n    sbruv[\"sbruv/\"]\n    edna[\"edna/\"]\n    other[\"Other Methods...\"]\n       %% UVS tables\n    sites[\"sites\"]\n    stations[\"stations\"]\n    \n    %% Fish transect tables\n    blt_group[\"Fish Belt Transect Tables\"]\n    blt1[\"blt_stations\"]\n    blt2[\"blt_observations\"]\n    blt3[\"blt_biomass_by_taxa\"]\n    \n    %% LPI tables\n    lpi_group[\"Benthic LPI Tables\"]\n    lpi1[\"lpi_stations\"]\n    lpi2[\"lpi_counts\"]\n    lpi3[\"lpi_cover_by_taxa\"]\n    \n    %% Taxonomy tables\n    fish[\"fish\"]\n    benthos[\"benthos\"]\n    inverts[\"inverts\"]\n    \n    %% Expeditions tables\n    info[\"info\"]\n    exp_sites[\"sites\"]\n    \n    %% Connections\n    pristine --&gt; reference_group\n    pristine --&gt; method_group\n    \n    reference_group --&gt; exp\n    reference_group --&gt; tax\n    reference_group --&gt; look\n    \n    method_group --&gt; uvs\n    method_group --&gt; pbruv\n    method_group --&gt; sbruv\n    method_group --&gt; edna\n    method_group --&gt; other\n    \n    uvs --&gt; sites\n    uvs --&gt; stations\n    uvs --&gt; blt_group\n    uvs --&gt; lpi_group\n    \n    blt_group --&gt; blt1\n    blt_group --&gt; blt2\n    blt_group --&gt; blt3\n    \n    lpi_group --&gt; lpi1\n    lpi_group --&gt; lpi2\n    lpi_group --&gt; lpi3\n    \n    tax --&gt; fish\n    tax --&gt; benthos\n    tax --&gt; inverts\n    \n    exp --&gt; info\n    exp --&gt; exp_sites\n    \n    %% Styling with improved visibility and contrast\n    classDef root fill:#004165,color:#ffffff,stroke:#002e48,stroke-width:2px,rx:8,ry:8\n    classDef group fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,stroke-dasharray: 5 5,rx:5,ry:5\n    classDef refDataset fill:#d4edda,color:#000000,stroke:#28a745,stroke-width:2px,rx:8,ry:8\n    classDef methodDataset fill:#cce5ff,color:#000000,stroke:#0d6efd,stroke-width:2px,rx:8,ry:8\n    classDef table fill:#ffffff,color:#000000,stroke:#6c757d,stroke-width:1px,rx:3,ry:3\n    classDef tableGroup fill:#f8f9fa,color:#000000,stroke:#343a40,stroke-width:1px,rx:3,ry:3\n    \n    class pristine root\n    class reference_group,method_group group\n    class exp,tax,look refDataset\n    class uvs,pbruv,sbruv,edna,other methodDataset\n    class sites,stations,info,exp_sites,blt1,blt2,blt3,lpi1,lpi2,lpi3,fish,benthos,inverts table\n    class blt_group,lpi_group tableGroup\n\n\n\n\n\n\nFor the complete database documenation please refer to the Pristine Seas Database Documentation.\n\n\nCommon Dataset Structures\nEach method dataset follows a consistent pattern with tables organized into logical categories that support various analytical needs. This standardized structure enables efficient querying, cross-method integration, and reproducible science.\n\n\n\n\n\n\nStandard Table Types\n\n\n\n\nSite Tables (sites, [method]_sites)\n\nOne row per survey site or deployment\nContains spatial information, geographic coordinates, habitat descriptions, and context\nKey tables:\n\nexpeditions.sites: aggregates all survey sites across methods and expeditions over time\nuvs.sites: all underwater visual survey sites with method specific metadata.\nsub.sites: all sub dive sites with method specific metadata.\n\n\nStation Tables ([method]_stations)\n\nOne row per sampling unit (e.g., depth strata, replicate)\nIncludes spatial and temporal information, survey effort, and method-specific metadata\nInclude aggregated metrics of interest (e.g., fish biomass, % coral cover)\nFunctions as a primary unit for analysis and comparison\nKey tables:\n\nuvs.lpi_stations: all benthic LPI stations, including transect length, depth, habitat type, and summary metrics.\nuvs.blt_stations: all fish belt transect stations, including transect length, depth, habitat type, and summary metrics.\nsub.stations: all submersible survey stations (horizontal transects) done with the sub.\n\n\nObservation Tables ([method]_observations)\n\nContains individual records (e.g., fish counts, benthic points, video annotations)\nStores raw QAQC’d ecological data with validated taxonomic identifications\nKey tables:\n\nuvs.lpi_counts: all benthic LPI counts, including taxonomic identifications (field_name, morphotaxa, accepted_aphia_ID).\nuvs.blt_observations: all fish belt transect observations, including taxonomic identifications and estimated biomass.\n\n\nStation-Taxa Tables ([method]_[metric]_by_[dimension])\n\nAggregated analysis-ready metrics\nPre-calculated to standardize common analytical outputs\nEnables efficient cross-site and cross-method comparisons\nKey tables:\n\nuvs.cover_by_taxa: total point and % cover by morphotaxa and station.\nuvs.biomass_by_taxa: fish abundance and biomass by taxa and station.\npbruvs.Maxn_by_station: Max N and length estimates per taxa per station",
     "crumbs": [
       "Home",
       "Collaborative Infrastructure",
@@ -1418,5 +1427,26 @@
       "Collaborative Infrastructure",
       "Argo NAS"
     ]
+  },
+  {
+    "objectID": "field-methods/benthic_overview.html#method-overview",
+    "href": "field-methods/benthic_overview.html#method-overview",
+    "title": "Overview",
+    "section": "Method Overview",
+    "text": "Method Overview"
+  },
+  {
+    "objectID": "field-methods/benthic_inverts.html#method-overview",
+    "href": "field-methods/benthic_inverts.html#method-overview",
+    "title": "Inverts",
+    "section": "Method Overview",
+    "text": "Method Overview"
+  },
+  {
+    "objectID": "field-methods/benthic_recruits.html#method-overview",
+    "href": "field-methods/benthic_recruits.html#method-overview",
+    "title": "Recruits",
+    "section": "Method Overview",
+    "text": "Method Overview"
   }
 ]

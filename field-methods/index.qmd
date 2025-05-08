@@ -171,7 +171,90 @@ Our nested structure organizes all collected data into meaningful spatial contex
 
 This allows for analyses at multiple scales while maintaining clear relationships between sampling elements.
 
+
 :::
+
+#### Sampling Hierarchy
+
+The table below outlines the spatial sampling structure for each method in the Pristine Seas Science Database. It defines the hierarchical relationship from sites to observations, ensuring clarity and consistency across protocols.
+
+```{r echo = F}
+library(gt)
+library(gtExtras)
+
+methods_hierarchy <- data.frame(
+  Method = c('UVS',
+             'eDNA', 
+             'Pelagic BRUVS', 
+             'Seabed BRUVS', 
+             'Submersible Surveys', 
+             'Deep-Sea Cameras', 
+             'ROV Surveys', 
+             'YSI Loggers', 
+             'Bird Surveys'),
+  Site = c('Dive survey',
+           'Water collection site',
+           '5-rig BRUVS deployment',
+           'Single BRUVS deployment',
+           'Sub dive',
+           'Single camera deployment',
+           'ROV dive',
+           'Logger deployment',
+           'Survey point'),
+  Station = c('Depth strata',
+              'Depth strata',
+              'Rig',
+              'Single station',
+              'Depth strata',
+              'Single station',
+              'Depth strata',
+              'Single profile',
+              'Single survey'),
+  Transect = c('BLT (3), LPI (1), Inverts (1), Recruits (10)',
+               'Water bags or pumps',
+               'N/A',
+               'N/A',
+               'Video transects',
+               'N/A',
+               'Video transects',
+               'N/A',
+               'Walking transect or point count'),
+  Observation = c('Counts, biomass, cover',
+                  'Species DNA',
+                  'Species ID, length, MaxN',
+                  'Species ID, length, MaxN',
+                  'Species ID, counts, habitat',
+                  'Species ID, abundance',
+                  'Species ID, counts, habitat',
+                  'Temp, salinity, DO, pH',
+                  'Species counts, behavior')
+)
+
+methods_hierarchy %>%
+  gt() %>%
+  gt_theme_nytimes() %>%
+  tab_header(
+    title = md("**Pristine Seas Sampling Hierarchy**"),
+    subtitle = "Site > Station > Transect > Observation"
+  ) %>%
+  cols_label(
+    Method = "Method",
+    Site = "Site",
+    Station = "Station",
+    Transect = "Transect",
+    Observation = "Observation"
+  ) %>%
+  tab_style(
+    style = cell_text(weight = "bold", size = px(16)),
+    locations = cells_column_labels()
+  ) %>%
+  tab_style(
+    style = cell_text(size = px(12)),
+    locations = cells_body()
+  )
+```
+
+
 
 The Pristine Seas Science Database serves as the central repository for this integrated data architecture, preserving methodological connections while maintaining data integrity. Complete documentation of database structure and integration protocols is available [here](https://link-to-database-documentation).
             

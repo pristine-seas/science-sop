@@ -180,26 +180,42 @@ For the complete database documenation please refer to the [Pristine Seas Databa
 Each method dataset follows a consistent pattern with tables organized into logical categories that support various analytical needs. This standardized structure enables efficient querying, cross-method integration, and reproducible science.
 
 ::: {.callout-note appearance="simple"}
+
 ## Standard Table Types
 
 - **Site Tables** (`sites`, `[method]_sites`)
   - One row per survey site or deployment
-  - Contains geographic coordinates, habitat descriptions, and sampling context
-  - Links to the shared `expeditions.sites` table for spatial hierarchy
-  
+  - Contains spatial information, geographic coordinates, habitat descriptions, and context
+  - Key tables: 
+    - `expeditions.sites`: aggregates all survey sites across methods and expeditions over time
+    - `uvs.sites`: all underwater visual survey sites with method specific metadata.
+    - `sub.sites`: all sub dive sites with method specific metadata.
+
 - **Station Tables** (`[method]_stations`)
   - One row per sampling unit (e.g., depth strata, replicate)
-  - Includes sampling parameters, environmental conditions, and method-specific metadata
-  - Functions as the primary unit for analysis and comparison
+  - Includes spatial and temporal information, survey effort, and method-specific metadata
+  - Include aggregated metrics of interest (e.g., fish biomass, % coral cover)
+  - Functions as a primary unit for analysis and comparison
+  - Key tables: 
+    - `uvs.lpi_stations`: all benthic LPI stations, including transect length, depth, habitat type, and summary metrics.
+    - `uvs.blt_stations`: all fish belt transect stations, including transect length, depth, habitat type, and summary metrics. 
+    - `sub.stations`: all submersible survey stations (horizontal transects) done with the sub.
   
 - **Observation Tables** (`[method]_observations`)
   - Contains individual records (e.g., fish counts, benthic points, video annotations)
-  - Stores raw QAQC'd ecological data with taxonomic identifications
+  - Stores raw QAQC'd ecological data with validated taxonomic identifications
+  - Key tables: 
+    - `uvs.lpi_counts`: all benthic LPI counts, including taxonomic identifications (`field_name`, `morphotaxa`, `accepted_aphia_ID`).
+    - `uvs.blt_observations`: all fish belt transect observations, including taxonomic identifications and estimated biomass.
 
-- **Summary Tables** (`[method]_[metric]_by_[dimension]`)
-  - Aggregated analysis-ready metrics (e.g., biomass by species, cover by category)
+- **Station-Taxa Tables** (`[method]_[metric]_by_[dimension]`)
+  - Aggregated analysis-ready metrics
   - Pre-calculated to standardize common analytical outputs
   - Enables efficient cross-site and cross-method comparisons
+  - Key tables: 
+    - `uvs.cover_by_taxa`: total point and % cover by morphotaxa and station.
+    - `uvs.biomass_by_taxa`: fish abundance and biomass by taxa and station.
+    - `pbruvs.Maxn_by_station`: Max N and length estimates per taxa per station
 :::
 
 

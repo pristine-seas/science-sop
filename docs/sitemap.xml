@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sop.pristine-seas.org/index.html</loc>
-    <lastmod>2025-05-07T22:27:54.080Z</lastmod>
+    <lastmod>2025-05-08T17:54:13.213Z</lastmod>
   </url>
   <url>
     <loc>https://sop.pristine-seas.org/collaborative-infra/index.html</loc>
@@ -26,11 +26,11 @@
   </url>
   <url>
     <loc>https://sop.pristine-seas.org/collaborative-infra/bigquery.html</loc>
-    <lastmod>2025-05-07T18:01:28.158Z</lastmod>
+    <lastmod>2025-05-08T18:30:00.627Z</lastmod>
   </url>
   <url>
     <loc>https://sop.pristine-seas.org/field-methods/index.html</loc>
-    <lastmod>2025-05-07T20:55:28.532Z</lastmod>
+    <lastmod>2025-05-08T19:00:37.514Z</lastmod>
   </url>
   <url>
     <loc>https://sop.pristine-seas.org/field-methods/uvs_overview.html</loc>
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://sop.pristine-seas.org/field-methods/benthic_lpi.html</loc>
-    <lastmod>2025-05-06T20:09:43.003Z</lastmod>
+    <lastmod>2025-05-08T19:07:21.116Z</lastmod>
   </url>
   <url>
     <loc>https://sop.pristine-seas.org/collaborative-infra/argo_NAS.html</loc>
@@ -51,5 +51,17 @@
   <url>
     <loc>https://sop.pristine-seas.org/field-methods/inverts.html</loc>
     <lastmod>2025-05-07T20:56:37.882Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/field-methods/benthic_overview.html</loc>
+    <lastmod>2025-05-08T19:08:56.432Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/field-methods/benthic_inverts.html</loc>
+    <lastmod>2025-05-08T19:07:56.060Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/field-methods/benthic_recruits.html</loc>
+    <lastmod>2025-05-08T19:08:22.457Z</lastmod>
   </url>
 </urlset>

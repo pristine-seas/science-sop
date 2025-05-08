@@ -97,32 +97,43 @@ The Pristine Seas Science Team is guided by these fundamental principles in all 
 The Pristine Seas Science Team works across an integrated set of platforms:
 
 ::::::: {style="display: flex; justify-content: space-between; flex-wrap: wrap;"}
-::: {.callout style="flex: 1; min-width: 200px; margin: 0.5em;"}
+
+::: {.callout style="flex: 1 1 30%; min-width: 200px; margin: 0.5em;"}
 ### ![](assets/logos/github-mark.svg){width="30px"} GitHub
 
 Version control for code, analysis, and documentation
 :::
 
-::: {.callout style="flex: 1; min-width: 200px; margin: 0.5em;"}
+::: {.callout style="flex: 1 1 30%; min-width: 200px; margin: 0.5em;"}
 ### ![](assets/logos/drive.svg){width="30px"} Google Drive
 
 Collaborative document editing and data storage
 :::
 
-::: {.callout style="flex: 1; min-width: 200px; margin: 0.5em;"}
+::: {.callout style="flex: 1 1 30%; min-width: 200px; margin: 0.5em;"}
 ### ![](assets/logos/zotero.png){width="30px"} Zotero
 
 Reference management and bibliography
 :::
 
-::: {.callout style="flex: 1; min-width: 200px; margin: 0.5em;"}
+:::::::
+
+::::::: {style="display: flex; justify-content: space-between; flex-wrap: wrap;"}
+
+::: {.callout style="flex: 1 1 45%; min-width: 200px; margin: 0.5em;"}
 ### ![](assets/logos/bigquery.svg){width="30px"} BigQuery
 
 Centralized database for expedition data
 :::
-:::::::
 
-[Learn more about our infrastructure →](collaborative-infra/index.qmd)
+::: {.callout style="flex: 1 1 45%; min-width: 200px; margin: 0.5em;"}
+### ![](assets/logos/nas.svg){width="30px"} Argo NAS
+
+At-sea hub for collaborative work
+:::
+
+:::::::
+[Learn more about our collaborative tools →](collaborative-infra/index.qmd)
 
 ## Get Started
 

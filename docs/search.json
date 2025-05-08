@@ -1462,7 +1462,7 @@
     "href": "field-methods/benthic_inverts.html#method-overview",
     "title": "Invertebrates",
     "section": "Method Overview",
-    "text": "Method Overview\nThe invertebrate survey method involves systematically searching a defined belt transect area to identify, count, and measure key mobile invertebrate species. This approach provides quantitative data on invertebrate density, biomass, and community composition, enabling rigorous spatial and temporal comparisons.\n\nKey Features",
+    "text": "Method Overview\nThe invertebrate survey method employs a belt transect approach to systematically document conspicuous mobile invertebrates within a defined search area. This standardized approach enables quantitative comparison of invertebrate communities across sites, regions, and time periods.\n\nKey Features\n\nDefined search area: 50 m × 1 m belt transect (50 m²)\nFocus taxa: Echinoderms, mollusks, crustaceans, and other conspicuous invertebrates\nSize measurements: Targeted measurements of commercially important or ecologically significant species\nStandardized effort: Consistent search time and methodology across all stations\nIntegration: Uses the same transect line deployed for LPI and coral recruit surveys",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1490,7 +1490,7 @@
     "href": "field-methods/benthic_inverts.html",
     "title": "Invertebrates",
     "section": "",
-    "text": "Mobile invertebrates are key components of marine ecosystems, performing vital ecological functions and serving as indicators of ecosystem health. The Pristine Seas invertebrate survey methodology provides standardized protocols for quantifying the abundance, size distribution, and diversity of conspicuous mobile invertebrates across different habitats and depths. These surveys complement our benthic composition data (LPI) by documenting the mobile fauna that contribute to reef processes such as herbivory, predation, and bioerosion.",
+    "text": "Mobile invertebrates are key components of marine ecosystems, serving as both ecological indicators and fulfilling critical functional roles in reef maintenance, herbivory, and nutrient cycling. The Pristine Seas invertebrate survey methodology provides standardized protocols for quantifying the abundance, diversity, and size distribution of conspicuous mobile invertebrates across different habitats and depths. These surveys complement our benthic composition data (LPI) by documenting the mobile fauna that drive essential reef processes and often serve as valuable fishery resources.",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1504,7 +1504,7 @@
     "href": "field-methods/benthic_inverts.html#introduction",
     "title": "Invertebrates",
     "section": "",
-    "text": "Mobile invertebrates are key components of marine ecosystems, performing vital ecological functions and serving as indicators of ecosystem health. The Pristine Seas invertebrate survey methodology provides standardized protocols for quantifying the abundance, size distribution, and diversity of conspicuous mobile invertebrates across different habitats and depths. These surveys complement our benthic composition data (LPI) by documenting the mobile fauna that contribute to reef processes such as herbivory, predation, and bioerosion.",
+    "text": "Mobile invertebrates are key components of marine ecosystems, serving as both ecological indicators and fulfilling critical functional roles in reef maintenance, herbivory, and nutrient cycling. The Pristine Seas invertebrate survey methodology provides standardized protocols for quantifying the abundance, diversity, and size distribution of conspicuous mobile invertebrates across different habitats and depths. These surveys complement our benthic composition data (LPI) by documenting the mobile fauna that drive essential reef processes and often serve as valuable fishery resources.",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1532,7 +1532,7 @@
     "href": "field-methods/benthic_inverts.html#field-implementation",
     "title": "Invertebrates",
     "section": "Field Implementation",
-    "text": "Field Implementation\nThe invertebrate survey is typically conducted by the recruit/invert diver as part of the three-person benthic survey team. This specialized diver completes both the invertebrate and coral recruit surveys during a single dive, performing these tasks in sequence.\n\n\n\n\n\n\nInvertebrate Survey Specifications\n\n\n\n\nTransect dimensions: 50 m × 1 m (50 m²)\nSearch width: 0.5 m on each side of the transect line\nSurvey direction: From end (50 m) to start (0 m) of the transect\nTiming: Conducted after completing coral recruit quadrats\nTypical duration: 15-20 minutes per transect\n\n\n\n\nData Collection Procedure\n\nDeployment coordination:\n\nThe invertebrate survey utilizes the same 50 m transect line deployed for the LPI survey\nAfter completing coral recruit quadrats, the diver transitions to invertebrate surveys\n\nSurvey method:\n\nBegin at the end of the transect (50 m mark)\nSearch 0.5 m on either side of the transect (1 m total width)\nMove systematically along the transect toward the start (0 m)\n\nTarget taxa:\n\nFocus on conspicuous mobile invertebrates (see Target Taxa section)\nRecord species-level identifications when possible\nFor challenging identifications, use higher taxonomic groupings with descriptive modifiers\n\nData recording:\n\nCount individuals by species or lowest identifiable taxonomic level\nMeasure or estimate size for speicfic taxa (length, width, or diameter as appropriate)\nNote unusual behavior, aggregations, habitat associations, or rare species\n\nPhoto documentation:\n\nPhotograph unusual or unidentified specimens\nCapture representative individuals of key species",
+    "text": "Field Implementation\n\nCoordination with Other Methods\nThe invertebrate survey is conducted by the same diver who performs the coral recruit survey, as part of the three-person benthic survey team. This specialized diver completes both surveys during a single dive, performing the coral recruit survey first, followed by the invertebrate survey along the same transect line.\n\n\n\n\n\n\nInvertebrate Survey Specifications\n\n\n\n\nTransect dimensions: 50 m × 1 m (50 m²)\nSearch width: 1 m along one side of the transect line\nDirection: From end (50 m) to start (0 m) of the transect\nTiming: Conducted after completing coral recruit quadrats\nDuration: 15-20 minutes per transect (standardized effort)\n\n\n\n\n\nData Collection Procedure\n\nSurvey execution:\n\nAfter completing the coral recruit quadrats, return to the end of the transect\nBegin at the 50 m mark and work toward the 0 m mark\nSystematically search 1 m along one side of the transect line\nMaintain a consistent search speed to standardize effort\n\nData recording:\n\nIdentify all motile invertebrates to species level and count them\nFor culturally and fishery important species, measure sizes in centimeters using slate\nExclude species permanently attached to the seabed (except for scallops, pearl oysters, and giant clams)\nNote unusual behavior or interesting ecological interactions\n\nPhoto documentation:\n\nPhotograph all invertebrates not identified in-situ to species\nCapture additional images of unusual specimens or notable aggregations\nDocument evidence of harvesting or ecological interactions\n\nQuality control notes:\n\nNote any deviations from standard protocol\nDocument search time and any interruptions",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1546,7 +1546,7 @@
     "href": "field-methods/benthic_inverts.html#target-taxa",
     "title": "Invertebrates",
     "section": "Target Taxa",
-    "text": "Target Taxa\nThe invertebrate survey focuses on conspicuous mobile invertebrates that can be reliably observed through visual census. While the specific target taxa may vary by region, the following groups are consistently surveyed:\n\nEchinoderms\n\n\n\nSea Stars (Asteroidea) Count all individuals, measure diameter Examples: Acanthaster spp., Linckia spp., Culcita spp.\n\n\n\nSea Urchins (Echinoidea) Count all individuals, measure test diameter Examples: Diadema spp., Echinometra spp., Tripneustes spp.\n\n\n\nSea Cucumbers (Holothuroidea) Count all individuals, measure length Examples: Holothuria spp., Stichopus spp., Actinopyga spp.\n\n\n\nFeather Stars (Crinoidea) Count all individuals, note color morphs Examples: Comanthus spp., Oxycomanthus spp.\n\n\n\n\n\nMollusks\n\n\n\nGiant Clams (Tridacnidae) Count all individuals, measure shell length Examples: Tridacna spp., Hippopus spp.\n\n\n\nNudibranchs Count all individuals, note distinctive species Examples: Chromodoris spp., Phyllidia spp.\n\n\n\nOctopuses and Cuttlefish Count all individuals, estimate size Examples: Octopus spp., Sepia spp.\n\n\n\nConch and Large Gastropods Count all individuals, measure shell length Examples: Lambis spp., Charonia spp., Cassis spp.\n\n\n\n\n\nCrustaceans\n\n\n\nLobsters Count all individuals, measure carapace length Examples: Panulirus spp., Enoplometopus spp.\n\n\n\nLarge Crabs Count all individuals, measure carapace width Examples: Carpilius spp., Etisus spp.",
+    "text": "Target Taxa\nThe invertebrate survey counts all motile invertebrates, with special attention to ecologically important and commercially valuable species. While we aim for complete enumeration, these key groups receive priority focus:\n\nMajor Taxonomic Groups\n\n\n\nEchinoderms\n\n\nSea stars (Acanthaster, Linckia)\n\n\nSea urchins (Diadema, Tripneustes)\n\n\nSea cucumbers (all commercial species)\n\n\nFeather stars (crinoids)\n\n\n\n\n\nMollusks\n\n\nGiant clams (Tridacnidae)\n\n\nPearl oysters (including Penguin’s wing)\n\n\nGastropods (Trochus, Triton, Conch)\n\n\nNudibranchs & Cephalopods\n\n\n\n\n\nCrustaceans\n\n\nLobsters (Panulirus, Scyllarides)\n\n\nLarge crabs (Carpilius, Etisus)\n\n\nOther large crustaceans\n\n\n\n\n\n\n\nPriority Species for Measurement\nUsing the centimeter-marked edge of the dive slate, measure sizes of these key species:\n\n\n\n\n\n\n\n\nTaxonomic Group\nSpecies to Measure\nMeasurement\n\n\n\n\nGiant clams\nAll Tridacnidae\nMaximum shell length\n\n\nPearl oysters\nIncluding Penguin’s wing\nShell height\n\n\nGastropods\nTrochus, Triton, Conch, Turban, Green snails\nShell width/length per SPC guide\n\n\nSea cucumbers\nAll commercial species\nBody length when relaxed\n\n\nSea urchins\nNon-boring species (e.g., Tripneustes)\nTest diameter without spines\n\n\nLobsters\nAll species\nCarapace length\n\n\n\nRefer to the SPC invertebrate measurement guide for specific measurement techniques. Additional species may be included based on regional priorities.\n\n\nSpecial Considerations for Key Species\n\nCrown-of-Thorns Starfish (COTS)\nFor each Acanthaster individual, record:\n\nDiameter (cm) from arm tip to opposite arm tip\nActivity: (F) feeding, (M) moving, or (R) resting\nSubstrate and coral association\nAggregation density and condition\n\n\n\nGiant Clams\nFor all Tridacnidae, document:\n\nSpecies-level identification\nMaximum shell length\nPosition: (E) embedded, (L) loose, or (P) partially embedded\nBleaching status or damage\n\n\n\nCommercially Important Species\nFor locally harvested species, note:\n\nSize measurements for population structure assessment\nHabitat associations\nEvidence of harvesting activity\nJuvenile presence",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1574,7 +1574,7 @@
     "href": "field-methods/benthic_inverts.html#taxonomic-resolution",
     "title": "Invertebrates",
     "section": "Taxonomic Resolution",
-    "text": "Taxonomic Resolution\nThe invertebrate survey employs the same taxonomic resolution model used across all Pristine Seas benthic methods.\n\nField Names: Descriptive placeholders used during the survey\nMorphotaxa: Consolidation of field names into taxonomic units with distinguishing characteristics\nLowest Defensible Taxonomic Rank: Mapping to formal taxonomy based on available evidence\nFunctional Group: Classification into ecological functional roles",
+    "text": "Taxonomic Resolution\nAll motile invertebrates are identified to species level whenever possible. For specimens that cannot be immediately identified in the field, photographs are taken for later identification using available resources.\n\nIdentification Resources\nThe following resources are available to support species identification:\n\nOn-ship reference books: Expedition vessels are equipped with invertebrate field guides and taxonomic references\nOnline resources:\n\nInvertEBase\nKwajalin Underwater\nSea Slug Forum\nSea Slugs of Hawaii\nFlorent’s Guide\nMyReefGuide\nMarineLifePhotography\n\n\nWhen species-level identification is not possible, the invertebrate survey follows the same taxonomic resolution approach used across all Pristine Seas benthic methods:\n\nField names: Descriptive terms based on obvious morphological characteristics\n\nExamples: “black sea cucumber with red papillae,” “blue-spotted sea star”\n\nMorphotaxa: Consolidation of field names into taxonomic units with distinguishing features\n\nExamples: “Linckia sp. blue,” “Holothuria sp. black with red”\n\nLowest defensible taxonomic rank: Formal taxonomic assignment based on available evidence\n\nExamples: “Linckia laevigata,” “Holothuria atra”\n\nFunctional group: Classification into ecological functional roles\n\nExamples: “Grazing echinoid,” “Deposit-feeding holothuroid”",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1588,7 +1588,7 @@
     "href": "field-methods/benthic_inverts.html#data-processing",
     "title": "Invertebrates",
     "section": "Data Processing",
-    "text": "Data Processing\n\nData Entry\nInvertebrate data are entered into standardized Excel fieldbooks with the following structure:\n\nreadme sheet: Contains expedition info, data entry instructions, and guidelines\nstations sheet: Records station information including sampling depths and any deviations from protocol\nobservations sheet: Primary data entry for all invertebrate observations, including counts and measurements\n\n\n\nProcessing Pipeline\nThe data processing workflow follows these key steps:\n\nFile Consolidation:\n\nMerge data across expedition legs and divers\nStandardize taxonomic names and size measurements\nIntegrate with site metadata from the UVS Sites Fieldbook\n\nData Validation:\n\nVerify completeness of required fields\nFlag outliers for size measurements\nCross-reference taxonomic entries against reference lists\n\nDensity Calculation:\n\nCalculate abundance per unit area (individuals/m²)\nGenerate summary statistics by taxa, site, and region\nCreate standardized density metrics for comparisons\n\nDatabase Integration:\n\nFormat processed data for database ingestion\nEnsure consistency with other UVS components\n\n\n\n\nCore Output Files\nThe pipeline generates several essential files:\n\ninverts_observations.csv: Cleaned observations with standardized taxonomy\ninverts_density_by_taxa.csv: Density calculations by taxa and station\ninverts_station_summary.csv: Aggregate metrics by station\ninverts_taxa_summary.csv: Occurrence and abundance by taxa across regions",
+    "text": "Data Processing\n\nData Entry and Management\nInvertebrate data are entered into standardized Excel fieldbooks with the following structure:\n\nreadme sheet: Contains expedition info, data entry instructions, and guidelines\nstations sheet: Records station information including sampling depths, habitat types, and protocol details\nobservations sheet: Primary data entry for all invertebrate observations, including counts and measurements\n\n\n\nProcessing Pipeline\nThe data processing workflow follows these key steps:\n\n1. File Consolidation\n\nMerge data across expedition legs and divers\nStandardize taxonomic entries and size measurements\nIntegrate with site metadata from the UVS Sites Fieldbook\nVerify data completeness across all stations\n\n\n\n2. Data Validation and Quality Control\n\nFlag missing data or outliers for review\nCross-check taxonomic entries\nVerify transect lengths and search times\n\n\n\n3. Standardization and Calculation\n\nCalculate density metrics (individuals/m²) for each taxon\nCompute biomass estimates for key species (where length-weight relationships exist)\nGenerate summary statistics by taxonomic group, site, and region\n\n\n\n4. Database Integration\n\nFormat processed data for BigQuery ingestion\nEnsure consistency with other UVS components\n\n\n\n\nCore Output Files\nThe pipeline generates several essential files:\n\ninverts_observations.csv: Cleaned observations with standardized taxonomy\ninverts_density_by_taxa.csv: Density calculations by taxa and station\ninverts_stations.csv: Aggregate metrics by station (richness, total density, key taxa densities)\ninverts_taxa_summary.csv: Regional occurrence patterns and average densities by taxa",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1602,7 +1602,7 @@
     "href": "field-methods/benthic_inverts.html#exploratory-data-analysis",
     "title": "Invertebrates",
     "section": "Exploratory Data Analysis",
-    "text": "Exploratory Data Analysis\nStandard analyses conducted for invertebrate data may include:\n\nCommunity Composition:\n\nTaxonomic richness and diversity indices\nMultivariate analyses (NMDS, cluster analysis)\nFunctional group proportions\n\nStatistical Comparisons:\n\nTests for significant differences by region, habitat, and depth\nAnalysis of key indicator species abundance patterns\nCorrelation with benthic cover metrics from LPI\n\nSpatial Visualization:\n\nDensity maps for key taxa\nGeographic distribution patterns\n\nSize Structure:\n\nSize frequency distributions for key species\nComparative size analysis across protection levels",
+    "text": "Exploratory Data Analysis\nOur standard invertebrate data analysis includes several core components that are usually applied across expeditions:\n\nCommunity Composition\n\nTaxonomic richness and diversity indices\nMultivariate analyses (NMDS, cluster analysis)\nFunctional group proportions\n\n\n\nStatistical Analyses\n\nTests for significant differences by region, habitat, and depth\nAnalysis of key indicator species abundance patterns\nCorrelation with benthic cover metrics from LPI\n\n\n\nSpatial Visualization\n\nDensity maps for key taxa\nGeographic distribution patterns\n\n\n\nSize Structure\n\nSize frequency distributions for key species\nComparative size analysis across protection levels\n\n\n\nIntegration with other methods\nThe invertebrate survey data can be analyzed alongside other Pristine Seas survey methods:\n\nWith LPI data: Examining relationships between benthic composition and invertebrate communities\nWith fish data: Investigating predator-prey relationships and trophic cascades\nWith coral recruit data: Assessing potential impacts of invertebrate grazers on coral recruitment\nWith eDNA data: Comparing visual detection with molecular detection of invertebrate diversity",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1616,7 +1616,7 @@
     "href": "field-methods/benthic_inverts.html#limitations",
     "title": "Invertebrates",
     "section": "Limitations",
-    "text": "Limitations\nWhile the belt transect methodology is effective for surveying many mobile invertebrates, several limitations should be considered:\n\nCryptic species: Many invertebrates are cryptic or nocturnal and may be underrepresented in daytime surveys\nSubstrate complexity: Detection probability varies with habitat complexity\nDiver influence: Some mobile species actively avoid or are attracted to divers\nTaxonomic challenges: Invertebrate identification often requires specialized expertise\nTemporal variability: Many invertebrates show significant diurnal or seasonal patterns\n\nThese limitations are addressed through:\n\nConsistent survey timing and methods\nStandardized observer training\nPhotographic documentation for verification\nConservative taxonomic resolution approach\nIntegration with other survey methods (e.g., eDNA)",
+    "text": "Limitations\nWhile the belt transect methodology is effective for surveying many mobile invertebrates, several limitations should be considered:\n\nHabitat complexity: Detection probability varies with substrate complexity\nCryptic behavior: Many invertebrates are hidden within complex reef structures\nNocturnal activity: Daytime surveys miss species active primarily at night\nDiver avoidance: Some mobile species actively avoid divers\nSpatial clumping: Patchy distribution may result in high variance between transects",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1770,7 +1770,7 @@
     "href": "field-methods/benthic_recruits.html#references",
     "title": "Coral Recruits",
     "section": "References",
-    "text": "References\nArnold SN, Steneck RS, Mumby PJ. (2010). Running the gauntlet: inhibitory effects of algal turfs on the processes of coral recruitment. Marine Ecology Progress Series, 414, 91-105.\nBabcock RC, Baird AH, Piromvaragorn S, Thomson DP, Willis BL. (2003). Identification of scleractinian coral recruits from Indo-Pacific reefs. Zoological Studies, 42(1), 211-226.\nHughes TP, Tanner JE. (2000). Recruitment failure, life histories, and long-term decline of Caribbean corals. Ecology, 81(8), 2250-2263.\nRitson-Williams R, Arnold SN, Fogarty ND, Steneck RS, Vermeij MJ, Paul VJ. (2009). New perspectives on ecological mechanisms affecting coral recruitment on reefs. Smithsonian Contributions to the Marine Sciences, 38, 437-457.\nVermeij MJ, Sandin SA. (2008). Density-dependent settlement and mortality structure the earliest life phases of a coral population. Ecology, 89(7), 1994-2004.\nWebster NS, Smith LD, Heyward AJ, Watts JE, Webb RI, Blackall LL, Negri AP. (2004). Metamorphosis of a scleractinian coral in response to microbial biofilms. Applied and Environmental Microbiology, 70(2), 1213-1221.",
+    "text": "References",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1791,6 +1791,62 @@
       "Underwater Visual Surveys (UVS)",
       "Benthos",
       "Coral Recruits"
+    ]
+  },
+  {
+    "objectID": "field-methods/benthic_inverts.html#references",
+    "href": "field-methods/benthic_inverts.html#references",
+    "title": "Invertebrates",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
+      "Invertebrates"
+    ]
+  },
+  {
+    "objectID": "field-methods/benthic_inverts.html#special-taxonomic-considerations",
+    "href": "field-methods/benthic_inverts.html#special-taxonomic-considerations",
+    "title": "Invertebrates",
+    "section": "Special Taxonomic Considerations",
+    "text": "Special Taxonomic Considerations\n\nGiant Clams (Tridacnidae)\nDue to their ecological significance and vulnerability to harvesting, detailed data is collected for all giant clams:\n\nSpecies: Identify to species level (e.g., Tridacna maxima, T. squamosa)\nSize: Measure maximum shell length (cm) using calipers\nPosition: Record as (E) embedded in substrate, (L) loose on substrate, or (P) partially embedded\nCondition: Note any signs of bleaching, damage, or harvesting attempts\n\n\n\nCrown-of-Thorns Starfish (COTS)\nIn regions where Acanthaster spp. outbreaks are a concern, we collect additional data on each individual:\n\nSize: Measure diameter (cm) from arm tip to opposite arm tip\nActivity: Record as (F) feeding, (M) moving, or (R) resting\nPosition: Note substrate association (e.g., on live coral, dead coral, rubble)\nAggregation: Document density if multiple individuals present\nCondition: Note any visible injuries, disease signs, or predation marks\n\nThis enhanced data collection for COTS provides valuable information about population dynamics and potential outbreak conditions.\n\n\nCommercially Valuable Species\nFor species with particular economic importance within the survey region:\n\nSize structure: Collect measurements to assess population structure\nHabitat association: Document specific substrate or habitat preferences\nEvidence of harvesting: Note any signs of collection pressure\nJuvenile presence: Document abundance of juvenile stages if observed",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
+      "Invertebrates"
+    ]
+  },
+  {
+    "objectID": "field-methods/benthic_inverts.html#integration-with-other-methods",
+    "href": "field-methods/benthic_inverts.html#integration-with-other-methods",
+    "title": "Invertebrates",
+    "section": "Integration with Other Methods",
+    "text": "Integration with Other Methods\nThe invertebrate survey data can be analyzed alongside other Pristine Seas survey methods:\n\nWith LPI data: Examining relationships between benthic composition and invertebrate communities\nWith fish data: Investigating predator-prey relationships and trophic cascades\nWith coral recruit data: Assessing potential impacts of invertebrate grazers on coral recruitment\nWith eDNA data: Comparing visual detection with molecular detection of invertebrate diversity",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
+      "Invertebrates"
+    ]
+  },
+  {
+    "objectID": "field-methods/benthic_inverts.html#limitations-and-considerations",
+    "href": "field-methods/benthic_inverts.html#limitations-and-considerations",
+    "title": "Invertebrates",
+    "section": "Limitations and Considerations",
+    "text": "Limitations and Considerations\nWhile the belt transect methodology is effective for surveying many mobile invertebrates, several limitations should be considered:\n\nHabitat complexity: Detection probability varies with substrate complexity\nCryptic behavior: Many invertebrates are hidden within complex reef structures\nNocturnal activity: Daytime surveys miss species active primarily at night\nDiver avoidance: Some mobile species actively avoid divers\nSpatial clumping: Patchy distribution may result in high variance between transects",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Benthos",
+      "Invertebrates"
     ]
   }
 ]

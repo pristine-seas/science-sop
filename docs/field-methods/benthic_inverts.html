@@ -470,26 +470,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#field-implementation" id="toc-field-implementation" class="nav-link" data-scroll-target="#field-implementation">Field Implementation</a>
   <ul class="collapse">
-  <li><a href="#coordination-with-other-methods" id="toc-coordination-with-other-methods" class="nav-link" data-scroll-target="#coordination-with-other-methods">Coordination with Other Methods</a></li>
-  <li><a href="#data-collection-procedure" id="toc-data-collection-procedure" class="nav-link" data-scroll-target="#data-collection-procedure">Data Collection Procedure</a></li>
+  <li><a href="#team-structure" id="toc-team-structure" class="nav-link" data-scroll-target="#team-structure">Team Structure</a></li>
+  <li><a href="#collection-procedure" id="toc-collection-procedure" class="nav-link" data-scroll-target="#collection-procedure">Collection Procedure</a></li>
+  <li><a href="#measurement-protocols" id="toc-measurement-protocols" class="nav-link" data-scroll-target="#measurement-protocols">Measurement Protocols</a></li>
   </ul></li>
-  <li><a href="#target-taxa" id="toc-target-taxa" class="nav-link" data-scroll-target="#target-taxa">Target Taxa</a>
+  <li><a href="#taxonomic-framework" id="toc-taxonomic-framework" class="nav-link" data-scroll-target="#taxonomic-framework">Taxonomic Framework</a>
   <ul class="collapse">
-  <li><a href="#major-taxonomic-groups" id="toc-major-taxonomic-groups" class="nav-link" data-scroll-target="#major-taxonomic-groups">Major Taxonomic Groups</a></li>
-  <li><a href="#priority-species-for-measurement" id="toc-priority-species-for-measurement" class="nav-link" data-scroll-target="#priority-species-for-measurement">Priority Species for Measurement</a></li>
-  <li><a href="#special-considerations-for-key-species" id="toc-special-considerations-for-key-species" class="nav-link" data-scroll-target="#special-considerations-for-key-species">Special Considerations for Key Species</a></li>
+  <li><a href="#target-taxa" id="toc-target-taxa" class="nav-link" data-scroll-target="#target-taxa">Target Taxa</a></li>
+  <li><a href="#identification-process" id="toc-identification-process" class="nav-link" data-scroll-target="#identification-process">Identification Process</a></li>
   </ul></li>
-  <li><a href="#taxonomic-resolution" id="toc-taxonomic-resolution" class="nav-link" data-scroll-target="#taxonomic-resolution">Taxonomic Resolution</a>
+  <li><a href="#ecological-classifications" id="toc-ecological-classifications" class="nav-link" data-scroll-target="#ecological-classifications">Ecological Classifications</a>
   <ul class="collapse">
-  <li><a href="#identification-resources" id="toc-identification-resources" class="nav-link" data-scroll-target="#identification-resources">Identification Resources</a></li>
+  <li><a href="#feeding-modes" id="toc-feeding-modes" class="nav-link" data-scroll-target="#feeding-modes">Feeding Modes</a></li>
+  <li><a href="#resource-categories" id="toc-resource-categories" class="nav-link" data-scroll-target="#resource-categories">Resource Categories</a></li>
   </ul></li>
-  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data Processing</a>
+  <li><a href="#data-workflow" id="toc-data-workflow" class="nav-link" data-scroll-target="#data-workflow">Data Workflow</a>
   <ul class="collapse">
-  <li><a href="#data-entry-and-management" id="toc-data-entry-and-management" class="nav-link" data-scroll-target="#data-entry-and-management">Data Entry and Management</a></li>
+  <li><a href="#data-entry" id="toc-data-entry" class="nav-link" data-scroll-target="#data-entry">Data Entry</a></li>
   <li><a href="#processing-pipeline" id="toc-processing-pipeline" class="nav-link" data-scroll-target="#processing-pipeline">Processing Pipeline</a></li>
-  <li><a href="#core-output-files" id="toc-core-output-files" class="nav-link" data-scroll-target="#core-output-files">Core Output Files</a></li>
-  </ul></li>
   <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link" data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
+  </ul></li>
   <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
@@ -538,9 +538,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="field-implementation" class="level2">
 <h2 class="anchored" data-anchor-id="field-implementation">Field Implementation</h2>
-<section id="coordination-with-other-methods" class="level3">
-<h3 class="anchored" data-anchor-id="coordination-with-other-methods">Coordination with Other Methods</h3>
-<p>The invertebrate survey is conducted by the same diver who performs the coral recruit survey, as part of the three-person benthic survey team. This specialized diver completes both surveys during a single dive, performing the coral recruit survey first, followed by the invertebrate survey along the same transect line.</p>
+<section id="team-structure" class="level3">
+<h3 class="anchored" data-anchor-id="team-structure">Team Structure</h3>
+<p>The invertebrate survey is conducted by a specialized diver as part of the three-person benthic survey team. This integrated approach maximizes efficiency while ensuring consistent sampling across all benthic components:</p>
+<ul>
+<li>One diver focuses on coral recruits and invertebrates</li>
+<li>Another conducts the Line Point Intercept (LPI) survey for benthic cover</li>
+<li>A third identifies corals at LPI points to species level</li>
+</ul>
+<p>The recruit/invertebrate specialist completes the coral recruit survey first, followed by the invertebrate survey along the same transect, optimizing dive time while maintaining thorough coverage.</p>
 <div class="callout callout-style-simple callout-note callout-titled" title="**Invertebrate Survey Specifications**">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -555,21 +561,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Transect dimensions</strong>: 50 m × 1 m (50 m²)</li>
 <li><strong>Search width</strong>: 1 m along one side of the transect line</li>
 <li><strong>Direction</strong>: From end (50 m) to start (0 m) of the transect</li>
+<li><strong>Depth strata</strong>: Typically 10 m and 20 m (matching other benthic methods)</li>
 <li><strong>Timing</strong>: Conducted after completing coral recruit quadrats</li>
 <li><strong>Duration</strong>: 15-20 minutes per transect (standardized effort)</li>
 </ul>
 </div>
 </div>
 </section>
-<section id="data-collection-procedure" class="level3">
-<h3 class="anchored" data-anchor-id="data-collection-procedure">Data Collection Procedure</h3>
+<section id="collection-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="collection-procedure">Collection Procedure</h3>
 <ol type="1">
-<li><strong>Survey execution</strong>:
+<li><strong>Initial preparation</strong>:
 <ul>
 <li>After completing the coral recruit quadrats, return to the end of the transect</li>
+<li>Prepare data slate with invertebrate recording sheets</li>
+<li>Ensure measuring tools are accessible</li>
+</ul></li>
+<li><strong>Survey execution</strong>:
+<ul>
 <li>Begin at the 50 m mark and work toward the 0 m mark</li>
 <li>Systematically search 1 m along one side of the transect line</li>
 <li>Maintain a consistent search speed to standardize effort</li>
+<li>Scan substrate, crevices, and undersides of structures</li>
 </ul></li>
 <li><strong>Data recording</strong>:
 <ul>
@@ -588,15 +601,85 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Note any deviations from standard protocol</li>
 <li>Document search time and any interruptions</li>
+<li>Record habitat and substrate characteristics that might affect invertebrate distributions</li>
 </ul></li>
 </ol>
 </section>
+<section id="measurement-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-protocols">Measurement Protocols</h3>
+<p>For priority species, standardized measurements are taken using the centimeter-marked edge of the dive slate. Each taxonomic group has specific measurement standards to ensure data consistency:</p>
+<div class="columns" style="display: flex; flex-wrap: wrap;">
+<div class="column" style="padding: 0.5em;">
+<div style="background-color: #E8F6F3; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #1ABC9C;">
+<p><strong>Giant Clams</strong><br> Maximum shell length for all Tridacnidae<br> <em>Position recorded as embedded, loose, or partial</em></p>
+</div>
+</div><div class="column" style="padding: 0.5em;">
+<div style="background-color: #EAF2F8; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #3498DB;">
+<p><strong>Pearl Oysters</strong><br> Shell height including Penguin’s wing oysters<br> <em>Measured from hinge to furthest shell margin</em></p>
+</div>
+</div><div class="column" style="padding: 0.5em;">
+<div style="background-color: #F4ECF7; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #8E44AD;">
+<p><strong>Gastropods</strong><br> Shell width/length for Trochus, Triton, Conch varieties<br> <em>Following SPC guide-specific measurement points</em></p>
+</div>
+</div><div class="column" style="padding: 0.5em;">
+<div style="background-color: #FEF9E7; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #F1C40F;">
+<p><strong>Sea Cucumbers</strong><br> Body length when relaxed for all commercial species<br> <em>Measured without disturbing the animal</em></p>
+</div>
+</div><div class="column" style="padding: 0.5em;">
+<div style="background-color: #FDEDEC; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #E74C3C;">
+<p><strong>Sea Urchins</strong><br> Test diameter without spines for non-boring species<br> <em>Especially important for Tripneustes and Diadema</em></p>
+</div>
+</div><div class="column" style="padding: 0.5em;">
+<div style="background-color: #F8F9F9; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #566573;">
+<p><strong>Lobsters</strong><br> Carapace length for all species<br> <em>Measured from eye orbit to posterior carapace edge</em></p>
+</div>
+</div>
+</div>
+<p>Additional species may be included based on regional priorities, following the measurement protocols outlined in the <em>SPC invertebrate measurement guide</em>.</p>
+<section id="priority-species-monitoring" class="level4">
+<h4 class="anchored" data-anchor-id="priority-species-monitoring">Priority Species Monitoring</h4>
+<p>Certain key species warrant additional documentation due to their ecological significance or commercial importance:</p>
+<div class="callout callout-style-simple callout-important callout-titled" title="**Crown-of-Thorns Starfish (COTS)**">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Crown-of-Thorns Starfish (COTS)</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For each <em>Acanthaster</em> individual encountered, we document:</p>
+<ul>
+<li><strong>Size</strong>: Diameter from arm tip to opposite arm tip (cm)</li>
+<li><strong>Behavior</strong>: Activity coded as feeding (F), moving (M), or resting (R)</li>
+<li><strong>Habitat</strong>: Substrate type and coral species association</li>
+<li><strong>Aggregation</strong>: Number of other individuals within 5m radius</li>
+<li><strong>Condition</strong>: Any signs of disease, predation, or stress</li>
+</ul>
+<p>This detailed monitoring helps track potential outbreaks that can significantly impact coral reef health and provides essential data for management interventions.</p>
+</div>
+</div>
+<div class="callout-info" data-appearance="simple" title="**Giant Clams (Tridacnidae)**">
+<p>All giant clam species receive special attention with documentation of:</p>
+<ul>
+<li><strong>Species</strong>: Complete species-level identification</li>
+<li><strong>Size</strong>: Maximum shell length measured along longest axis</li>
+<li><strong>Position</strong>: Recorded as embedded (E), loose (L), or partially embedded (P)</li>
+<li><strong>Health</strong>: Assessment of bleaching status and physical damage</li>
+<li><strong>Habitat</strong>: Substrate type and depth within site</li>
+</ul>
+<p>As iconic and vulnerable species, giant clams serve as important indicators of fishing pressure, environmental conditions, and reef health.</p>
+</div>
+<p>This comprehensive data collection provides critical insights into the status of invertebrate resources and informs sustainable management strategies.</p>
 </section>
-<section id="target-taxa" class="level2">
-<h2 class="anchored" data-anchor-id="target-taxa">Target Taxa</h2>
-<p>The invertebrate survey counts all motile invertebrates, with special attention to ecologically important and commercially valuable species. While we aim for complete enumeration, these key groups receive priority focus:</p>
-<section id="major-taxonomic-groups" class="level3">
-<h3 class="anchored" data-anchor-id="major-taxonomic-groups">Major Taxonomic Groups</h3>
+</section>
+</section>
+<section id="taxonomic-framework" class="level2">
+<h2 class="anchored" data-anchor-id="taxonomic-framework">Taxonomic Framework</h2>
+<section id="target-taxa" class="level3">
+<h3 class="anchored" data-anchor-id="target-taxa">Target Taxa</h3>
+<p>The invertebrate survey counts all motile invertebrates, with special attention to ecologically important and commercially valuable species. While we aim for complete enumeration, the following key groups receive priority focus:</p>
 <div class="columns" style="display: flex; flex-wrap: wrap;">
 <div class="column" style="padding: 0.5em;">
 <div style="background-color: #FFF3E0; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #FF9800;">
@@ -652,111 +735,10 @@ Other large crustaceans
 </div>
 </div>
 </section>
-<section id="priority-species-for-measurement" class="level3">
-<h3 class="anchored" data-anchor-id="priority-species-for-measurement">Priority Species for Measurement</h3>
-<p>Using the centimeter-marked edge of the dive slate, measure sizes of these key species:</p>
-<table class="table">
-<colgroup>
-<col style="width: 34%">
-<col style="width: 38%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Taxonomic Group</th>
-<th>Species to Measure</th>
-<th>Measurement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Giant clams</strong></td>
-<td>All Tridacnidae</td>
-<td>Maximum shell length</td>
-</tr>
-<tr class="even">
-<td><strong>Pearl oysters</strong></td>
-<td>Including Penguin’s wing</td>
-<td>Shell height</td>
-</tr>
-<tr class="odd">
-<td><strong>Gastropods</strong></td>
-<td>Trochus, Triton, Conch, Turban, Green snails</td>
-<td>Shell width/length per SPC guide</td>
-</tr>
-<tr class="even">
-<td><strong>Sea cucumbers</strong></td>
-<td>All commercial species</td>
-<td>Body length when relaxed</td>
-</tr>
-<tr class="odd">
-<td><strong>Sea urchins</strong></td>
-<td>Non-boring species (e.g., <em>Tripneustes</em>)</td>
-<td>Test diameter without spines</td>
-</tr>
-<tr class="even">
-<td><strong>Lobsters</strong></td>
-<td>All species</td>
-<td>Carapace length</td>
-</tr>
-</tbody>
-</table>
-<p>Refer to the <em>SPC invertebrate measurement guide</em> for specific measurement techniques. Additional species may be included based on regional priorities.</p>
-</section>
-<section id="special-considerations-for-key-species" class="level3">
-<h3 class="anchored" data-anchor-id="special-considerations-for-key-species">Special Considerations for Key Species</h3>
-<section id="crown-of-thorns-starfish-cots" class="level4">
-<h4 class="anchored" data-anchor-id="crown-of-thorns-starfish-cots">Crown-of-Thorns Starfish (COTS)</h4>
-<p>For each <em>Acanthaster</em> individual, record:</p>
-<ul>
-<li>Diameter (cm) from arm tip to opposite arm tip</li>
-<li>Activity: (F) feeding, (M) moving, or (R) resting</li>
-<li>Substrate and coral association</li>
-<li>Aggregation density and condition</li>
-</ul>
-</section>
-<section id="giant-clams" class="level4">
-<h4 class="anchored" data-anchor-id="giant-clams">Giant Clams</h4>
-<p>For all Tridacnidae, document:</p>
-<ul>
-<li>Species-level identification</li>
-<li>Maximum shell length</li>
-<li>Position: (E) embedded, (L) loose, or (P) partially embedded</li>
-<li>Bleaching status or damage</li>
-</ul>
-</section>
-<section id="commercially-important-species" class="level4">
-<h4 class="anchored" data-anchor-id="commercially-important-species">Commercially Important Species</h4>
-<p>For locally harvested species, note:</p>
-<ul>
-<li>Size measurements for population structure assessment</li>
-<li>Habitat associations</li>
-<li>Evidence of harvesting activity</li>
-<li>Juvenile presence</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="taxonomic-resolution" class="level2">
-<h2 class="anchored" data-anchor-id="taxonomic-resolution">Taxonomic Resolution</h2>
-<p>All motile invertebrates are identified to species level whenever possible. For specimens that cannot be immediately identified in the field, photographs are taken for later identification using available resources.</p>
-<section id="identification-resources" class="level3">
-<h3 class="anchored" data-anchor-id="identification-resources">Identification Resources</h3>
-<p>The following resources are available to support species identification:</p>
-<ul>
-<li><strong>On-ship reference books</strong>: Expedition vessels are equipped with invertebrate field guides and taxonomic references</li>
-<li><strong>Online resources</strong>:
-<ul>
-<li>InvertEBase</li>
-<li>Kwajalin Underwater</li>
-<li>Sea Slug Forum</li>
-<li>Sea Slugs of Hawaii</li>
-<li>Florent’s Guide</li>
-<li>MyReefGuide</li>
-<li>MarineLifePhotography</li>
-</ul></li>
-</ul>
-<p>When species-level identification is not possible, the invertebrate survey follows the same taxonomic resolution approach used across all Pristine Seas benthic methods:</p>
+<section id="identification-process" class="level3">
+<h3 class="anchored" data-anchor-id="identification-process">Identification Process</h3>
+<p>Our taxonomic approach adapts to the challenges of identifying diverse invertebrate taxa in the field. All motile invertebrates are identified to species level whenever possible, with photographs taken for specimens that cannot be immediately identified.</p>
+<p>When immediate species-level identification is not possible, we employ a hierarchical approach to taxonomic resolution:</p>
 <ol type="1">
 <li><strong>Field names</strong>: Descriptive terms based on obvious morphological characteristics
 <ul>
@@ -775,120 +757,214 @@ Other large crustaceans
 <li><em>Examples: “Grazing echinoid,” “Deposit-feeding holothuroid”</em></li>
 </ul></li>
 </ol>
-</section>
-</section>
-<section id="data-processing" class="level2">
-<h2 class="anchored" data-anchor-id="data-processing">Data Processing</h2>
-<section id="data-entry-and-management" class="level3">
-<h3 class="anchored" data-anchor-id="data-entry-and-management">Data Entry and Management</h3>
-<p>Invertenbrates data are recorded in standardized Excel fieldbooks on the same day of data collection, while information and memory are fresh. The <code>ISO3_YEAR_inverts_fieldbook.xlsx</code> is organized as follows:</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="**Identification Resources**">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Identification Resources</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Field teams utilize multiple resources to support accurate species identification:</p>
 <ul>
-<li><code>readme</code> sheet: Contains expedition info, data entry instructions, and guidelines</li>
-<li><code>stations</code> sheet: Records station information including sampling depths, habitat types, and protocol details</li>
-<li><code>observations</code> sheet: Primary data entry for all invertebrate observations, including counts and measurements</li>
+<li><strong>Pre-expedition training</strong>: Familiarization with expected regional species</li>
+<li><strong>Field guides</strong>: Region-specific printed references available onboard</li>
+<li><strong>Digital libraries</strong>: Offline electronic identification guides</li>
+<li><strong>Photographic documentation</strong>: Systematic imaging for later verification</li>
+<li><strong>Expert consultation</strong>: Review of challenging identifications by taxonomic specialists</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="ecological-classifications" class="level2">
+<h2 class="anchored" data-anchor-id="ecological-classifications">Ecological Classifications</h2>
+<p>Invertebrates are classified according to several functional frameworks to enable ecological interpretation beyond simple taxonomic groupings.</p>
+<section id="feeding-modes" class="level3">
+<h3 class="anchored" data-anchor-id="feeding-modes">Feeding Modes</h3>
+<p>We categorize invertebrates into functional feeding groups that reflect their ecological roles:</p>
+<div class="columns" style="display: flex; flex-wrap: wrap;">
+<div class="column" style="padding: 0.5em;">
+<div style="background-color: #D5F5E3; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #2ECC71;">
+<p><strong>Herbivores/Detritivores</strong><br> Consume algae, detritus, or plant material<br> <em>Examples: Many sea urchins, some sea cucumbers</em></p>
+</div>
+</div><div class="column" style="padding: 0.5em;">
+<div style="background-color: #D4E6F1; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #3498DB;">
+<p><strong>Filter/Suspension Feeders</strong><br> Extract particles from water column<br> <em>Examples: Giant clams, feather stars, fan worms</em></p>
+</div>
+</div><div class="column" style="padding: 0.5em;">
+<div style="background-color: #FCF3CF; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #F1C40F;">
+<p><strong>Deposit Feeders</strong><br> Process sediment for organic material<br> <em>Examples: Many sea cucumbers, some sea stars</em></p>
+</div>
+</div><div class="column" style="padding: 0.5em;">
+<div style="background-color: #FADBD8; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #E74C3C;">
+<p><strong>Predators</strong><br> Consume other animals<br> <em>Examples: COTS, many gastropods, octopus</em></p>
+</div>
+</div>
+</div>
+</section>
+<section id="resource-categories" class="level3">
+<h3 class="anchored" data-anchor-id="resource-categories">Resource Categories</h3>
+<p>Many invertebrates represent important fishery resources. We classify these according to their value and exploitation status:</p>
+<div class="columns" style="display: flex; flex-wrap: wrap;">
+<div class="column" style="padding: 0.5em;">
+<div style="background-color: #FDEDEC; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #943126;">
+<p><strong>High-Value Commercial</strong><br> Primary target species in export fisheries<br> <em>Examples: Sea cucumbers, lobsters, giant clams</em></p>
+</div>
+</div><div class="column" style="padding: 0.5em;">
+<div style="background-color: #EBF5FB; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #21618C;">
+<p><strong>Local Subsistence Resource</strong><br> Species harvested primarily for local consumption<br> <em>Examples: Trochus, octopus, many crabs</em></p>
+</div>
+</div>
+</div>
+<p>These classifications provide a framework for interpreting invertebrate patterns in the context of ecosystem function and human use.</p>
+</section>
+</section>
+<section id="data-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="data-workflow">Data Workflow</h2>
+<section id="data-entry" class="level3">
+<h3 class="anchored" data-anchor-id="data-entry">Data Entry</h3>
+<p>Invertebrate observations are recorded on underwater slates during dives and transferred to standardized Excel fieldbooks on the same day. This immediate transcription preserves data accuracy while memory is fresh. The <code>ISO3_YEAR_inverts_fieldbook.xlsx</code> serves as the primary data repository for each expedition with three key components:</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="**Fieldbook Structure**">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Fieldbook Structure</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Readme</strong>: Expedition details, data entry protocols, and guidelines</li>
+<li><strong>Stations</strong>: Site information including depth, habitat type, and protocol adherence</li>
+<li><strong>Observations</strong>: Individual invertebrate records with taxonomic identification, counts, and measurements</li>
+</ul>
+</div>
+</div>
+<p>The observations sheet includes validation rules that flag potential errors such as:</p>
+<ul>
+<li>Missing taxonomic information</li>
+<li>Unlikely size measurements</li>
+<li>Invalid station numbers</li>
 </ul>
 </section>
 <section id="processing-pipeline" class="level3">
 <h3 class="anchored" data-anchor-id="processing-pipeline">Processing Pipeline</h3>
-<p>The data processing workflow follows these key steps:</p>
+<p>Our data processing transforms raw field observations into analysis-ready datasets through four sequential phases:</p>
 <section id="file-consolidation" class="level4">
 <h4 class="anchored" data-anchor-id="file-consolidation">1. File Consolidation</h4>
+<p>First, we compile data from all divers and expedition legs into a unified dataset:</p>
 <ul>
-<li>Merge data across expedition legs and divers</li>
-<li>Standardize taxonomic entries and size measurements</li>
-<li>Integrate with site metadata from the UVS Sites Fieldbook</li>
-<li>Verify data completeness across all stations</li>
+<li>Merge all invertebrate records from multiple dives and sites</li>
+<li>Standardize taxonomic names using reference taxonomy lists</li>
+<li>Add metadata from the UVS Sites Fieldbook (coordinates, habitat type, etc.)</li>
+<li>Create a complete dataset that preserves all original observations</li>
 </ul>
 </section>
-<section id="data-validation-and-quality-control" class="level4">
-<h4 class="anchored" data-anchor-id="data-validation-and-quality-control">2. Data Validation and Quality Control</h4>
+<section id="quality-control" class="level4">
+<h4 class="anchored" data-anchor-id="quality-control">2. Quality Control</h4>
+<p>Next, we verify data quality through a systematic review process:</p>
 <ul>
-<li>Flag missing data or outliers for review</li>
-<li>Cross-check taxonomic entries</li>
-<li>Verify transect lengths and search times</li>
+<li>Validate species identifications for consistency and accuracy</li>
+<li>Flag outliers in size measurements for review</li>
+<li>Cross-check invertebrate records with habitat types for ecological coherence</li>
+<li>Ensure complete sampling coverage across all sites</li>
 </ul>
+<p>Potential issues are flagged for expert review rather than automatically removed, preserving data integrity while ensuring scientific accuracy.</p>
 </section>
-<section id="standardization-and-calculation" class="level4">
-<h4 class="anchored" data-anchor-id="standardization-and-calculation">3. Standardization and Calculation</h4>
+<section id="density-calculation" class="level4">
+<h4 class="anchored" data-anchor-id="density-calculation">3. Density Calculation</h4>
+<p>We then calculate standardized density metrics for cross-site comparisons:</p>
 <ul>
-<li>Calculate density metrics (individuals/m²) for each taxon</li>
-<li>Compute biomass estimates for key species (where length-weight relationships exist)</li>
-<li>Generate summary statistics by taxonomic group, site, and region</li>
+<li>Compute abundance per unit area (individuals/m²) for each taxon</li>
+<li>Generate biomass estimates for species with established length-weight relationships</li>
+<li>Calculate summary statistics by taxonomic group, site, and region</li>
+</ul>
+<p>A critical step in this process is the addition of zero values for taxa that were not observed on a particular transect but were found elsewhere in the region. This ensures that absence data is properly incorporated when calculating average densities and prevents biased estimates. Zero values are applied:</p>
+<ul>
+<li>After taxonomic standardization but before aggregation</li>
+<li>Based on the regional species pool established for each survey</li>
+<li>Only for species that could reasonably occur in the sampled habitat type</li>
+<li>Prior to calculating site-level and region-level metrics</li>
 </ul>
 </section>
 <section id="database-integration" class="level4">
 <h4 class="anchored" data-anchor-id="database-integration">4. Database Integration</h4>
-<ul>
-<li>Format processed data for BigQuery ingestion</li>
-<li>Ensure consistency with other UVS components</li>
-</ul>
+<p>Finally, we format the processed data for ingestion into our central database, creating four core output files:</p>
+<ol type="1">
+<li><strong>inverts_observations</strong>: Individual records with standardized taxonomy, counts, and measurements</li>
+<li><strong>inverts_density_by_taxa</strong>: Density calculations by taxa and station</li>
+<li><strong>inverts_stations</strong>: Station-level metadata and summary statistics (richness, density)</li>
+<li><strong>inverts_taxa_summary</strong>: Regional occurrence patterns and average densities by taxa</li>
+</ol>
+<p>These standardized outputs allow consistent analysis across expeditions and regions while maintaining connections to the original field observations.</p>
 </section>
 </section>
-<section id="core-output-files" class="level3">
-<h3 class="anchored" data-anchor-id="core-output-files">Core Output Files</h3>
-<p>The pipeline generates several essential files:</p>
-<ul>
-<li><strong>inverts_observations.csv</strong>: Cleaned observations with standardized taxonomy</li>
-<li><strong>inverts_density_by_taxa.csv</strong>: Density calculations by taxa and station</li>
-<li><strong>inverts_stations.csv</strong>: Aggregate metrics by station (richness, total density, key taxa densities)</li>
-<li><strong>inverts_taxa_summary.csv</strong>: Regional occurrence patterns and average densities by taxa</li>
-</ul>
-</section>
-</section>
-<section id="exploratory-data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h2>
-<p>Our standard invertebrate data analysis includes several core components that are usually applied across expeditions:</p>
+<section id="exploratory-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h3>
+<p>Our analytical approach examines invertebrate communities through multiple complementary perspectives:</p>
 <section id="community-composition" class="level4">
 <h4 class="anchored" data-anchor-id="community-composition">Community Composition</h4>
+<p>We analyze biodiversity patterns and community structure:</p>
 <ul>
-<li>Taxonomic richness and diversity indices</li>
-<li>Multivariate analyses (NMDS, cluster analysis)</li>
-<li>Functional group proportions</li>
+<li>Species richness and diversity indices across sites and protection levels</li>
+<li>Multivariate analyses (NMDS, cluster analysis) to identify assemblage patterns</li>
+<li>Functional group proportions to assess ecosystem processes</li>
+<li>Indicator species analysis to identify habitat associations</li>
 </ul>
+<p>These analyses provide insights into the factors structuring invertebrate communities and their responses to environmental gradients.</p>
 </section>
-<section id="statistical-analyses" class="level4">
-<h4 class="anchored" data-anchor-id="statistical-analyses">Statistical Analyses</h4>
+<section id="population-patterns" class="level4">
+<h4 class="anchored" data-anchor-id="population-patterns">Population Patterns</h4>
+<p>We examine population characteristics of key species:</p>
 <ul>
-<li>Tests for significant differences by region, habitat, and depth</li>
-<li>Analysis of key indicator species abundance patterns</li>
-<li>Correlation with benthic cover metrics from LPI</li>
+<li>Density comparisons across sites, habitats, and protection levels</li>
+<li>Size frequency distributions to assess population structure</li>
+<li>Biomass estimates for commercially important species</li>
+<li>Recruitment patterns and juvenile abundance</li>
 </ul>
+<p>These metrics help evaluate population health and the impacts of environmental conditions or harvesting pressure.</p>
 </section>
-<section id="spatial-visualization" class="level4">
-<h4 class="anchored" data-anchor-id="spatial-visualization">Spatial Visualization</h4>
+<section id="spatial-patterns" class="level4">
+<h4 class="anchored" data-anchor-id="spatial-patterns">Spatial Patterns</h4>
+<p>By analyzing invertebrate distributions across space, we identify:</p>
 <ul>
-<li>Density maps for key taxa</li>
-<li>Geographic distribution patterns</li>
+<li>Hotspots of diversity and abundance</li>
+<li>Habitat associations for key species</li>
+<li>Depth-related community changes</li>
+<li>Geographic patterns in commercially important taxa</li>
 </ul>
+<p>Spatial analyses provide critical information for conservation planning and resource management.</p>
 </section>
-<section id="size-structure" class="level4">
-<h4 class="anchored" data-anchor-id="size-structure">Size Structure</h4>
+<section id="cross-method-integration" class="level4">
+<h4 class="anchored" data-anchor-id="cross-method-integration">Cross-Method Integration</h4>
+<p>We combine invertebrate data with other survey components to reveal ecosystem relationships:</p>
 <ul>
-<li>Size frequency distributions for key species</li>
-<li>Comparative size analysis across protection levels</li>
+<li>Correlations between benthic cover and invertebrate communities</li>
+<li>Predator-prey relationships between fish and invertebrates</li>
+<li>Potential impacts of invertebrate grazers on coral recruitment</li>
+<li>Comparisons between visual surveys and eDNA detection of invertebrate diversity</li>
 </ul>
+<p>These integrated analyses provide a holistic understanding of reef ecosystem function and reveal the ecological processes that drive reef health and resilience.</p>
+<p>Through these complementary analytical approaches, we transform field observations into ecological insights that inform conservation planning and contribute to our understanding of marine ecosystems across multiple scales.</p>
 </section>
-<section id="integration-with-other-methods" class="level4">
-<h4 class="anchored" data-anchor-id="integration-with-other-methods">Integration with other methods</h4>
-<p>The invertebrate survey data can be analyzed alongside other Pristine Seas survey methods:</p>
-<ul>
-<li><strong>With LPI data</strong>: Examining relationships between benthic composition and invertebrate communities</li>
-<li><strong>With fish data</strong>: Investigating predator-prey relationships and trophic cascades</li>
-<li><strong>With coral recruit data</strong>: Assessing potential impacts of invertebrate grazers on coral recruitment</li>
-<li><strong>With eDNA data</strong>: Comparing visual detection with molecular detection of invertebrate diversity</li>
-</ul>
 </section>
 </section>
 <section id="limitations" class="level2">
 <h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
-<p>While the belt transect methodology is effective for surveying many mobile invertebrates, several limitations should be considered:</p>
+<p>While belt transects are an efficient method for surveying many mobile invertebrates, several limitations should be considered:</p>
 <ul>
 <li><strong>Habitat complexity</strong>: Detection probability varies with substrate complexity</li>
-<li><strong>Cryptic behavior</strong>: Many invertebrates are hidden within complex reef structures</li>
+<li><strong>Cryptic behavior</strong>: Many invertebrates remain hidden within complex reef structures</li>
 <li><strong>Nocturnal activity</strong>: Daytime surveys miss species active primarily at night</li>
-<li><strong>Diver avoidance</strong>: Some mobile species actively avoid divers</li>
+<li><strong>Diver avoidance</strong>: Some mobile species actively avoid observers</li>
 <li><strong>Spatial clumping</strong>: Patchy distribution may result in high variance between transects</li>
+<li><strong>Taxonomic challenges</strong>: Some groups require specialized expertise for accurate identification</li>
 </ul>
+<p>We address these limitations through standardized protocols, thorough diver training, adequate replication, and integration with complementary methods like eDNA and night surveys where possible.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
@@ -1397,250 +1473,417 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Field Implementation</span></span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">### Coordination with Other Methods</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">### Team Structure</span></span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>The invertebrate survey is conducted by the same diver who performs the coral recruit survey, as part of the three-person benthic survey team. This specialized diver completes both surveys during a single dive, performing the coral recruit survey first, followed by the invertebrate survey along the same transect line.</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>The invertebrate survey is conducted by a specialized diver as part of the three-person benthic survey team. This integrated approach maximizes efficiency while ensuring consistent sampling across all benthic components:</span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" title="**Invertebrate Survey Specifications**"}</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Transect dimensions**: 50 m × 1 m (50 m²)</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Search width**: 1 m along one side of the transect line</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Direction**: From end (50 m) to start (0 m) of the transect</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Timing**: Conducted after completing coral recruit quadrats</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Duration**: 15-20 minutes per transect (standardized effort)</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Collection Procedure</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Survey execution**:</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>After completing the coral recruit quadrats, return to the end of the transect</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Begin at the 50 m mark and work toward the 0 m mark</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Systematically search 1 m along one side of the transect line</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Maintain a consistent search speed to standardize effort</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>One diver focuses on coral recruits and invertebrates</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Another conducts the Line Point Intercept (LPI) survey for benthic cover</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A third identifies corals at LPI points to species level</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>The recruit/invertebrate specialist completes the coral recruit survey first, followed by the invertebrate survey along the same transect, optimizing dive time while maintaining thorough coverage.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" title="**Invertebrate Survey Specifications**"}</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Transect dimensions**: 50 m × 1 m (50 m²)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Search width**: 1 m along one side of the transect line</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Direction**: From end (50 m) to start (0 m) of the transect</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Depth strata**: Typically 10 m and 20 m (matching other benthic methods)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Timing**: Conducted after completing coral recruit quadrats</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Duration**: 15-20 minutes per transect (standardized effort)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Data recording**:</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Identify all motile invertebrates to species level and count them</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>For culturally and fishery important species, measure sizes in centimeters using slate</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Exclude species permanently attached to the seabed (except for scallops, pearl oysters, and giant clams)</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Note unusual behavior or interesting ecological interactions</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Photo documentation**:</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Photograph all invertebrates not identified in-situ to species</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Capture additional images of unusual specimens or notable aggregations</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Document evidence of harvesting or ecological interactions</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Quality control notes**:</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Note any deviations from standard protocol</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Document search time and any interruptions</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="fu">## Target Taxa</span></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>The invertebrate survey counts all motile invertebrates, with special attention to ecologically important and commercially valuable species. While we aim for complete enumeration, these key groups receive priority focus:</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">### Collection Procedure</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Initial preparation**:</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>After completing the coral recruit quadrats, return to the end of the transect</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Prepare data slate with invertebrate recording sheets</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Ensure measuring tools are accessible</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Survey execution**:</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Begin at the 50 m mark and work toward the 0 m mark</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Systematically search 1 m along one side of the transect line</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Maintain a consistent search speed to standardize effort</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Scan substrate, crevices, and undersides of structures</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Data recording**:</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Identify all motile invertebrates to species level and count them</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>For culturally and fishery important species, measure sizes in centimeters using slate</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Exclude species permanently attached to the seabed (except for scallops, pearl oysters, and giant clams)</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Note unusual behavior or interesting ecological interactions</span>
 <span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu">### Major Taxonomic Groups</span></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>:::: {.columns style="display: flex; flex-wrap: wrap;"}</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>::: {.column width="33%" style="padding: 0.5em;"}</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #FFF3E0; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #FF9800;"&gt;</span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Echinoderms&lt;/strong&gt;</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>&lt;ul style="margin: 0.2em 0 0 1em; padding: 0;"&gt;</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Sea stars (Acanthaster, Linckia)&lt;/li&gt;</span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Sea urchins (Diadema, Tripneustes)&lt;/li&gt;</span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Sea cucumbers (all commercial species)&lt;/li&gt;</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Feather stars (crinoids)&lt;/li&gt;</span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>&lt;/ul&gt;</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>::: {.column width="33%" style="padding: 0.5em;"}</span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #E0F7FA; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #00BCD4;"&gt;</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Mollusks&lt;/strong&gt;</span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>&lt;ul style="margin: 0.2em 0 0 1em; padding: 0;"&gt;</span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Giant clams (Tridacnidae)&lt;/li&gt;</span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Pearl oysters (including Penguin's wing)&lt;/li&gt;</span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Gastropods (Trochus, Triton, Conch)&lt;/li&gt;</span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Nudibranchs &amp; Cephalopods&lt;/li&gt;</span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>&lt;/ul&gt;</span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>::: {.column width="33%" style="padding: 0.5em;"}</span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #F3E5F5; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #9C27B0;"&gt;</span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Crustaceans&lt;/strong&gt;</span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>&lt;ul style="margin: 0.2em 0 0 1em; padding: 0;"&gt;</span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Lobsters (Panulirus, Scyllarides)&lt;/li&gt;</span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Large crabs (Carpilius, Etisus)&lt;/li&gt;</span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Other large crustaceans&lt;/li&gt;</span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>&lt;/ul&gt;</span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>::::</span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="fu">### Priority Species for Measurement</span></span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>Using the centimeter-marked edge of the dive slate, measure sizes of these key species:</span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>| Taxonomic Group | Species to Measure | Measurement |</span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>|-----------------|-------------------|-------------|</span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>| **Giant clams** | All Tridacnidae | Maximum shell length |</span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>| **Pearl oysters** | Including Penguin's wing | Shell height |</span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>| **Gastropods** | Trochus, Triton, Conch, Turban, Green snails | Shell width/length per SPC guide |</span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>| **Sea cucumbers** | All commercial species | Body length when relaxed |</span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>| **Sea urchins** | Non-boring species (e.g., *Tripneustes*) | Test diameter without spines |</span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>| **Lobsters** | All species | Carapace length |</span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>Refer to the *SPC invertebrate measurement guide* for specific measurement techniques. Additional species may be included based on regional priorities.</span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="fu">### Special Considerations for Key Species</span></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Crown-of-Thorns Starfish (COTS)</span></span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>For each *Acanthaster* individual, record:</span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Diameter (cm) from arm tip to opposite arm tip</span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Activity: (F) feeding, (M) moving, or (R) resting</span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Substrate and coral association</span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Aggregation density and condition</span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Giant Clams</span></span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>For all Tridacnidae, document:</span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Species-level identification</span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Maximum shell length</span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Position: (E) embedded, (L) loose, or (P) partially embedded</span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Bleaching status or damage</span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Commercially Important Species</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Photo documentation**:</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Photograph all invertebrates not identified in-situ to species</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Capture additional images of unusual specimens or notable aggregations</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Document evidence of harvesting or ecological interactions</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Quality control notes**:</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Note any deviations from standard protocol</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Document search time and any interruptions</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Record habitat and substrate characteristics that might affect invertebrate distributions</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="fu">### Measurement Protocols</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>For priority species, standardized measurements are taken using the centimeter-marked edge of the dive slate. Each taxonomic group has specific measurement standards to ensure data consistency:</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>:::: {.columns style="display: flex; flex-wrap: wrap;"}</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #E8F6F3; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #1ABC9C;"&gt;</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Giant Clams&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>Maximum shell length for all Tridacnidae&lt;br&gt;</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Position recorded as embedded, loose, or partial&lt;/em&gt;</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #EAF2F8; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #3498DB;"&gt;</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Pearl Oysters&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>Shell height including Penguin's wing oysters&lt;br&gt;</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Measured from hinge to furthest shell margin&lt;/em&gt;</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #F4ECF7; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #8E44AD;"&gt;</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Gastropods&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>Shell width/length for Trochus, Triton, Conch varieties&lt;br&gt;</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Following SPC guide-specific measurement points&lt;/em&gt;</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #FEF9E7; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #F1C40F;"&gt;</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Sea Cucumbers&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>Body length when relaxed for all commercial species&lt;br&gt;</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Measured without disturbing the animal&lt;/em&gt;</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #FDEDEC; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #E74C3C;"&gt;</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Sea Urchins&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>Test diameter without spines for non-boring species&lt;br&gt;</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Especially important for Tripneustes and Diadema&lt;/em&gt;</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #F8F9F9; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #566573;"&gt;</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Lobsters&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>Carapace length for all species&lt;br&gt;</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Measured from eye orbit to posterior carapace edge&lt;/em&gt;</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>::::</span>
 <span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>For locally harvested species, note:</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>Additional species may be included based on regional priorities, following the measurement protocols outlined in the *SPC invertebrate measurement guide*.</span>
 <span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Size measurements for population structure assessment</span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Habitat associations</span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Evidence of harvesting activity</span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Juvenile presence</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Priority Species Monitoring</span></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>Certain key species warrant additional documentation due to their ecological significance or commercial importance:</span>
 <span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="fu">## Taxonomic Resolution</span></span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>All motile invertebrates are identified to species level whenever possible. For specimens that cannot be immediately identified in the field, photographs are taken for later identification using available resources.</span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="fu">### Identification Resources</span></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>The following resources are available to support species identification:</span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**On-ship reference books**: Expedition vessels are equipped with invertebrate field guides and taxonomic references</span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Online resources**:</span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>InvertEBase</span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Kwajalin Underwater</span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Sea Slug Forum</span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Sea Slugs of Hawaii</span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Florent's Guide</span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>MyReefGuide</span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>MarineLifePhotography</span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>When species-level identification is not possible, the invertebrate survey follows the same taxonomic resolution approach used across all Pristine Seas benthic methods:</span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Field names**: Descriptive terms based on obvious morphological characteristics</span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>*Examples: "black sea cucumber with red papillae," "blue-spotted sea star"*</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Morphotaxa**: Consolidation of field names into taxonomic units with distinguishing features</span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>*Examples: "Linckia sp. blue," "Holothuria sp. black with red"*</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="simple" title="**Crown-of-Thorns Starfish (COTS)**"}</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>For each *Acanthaster* individual encountered, we document:</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Size**: Diameter from arm tip to opposite arm tip (cm)</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Behavior**: Activity coded as feeding (F), moving (M), or resting (R)</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Habitat**: Substrate type and coral species association</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Aggregation**: Number of other individuals within 5m radius</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Condition**: Any signs of disease, predation, or stress</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>This detailed monitoring helps track potential outbreaks that can significantly impact coral reef health and provides essential data for management interventions.</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>::: {.callout-info appearance="simple" title="**Giant Clams (Tridacnidae)**"}</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>All giant clam species receive special attention with documentation of:</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Species**: Complete species-level identification</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Size**: Maximum shell length measured along longest axis</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Position**: Recorded as embedded (E), loose (L), or partially embedded (P)</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Health**: Assessment of bleaching status and physical damage</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Habitat**: Substrate type and depth within site</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>As iconic and vulnerable species, giant clams serve as important indicators of fishing pressure, environmental conditions, and reef health.</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>This comprehensive data collection provides critical insights into the status of invertebrate resources and informs sustainable management strategies.</span>
 <span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Lowest defensible taxonomic rank**: Formal taxonomic assignment based on available evidence</span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>*Examples: "Linckia laevigata," "Holothuria atra"*</span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Functional group**: Classification into ecological functional roles</span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>*Examples: "Grazing echinoid," "Deposit-feeding holothuroid"*</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="fu">## Taxonomic Framework</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="fu">### Target Taxa</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>The invertebrate survey counts all motile invertebrates, with special attention to ecologically important and commercially valuable species. While we aim for complete enumeration, the following key groups receive priority focus:</span>
 <span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Processing</span></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Entry and Management</span></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>Invertenbrates data are recorded in standardized Excel fieldbooks on the same day of data collection, while information and memory are fresh. The <span class="in">`ISO3_YEAR_inverts_fieldbook.xlsx`</span> is organized as follows:</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`readme`</span> sheet: Contains expedition info, data entry instructions, and guidelines</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`stations`</span> sheet: Records station information including sampling depths, habitat types, and protocol details</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`observations`</span> sheet: Primary data entry for all invertebrate observations, including counts and measurements</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="fu">### Processing Pipeline</span></span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>The data processing workflow follows these key steps:</span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 1. File Consolidation</span></span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Merge data across expedition legs and divers</span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Standardize taxonomic entries and size measurements</span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Integrate with site metadata from the UVS Sites Fieldbook</span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Verify data completeness across all stations</span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 2. Data Validation and Quality Control</span></span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Flag missing data or outliers for review</span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cross-check taxonomic entries</span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Verify transect lengths and search times</span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 3. Standardization and Calculation</span></span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Calculate density metrics (individuals/m²) for each taxon</span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Compute biomass estimates for key species (where length-weight relationships exist)</span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Generate summary statistics by taxonomic group, site, and region</span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 4. Database Integration</span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>:::: {.columns style="display: flex; flex-wrap: wrap;"}</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>::: {.column width="33%" style="padding: 0.5em;"}</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #FFF3E0; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #FF9800;"&gt;</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Echinoderms&lt;/strong&gt;</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>&lt;ul style="margin: 0.2em 0 0 1em; padding: 0;"&gt;</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Sea stars (Acanthaster, Linckia)&lt;/li&gt;</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Sea urchins (Diadema, Tripneustes)&lt;/li&gt;</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Sea cucumbers (all commercial species)&lt;/li&gt;</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Feather stars (crinoids)&lt;/li&gt;</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>&lt;/ul&gt;</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>::: {.column width="33%" style="padding: 0.5em;"}</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #E0F7FA; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #00BCD4;"&gt;</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Mollusks&lt;/strong&gt;</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>&lt;ul style="margin: 0.2em 0 0 1em; padding: 0;"&gt;</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Giant clams (Tridacnidae)&lt;/li&gt;</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Pearl oysters (including Penguin's wing)&lt;/li&gt;</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Gastropods (Trochus, Triton, Conch)&lt;/li&gt;</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Nudibranchs &amp; Cephalopods&lt;/li&gt;</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>&lt;/ul&gt;</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>::: {.column width="33%" style="padding: 0.5em;"}</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #F3E5F5; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #9C27B0;"&gt;</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Crustaceans&lt;/strong&gt;</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>&lt;ul style="margin: 0.2em 0 0 1em; padding: 0;"&gt;</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Lobsters (Panulirus, Scyllarides)&lt;/li&gt;</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Large crabs (Carpilius, Etisus)&lt;/li&gt;</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>&lt;li&gt;Other large crustaceans&lt;/li&gt;</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>&lt;/ul&gt;</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>::::</span>
 <span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Format processed data for BigQuery ingestion</span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ensure consistency with other UVS components</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="fu">### Identification Process</span></span>
 <span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="fu">### Core Output Files</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>Our taxonomic approach adapts to the challenges of identifying diverse invertebrate taxa in the field. All motile invertebrates are identified to species level whenever possible, with photographs taken for specimens that cannot be immediately identified.</span>
 <span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>The pipeline generates several essential files:</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>When immediate species-level identification is not possible, we employ a hierarchical approach to taxonomic resolution:</span>
 <span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**inverts_observations.csv**: Cleaned observations with standardized taxonomy</span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**inverts_density_by_taxa.csv**: Density calculations by taxa and station</span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**inverts_stations.csv**: Aggregate metrics by station (richness, total density, key taxa densities)</span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**inverts_taxa_summary.csv**: Regional occurrence patterns and average densities by taxa</span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="fu">## Exploratory Data Analysis</span></span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>Our standard invertebrate data analysis includes several core components that are usually applied across expeditions:</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Field names**: Descriptive terms based on obvious morphological characteristics</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>*Examples: "black sea cucumber with red papillae," "blue-spotted sea star"*</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Morphotaxa**: Consolidation of field names into taxonomic units with distinguishing features</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>*Examples: "Linckia sp. blue," "Holothuria sp. black with red"*</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Lowest defensible taxonomic rank**: Formal taxonomic assignment based on available evidence</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>*Examples: "Linckia laevigata," "Holothuria atra"*</span>
 <span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Community Composition</span></span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Taxonomic richness and diversity indices</span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Multivariate analyses (NMDS, cluster analysis)</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Functional group proportions</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Statistical Analyses</span></span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Tests for significant differences by region, habitat, and depth</span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Analysis of key indicator species abundance patterns</span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Correlation with benthic cover metrics from LPI</span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Spatial Visualization</span></span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Density maps for key taxa</span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Geographic distribution patterns</span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Size Structure</span></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Functional group**: Classification into ecological functional roles</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>*Examples: "Grazing echinoid," "Deposit-feeding holothuroid"*</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" title="**Identification Resources**"}</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>Field teams utilize multiple resources to support accurate species identification:</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Pre-expedition training**: Familiarization with expected regional species</span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Field guides**: Region-specific printed references available onboard</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Digital libraries**: Offline electronic identification guides</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Photographic documentation**: Systematic imaging for later verification</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Expert consultation**: Review of challenging identifications by taxonomic specialists</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ecological Classifications</span></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>Invertebrates are classified according to several functional frameworks to enable ecological interpretation beyond simple taxonomic groupings.</span>
 <span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Size frequency distributions for key species</span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Comparative size analysis across protection levels</span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Integration with other methods</span></span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>The invertebrate survey data can be analyzed alongside other Pristine Seas survey methods:</span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**With LPI data**: Examining relationships between benthic composition and invertebrate communities</span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**With fish data**: Investigating predator-prey relationships and trophic cascades</span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**With coral recruit data**: Assessing potential impacts of invertebrate grazers on coral recruitment</span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**With eDNA data**: Comparing visual detection with molecular detection of invertebrate diversity</span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="fu">## Limitations</span></span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>While the belt transect methodology is effective for surveying many mobile invertebrates, several limitations should be considered:</span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Habitat complexity**: Detection probability varies with substrate complexity</span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Cryptic behavior**: Many invertebrates are hidden within complex reef structures</span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Nocturnal activity**: Daytime surveys miss species active primarily at night</span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Diver avoidance**: Some mobile species actively avoid divers</span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Spatial clumping**: Patchy distribution may result in high variance between transects</span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="fu">### Feeding Modes</span></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>We categorize invertebrates into functional feeding groups that reflect their ecological roles:</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>:::: {.columns style="display: flex; flex-wrap: wrap;"}</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #D5F5E3; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #2ECC71;"&gt;</span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Herbivores/Detritivores&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>Consume algae, detritus, or plant material&lt;br&gt;</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Examples: Many sea urchins, some sea cucumbers&lt;/em&gt;</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #D4E6F1; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #3498DB;"&gt;</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Filter/Suspension Feeders&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>Extract particles from water column&lt;br&gt;</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Examples: Giant clams, feather stars, fan worms&lt;/em&gt;</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #FCF3CF; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #F1C40F;"&gt;</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Deposit Feeders&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>Process sediment for organic material&lt;br&gt;</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Examples: Many sea cucumbers, some sea stars&lt;/em&gt;</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #FADBD8; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #E74C3C;"&gt;</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Predators&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>Consume other animals&lt;br&gt;</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Examples: COTS, many gastropods, octopus&lt;/em&gt;</span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="fu">### Resource Categories</span></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>Many invertebrates represent important fishery resources. We classify these according to their value and exploitation status:</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>:::: {.columns style="display: flex; flex-wrap: wrap;"}</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #FDEDEC; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #943126;"&gt;</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;High-Value Commercial&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>Primary target species in export fisheries&lt;br&gt;</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Examples: Sea cucumbers, lobsters, giant clams&lt;/em&gt;</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%" style="padding: 0.5em;"}</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>&lt;div style="background-color: #EBF5FB; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #21618C;"&gt;</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>&lt;strong&gt;Local Subsistence Resource&lt;/strong&gt;&lt;br&gt;</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>Species harvested primarily for local consumption&lt;br&gt;</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>&lt;em&gt;Examples: Trochus, octopus, many crabs&lt;/em&gt;</span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>These classifications provide a framework for interpreting invertebrate patterns in the context of ecosystem function and human use.</span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Workflow</span></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Entry</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>Invertebrate observations are recorded on underwater slates during dives and transferred to standardized Excel fieldbooks on the same day. This immediate transcription preserves data accuracy while memory is fresh. The <span class="in">`ISO3_YEAR_inverts_fieldbook.xlsx`</span> serves as the primary data repository for each expedition with three key components:</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" title="**Fieldbook Structure**"}</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Readme**: Expedition details, data entry protocols, and guidelines</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Stations**: Site information including depth, habitat type, and protocol adherence</span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Observations**: Individual invertebrate records with taxonomic identification, counts, and measurements</span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>The observations sheet includes validation rules that flag potential errors such as:</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Missing taxonomic information</span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Unlikely size measurements</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Invalid station numbers</span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="fu">### Processing Pipeline</span></span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>Our data processing transforms raw field observations into analysis-ready datasets through four sequential phases:</span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 1. File Consolidation</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>First, we compile data from all divers and expedition legs into a unified dataset:</span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Merge all invertebrate records from multiple dives and sites</span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Standardize taxonomic names using reference taxonomy lists</span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add metadata from the UVS Sites Fieldbook (coordinates, habitat type, etc.)</span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create a complete dataset that preserves all original observations</span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 2. Quality Control</span></span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>Next, we verify data quality through a systematic review process:</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Validate species identifications for consistency and accuracy</span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Flag outliers in size measurements for review</span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cross-check invertebrate records with habitat types for ecological coherence</span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ensure complete sampling coverage across all sites</span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>Potential issues are flagged for expert review rather than automatically removed, preserving data integrity while ensuring scientific accuracy.</span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 3. Density Calculation</span></span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>We then calculate standardized density metrics for cross-site comparisons:</span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Compute abundance per unit area (individuals/m²) for each taxon</span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Generate biomass estimates for species with established length-weight relationships</span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Calculate summary statistics by taxonomic group, site, and region</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a>A critical step in this process is the addition of zero values for taxa that were not observed on a particular transect but were found elsewhere in the region. This ensures that absence data is properly incorporated when calculating average densities and prevents biased estimates. Zero values are applied:</span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>After taxonomic standardization but before aggregation</span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Based on the regional species pool established for each survey</span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Only for species that could reasonably occur in the sampled habitat type</span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Prior to calculating site-level and region-level metrics</span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 4. Database Integration</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a>Finally, we format the processed data for ingestion into our central database, creating four core output files:</span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**inverts_observations**: Individual records with standardized taxonomy, counts, and measurements</span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**inverts_density_by_taxa**: Density calculations by taxa and station</span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**inverts_stations**: Station-level metadata and summary statistics (richness, density)</span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**inverts_taxa_summary**: Regional occurrence patterns and average densities by taxa</span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>These standardized outputs allow consistent analysis across expeditions and regions while maintaining connections to the original field observations.</span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploratory Data Analysis</span></span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>Our analytical approach examines invertebrate communities through multiple complementary perspectives:</span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Community Composition</span></span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a>We analyze biodiversity patterns and community structure:</span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Species richness and diversity indices across sites and protection levels</span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multivariate analyses (NMDS, cluster analysis) to identify assemblage patterns</span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Functional group proportions to assess ecosystem processes</span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Indicator species analysis to identify habitat associations</span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>These analyses provide insights into the factors structuring invertebrate communities and their responses to environmental gradients.</span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Population Patterns</span></span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>We examine population characteristics of key species:</span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Density comparisons across sites, habitats, and protection levels</span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Size frequency distributions to assess population structure</span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Biomass estimates for commercially important species</span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Recruitment patterns and juvenile abundance</span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a>These metrics help evaluate population health and the impacts of environmental conditions or harvesting pressure.</span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Spatial Patterns</span></span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a>By analyzing invertebrate distributions across space, we identify:</span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hotspots of diversity and abundance</span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Habitat associations for key species</span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Depth-related community changes</span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Geographic patterns in commercially important taxa</span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a>Spatial analyses provide critical information for conservation planning and resource management.</span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Cross-Method Integration</span></span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a>We combine invertebrate data with other survey components to reveal ecosystem relationships:</span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Correlations between benthic cover and invertebrate communities</span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Predator-prey relationships between fish and invertebrates</span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Potential impacts of invertebrate grazers on coral recruitment</span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Comparisons between visual surveys and eDNA detection of invertebrate diversity</span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a>These integrated analyses provide a holistic understanding of reef ecosystem function and reveal the ecological processes that drive reef health and resilience.</span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a>Through these complementary analytical approaches, we transform field observations into ecological insights that inform conservation planning and contribute to our understanding of marine ecosystems across multiple scales.</span>
+<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a><span class="fu">## Limitations</span></span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a>While belt transects are an efficient method for surveying many mobile invertebrates, several limitations should be considered:</span>
+<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Habitat complexity**: Detection probability varies with substrate complexity</span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Cryptic behavior**: Many invertebrates remain hidden within complex reef structures</span>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Nocturnal activity**: Daytime surveys miss species active primarily at night</span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Diver avoidance**: Some mobile species actively avoid observers</span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Spatial clumping**: Patchy distribution may result in high variance between transects</span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Taxonomic challenges**: Some groups require specialized expertise for accurate identification</span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>We address these limitations through standardized protocols, thorough diver training, adequate replication, and integration with complementary methods like eDNA and night surveys where possible.</span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

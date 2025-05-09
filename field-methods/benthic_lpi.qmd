@@ -145,7 +145,7 @@ Our taxonomic resolution progresses through four distinct levels:
 :::
 
 
-## Functional Categories
+## Ecological Classifications
 
 We use the following standardized functional categories for analysis and visualization:
 

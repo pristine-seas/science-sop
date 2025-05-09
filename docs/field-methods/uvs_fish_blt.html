@@ -506,9 +506,9 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#identification-process" id="toc-identification-process" class="nav-link" data-scroll-target="#identification-process">Identification Process</a></li>
   <li><a href="#field-code-system" id="toc-field-code-system" class="nav-link" data-scroll-target="#field-code-system">Field Code System</a></li>
-  <li><a href="#database-integration" id="toc-database-integration" class="nav-link" data-scroll-target="#database-integration">Database Integration</a></li>
+  <li><a href="#reference-database" id="toc-reference-database" class="nav-link" data-scroll-target="#reference-database">Reference Database</a></li>
   </ul></li>
-  <li><a href="#trophic-and-functional-classification" id="toc-trophic-and-functional-classification" class="nav-link" data-scroll-target="#trophic-and-functional-classification">Trophic and Functional Classification</a>
+  <li><a href="#ecological-classifications" id="toc-ecological-classifications" class="nav-link" data-scroll-target="#ecological-classifications">Ecological Classifications</a>
   <ul class="collapse">
   <li><a href="#trophic-groups" id="toc-trophic-groups" class="nav-link" data-scroll-target="#trophic-groups">Trophic Groups</a></li>
   <li><a href="#herbivore-functional-groups" id="toc-herbivore-functional-groups" class="nav-link" data-scroll-target="#herbivore-functional-groups">Herbivore Functional Groups</a></li>
@@ -516,7 +516,7 @@ window.Quarto = {
   <li><a href="#data-workflow" id="toc-data-workflow" class="nav-link" data-scroll-target="#data-workflow">Data Workflow</a>
   <ul class="collapse">
   <li><a href="#data-entry" id="toc-data-entry" class="nav-link" data-scroll-target="#data-entry">Data Entry</a></li>
-  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data Processing</a></li>
+  <li><a href="#processing-pipeline" id="toc-processing-pipeline" class="nav-link" data-scroll-target="#processing-pipeline">Processing Pipeline</a></li>
   <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link" data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
   </ul></li>
   <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
@@ -746,8 +746,8 @@ Hybrid taxa use extended format: <code>GEN2.SPxSP</code></p>
 </div>
 </div>
 </section>
-<section id="database-integration" class="level3">
-<h3 class="anchored" data-anchor-id="database-integration">Database Integration</h3>
+<section id="reference-database" class="level3">
+<h3 class="anchored" data-anchor-id="reference-database">Reference Database</h3>
 <p>Our two-tier database system translates field observations into analysis-ready data:</p>
 <ol type="1">
 <li><strong><code>taxonomy.uvs_fish_codes</code></strong>: Maps field codes to formal taxonomy
@@ -771,8 +771,8 @@ Hybrid taxa use extended format: <code>GEN2.SPxSP</code></p>
 <p>This integrated system enables seamless workflow from underwater observations to sophisticated ecological analyses while maintaining taxonomic precision and compatibility with global biodiversity databases.</p>
 </section>
 </section>
-<section id="trophic-and-functional-classification" class="level2">
-<h2 class="anchored" data-anchor-id="trophic-and-functional-classification">Trophic and Functional Classification</h2>
+<section id="ecological-classifications" class="level2">
+<h2 class="anchored" data-anchor-id="ecological-classifications">Ecological Classifications</h2>
 <p>All fish species in the Pristine Seas database are assigned to standardized trophic groups and functional categories based on their ecological roles. This classification system provides a foundation for analyzing reef community structure and ecosystem function.</p>
 <section id="trophic-groups" class="level3">
 <h3 class="anchored" data-anchor-id="trophic-groups">Trophic Groups</h3>
@@ -859,8 +859,8 @@ Hybrid taxa use extended format: <code>GEN2.SPxSP</code></p>
 </ul>
 <p>This real-time validation enables immediate correction while field observations remain clear in divers’ memories.</p>
 </section>
-<section id="data-processing" class="level3">
-<h3 class="anchored" data-anchor-id="data-processing">Data Processing</h3>
+<section id="processing-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="processing-pipeline">Processing Pipeline</h3>
 <p>Our data processing transforms raw field observations into analysis-ready datasets through four sequential phases:</p>
 <section id="consolidation-and-standardization" class="level4">
 <h4 class="anchored" data-anchor-id="consolidation-and-standardization">1. Consolidation and Standardization</h4>
@@ -903,8 +903,8 @@ Hybrid taxa use extended format: <code>GEN2.SPxSP</code></p>
 <li>Community structure indicators like diversity indices</li>
 </ul>
 </section>
-<section id="database-integration-1" class="level4">
-<h4 class="anchored" data-anchor-id="database-integration-1">4. Database Integration</h4>
+<section id="database-integration" class="level4">
+<h4 class="anchored" data-anchor-id="database-integration">4. Database Integration</h4>
 <p>Finally, we format the processed data for ingestion into our central database, creating four core output files:</p>
 <ol type="1">
 <li><strong>blt_observations</strong>: Individual-level records with taxonomic classification and biomass</li>
@@ -1638,7 +1638,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>These conventions ensure clean data joins, traceability, and consistent taxonomy across all datasets.</span>
 <span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="fu">### Database Integration</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="fu">### Reference Database</span></span>
 <span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>Our two-tier database system translates field observations into analysis-ready data:</span>
 <span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
@@ -1659,7 +1659,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>This integrated system enables seamless workflow from underwater observations to sophisticated ecological analyses while maintaining taxonomic precision and compatibility with global biodiversity databases.</span>
 <span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="fu">## Trophic and Functional Classification</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ecological Classifications</span></span>
 <span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>All fish species in the Pristine Seas database are assigned to standardized trophic groups and functional categories based on their ecological roles. This classification system provides a foundation for analyzing reef community structure and ecosystem function.</span>
 <span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
@@ -1767,7 +1767,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>This real-time validation enables immediate correction while field observations remain clear in divers' memories.</span>
 <span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Processing</span></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="fu">### Processing Pipeline</span></span>
 <span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>Our data processing transforms raw field observations into analysis-ready datasets through four sequential phases:</span>
 <span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a></span>

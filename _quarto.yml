@@ -41,7 +41,7 @@ website:
               - text: "Recruits"
                 href: field-methods/benthic_recuirts.qmd 
           - text: "Fish Surveys"
-            href: field-methods/fish-surveys.qmd
+            href: field-methods/uvs_fish_blt.qmd
           - text: "eDNA"
             href: field-methods/edna.qmd
           - text: "Seabed BRUVS"

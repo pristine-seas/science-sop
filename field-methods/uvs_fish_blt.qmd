@@ -177,7 +177,7 @@ Examples:
 These conventions ensure clean data joins, traceability, and consistent taxonomy across all datasets.
 :::
 
-### Database Integration
+### Reference Database
 
 Our two-tier database system translates field observations into analysis-ready data:
 
@@ -198,7 +198,7 @@ Our two-tier database system translates field observations into analysis-ready d
 
 This integrated system enables seamless workflow from underwater observations to sophisticated ecological analyses while maintaining taxonomic precision and compatibility with global biodiversity databases.
 
-## Trophic and Functional Classification
+## Ecological Classifications
 
 All fish species in the Pristine Seas database are assigned to standardized trophic groups and functional categories based on their ecological roles. This classification system provides a foundation for analyzing reef community structure and ecosystem function.
 
@@ -306,7 +306,7 @@ The observations sheet includes built-in validation rules that flag potential er
 
 This real-time validation enables immediate correction while field observations remain clear in divers' memories.
 
-### Data Processing
+### Processing Pipeline
 
 Our data processing transforms raw field observations into analysis-ready datasets through four sequential phases:
 

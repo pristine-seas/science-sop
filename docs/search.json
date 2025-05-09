@@ -1451,7 +1451,6 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
       "Invertebrates"
     ]
   },
@@ -1479,7 +1478,6 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
       "Invertebrates"
     ]
   },
@@ -1493,7 +1491,6 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
       "Invertebrates"
     ]
   },
@@ -1521,7 +1518,6 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
       "Invertebrates"
     ]
   },
@@ -1535,7 +1531,6 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
       "Invertebrates"
     ]
   },
@@ -1563,7 +1558,6 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
       "Invertebrates"
     ]
   },
@@ -1577,7 +1571,6 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
       "Invertebrates"
     ]
   },
@@ -1591,7 +1584,6 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
       "Invertebrates"
     ]
   },
@@ -1605,7 +1597,6 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
       "Invertebrates"
     ]
   },
@@ -1778,7 +1769,6 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
       "Invertebrates"
     ]
   },
@@ -1889,7 +1879,7 @@
     "href": "field-methods/uvs_fish_blt.html",
     "title": "Reef Fish",
     "section": "",
-    "text": "The Line Point Intercept (LPI) method is a fundamental component of Pristine Seas underwater visual surveys, providing quantitative data on benthic community composition and substrate cover. This method documents the relative abundance of key benthic categories, including corals, algae, and other sessile organisms, as well as abiotic substrate types.",
+    "text": "Reef fish are key indicators of ecosystem health, providing insights into marine productivity, biodiversity patterns, and human impacts. The Pristine Seas fish belt transect (BLT) methodology provides standardized protocols for quantifying fish community structure, biomass distributions, and trophic organization across different habitats and depths. These surveys form a cornerstone of our ecosystem assessments, enabling quantitative comparisons of fish assemblages across geographies.",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1902,7 +1892,7 @@
     "href": "field-methods/uvs_fish_blt.html#introduction",
     "title": "Reef Fish",
     "section": "",
-    "text": "The Line Point Intercept (LPI) method is a fundamental component of Pristine Seas underwater visual surveys, providing quantitative data on benthic community composition and substrate cover. This method documents the relative abundance of key benthic categories, including corals, algae, and other sessile organisms, as well as abiotic substrate types.",
+    "text": "Reef fish are key indicators of ecosystem health, providing insights into marine productivity, biodiversity patterns, and human impacts. The Pristine Seas fish belt transect (BLT) methodology provides standardized protocols for quantifying fish community structure, biomass distributions, and trophic organization across different habitats and depths. These surveys form a cornerstone of our ecosystem assessments, enabling quantitative comparisons of fish assemblages across geographies.",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1915,7 +1905,7 @@
     "href": "field-methods/uvs_fish_blt.html#method-overview",
     "title": "Reef Fish",
     "section": "Method Overview",
-    "text": "Method Overview",
+    "text": "Method Overview\nThe fish belt transect method employs a standardized visual census approach to systematically document fish abundance, size structure, and species composition. This method has been refined over decades of reef monitoring and provides robust, quantitative data suitable for global comparisons and trend analyses.\n\nKey Features\n\nPaired divers: Two fish specialists conducting parallel surveys\nMulti-size census: Dedicated passes for large and small-bodied fishes\nPrecise size estimation: Length measurements to nearest centimeter\nComplete taxonomic assessment: All visible fish species recorded\nBiomass calculation: Size-based biomass estimates for trophic and functional analyses\nDepth stratification: Consistent sampling at standard depth strata\nReplicated design: Multiple transects per station for statistical robustness",
     "crumbs": [
       "Home",
       "Field Methods",
@@ -1934,6 +1924,162 @@
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
       "Environmental (YSI)"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#field-implementation",
+    "href": "field-methods/uvs_fish_blt.html#field-implementation",
+    "title": "Reef Fish",
+    "section": "Field Implementation",
+    "text": "Field Implementation\n\nTeam Structure\nFish surveys require dedicated specialists who focus exclusively on fish observations. Unlike the benthic team, which divides labor by taxonomic expertise, the fish team comprises:\n\nTwo fish divers working independently at each depth stratum\nEach diver conducts three replicate transects\nDivers typically alternate between depth strata on successive dives\n\nThis approach maximizes sampling efficiency while ensuring robust sample replication.\n\n\n\n\n\n\nFish Belt Transect Specifications\n\n\n\n\nTransect dimensions: 25 m × 4 m for large fish (≥20 cm TL); 25 m × 2 m for small fish (&lt;20 cm TL)\nReplication: 3 transects per diver per depth stratum\nDepth strata: Typically 10 m and 20 m (with 5 m stratum added when appropriate)\nDirection: Parallel to shoreline at constant depth\nSeparation: 5+ m between adjacent transects\nTotal area: 300 m² for large fish and 150 m² for small fish per station\n\n\n\n\n\nCollection Procedure\n\nSite preparation:\n\nSelect site with appropriate habitat at target depth\nEnsure sufficient separation from benthic team operations\n\nTransect deployment:\n\nDeploy 25 m transect tape parallel to shoreline\nMaintain consistent depth throughout transect length\n\nSurvey execution:\n\nFirst pass (outward swim):\n\nTarget all fish ≥20 cm TL within 2 m on either side of the transect (4 m total width)\nSwim at a consistent pace (~8-10 minutes per transect)\nIdentify all fish to species level\nEstimate total length to nearest cm\nCount individuals and record observations on slate\n\nSecond pass (return swim):\n\nTarget all fish &lt;20 cm TL within 1 m on either side of the transect (2 m total width)\nMaintain consistent pace with careful attention to substrate\nIdentify all fish to species level\nEstimate total length to nearest cm\nCount individuals and record observations on slate\n\n\nRepeat process:\n\nComplete three replicate transects at the same depth stratum\nMaintain adequate separation between transects (minimum 5 m)\nEnsure transects sample representative and consistent habitat\n\nPhoto documentation:\n\nPhotograph unusual or difficult-to-identify species\nDocument general habitat conditions\nCapture images of notable aggregations or behaviors\n\nSurvey completion:\n\nConduct general site exploration if time permits\nNote presence of significant species not observed on transects\nJoin the benthic team and exit the water together\n\n\n\nAccurate size estimation is critical for biomass calculation and population structure assessment. Fish divers use several strategies to maintain accuracy:\n\nRegular calibration: Practice with objects of known size before each expedition\nReference standards: Use dive slate markings for direct comparison\nProgressive bracketing: Categorize fish into broad size groups initially, then refine by specific cm\nConsistency checks: Compare size estimates between divers periodically\nPhoto validation: Use photography to validate sizes of unusual specimens",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#taxonomic-resolution",
+    "href": "field-methods/uvs_fish_blt.html#taxonomic-resolution",
+    "title": "Reef Fish",
+    "section": "Taxonomic Resolution",
+    "text": "Taxonomic Resolution\nThe fish survey aims for species-level identification of all observed fishes. Field divers typically identify over 90% of individuals to species level in real-time. For challenging identifications, a structured taxonomic resolution approach is employed:\n\nField names: Descriptive terms based on morphological characteristics\n\nExamples: “red grouper with blue spots,” “yellow surgeonfish with white tail”\n\nMorphotaxa: Consolidation of field names into taxonomic units\n\nExamples: “Cephalopholis sp. red/blue,” “Acanthurus sp. yellow/white”\n\nLowest defensible taxonomic rank: Formal identification based on available evidence\n\nExamples: “Cephalopholis miniata,” “Acanthurus olivaceus”\n\nFunctional group: Classification into trophic categories\n\nExamples: “Top predator,” “Herbivore/Detritivore”\n\n\n\nIdentification Resources\nField divers utilize multiple resources to support accurate species identification:\n\nPre-expedition preparation: Review of expected species lists for the survey region\nOn-ship reference materials: Regional fish identification guides and references\nDigital resources: Mobile device applications with offline fish guide capabilities\nPhotography: Capturing images of uncertain identifications for later verification\nPost-dive discussion: Comparing observations between team members",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#data-processing",
+    "href": "field-methods/uvs_fish_blt.html#data-processing",
+    "title": "Reef Fish",
+    "section": "Data Processing",
+    "text": "Data Processing\n\nData Entry and Management\nFish survey data are recorded in standardized Excel fieldbooks on the same day of data collection. The ISO3_YEAR_fish_fieldbook.xlsx is organized as follows:\n\nreadme sheet: Contains expedition info, data entry instructions, and guidelines\nstations sheet: Records station information including depth, bottom type, survey effort, and any deviations from protocol\nobservations sheet: Primary data entry for all fish observations, including counts and size estimates\n\nThis sheet has built-in data validation rules to ensure correct species data entry\nAutomatic warnings flag suspect lengths over maximum reported length\nReal-time estimation of biomass density using standardized length-weight parameters\n\nspecies sheet: Master lookup table with all fish species in the Pristine Seas Database\n\n\nTaxonomic Framework: From Field Codes to Research-Grade Data\nPristine Seas employs a robust two-tier taxonomic system that bridges practical field requirements with rigorous scientific standards.\n\nField Taxon Code System\nPristine Seas surveys use a specialized taxon code system for fish data collection. These concise codes are optimized for underwater recording and rapid data entry aboard vessels. While essential in the field, they are transitional tools – during processing, we replace them with accepted scientific names and standardized AphiaIDs to ensure compatibility with global taxonomic databases and integration with broader research efforts.\n\n\n\n\n\n\nTaxon Code Structure\n\n\n\ntaxon_code is the primary join key across all UVS fish datasets in the Pristine Seas Database.\n\nFormat for Species-Level Codes\nGEN2.SPEC4 — First 2 letters of the genus + first 4 of the species (uppercase)\n\nAcanthurus tristis → AC.TRIS\nApogon tricolor → AP.TRIC\nAnthias tricolor → AN.TRIC\n\n\n\nHandling Duplicates\nWhen multiple species would share the same code:\n\nThe most common taxon keeps the default code\nOthers extend the genus or species portion to ensure uniqueness\n\nExamples: * Apogon tristis → AP.TRIS * Aplodactylus tristis → APL.TRIS * Labroides bilineatus → LA.BILI * Labroides bilinearis → LA.BILIN\n\n\nGenus- and Family-Level Codes\nUsed when identifications are not to species level:\n\nGenus → GEN4.SP (e.g., Labroides sp. → LABR.SP)\nFamily → FAM4.SPP (e.g., Labridae spp. → LABR.SPP)\n\n\n\nHybrids\nHybrid taxa use an extended code format: GEN2.SPxSP\n\nCombine first two genus letters with x and capitalized genus/species initials of each parent\nUse consistent casing and separators\n\nExamples: * Acanthurus achilles × nigricans → AC.ACxNI * Acanthurus olivaceus × nigricans → AC.OLxNI * Paracirrhites arcatus × bicolor → PA.ARxBI\nThese conventions ensure clean joins, traceability, and consistent taxonomy across field data and reference tables.\n\n\n\n\n\nReference Database Tables\nThe Pristine Seas Database maintains two complementary reference tables that form the taxonomic foundation for all fish-related analyses:\n\ntaxonomy.uvs_fish_codes: Maps field codes to standardized taxonomy\n\nLinks taxon_code to accepted scientific names\nProvides AphiaIDs for each code\nServes as the translation layer between field observations and formal taxonomy\nIncludes regionally-specific code variants and common identification challenges\n\ntaxonomy.fish: Comprehensive trait database organized by AphiaID\n\nTaxonomic information: Valid scientific name, authority, synonyms, taxonomic hierarchy\nEcological traits: Maximum size, trophic level, functional group, feeding guild\nLife history parameters: Growth coefficients, reproductive strategy, longevity\nGeographical distributions: Biogeographic regions, depth ranges, habitat preferences\nConservational data: IUCN status, population trends, vulnerability indices\nNumerical parameters: Length-weight coefficients, standard deviation values\n\n\nTogether, these tables enable a seamless workflow from field observations to sophisticated ecological analyses across methods and regions. Field codes are first mapped to standardized taxonomy through uvs_fish_codes, then enriched with trait data from the fish table. For complete details on available fish traits and their applications, refer to the Pristine Seas Database Documentation.\n\n\n\n\nBiomass Calculation\nA critical component of the fish data processing is the conversion of length measurements to biomass estimates using standard length-weight relationships:\n\\[W = a \\times L^b\\]\nWhere:\n\n\\(W\\) = weight in grams\n\\(L\\) = total length in centimeters\n\\(a\\) and \\(b\\) = species-specific constants derived from published literature\n\nWhen species-specific parameters are unavailable, family-level or genus-level constants are applied. All biomass calculations reference a standardized database of length-weight relationships that is continually updated with the best available parameters.\n\n\nProcessing Pipeline\nThe data processing workflow follows these key steps:\n\n1. File Consolidation\n\nMerge data across expedition legs, and divers\nReplace taxa code for accepted spceis names and AphiaIDs\nStandardize taxonomic entries and size measurements\nIntegrate with site metadata from the UVS Sites Fieldbook\nVerify data completeness across all stations\n\n\n\n2. Data Validation and Quality Control\n\nFlag potential errors in species identification or unlikely sizes\nVerify consistency in species records between divers and stations\nCross-check taxonomic entries against species lists\nValidate length-frequency distributions for common species\n\n\n\n3. Biomass Calculation and Standardization\n\nApply species-specific length-weight relationships\nCalculate standardized metrics (abundance and biomass per m²)\nGenerate summary statistics by taxonomic levels, trophic groups, and size classes\nCompute diversity indices and community structure metrics\n\n\n\n4. Database Integration\n\nFormat processed data for BigQuery ingestion\nEnsure consistency with other UVS components\nPrepare analysis-ready datasets\n\n\n\n\nCore Output Files\nThe pipeline generates several essential files:\n\nblt_observations.csv: Cleaned observations with standardized taxonomy, length measurements, and biomass estimates\nblt_biomass_by_taxa.csv: Biomass and abundance aggregated by taxa and station\nblt_stations.csv: Station metadata, sampling effort, and summary metrics (total biomass, key trophic groups, diversity indices),\nblt_taxa_summary.csv: Frequency of occurrence, average abundance, and biomass per taxa and region",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#trophic-and-functional-classification",
+    "href": "field-methods/uvs_fish_blt.html#trophic-and-functional-classification",
+    "title": "Reef Fish",
+    "section": "Trophic and Functional Classification",
+    "text": "Trophic and Functional Classification\nAll fish species in the Pristine Seas database are assigned to standardized trophic groups and functional categories based on their ecological roles. This classification system provides a foundation for analyzing reef community structure and ecosystem function.\n\nTrophic Groups\nWe use five primary trophic categories that reflect feeding ecology and position in the food web:\n\n\n\nHerbivore/Detritivore Species that primarily consume plant material or detritus Examples: Parrotfishes (Scaridae), surgeonfishes (Acanthuridae), rabbitfishes (Siganidae)\n\n\n\nPlanktivore Species that primarily consume planktonic organisms Examples: Fusiliers (Caesionidae), chromis (Pomacentridae), anthias (Anthiadinae)\n\n\n\nLower-Carnivore Species that consume mainly invertebrates and small fishes Examples: Wrasses (Labridae), snappers (Lutjanidae), emperors (Lethrinidae)\n\n\n\nTop-Predator Non-shark predatory species primarily consuming other fishes Examples: Groupers (Epinephelidae), barracuda (Sphyraenidae), jacks (Carangidae)\n\n\n\nShark All sharks, regardless of feeding ecology Examples: Reef sharks (Carcharhinidae), nurse sharks (Ginglymostomatidae), hammerheads (Sphyrnidae)\n\n\n\nThese categories allow us to analyze trophic structure across reef ecosystems and assess the impacts of fishing pressure, which typically affects top predators and sharks first, followed by lower trophic levels.\n\n\nHerbivore Functional Groups\nHerbivorous fishes play critical roles in coral reef resilience by controlling algae that compete with corals. We further classify herbivores into four functional groups based on their feeding mode:\n\n\n\nBrowsers Selectively feed on macroalgae, removing entire plants Examples: Naso unicornis, many Kyphosus species\n\n\n\nGrazers Crop algal turf, creating patches of cropped substrate Examples: Many Acanthurus species, Zebrasoma\n\n\n\nScrapers Remove algae and associated sediment and detritus Examples: Many Scarinae (parrotfishes)\n\n\n\nExcavators Remove chunks of substrate while feeding, creating space for coral recruitment Examples: Large-bodied Scarinae, Chlorurus species\n\n\n\nThis functional classification enables detailed analysis of how different types of herbivores contribute to reef processes, particularly coral-algal dynamics and reef recovery potential after disturbances.",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#exploratory-data-analysis",
+    "href": "field-methods/uvs_fish_blt.html#exploratory-data-analysis",
+    "title": "Reef Fish",
+    "section": "Exploratory Data Analysis",
+    "text": "Exploratory Data Analysis\nAfter completion of the data processing pipeline, standardized analyses are conducted to characterize fish community patterns. Core analyses include:\n\nCommunity Structure\n\nSpecies richness and diversity indices\nCommunity dissimilarity analyses (NMDS, cluster analysis)\nSpecies accumulation curves\n\n\n\nBiomass and Abundance\n\nTotal fish biomass comparisons across sites and regions\nTrophic pyramid structure and proportional distribution\nSize spectra analysis\nKey functional group assessments\n\n\n\nSize Structure\n\nLength-frequency distributions for target species\nMean size comparisons across protection levels\nProportional representation in size classes\n\n\n\nSpatial Patterns\n\nDistribution of biomass hotspots\nHabitat associations\nDepth-related patterns\nProtected vs unprotected area comparisons\n\n\n\nIntegration with other methods\nThe fish survey data can be integrated with other Pristine Seas methods. Examples include:\n\nWith LPI data: Examining fish-habitat relationships\nWith invertebrate data: Investigating predator-prey dynamics\nWith recruit data: Assessing herbivore impacts on coral recruitment\nWith eDNA data: Comparing visual vs molecular detection of fish diversity",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#limitations",
+    "href": "field-methods/uvs_fish_blt.html#limitations",
+    "title": "Reef Fish",
+    "section": "Limitations",
+    "text": "Limitations\nWhile belt transects are an efficient and widely used method for assessing reef fish communities, several limitations should be considered:\n\nDiver influence: Some fish species actively avoid or are attracted to divers\nCryptic species: Small, hidden, or nocturnal fish are typically underrepresented\nSpatial variability: Fish distribution patchiness requires adequate replication\nTemporal variation: Fish communities change throughout the day and seasons\nObserver differences: Individual divers may vary in species identification and size estimation\nDepth constraints: Standard SCUBA limits surveys to relatively shallow depths\nCoverage limits: Transects sample only a small portion of the total habitat area\n\nWe address these limitations through standardized protocols, thorough diver training, adequate replication, and by combining fish surveys with complementary methods like environmental DNA and baited remote underwater video systems.",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#references",
+    "href": "field-methods/uvs_fish_blt.html#references",
+    "title": "Reef Fish",
+    "section": "References",
+    "text": "References\nCaldwell ZR, Zgliczynski BJ, Williams GJ, Sandin SA (2016) Reef Fish Survey Techniques: Assessing the Potential for Standardizing Methodologies. PLOS ONE 11(4): e0153066. https://doi.org/10.1371/journal.pone.0153066\nFriedlander AM, Sandin SA, DeMartini EE, Sala E (2010) Spatial patterns of the structure of reef fish assemblages at a pristine atoll in the central Pacific. Marine Ecology Progress Series 410: 219-231. https://doi.org/10.3354/meps08634\nMacNeil MA, Graham NAJ, Cinner JE, Wilson SK, Williams ID, Maina J, Newman S, Friedlander AM, Jupiter S, Polunin NVC, McClanahan TR (2015) Recovery potential of the world’s coral reef fishes. Nature 520(7547): 341-344. https://doi.org/10.1038/nature14358\nMorais RA, Bellwood DR (2018) Global drivers of reef fish growth. Fish and Fisheries 19(5): 874-889. https://doi.org/10.1111/faf.12297",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#taxonomic-reference-dataset",
+    "href": "field-methods/uvs_fish_blt.html#taxonomic-reference-dataset",
+    "title": "Reef Fish",
+    "section": "Taxonomic Reference Dataset",
+    "text": "Taxonomic Reference Dataset\nThe Pristine Seas Database maintains two complementary reference tables that form the taxonomic foundation for all fish-related analyses:\n\ntaxonomy.uvs_fish_codes: Maps field codes to standardized taxonomy\n\nLinks taxon_code to accepted scientific names\nProvides AphiaIDs for each code\nServes as the translation layer between field observations and formal taxonomy\nIncludes regionally-specific code variants and common identification challenges\n\ntaxonomy.fish: Comprehensive trait database organized by AphiaID\n\nTaxonomic information: Valid scientific name, authority, synonyms, taxonomic hierarchy\nEcological traits: Maximum size, trophic level, functional group, feeding guild\nLife history parameters: Growth coefficients, reproductive strategy, longevity\nGeographical distributions: Biogeographic regions, depth ranges, habitat preferences\nConservational data: IUCN status, population trends, vulnerability indices\nNumerical parameters: Length-weight coefficients, standard deviation values\n\n\n\nTrophic Groups\nAll fish species are classified into standardized trophic and functional groups to facilitate ecological analyses. This classification system includes:\n\n\n\nHerbivore/Detritivore Species that primarily consume plant material or detritus Examples: Parrotfishes (Scaridae), surgeonfishes (Acanthuridae), rabbitfishes (Siganidae)\n\n\n\nPlanktivore Species that primarily consume planktonic organisms Examples: Fusiliers (Caesionidae), chromis (Pomacentridae), anthias (Anthiadinae)\n\n\n\nLower-Carnivore Species that consume mainly invertebrates and small fishes Examples: Wrasses (Labridae), snappers (Lutjanidae), emperors (Lethrinidae)\n\n\n\nTop-Predator Non-shark predatory species primarily consuming other fishes Examples: Groupers (Epinephelidae), large snappers (Lutjanidae), jacks (Carangidae)\n\n\n\nShark All sharks, regardless of feeding ecology Examples: Reef sharks (Carcharhinidae), nurse sharks (Ginglymostomatidae), hammerheads (Sphyrnidae)\n\n\n\n\n\nHerbivore Functional Groups\nHerbivorous fishes are further classified into functional groups based on feeding mode and ecological role:\n\n\n\nBrowsers Selectively feed on macroalgae, removing entire plants Examples: Naso, many Kyphosus\n\n\n\nGrazers Crop algal turf, creating patches of cropped substrate Examples: Many Acanthurus, Zebrasoma\n\n\n\nScrapers Remove algae and associated sediment and detritus Examples: Many Scarinae (parrotfishes)\n\n\n\nExcavators Remove chunks of substrate while feeding Examples: Large-bodied Scarinae, Chlorurus",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#data-workflow",
+    "href": "field-methods/uvs_fish_blt.html#data-workflow",
+    "title": "Reef Fish",
+    "section": "Data Workflow",
+    "text": "Data Workflow\nThe Pristine Seas fish survey methodology follows a systematic workflow from field collection to analysis, ensuring data quality and scientific rigor at each stage.\n\nData Entry\nFish survey data are recorded on underwater slates during dives and transferred to standardized Excel fieldbooks on the same day. This immediate transcription preserves data accuracy while memories are fresh. The ISO3_YEAR_fish_fieldbook.xlsx serves as the primary data repository for each expedition with four key components:\n\n\n\n\n\n\nFieldbook Structure\n\n\n\n\nReadme: Expedition details, data entry protocols, and guidelines\nStations: Site information including depth, survey effort, and habitat type\nObservations: Individual fish records with taxonomic codes, counts, and size estimates\nSpecies: Reference list of fish species with taxonomic information\n\n\n\nThe observations sheet includes built-in validation rules that flag potential errors such as:\n\nSpecies codes not in the reference list\nSize estimates exceeding known maximum lengths\nMissing or inconsistent data fields\n\nThis real-time validation enables immediate correction while field observations remain clear in divers’ memories.\n\n\nData Processing\nOur data processing transforms raw field observations into analysis-ready datasets through four sequential phases:\n\n1. Consolidation and Standardization\nFirst, we combine data from multiple divers and expedition legs into a unified dataset:\n\nConvert field codes to accepted scientific names and AphiaIDs\nStandardize size measurements and abundance records\nAdd spatial metadata from the site documentation\nJoin species traits from the taxonomy.fish reference table using AphiaID\nCreate a complete dataset that preserves all original observations\n\n\n\n2. Quality Control\nNext, we verify data quality through a systematic review process:\n\nAnalyze length distributions to identify unlikely size measurements\nCompare species lists between divers and stations for consistency\nCheck geographic ranges against known species distributions\nVerify taxonomic classifications against global databases\n\nPotential issues are flagged for expert review rather than automatically removed, preserving data integrity while ensuring scientific accuracy.\n\n\n3. Biomass Calculation\nWe then transform fish lengths into biomass estimates using the standard length-weight relationship:\n\\[W = a \\times L^b\\]\nWhere \\(W\\) is weight in grams, \\(L\\) is total length in centimeters, and \\(a\\) and \\(b\\) are species-specific constants from our reference database. For species without specific parameters, we use coefficients from closely related species or family-level relationships.\nA critical step in this process is the addition of zero values for species that were not observed on a particular transect but are known to occur in the region. This ensures that absence data is properly incorporated into average calculations, preventing biased estimates of abundance and biomass. Zero values are applied:\n\nAfter taxonomic standardization but before aggregation\nBased on the regional species pool for each location\nOnly for species that could reasonably occur in the sampled habitat type\nPrior to calculating transect-level and station-level metrics\n\nThis process generates standardized metrics including:\n\nFish abundance (individuals/m²) by species and functional group\nBiomass (g/m²) at various taxonomic and ecological levels\nCommunity structure indicators like diversity indices\n\n\n\n4. Database Integration\nFinally, we format the processed data for ingestion into our central database, creating four core output files:\n\nblt_observations: Individual-level records with taxonomic classification and biomass\nblt_biomass_by_taxa: Abundance and biomass aggregated by species and station\nblt_stations: Site-level metadata and summary statistics\nblt_taxa_summary: Regional patterns of occurrence, abundance, and biomass\n\nThese standardized outputs allow consistent analysis across expeditions and regions while maintaining connections to the original field observations.\n\n\n\nExploratory Data Analysis\nOur analysis examines fish communities through multiple complementary perspectives:\n\nCommunity Structure\nWe analyze biodiversity patterns through various metrics including:\n\nSpecies richness and diversity indices\nCommunity composition visualizations (NMDS, cluster analysis)\nDominant species identification and rank-abundance patterns\n\nThese analyses provide insights into ecosystem complexity and community organization at different sites.\n\n\nBiomass and Trophic Organization\nWe examine how biomass is distributed across trophic levels to understand ecosystem function. Key analyses include:\n\nProportional biomass of different trophic groups\nContribution of top predators and sharks to total fish biomass\nComparison with baseline values from remote, unfished locations\nAssessment of key species for local economies and food security\n\nThese patterns reveal fishing impacts and help evaluate ecosystem integrity.\n\n\nSize Structure\nFish size distributions provide insights into population health and fishing pressure:\n\nLength-frequency distributions for target species\nMean size comparisons across protection levels\nSize spectra analysis to detect fishing impacts\nGrowth and recruitment pattern assessment\n\nSize structure analysis is particularly valuable for identifying overfishing signals and evaluating protection effectiveness.\n\n\nSpatial Patterns\nBy analyzing how fish communities vary across space, we identify:\n\nBiomass hotspots and priority conservation areas\nHabitat associations for key species\nDepth-related changes in community structure\nEnvironmental correlates of fish distribution\n\n\n\nCross-Method Integration\nWe combine fish data with other survey components to reveal ecosystem relationships:\n\nCorrelations between coral cover and fish diversity/abundance\nRelationships between herbivorous fish and algal communities\nConnections between benthic habitat complexity and fish biomass\nPotential trophic cascades linking predators, herbivores, and reef algae\n\nThese integrated analyses provide a holistic understanding of reef ecosystem function and reveal the ecological processes that drive reef health and resilience.\nThrough these complementary analytical approaches, we transform field observations into ecological insights that inform conservation planning and contribute to our understanding of marine ecosystems—from individual reefs to global patterns.",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#integration-with-other-methods",
+    "href": "field-methods/uvs_fish_blt.html#integration-with-other-methods",
+    "title": "Reef Fish",
+    "section": "Integration with other methods",
+    "text": "Integration with other methods\nThe fish survey data can be integrated with other Pristine Seas methods. Examples include:\n\nWith LPI data: Examining fish-habitat relationships\nWith invertebrate data: Investigating predator-prey dynamics\nWith recruit data: Assessing herbivore impacts on coral recruitment\nWith eDNA data: Comparing visual vs molecular detection of fish diversity",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#taxonomic-framework",
+    "href": "field-methods/uvs_fish_blt.html#taxonomic-framework",
+    "title": "Reef Fish",
+    "section": "Taxonomic Framework",
+    "text": "Taxonomic Framework\nPrecise species identification and classification are fundamental to the fish survey methodology. Pristine Seas uses a comprehensive taxonomic system that balances field practicality with scientific rigor. This framework connects underwater observations to global taxonomic databases, with the World Register of Marine Species (WoRMS) AphiaID serving as the authoritative identifier throughout all datasets.\n\nIdentification Process\nOur divers achieve species-level identification for over 90% of individuals in real-time, using a structured approach for challenging identifications:\n\nField observation: Record distinguishing features when species identity is uncertain\nReference consultation: Compare observations with identification guides post-dive\nTeam verification: Review difficult identifications collectively\nPhoto documentation: Capture images of unusual specimens for later analysis\n\n\n\n\n\n\n\nIdentification Resources\n\n\n\nField teams use multiple resources to support accurate species identification:\n\nPre-expedition training: Review regional species lists and identification challenges\nField guides: Region-specific printed and digital references available onboard\nDigital libraries: Offline mobile applications with comprehensive visual databases\nPhotography: Systematic image collection of uncertain identifications\nPost-dive consensus: Regular team discussions to standardize identification approaches\n\n\n\n\n\nField Code System\nFor efficient underwater data collection and rapid at-sea data entry, Pristine Seas employs a specialized field code system. These codes serve as temporary identifiers that link field observations to formal taxonomy.\n\n\n\n\n\n\nTaxon Code Structure\n\n\n\nOur field code (taxon_code) system uses a consistent format that makes underwater data recording efficient while maintaining taxonomic precision.\nSpecies-Level Codes\nGEN2.SPEC4 — First 2 letters of genus + first 4 of species (uppercase)\n\nAcanthurus tristis → AC.TRIS\nApogon tricolor → AP.TRIC\nAnthias tricolor → AN.TRIC\n\nHandling Duplicates\nWhen multiple species would share the same code:\n\nMost common taxon keeps the default code\nOthers extend the genus or species portion to ensure uniqueness\n\nExamples:\n\nApogon tristis → AP.TRIS\nAplodactylus tristis → APL.TRIS\nLabroides bilineatus → LA.BILI\nLabroides bilinearis → LA.BILIN\n\nGenus and Family Codes\nUsed when species-level identification isn’t possible:\n\nGenus → GEN4.SP (e.g., Labroides sp. → LABR.SP)\nFamily → FAM4.SPP (e.g., Labridae spp. → LABR.SPP)\n\nHybrids\nHybrid taxa use extended format: GEN2.SPxSP\nExamples:\n\nAcanthurus achilles × nigricans → AC.ACxNI\nAcanthurus olivaceus × nigricans → AC.OLxNI\n\nThese conventions ensure clean data joins, traceability, and consistent taxonomy across all datasets.\n\n\n\n\nDatabase Integration\nOur two-tier database system translates field observations into analysis-ready data:\n\ntaxonomy.uvs_fish_codes: Maps field codes to formal taxonomy\n\nConnects temporary taxon_code to accepted scientific names\nLinks each code to its authoritative AphiaID\nIncludes regional variants and handles identification edge cases (e.g., hybrids)\nMaintains historical continuity across expeditions\n\ntaxonomy.fish: Comprehensive species trait database with AphiaID as the primary key\n\nTaxonomic identifiers: AphiaID (WoRMS), SpecCode (Fishbase), SIS_ID (IUCN)\nTaxonomic classification: Complete tree from phylum to species\nCommon names: Species and family common names (in English)\nTrophic information: Trophic group and level, feeding guild, and diet composition\nMorphometrics: Length-weight relationships, maximum size, and growth parameters\nEcological context: Habitat associations and fishery importance\nConservation status: IUCN categorization\n\n\nThis integrated system enables seamless workflow from underwater observations to sophisticated ecological analyses while maintaining taxonomic precision and compatibility with global biodiversity databases.",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#methodological-evolution",
+    "href": "field-methods/uvs_fish_blt.html#methodological-evolution",
+    "title": "Reef Fish",
+    "section": "Methodological Evolution",
+    "text": "Methodological Evolution\nThe fish belt transect methodology continues to evolve as technology advances and our understanding of marine ecosystems grows. Recent and ongoing developments include:\n\nStereo-video integration: Supplementing diver observations with stereo-video systems for more precise length measurements\nMachine learning applications: Developing automated species identification to assist with field data validation\nCross-method calibration: Establishing relationships between visual census and eDNA approaches for complementary biodiversity assessments\nStandardized power analysis: Refining optimal sample sizes for different habitats and research questions\nExpanded trait databases: Incorporating additional ecological and life history traits to enhance functional analyses\nDigital data collection: Testing underwater tablets for direct digital data entry\n\nThese innovations aim to enhance data quality, reduce observer bias, and strengthen connections between traditional and emerging survey methods while maintaining compatibility with our long-term dataset.",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
     ]
   }
 ]

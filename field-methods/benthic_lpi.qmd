@@ -81,7 +81,7 @@ This division of labor ensures both broad coverage of all substrate types and pr
    - Roam the station if time allows
    - Document any notable off-transect taxa or observations
    
-## Taxonomic Resolution
+## Taxonomic Framework
 
 The Pristine Seas LPI method employs world-class scientific divers who typically identify organisms to species or genus level immediately. However, for challenging identifications, we use a structured taxonomic resolution model that ensures scientific rigor throughout the identification process.
 
@@ -341,7 +341,7 @@ Coral morphology represents the physical structure and growth form that coral co
 
 </div>
 
-## Data Processing
+## Data Workflow
 
 ### Data Entry
 

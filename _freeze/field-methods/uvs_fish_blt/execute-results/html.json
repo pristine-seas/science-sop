@@ -1,0 +1,15 @@
+{
+  "hash": "6ec933d1c8facbd79571fa4b854fa7ae",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Reef Fish\"\nsubtitle: \"Quantifying benthic community composition\"\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    toc-location: right\nexecute:\n  echo: true\n  warning: false\n  message: false\n---\n\n\n\n\n## Introduction\n\nThe Line Point Intercept (LPI) method is a fundamental component of Pristine Seas underwater visual surveys, providing quantitative data on benthic community composition and substrate cover. This method documents the relative abundance of key benthic categories, including corals, algae, and other sessile organisms, as well as abiotic substrate types.\n\n## Method Overview",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

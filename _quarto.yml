@@ -97,7 +97,7 @@ website:
               - text: "Coral recruits"
                 href: field-methods/benthic_recruits.qmd
               - text: "Reef fish"
-                href: field-methods/uvs_fish.qmd
+                href: field-methods/uvs_fish_blt.qmd
               - text: "Environmental (YSI)"
                 href: field-methods/ysi.qmd
           - section: "BRUVS"

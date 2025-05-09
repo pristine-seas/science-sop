@@ -534,8 +534,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Line Point Intercept"
+      "Benthos"
     ]
   },
   {
@@ -548,8 +547,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Line Point Intercept"
+      "Benthos"
     ]
   },
   {
@@ -562,8 +560,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Line Point Intercept"
+      "Benthos"
     ]
   },
   {
@@ -576,8 +573,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Line Point Intercept"
+      "Benthos"
     ]
   },
   {
@@ -650,8 +646,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Line Point Intercept"
+      "Benthos"
     ]
   },
   {
@@ -724,8 +719,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Line Point Intercept"
+      "Benthos"
     ]
   },
   {
@@ -738,8 +732,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Line Point Intercept"
+      "Benthos"
     ]
   },
   {
@@ -776,8 +769,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Line Point Intercept"
+      "Benthos"
     ]
   },
   {
@@ -845,8 +837,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Line Point Intercept"
+      "Benthos"
     ]
   },
   {
@@ -1891,6 +1882,58 @@
       "Home",
       "Field Methods",
       "Overview"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html",
+    "href": "field-methods/uvs_fish_blt.html",
+    "title": "Reef Fish",
+    "section": "",
+    "text": "The Line Point Intercept (LPI) method is a fundamental component of Pristine Seas underwater visual surveys, providing quantitative data on benthic community composition and substrate cover. This method documents the relative abundance of key benthic categories, including corals, algae, and other sessile organisms, as well as abiotic substrate types.",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#introduction",
+    "href": "field-methods/uvs_fish_blt.html#introduction",
+    "title": "Reef Fish",
+    "section": "",
+    "text": "The Line Point Intercept (LPI) method is a fundamental component of Pristine Seas underwater visual surveys, providing quantitative data on benthic community composition and substrate cover. This method documents the relative abundance of key benthic categories, including corals, algae, and other sessile organisms, as well as abiotic substrate types.",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/uvs_fish_blt.html#method-overview",
+    "href": "field-methods/uvs_fish_blt.html#method-overview",
+    "title": "Reef Fish",
+    "section": "Method Overview",
+    "text": "Method Overview",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Reef fish"
+    ]
+  },
+  {
+    "objectID": "field-methods/ysi.html#method-overview",
+    "href": "field-methods/ysi.html#method-overview",
+    "title": "YSI",
+    "section": "Method Overview",
+    "text": "Method Overview",
+    "crumbs": [
+      "Home",
+      "Field Methods",
+      "Underwater Visual Surveys (UVS)",
+      "Environmental (YSI)"
     ]
   }
 ]

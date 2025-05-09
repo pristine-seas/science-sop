@@ -260,6 +260,8 @@ The Pristine Seas Science Database serves as the central repository for this int
 
 ## General Data Worklow
 
+The diagram below shows how information flows from collection in the field through processing and analysis to final integration in our database.
+
 ```{mermaid}
 flowchart LR
     subgraph Field["🔍 Field Collection"]
@@ -270,7 +272,7 @@ flowchart LR
     
     subgraph Process["🔄 Data Processing"]
         direction TB
-        D[File Consolidation] --> E[Standardization & QA/QC]
+        D[File Consolidation] --> E[Quality Control]
         E --> F[Integration & Cleaning]
     end
     
@@ -280,9 +282,9 @@ flowchart LR
         H --> I[Visualization & Reporting]
     end
     
-    subgraph Database["🗄️ Database Integration"]
+    subgraph Database["🗄️ Database Storage"]
         direction TB
-        J[Formatting for Ingestion] --> K[BigQuery Tables]
+        J[Formatting] --> K[BigQuery Tables]
         K --> L[Cross-Method Integration]
     end
     
@@ -297,35 +299,39 @@ flowchart LR
     style Database fill:#F6C141,color:#000000
 ```
 
-### Collection 
+### Data Collection 
 
 Field data collection is the foundation of our scientific process. Each method has specific protocols detailed in its respective section, but all follow these core principles:
 
-  - **Standardized fieldbooks** with method-specific templates
-  - **Consistent metadata** across all observations (site IDs, coordinates, date/time, observers)
-  - **Controlled vocabularies** for habitat types, substrate categories, and taxonomic classifications
-  - **Photographic documentation** to supplement written observations
-  - **Fixed sampling designs** to ensure statistical validity and comparison across sites
+  - **Standard fieldbooks** designed specifically for each method
+  - **Consistent information recording** across all observations (site IDs, coordinates, date/time, observers)
+  - **Common terminology** for habitat types, substrate categories, and species classifications
+  - **Photo documentation** to supplement written observations
+  - **Consistent sampling approaches** to ensure comparability across sites
 
-#### Daily Data Entry
+### Daily Data Entry
 
 Data are entered into digital formats as soon as possible after collection:
 
   - Same-day entry while observations are fresh in memory
-  - Method-specific fieldbooks with built-in validation rules, autocopmletion, and flags
-  - Follow consistent folder structure and naming conventions: [ISO3]_[YEAR]_[METHOD]_fieldbook.xlsx
-  - Work on the NAS - data is automatically backed up to the ship's Network Attached Storage 
-  - Daily review by the data manager to identify potential issues
+  - Method-specific fieldbooks with built-in error checking and autocomplete features
+  - Standard folder structure and file naming: `[ISO3]_[YEAR]_[METHOD]_fieldbook.xlsx`
+  - Work directly on the ship's NAS for automatic backup
+  - Daily review by the data manager to catch potential issues
+
+### Media Management 
+
+Photos and videos serve as both scientific evidence and powerful tools for communicating our work. Consistent management ensures these visual assets remain accessible, properly labeled, and scientifically valuable.
 
 ::: {.callout-important appearance="simple" title="Photo Management Best Practices"}
-Proper image management is essential for scientific documentation and communication. 
+Good photo management is essential for documenting our scientific work.
 Follow these three key practices:
 
-1. **Station-Based Organization**: Structure folders by station to ensure all photos are organized by location and depth
+1. **Organize by Station**: Keep all photos in folders organized by station ID so they can be easily found later
 
-2. **Curate Selections**: Build a collection of high-quality, labeled images for species identification, notable observations, and habitat documentation to contribute to our reference library and for use in reports
+2. **Select Best Images**: Create a collection of high-quality, labeled photos showing species, notable observations, and habitats for our reference library and reports
 
-3. **Consistent Naming**: Use our standard formats for naming image folders and individual photos
+3. **Use Consistent Names**: Follow our standard naming approach for folders and important images
    - **Folders**: `[ISO3]-[YEAR]-[METHOD]-[STATION_ID]`  
      Examples: 
      - Quadrats: `data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/`
@@ -333,51 +339,143 @@ Follow these three key practices:
      - Inverts: `data/benthos/inverts/photos/PLW-2023-uvs-001-10m/`
      - Birds: `data/birds/photos/PLW-2023-birds-001/`
    
-   - **Selected Images**: `[ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[OBSERVATION].jpg`  
+   - **Selected Images**: `[ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[DESCRIPTION].jpg`  
      Examples: 
      - Birds: `media/science-collection/birds/PLW_2023_birds_001_frigatebird.jpg`
      - Fish: `media/science-collection/fish/PLW_2023_uvs_001_20m_acanthurus_lineatus.jpg`
      - Submersible: `media/science-collection/sub/PLW_2023_sub_08_gorgonian_fan.jpg`
    
-   - **Field Photos**: Only selected highlights need full labeling; other field photos can remain as-is if stored in properly labeled station folders  
+   - **Field Photos**: Only selected highlights need complete labels; other field photos can remain as-is if stored in properly labeled station folders  
      Examples: 
      - Quadrats: `data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/q3_IMG0042.jpg`
      - Birds: `data/birds/photos/PLW-2023-birds-001/canon_2023-08-01_12-00-00.jpg`
 
-Backup to the NAS daily. Data manager will transfer to Google Drive upon expedition completion.
+Save all photos to the NAS daily. The data manager will transfer everything to Google Drive after the expedition.
+:::
+
+::: {.callout-important appearance="simple" title="Video Footage Best Practices"}
+Managing footage from remote cameras (BRUVS, deep-sea cameras, ROV, submersible) requires organization to make the most of these valuable recordings.
+Follow these key practices:
+
+1. **Use a Central Highlights Folder**: Save all important video clips and screenshots to the appropriate method's highlights folder
+   - Create a highlights subfolder for each method: `/[method]/highlights/`
+   - Examples:
+     - Seabed BRUVS: `sbruv/highlights/`
+     - Pelagic BRUVS: `pbruv/highlights/`
+     - ROV: `rov/highlights/`
+     - Submersible: `sub/highlights/`
+     - Deep-sea cameras: `deepsea/highlights/`
+
+2. **Name Files Consistently**: Use our standard format for all highlight files
+   - **Standard Format**: `[ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[DEPTH]_[DESCRIPTION].mp4`
+   - **Examples**:
+     - Seabed BRUVS: `FJI_2025_sbruv_001_40m_grouper_school.mp4`
+     - Pelagic BRUVS: `FJI_2025_pbruv_003_silky_shark.mp4`
+     - ROV: `FJI_2025_rov_002_350m_soft_coral_garden.mp4`
+     - Submersible: `FJI_2025_sub_005_800m_deep_reef_community.mp4`
+     - Deep-sea camera: `FJI_2025_dscm004_1200m_cusk_eel.mp4`
+
+3. **Use Standard File Formats**: Make sure everyone can open and view your files
+   - **Video Clips**: Save as `.mp4` format for all video highlights
+   - **Screenshots**: Save as `.jpg` format for all still images
+   - **Clip Length**: Keep highlight clips between 10-60 seconds
+   - **Resolution**: Maintain 1080p resolution when possible
+
+4. **Include Important Details**: Make sure others can understand what they're seeing
+   - Include depth information for all depth-related methods
+   - Use descriptive names that indicate content (species, behavior, habitat)
+   - Note the time code from original footage when possible
+   - For unusual observations, create a simple text file with additional notes
+
+5. **Capture These Key Moments**:
+   - **Diversity and MaxN**: Footage showing multiple species or high numbers
+   - **Behaviors**: Interesting activities like feeding, schooling, or cleaning
+   - **Habitats**: Good examples of different habitat types
+   - **Notable Finds**: Rare species, unusual interactions, or new records
+
+Save all highlight files to the NAS daily. The data manager will transfer everything to Google Drive after the expedition.
+:::
+
+While more detailed guidelines can be found in the [Media Library](../media-library/organization.qmd) section, these practices ensure that our photos and videos are properly organized and can be easily connected to our scientific observations.
+
+### Data Processing
+
+Each method follows a specific workflow that turns raw observations into clean, analysis-ready data while ensuring scientific accuracy. While specific details vary by method, all follow a common framework to ensure consistency and quality.
+
+#### Processing Documentation
+
+All data processing steps are documented and implemented through standardized scripts:
+
+1. **`pipeline_[method].qmd`**: Transforms raw data into clean, analysis-ready tables
+   - Records each step in the cleaning process
+   - Tracks where each piece of data came from
+   - Performs method-specific calculations
+   - Creates standardized output files ready for our database
+
+2. **`eda_[method].qmd`**: Explores and analyzes the processed data
+   - Creates consistent analyses across expeditions
+   - Generates standard graphs and visualizations
+   - Documents method-specific analysis considerations
+   - Enables others to reproduce analyses exactly
+
+### Standard Processing Steps
+
+While each method has unique requirements, all processing workflows include these core steps:
+
+::: {.panel-tabset}
+
+## Combining Data
+- Bringing together data from multiple scientists and expedition legs
+- Making sure units and formats match across all datasets
+- Fixing inconsistent species names and identifications
+- Adding information from site logs and measurements (when available)
+- Creating clean, complete data tables for each station and observation
+
+## Quality Checks
+- Finding and fixing unusual values or errors
+- Comparing data across different methods to spot inconsistencies
+- Verifying species identifications with our reference lists
+- Keeping clear records of any changes made to the original data
+- Creating maps and plots to visually check patterns
+- Running method-specific checks for known issues
+
+## Adding Context
+- Connecting observations to their proper site, region, and expedition
+- Including details about how each survey was conducted
+- Adding environmental information like temperature, depth, and weather
+- Linking data to relevant photos and video highlights
+- Making sure dates and times are recorded consistently
+
+## Final Formatting
+- Using consistent file names like `PLW_2023_fish_observations.csv`
+- Creating standardized table layouts that work across all expeditions
+- Using the same column types and formats across methods
+- Properly marking missing data and true zero counts
+- Creating both detailed observation tables and summary statistics tables
+
 :::
 
 
-### Processing
+#### Database Storage
 
-Each field method follows specific processing workflows, but all adhere to a standardized framework that ensures data quality, reproducibility, and integration. Our data processing approach balances method-specific requirements with system-wide standards.
+The final stage prepares all data for storage in our central database:
 
-* **Quality Control Procedures**
-  * Multi-stage verification process (field, office, database)
-  * Cross-method consistency checks for shared parameters
-  
-* **Database Integration**
-  * Automated (i wish) data ingestion pipelines for each method
-  * Relational table structures preserving cross-method linkages
-  * Metadata documentation
+- **Formatting for Storage**
+  - Converting data to database-friendly formats
+  - Using standard field names across all datasets
+  - Connecting species IDs to our taxonomic database
+  - Making sure number and text fields are properly formatted
 
-Each method's processing workflow is fully documented and implemented in two Quarto scripts:
+- **Final Quality Checks**
+  - Verifying data at multiple stages (field, expedition, database)
+  - Checking consistency across different methods
+  - Comparing with historical data ranges
+  - Documenting any quality concerns
 
-1. **`pipeline_[method].qmd`**: Data transformation pipeline from raw collection, QAQC, and output of analysis-ready tables for ingestion into the DB
+- **Documentation**
+  - Recording all processing decisions
+  - Tracking original data sources
+  - Versioning all processing scripts
+  - Linking with expedition details and methods
 
-#### 
-
-2. **`eda_[method].qmd`**: Exploratory data analysis, visualization and statistics
-
-All methods implement these critical standards:
-
-
-  * Version control system
-* **Statistical Approaches**
-  * Standardized methods for handling zero-inflated ecological data
-  * Consistent treatment of temporal and spatial autocorrelation
-These reproducible scripts ensure consistent processing across expeditions and enable efficient onboarding of new team members to our data workflows.
-
-
-
-
+This systematic approach ensures that all data collected during expeditions is transformed into high-quality, analysis-ready formats that can be used both for immediate research questions and long-term scientific studies.

@@ -1447,8 +1447,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Overview"
+      "Benthos"
     ]
   },
   {
@@ -1629,8 +1628,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Coral Recruits"
+      "Coral recruits"
     ]
   },
   {
@@ -1643,8 +1641,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Coral Recruits"
+      "Coral recruits"
     ]
   },
   {
@@ -1657,8 +1654,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Coral Recruits"
+      "Coral recruits"
     ]
   },
   {
@@ -1671,8 +1667,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Coral Recruits"
+      "Coral recruits"
     ]
   },
   {
@@ -1685,8 +1680,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Coral Recruits"
+      "Coral recruits"
     ]
   },
   {
@@ -1713,8 +1707,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Coral Recruits"
+      "Coral recruits"
     ]
   },
   {
@@ -1727,8 +1720,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Coral Recruits"
+      "Coral recruits"
     ]
   },
   {
@@ -1741,8 +1733,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Coral Recruits"
+      "Coral recruits"
     ]
   },
   {
@@ -1769,8 +1760,7 @@
       "Home",
       "Field Methods",
       "Underwater Visual Surveys (UVS)",
-      "Benthos",
-      "Coral Recruits"
+      "Coral recruits"
     ]
   },
   {
@@ -1896,7 +1886,7 @@
     "href": "field-methods/index.html#general-data-worklow",
     "title": "Overview",
     "section": "General Data Worklow",
-    "text": "General Data Worklow\n\n\nCode\nflowchart LR\n    subgraph Field[\"🔍 Field Collection\"]\n        direction TB\n        A[Data Collection] --&gt; B[Field Validation]\n        B --&gt; C[Daily Entry]\n    end\n    \n    subgraph Process[\"🔄 Data Processing\"]\n        direction TB\n        D[File Consolidation] --&gt; E[Standardization & QA/QC]\n        E --&gt; F[Integration & Cleaning]\n    end\n    \n    subgraph Analysis[\"📊 Data Analysis\"]\n        direction TB\n        G[Exploratory Analysis] --&gt; H[Statistical Testing]\n        H --&gt; I[Visualization & Reporting]\n    end\n    \n    subgraph Database[\"🗄️ Database Integration\"]\n        direction TB\n        J[Formatting for Ingestion] --&gt; K[BigQuery Tables]\n        K --&gt; L[Cross-Method Integration]\n    end\n    \n    Field --&gt; Process\n    Process --&gt; Analysis\n    Process --&gt; Database\n    Database --&gt; Analysis\n    \n    style Field fill:#004165,color:#ffffff\n    style Process fill:#8EBDC8,color:#000000\n    style Analysis fill:#EA9E8D,color:#000000\n    style Database fill:#F6C141,color:#000000\n\n\n\n\n\nflowchart LR\n    subgraph Field[\"🔍 Field Collection\"]\n        direction TB\n        A[Data Collection] --&gt; B[Field Validation]\n        B --&gt; C[Daily Entry]\n    end\n    \n    subgraph Process[\"🔄 Data Processing\"]\n        direction TB\n        D[File Consolidation] --&gt; E[Standardization & QA/QC]\n        E --&gt; F[Integration & Cleaning]\n    end\n    \n    subgraph Analysis[\"📊 Data Analysis\"]\n        direction TB\n        G[Exploratory Analysis] --&gt; H[Statistical Testing]\n        H --&gt; I[Visualization & Reporting]\n    end\n    \n    subgraph Database[\"🗄️ Database Integration\"]\n        direction TB\n        J[Formatting for Ingestion] --&gt; K[BigQuery Tables]\n        K --&gt; L[Cross-Method Integration]\n    end\n    \n    Field --&gt; Process\n    Process --&gt; Analysis\n    Process --&gt; Database\n    Database --&gt; Analysis\n    \n    style Field fill:#004165,color:#ffffff\n    style Process fill:#8EBDC8,color:#000000\n    style Analysis fill:#EA9E8D,color:#000000\n    style Database fill:#F6C141,color:#000000\n\n\n\n\n\n\n\nCollection\nField data collection is the foundation of our scientific process. Each method has specific protocols detailed in its respective section, but all follow these core principles:\n\nStandardized fieldbooks with method-specific templates\nConsistent metadata across all observations (site IDs, coordinates, date/time, observers)\nControlled vocabularies for habitat types, substrate categories, and taxonomic classifications\nPhotographic documentation to supplement written observations\nFixed sampling designs to ensure statistical validity and comparison across sites\n\n\nDaily Data Entry\nData are entered into digital formats as soon as possible after collection:\n\nSame-day entry while observations are fresh in memory\nMethod-specific fieldbooks with built-in validation rules, autocopmletion, and flags\nFollow consistent folder structure and naming conventions: [ISO3][YEAR][METHOD]_fieldbook.xlsx\nWork on the NAS - data is automatically backed up to the ship’s Network Attached Storage\nDaily review by the data manager to identify potential issues\n\n\n\n\n\n\n\nPhoto Management Best Practices\n\n\n\nProper image management is essential for scientific documentation and communication. Follow these three key practices:\n\nStation-Based Organization: Structure folders by station to ensure all photos are organized by location and depth\nCurate Selections: Build a collection of high-quality, labeled images for species identification, notable observations, and habitat documentation to contribute to our reference library and for use in reports\nConsistent Naming: Use our standard formats for naming image folders and individual photos\n\nFolders: [ISO3]-[YEAR]-[METHOD]-[STATION_ID]\nExamples:\n\nQuadrats: data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/\nFish: data/fish/photos/PLW-2023-uvs-001-20m/\nInverts: data/benthos/inverts/photos/PLW-2023-uvs-001-10m/\nBirds: data/birds/photos/PLW-2023-birds-001/\n\nSelected Images: [ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[OBSERVATION].jpg\nExamples:\n\nBirds: media/science-collection/birds/PLW_2023_birds_001_frigatebird.jpg\nFish: media/science-collection/fish/PLW_2023_uvs_001_20m_acanthurus_lineatus.jpg\nSubmersible: media/science-collection/sub/PLW_2023_sub_08_gorgonian_fan.jpg\n\nField Photos: Only selected highlights need full labeling; other field photos can remain as-is if stored in properly labeled station folders\nExamples:\n\nQuadrats: data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/q3_IMG0042.jpg\nBirds: data/birds/photos/PLW-2023-birds-001/canon_2023-08-01_12-00-00.jpg\n\n\n\nBackup to the NAS daily. Data manager will transfer to Google Drive upon expedition completion.\n\n\n\n\n\nProcessing\nEach field method follows specific processing workflows, but all adhere to a standardized framework that ensures data quality, reproducibility, and integration. Our data processing approach balances method-specific requirements with system-wide standards.\n\nQuality Control Procedures\n\nMulti-stage verification process (field, office, database)\nCross-method consistency checks for shared parameters\n\nDatabase Integration\n\nAutomated (i wish) data ingestion pipelines for each method\nRelational table structures preserving cross-method linkages\nMetadata documentation\n\n\nEach method’s processing workflow is fully documented and implemented in two Quarto scripts:\n\npipeline_[method].qmd: Data transformation pipeline from raw collection, QAQC, and output of analysis-ready tables for ingestion into the DB\n\n\n\n\neda_[method].qmd: Exploratory data analysis, visualization and statistics\n\nAll methods implement these critical standards:\n\nVersion control system\nStatistical Approaches\n\nStandardized methods for handling zero-inflated ecological data\nConsistent treatment of temporal and spatial autocorrelation These reproducible scripts ensure consistent processing across expeditions and enable efficient onboarding of new team members to our data workflows.",
+    "text": "General Data Worklow\nThe diagram below shows how information flows from collection in the field through processing and analysis to final integration in our database.\n\n\nCode\nflowchart LR\n    subgraph Field[\"🔍 Field Collection\"]\n        direction TB\n        A[Data Collection] --&gt; B[Field Validation]\n        B --&gt; C[Daily Entry]\n    end\n    \n    subgraph Process[\"🔄 Data Processing\"]\n        direction TB\n        D[File Consolidation] --&gt; E[Quality Control]\n        E --&gt; F[Integration & Cleaning]\n    end\n    \n    subgraph Analysis[\"📊 Data Analysis\"]\n        direction TB\n        G[Exploratory Analysis] --&gt; H[Statistical Testing]\n        H --&gt; I[Visualization & Reporting]\n    end\n    \n    subgraph Database[\"🗄️ Database Storage\"]\n        direction TB\n        J[Formatting] --&gt; K[BigQuery Tables]\n        K --&gt; L[Cross-Method Integration]\n    end\n    \n    Field --&gt; Process\n    Process --&gt; Analysis\n    Process --&gt; Database\n    Database --&gt; Analysis\n    \n    style Field fill:#004165,color:#ffffff\n    style Process fill:#8EBDC8,color:#000000\n    style Analysis fill:#EA9E8D,color:#000000\n    style Database fill:#F6C141,color:#000000\n\n\n\n\n\nflowchart LR\n    subgraph Field[\"🔍 Field Collection\"]\n        direction TB\n        A[Data Collection] --&gt; B[Field Validation]\n        B --&gt; C[Daily Entry]\n    end\n    \n    subgraph Process[\"🔄 Data Processing\"]\n        direction TB\n        D[File Consolidation] --&gt; E[Quality Control]\n        E --&gt; F[Integration & Cleaning]\n    end\n    \n    subgraph Analysis[\"📊 Data Analysis\"]\n        direction TB\n        G[Exploratory Analysis] --&gt; H[Statistical Testing]\n        H --&gt; I[Visualization & Reporting]\n    end\n    \n    subgraph Database[\"🗄️ Database Storage\"]\n        direction TB\n        J[Formatting] --&gt; K[BigQuery Tables]\n        K --&gt; L[Cross-Method Integration]\n    end\n    \n    Field --&gt; Process\n    Process --&gt; Analysis\n    Process --&gt; Database\n    Database --&gt; Analysis\n    \n    style Field fill:#004165,color:#ffffff\n    style Process fill:#8EBDC8,color:#000000\n    style Analysis fill:#EA9E8D,color:#000000\n    style Database fill:#F6C141,color:#000000\n\n\n\n\n\n\n\nData Collection\nField data collection is the foundation of our scientific process. Each method has specific protocols detailed in its respective section, but all follow these core principles:\n\nStandard fieldbooks designed specifically for each method\nConsistent information recording across all observations (site IDs, coordinates, date/time, observers)\nCommon terminology for habitat types, substrate categories, and species classifications\nPhoto documentation to supplement written observations\nConsistent sampling approaches to ensure comparability across sites\n\n\n\nDaily Data Entry\nData are entered into digital formats as soon as possible after collection:\n\nSame-day entry while observations are fresh in memory\nMethod-specific fieldbooks with built-in error checking and autocomplete features\nStandard folder structure and file naming: [ISO3]_[YEAR]_[METHOD]_fieldbook.xlsx\nWork directly on the ship’s NAS for automatic backup\nDaily review by the data manager to catch potential issues\n\n\n\nMedia Management\nPhotos and videos serve as both scientific evidence and powerful tools for communicating our work. Consistent management ensures these visual assets remain accessible, properly labeled, and scientifically valuable.\n\n\n\n\n\n\nPhoto Management Best Practices\n\n\n\nGood photo management is essential for documenting our scientific work. Follow these three key practices:\n\nOrganize by Station: Keep all photos in folders organized by station ID so they can be easily found later\nSelect Best Images: Create a collection of high-quality, labeled photos showing species, notable observations, and habitats for our reference library and reports\nUse Consistent Names: Follow our standard naming approach for folders and important images\n\nFolders: [ISO3]-[YEAR]-[METHOD]-[STATION_ID]\nExamples:\n\nQuadrats: data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/\nFish: data/fish/photos/PLW-2023-uvs-001-20m/\nInverts: data/benthos/inverts/photos/PLW-2023-uvs-001-10m/\nBirds: data/birds/photos/PLW-2023-birds-001/\n\nSelected Images: [ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[DESCRIPTION].jpg\nExamples:\n\nBirds: media/science-collection/birds/PLW_2023_birds_001_frigatebird.jpg\nFish: media/science-collection/fish/PLW_2023_uvs_001_20m_acanthurus_lineatus.jpg\nSubmersible: media/science-collection/sub/PLW_2023_sub_08_gorgonian_fan.jpg\n\nField Photos: Only selected highlights need complete labels; other field photos can remain as-is if stored in properly labeled station folders\nExamples:\n\nQuadrats: data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/q3_IMG0042.jpg\nBirds: data/birds/photos/PLW-2023-birds-001/canon_2023-08-01_12-00-00.jpg\n\n\n\nSave all photos to the NAS daily. The data manager will transfer everything to Google Drive after the expedition.\n\n\n\n\n\n\n\n\nVideo Footage Best Practices\n\n\n\nManaging footage from remote cameras (BRUVS, deep-sea cameras, ROV, submersible) requires organization to make the most of these valuable recordings. Follow these key practices:\n\nUse a Central Highlights Folder: Save all important video clips and screenshots to the appropriate method’s highlights folder\n\nCreate a highlights subfolder for each method: /[method]/highlights/\nExamples:\n\nSeabed BRUVS: sbruv/highlights/\nPelagic BRUVS: pbruv/highlights/\nROV: rov/highlights/\nSubmersible: sub/highlights/\nDeep-sea cameras: deepsea/highlights/\n\n\nName Files Consistently: Use our standard format for all highlight files\n\nStandard Format: [ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[DEPTH]_[DESCRIPTION].mp4\nExamples:\n\nSeabed BRUVS: FJI_2025_sbruv_001_40m_grouper_school.mp4\nPelagic BRUVS: FJI_2025_pbruv_003_silky_shark.mp4\nROV: FJI_2025_rov_002_350m_soft_coral_garden.mp4\nSubmersible: FJI_2025_sub_005_800m_deep_reef_community.mp4\nDeep-sea camera: FJI_2025_dscm004_1200m_cusk_eel.mp4\n\n\nUse Standard File Formats: Make sure everyone can open and view your files\n\nVideo Clips: Save as .mp4 format for all video highlights\nScreenshots: Save as .jpg format for all still images\nClip Length: Keep highlight clips between 10-60 seconds\nResolution: Maintain 1080p resolution when possible\n\nInclude Important Details: Make sure others can understand what they’re seeing\n\nInclude depth information for all depth-related methods\nUse descriptive names that indicate content (species, behavior, habitat)\nNote the time code from original footage when possible\nFor unusual observations, create a simple text file with additional notes\n\nCapture These Key Moments:\n\nDiversity and MaxN: Footage showing multiple species or high numbers\nBehaviors: Interesting activities like feeding, schooling, or cleaning\nHabitats: Good examples of different habitat types\nNotable Finds: Rare species, unusual interactions, or new records\n\n\nSave all highlight files to the NAS daily. The data manager will transfer everything to Google Drive after the expedition.\n\n\nWhile more detailed guidelines can be found in the Media Library section, these practices ensure that our photos and videos are properly organized and can be easily connected to our scientific observations.\n\n\nData Processing\nEach method follows a specific workflow that turns raw observations into clean, analysis-ready data while ensuring scientific accuracy. While specific details vary by method, all follow a common framework to ensure consistency and quality.\n\nProcessing Documentation\nAll data processing steps are documented and implemented through standardized scripts:\n\npipeline_[method].qmd: Transforms raw data into clean, analysis-ready tables\n\nRecords each step in the cleaning process\nTracks where each piece of data came from\nPerforms method-specific calculations\nCreates standardized output files ready for our database\n\neda_[method].qmd: Explores and analyzes the processed data\n\nCreates consistent analyses across expeditions\nGenerates standard graphs and visualizations\nDocuments method-specific analysis considerations\nEnables others to reproduce analyses exactly\n\n\n\n\n\nStandard Processing Steps\nWhile each method has unique requirements, all processing workflows include these core steps:\n\nCombining DataQuality ChecksAdding ContextFinal Formatting\n\n\n\nBringing together data from multiple scientists and expedition legs\nMaking sure units and formats match across all datasets\nFixing inconsistent species names and identifications\nAdding information from site logs and measurements (when available)\nCreating clean, complete data tables for each station and observation\n\n\n\n\nFinding and fixing unusual values or errors\nComparing data across different methods to spot inconsistencies\nVerifying species identifications with our reference lists\nKeeping clear records of any changes made to the original data\nCreating maps and plots to visually check patterns\nRunning method-specific checks for known issues\n\n\n\n\nConnecting observations to their proper site, region, and expedition\nIncluding details about how each survey was conducted\nAdding environmental information like temperature, depth, and weather\nLinking data to relevant photos and video highlights\nMaking sure dates and times are recorded consistently\n\n\n\n\nUsing consistent file names like PLW_2023_fish_observations.csv\nCreating standardized table layouts that work across all expeditions\nUsing the same column types and formats across methods\nProperly marking missing data and true zero counts\nCreating both detailed observation tables and summary statistics tables\n\n\n\n\n\nDatabase Storage\nThe final stage prepares all data for storage in our central database:\n\nFormatting for Storage\n\nConverting data to database-friendly formats\nUsing standard field names across all datasets\nConnecting species IDs to our taxonomic database\nMaking sure number and text fields are properly formatted\n\nFinal Quality Checks\n\nVerifying data at multiple stages (field, expedition, database)\nChecking consistency across different methods\nComparing with historical data ranges\nDocumenting any quality concerns\n\nDocumentation\n\nRecording all processing decisions\nTracking original data sources\nVersioning all processing scripts\nLinking with expedition details and methods\n\n\nThis systematic approach ensures that all data collected during expeditions is transformed into high-quality, analysis-ready formats that can be used both for immediate research questions and long-term scientific studies.",
     "crumbs": [
       "Home",
       "Field Methods",

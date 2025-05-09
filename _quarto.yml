@@ -90,16 +90,15 @@ website:
             href: field-methods/uvs_overview.qmd
             collapsible: true
             contents:
-              - section: "Benthos"
-                href: field-methods/benthic_overview.qmd
-                collapsible: true
-                contents:
-                  - field-methods/benthic_lpi.qmd
-                  - field-methods/benthic_inverts.qmd
-                  - field-methods/benthic_recruits.qmd
-              - text: "Fish"
+              - text: "Benthos"
+                href: field-methods/benthic_lpi.qmd
+              - text: "Invertebrates"
+                href: field-methods/benthic_inverts.qmd
+              - text: "Coral recruits"
+                href: field-methods/benthic_recruits.qmd
+              - text: "Reef fish"
                 href: field-methods/uvs_fish.qmd
-              - text: "YSI"
+              - text: "Environmental (YSI)"
                 href: field-methods/ysi.qmd
           - section: "BRUVS"
             href: field-methods/seabed-bruvs.qmd

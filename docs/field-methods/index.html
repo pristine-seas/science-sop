@@ -283,13 +283,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../field-methods/uvs_fish.qmd" class="sidebar-item-text sidebar-link">
+  <a href="../field-methods/uvs_fish_blt.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Reef fish</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../field-methods/ysi.qmd" class="sidebar-item-text sidebar-link">
+  <a href="../field-methods/ysi.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Environmental (YSI)</span></a>
   </div>
 </li>
@@ -470,11 +470,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#methods-integration" id="toc-methods-integration" class="nav-link" data-scroll-target="#methods-integration">Methods Integration</a></li>
   <li><a href="#general-data-worklow" id="toc-general-data-worklow" class="nav-link" data-scroll-target="#general-data-worklow">General Data Worklow</a>
   <ul class="collapse">
-  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">Data Collection</a></li>
-  <li><a href="#daily-data-entry" id="toc-daily-data-entry" class="nav-link" data-scroll-target="#daily-data-entry">Daily Data Entry</a></li>
+  <li><a href="#field-collection" id="toc-field-collection" class="nav-link" data-scroll-target="#field-collection">Field Collection</a></li>
+  <li><a href="#data-entry" id="toc-data-entry" class="nav-link" data-scroll-target="#data-entry">Data Entry</a></li>
   <li><a href="#media-management" id="toc-media-management" class="nav-link" data-scroll-target="#media-management">Media Management</a></li>
-  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data Processing</a></li>
-  <li><a href="#standard-processing-steps" id="toc-standard-processing-steps" class="nav-link" data-scroll-target="#standard-processing-steps">Standard Processing Steps</a></li>
+  <li><a href="#processing-pipeline" id="toc-processing-pipeline" class="nav-link" data-scroll-target="#processing-pipeline">Processing Pipeline</a></li>
+  <li><a href="#exploratory-data-analysis-eda" id="toc-exploratory-data-analysis-eda" class="nav-link" data-scroll-target="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pristine-seas/sop/edit/main/field-methods/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pristine-seas/sop/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -712,8 +712,8 @@ New records and range extensions
 <h2 class="anchored" data-anchor-id="methods-integration">Methods Integration</h2>
 <p>Our field research strategically integrates multiple assessment methods to provide comprehensive ecosystem insights beyond what individual techniques can reveal. Sampling sites are carefully selected to maximize spatial and temporal alignment across methods, enabling analyses of relationships between different ecosystem components.</p>
 <p>To ensure seamless data integration, all methods follow standardized protocols including uniform taxonomic references, consistent metadata structures, shared spatial hierarchies, and compatible statistical approaches. This standardization facilitates robust cross-method analyses that reveal critical ecological relationships and functions.</p>
-<section id="spatial-hierarchy" class="level4">
-<h4 class="anchored" data-anchor-id="spatial-hierarchy">Spatial Hierarchy</h4>
+<section id="shared-spatial-hierarchy" class="level4">
+<h4 class="anchored" data-anchor-id="shared-spatial-hierarchy">Shared Spatial Hierarchy</h4>
 <div class="callout callout-style-default callout-note callout-titled" title="Hierarchical spatial structure">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -760,31 +760,31 @@ Hierarchical spatial structure
 </div>
 </div>
 </section>
-<section id="sampling-model" class="level4">
-<h4 class="anchored" data-anchor-id="sampling-model">Sampling model</h4>
+<section id="consistent-sampling-model" class="level4">
+<h4 class="anchored" data-anchor-id="consistent-sampling-model">Consistent Sampling model</h4>
 <p>The table below outlines the spatial sampling structure for each method in the Pristine Seas Science Database. It defines the hierarchical relationship from sites to observations, ensuring clarity and consistency across protocols.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="ajzcklrnez" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="befvycdffe" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#ajzcklrnez table {
+#befvycdffe table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ajzcklrnez thead, #ajzcklrnez tbody, #ajzcklrnez tfoot, #ajzcklrnez tr, #ajzcklrnez td, #ajzcklrnez th {
+#befvycdffe thead, #befvycdffe tbody, #befvycdffe tfoot, #befvycdffe tr, #befvycdffe td, #befvycdffe th {
   border-style: none;
 }
 
-#ajzcklrnez p {
+#befvycdffe p {
   margin: 0;
   padding: 0;
 }
 
-#ajzcklrnez .gt_table {
+#befvycdffe .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -810,12 +810,12 @@ Hierarchical spatial structure
   border-left-color: #D3D3D3;
 }
 
-#ajzcklrnez .gt_caption {
+#befvycdffe .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ajzcklrnez .gt_title {
+#befvycdffe .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -827,7 +827,7 @@ Hierarchical spatial structure
   border-bottom-width: 0;
 }
 
-#ajzcklrnez .gt_subtitle {
+#befvycdffe .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -839,7 +839,7 @@ Hierarchical spatial structure
   border-top-width: 0;
 }
 
-#ajzcklrnez .gt_heading {
+#befvycdffe .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -851,13 +851,13 @@ Hierarchical spatial structure
   border-right-color: #D3D3D3;
 }
 
-#ajzcklrnez .gt_bottom_border {
+#befvycdffe .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ajzcklrnez .gt_col_headings {
+#befvycdffe .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -872,7 +872,7 @@ Hierarchical spatial structure
   border-right-color: #D3D3D3;
 }
 
-#ajzcklrnez .gt_col_heading {
+#befvycdffe .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 12px;
@@ -892,7 +892,7 @@ Hierarchical spatial structure
   overflow-x: hidden;
 }
 
-#ajzcklrnez .gt_column_spanner_outer {
+#befvycdffe .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 12px;
@@ -904,15 +904,15 @@ Hierarchical spatial structure
   padding-right: 4px;
 }
 
-#ajzcklrnez .gt_column_spanner_outer:first-child {
+#befvycdffe .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ajzcklrnez .gt_column_spanner_outer:last-child {
+#befvycdffe .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ajzcklrnez .gt_column_spanner {
+#befvycdffe .gt_column_spanner {
   border-bottom-style: none;
   border-bottom-width: 1px;
   border-bottom-color: #334422;
@@ -924,11 +924,11 @@ Hierarchical spatial structure
   width: 100%;
 }
 
-#ajzcklrnez .gt_spanner_row {
+#befvycdffe .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ajzcklrnez .gt_group_heading {
+#befvycdffe .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -954,7 +954,7 @@ Hierarchical spatial structure
   text-align: left;
 }
 
-#ajzcklrnez .gt_empty_group_heading {
+#befvycdffe .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -969,15 +969,15 @@ Hierarchical spatial structure
   vertical-align: middle;
 }
 
-#ajzcklrnez .gt_from_md > :first-child {
+#befvycdffe .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ajzcklrnez .gt_from_md > :last-child {
+#befvycdffe .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ajzcklrnez .gt_row {
+#befvycdffe .gt_row {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 5px;
@@ -996,7 +996,7 @@ Hierarchical spatial structure
   overflow-x: hidden;
 }
 
-#ajzcklrnez .gt_stub {
+#befvycdffe .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1009,7 +1009,7 @@ Hierarchical spatial structure
   padding-right: 5px;
 }
 
-#ajzcklrnez .gt_stub_row_group {
+#befvycdffe .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1023,15 +1023,15 @@ Hierarchical spatial structure
   vertical-align: top;
 }
 
-#ajzcklrnez .gt_row_group_first td {
+#befvycdffe .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ajzcklrnez .gt_row_group_first th {
+#befvycdffe .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ajzcklrnez .gt_summary_row {
+#befvycdffe .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1041,16 +1041,16 @@ Hierarchical spatial structure
   padding-right: 5px;
 }
 
-#ajzcklrnez .gt_first_summary_row {
+#befvycdffe .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ajzcklrnez .gt_first_summary_row.thick {
+#befvycdffe .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ajzcklrnez .gt_last_summary_row {
+#befvycdffe .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1060,7 +1060,7 @@ Hierarchical spatial structure
   border-bottom-color: #D3D3D3;
 }
 
-#ajzcklrnez .gt_grand_summary_row {
+#befvycdffe .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1070,7 +1070,7 @@ Hierarchical spatial structure
   padding-right: 5px;
 }
 
-#ajzcklrnez .gt_first_grand_summary_row {
+#befvycdffe .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1080,7 +1080,7 @@ Hierarchical spatial structure
   border-top-color: #D3D3D3;
 }
 
-#ajzcklrnez .gt_last_grand_summary_row_top {
+#befvycdffe .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1090,11 +1090,11 @@ Hierarchical spatial structure
   border-bottom-color: #D3D3D3;
 }
 
-#ajzcklrnez .gt_striped {
+#befvycdffe .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ajzcklrnez .gt_table_body {
+#befvycdffe .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1103,7 +1103,7 @@ Hierarchical spatial structure
   border-bottom-color: #FFFFFF;
 }
 
-#ajzcklrnez .gt_footnotes {
+#befvycdffe .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1117,7 +1117,7 @@ Hierarchical spatial structure
   border-right-color: #D3D3D3;
 }
 
-#ajzcklrnez .gt_footnote {
+#befvycdffe .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1126,7 +1126,7 @@ Hierarchical spatial structure
   padding-right: 5px;
 }
 
-#ajzcklrnez .gt_sourcenotes {
+#befvycdffe .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1140,7 +1140,7 @@ Hierarchical spatial structure
   border-right-color: #D3D3D3;
 }
 
-#ajzcklrnez .gt_sourcenote {
+#befvycdffe .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1148,72 +1148,72 @@ Hierarchical spatial structure
   padding-right: 5px;
 }
 
-#ajzcklrnez .gt_left {
+#befvycdffe .gt_left {
   text-align: left;
 }
 
-#ajzcklrnez .gt_center {
+#befvycdffe .gt_center {
   text-align: center;
 }
 
-#ajzcklrnez .gt_right {
+#befvycdffe .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ajzcklrnez .gt_font_normal {
+#befvycdffe .gt_font_normal {
   font-weight: normal;
 }
 
-#ajzcklrnez .gt_font_bold {
+#befvycdffe .gt_font_bold {
   font-weight: bold;
 }
 
-#ajzcklrnez .gt_font_italic {
+#befvycdffe .gt_font_italic {
   font-style: italic;
 }
 
-#ajzcklrnez .gt_super {
+#befvycdffe .gt_super {
   font-size: 65%;
 }
 
-#ajzcklrnez .gt_footnote_marks {
+#befvycdffe .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ajzcklrnez .gt_asterisk {
+#befvycdffe .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ajzcklrnez .gt_indent_1 {
+#befvycdffe .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ajzcklrnez .gt_indent_2 {
+#befvycdffe .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ajzcklrnez .gt_indent_3 {
+#befvycdffe .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ajzcklrnez .gt_indent_4 {
+#befvycdffe .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ajzcklrnez .gt_indent_5 {
+#befvycdffe .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ajzcklrnez .katex-display {
+#befvycdffe .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ajzcklrnez div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#befvycdffe div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1309,7 +1309,7 @@ Hierarchical spatial structure
 </section>
 <section id="general-data-worklow" class="level2">
 <h2 class="anchored" data-anchor-id="general-data-worklow">General Data Worklow</h2>
-<p>The diagram below shows how information flows from collection in the field through processing and analysis to final integration in our database.</p>
+<p>The diagram below illustrates the journey of field data from initial collection to its final integration within our database. This structured workflow ensures that data collected from diverse locations and methods is processed and stored consistently. As our network of collaborating researchers grows, maintaining this standardization is crucial—not only for ease of analysis but also to safeguard the scientific integrity of our collective work.</p>
 <div class="cell" data-layout-align="default">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1392,27 +1392,29 @@ Hierarchical spatial structure
 </div>
 </div>
 </div>
-<section id="data-collection" class="level3">
-<h3 class="anchored" data-anchor-id="data-collection">Data Collection</h3>
-<p>Field data collection is the foundation of our scientific process. Each method has specific protocols detailed in its respective section, but all follow these core principles:</p>
+<section id="field-collection" class="level3">
+<h3 class="anchored" data-anchor-id="field-collection">Field Collection</h3>
+<p>Field collection is the foundation of our scientific process. Every observation is documented following standardized protocols to ensure that data is consistent and reliable. We emphasize:</p>
 <ul>
-<li><strong>Standard fieldbooks</strong> designed specifically for each method</li>
-<li><strong>Consistent information recording</strong> across all observations (site IDs, coordinates, date/time, observers)</li>
-<li><strong>Common terminology</strong> for habitat types, substrate categories, and species classifications</li>
-<li><strong>Photo documentation</strong> to supplement written observations</li>
-<li><strong>Consistent sampling approaches</strong> to ensure comparability across sites</li>
+<li><strong>Standardized fieldbooks</strong> specifically designed for each method, ensuring structured and error-free data collection.</li>
+<li><strong>Consistent recording</strong> of site IDs, coordinates, date, time, and observer names for traceability.</li>
+<li><strong>Common terminology</strong> for habitat types, substrates, and species to maintain comparability across sites.</li>
+<li><strong>Photo documentation</strong> as visual evidence to complement written records.</li>
+<li><strong>Systematic sampling methods</strong> that allow data to be compared confidently across different regions.</li>
 </ul>
+<p>These protocols not only enhance the reliability of our own analysis but also make our data easily understandable and usable by other researchers working with us.</p>
 </section>
-<section id="daily-data-entry" class="level3">
-<h3 class="anchored" data-anchor-id="daily-data-entry">Daily Data Entry</h3>
-<p>Data are entered into digital formats as soon as possible after collection:</p>
+<section id="data-entry" class="level3">
+<h3 class="anchored" data-anchor-id="data-entry">Data Entry</h3>
+<p>Once collected, data is entered into digital formats as soon as possible to prevent loss of detail and reduce errors. Our main practices include:</p>
 <ul>
-<li>Same-day entry while observations are fresh in memory</li>
-<li>Method-specific fieldbooks with built-in error checking and autocomplete features</li>
-<li>Standard folder structure and file naming: <code>[ISO3]_[YEAR]_[METHOD]_fieldbook.xlsx</code></li>
-<li>Work directly on the ship’s NAS for automatic backup</li>
-<li>Daily review by the data manager to catch potential issues</li>
+<li><strong>Same-day data entry</strong> to keep information fresh and accurate.</li>
+<li><strong>Fieldbooks with built-in error checks</strong> to minimize typos and formatting mistakes.</li>
+<li><strong>Standardized file naming:</strong> <code>[ISO3]_[YEAR]_[METHOD]_fieldbook.xlsx</code> for easy identification.</li>
+<li><strong>Real-time backups</strong> on the ship’s storage system (NAS) to prevent data loss.</li>
+<li><strong>Daily review by a data manager</strong> to spot errors early and maintain data quality.</li>
 </ul>
+<p>This structured approach ensures that as more researchers join our efforts, everyone has access to clean, well-organized data that is easy to interpret and integrate across projects. It is our commitment to scientific rigor and transparency.</p>
 </section>
 <section id="media-management" class="level3">
 <h3 class="anchored" data-anchor-id="media-management">Media Management</h3>
@@ -1473,7 +1475,6 @@ Video Footage Best Practices
 <ol type="1">
 <li><strong>Use a Central Highlights Folder</strong>: Save all important video clips and screenshots to the appropriate method’s highlights folder
 <ul>
-<li>Create a highlights subfolder for each method: <code>/[method]/highlights/</code></li>
 <li>Examples:
 <ul>
 <li>Seabed BRUVS: <code>sbruv/highlights/</code></li>
@@ -1500,14 +1501,13 @@ Video Footage Best Practices
 <li><strong>Video Clips</strong>: Save as <code>.mp4</code> format for all video highlights</li>
 <li><strong>Screenshots</strong>: Save as <code>.jpg</code> format for all still images</li>
 <li><strong>Clip Length</strong>: Keep highlight clips between 10-60 seconds</li>
-<li><strong>Resolution</strong>: Maintain 1080p resolution when possible</li>
+<li><strong>Resolution</strong>: Maintain 1080p resolution</li>
 </ul></li>
 <li><strong>Include Important Details</strong>: Make sure others can understand what they’re seeing
 <ul>
 <li>Include depth information for all depth-related methods</li>
 <li>Use descriptive names that indicate content (species, behavior, habitat)</li>
 <li>Note the time code from original footage when possible</li>
-<li>For unusual observations, create a simple text file with additional notes</li>
 </ul></li>
 <li><strong>Capture These Key Moments</strong>:
 <ul>
@@ -1522,106 +1522,146 @@ Video Footage Best Practices
 </div>
 <p>While more detailed guidelines can be found in the <a href="../media-library/organization.qmd">Media Library</a> section, these practices ensure that our photos and videos are properly organized and can be easily connected to our scientific observations.</p>
 </section>
-<section id="data-processing" class="level3">
-<h3 class="anchored" data-anchor-id="data-processing">Data Processing</h3>
-<p>Each method follows a specific workflow that turns raw observations into clean, analysis-ready data while ensuring scientific accuracy. While specific details vary by method, all follow a common framework to ensure consistency and quality.</p>
-<section id="processing-documentation" class="level4">
-<h4 class="anchored" data-anchor-id="processing-documentation">Processing Documentation</h4>
-<p>All data processing steps are documented and implemented through standardized scripts:</p>
-<ol type="1">
-<li><strong><code>pipeline_[method].qmd</code></strong>: Transforms raw data into clean, analysis-ready tables
+<section id="processing-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="processing-pipeline">Processing Pipeline</h3>
+<p>We use method-specific standardized scripts (<code>pipeline_[method].qmd</code>) to transform raw field observations into clean, analysis-ready datasets. Although each method follows a unique pipeline, the overall structure remains consistent, ensuring data integrity, traceability, and seamless integration into the <strong>Pristine Seas Science Database</strong>.</p>
+<section id="data-ingestion-and-harmonization" class="level4">
+<h4 class="anchored" data-anchor-id="data-ingestion-and-harmonization">Data Ingestion and Harmonization</h4>
 <ul>
-<li>Records each step in the cleaning process</li>
-<li>Tracks where each piece of data came from</li>
-<li>Performs method-specific calculations</li>
-<li>Creates standardized output files ready for our database</li>
-</ul></li>
-<li><strong><code>eda_[method].qmd</code></strong>: Explores and analyzes the processed data
+<li><strong>Data Ingestion:</strong> Gather and merge raw field data from multiple expedition legs and contributors.</li>
+<li><strong>Standardization:</strong> Apply consistent field names, units, and formats to match database schema.</li>
+<li><strong>Spatial Context:</strong> Harmonize geographic data across the established hierarchy:
 <ul>
-<li>Creates consistent analyses across expeditions</li>
-<li>Generates standard graphs and visualizations</li>
-<li>Documents method-specific analysis considerations</li>
-<li>Enables others to reproduce analyses exactly</li>
+<li><strong>Region → Subregion → Locality → Site → Station</strong></li>
 </ul></li>
-</ol>
+<li><strong>Terminology Alignment:</strong> Enforce consistent language for <strong>habitats</strong>, <strong>strata</strong>, and <strong>exposure types</strong>.</li>
+</ul>
+</section>
+<section id="qaqc" class="level4">
+<h4 class="anchored" data-anchor-id="qaqc">QA/QC</h4>
+<ul>
+<li><strong>Sampling Effort Verification:</strong> Assess completeness and alignment with sampling protocols.</li>
+<li><strong>Exploratory Visualizations:</strong> Generate maps and plots to visually inspect patterns.</li>
+<li><strong>Spatial and Temporal Validation:</strong> Check station alignment and method overlap across regions.</li>
+<li><strong>Data Completeness Assessment:</strong> Identify missing values and ensure records are logically complete.</li>
+<li><strong>Outlier and Anomaly Detection:</strong> Flag improbable values and check for inconsistencies.</li>
+<li><strong>Protocol Deviation Documentation:</strong> Record any departures from standard field protocols.</li>
+<li><strong>Decision Logging:</strong> Maintain structured logs of all processing steps and adjustments.</li>
+</ul>
+</section>
+<section id="taxonomic-validation" class="level4">
+<h4 class="anchored" data-anchor-id="taxonomic-validation">Taxonomic Validation</h4>
+<ul>
+<li><strong>Species Identification Checks:</strong> Cross-reference observed taxa with the <strong>Pristine Seas Taxonomic Database</strong>.</li>
+<li><strong>Resolve Inconsistencies:</strong> Correct synonyms, misidentifications, and hierarchical misalignments.</li>
+<li><strong>Harmonize Across Regions:</strong> Ensure consistent naming and classification throughout the dataset.</li>
+</ul>
+</section>
+<section id="ecological-metric-calculation" class="level4">
+<h4 class="anchored" data-anchor-id="ecological-metric-calculation">Ecological Metric Calculation</h4>
+<ul>
+<li>Compute key ecological indicators at relevant spatial scales:
+<ul>
+<li><strong>Biomass (<code>g/m²</code>)</strong></li>
+<li><strong>Species Richness</strong></li>
+<li><strong>Diversity Indices (e.g., Shannon, Simpson)</strong></li>
+<li><strong>Trophic Composition</strong></li>
+<li><strong>MaxN (Maximum Number Observed Simultaneously)</strong></li>
+</ul></li>
+<li>Generate summary tables at multiple ecological and political levels:
+<ul>
+<li><strong>Taxa → Station → Site → Subregion → Region</strong></li>
+</ul></li>
+<li>Produce both detailed observation-level tables and summary statistics for downstream analyses.</li>
+</ul>
+</section>
+<section id="output-standardization-and-database-integration" class="level4">
+<h4 class="anchored" data-anchor-id="output-standardization-and-database-integration">Output Standardization and Database Integration</h4>
+<ul>
+<li><strong>File Naming Convention:</strong> Apply a consistent format for traceability:
+<ul>
+<li><code>[ISO3]_[YEAR]_[METHOD]_[TYPE].csv</code></li>
+<li>Examples: <code>PLW_2023_fish_observations.csv</code>, <code>FJI_2025_coral_cover.csv</code></li>
+</ul></li>
+<li><strong>Database Upload:</strong> Load processed and validated datasets into the <strong>Pristine Seas Science Database</strong>.</li>
+<li><strong>Media Linkage:</strong> Attach relevant photos and video highlights for cross-referencing.</li>
+</ul>
 </section>
 </section>
-<section id="standard-processing-steps" class="level3">
-<h3 class="anchored" data-anchor-id="standard-processing-steps">Standard Processing Steps</h3>
-<p>While each method has unique requirements, all processing workflows include these core steps:</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Combining Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Quality Checks</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Adding Context</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Final Formatting</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="exploratory-data-analysis-eda" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</h3>
+<p>The <strong>Exploratory Data Analysis (EDA)</strong> stage transforms standardized datasets into actionable insights that inform scientific reports and conservation strategies. During this phase, we go beyond surface-level exploration to actively seek indicators of ecosystem health, conservation effectiveness, and environmental threats. Analyses are performed in <strong><code>eda_[method].qmd</code></strong>, with a strong emphasis on generating meaningful ecological narratives and identifying conservation priorities.</p>
+<section id="data-visualization" class="level4">
+<h4 class="anchored" data-anchor-id="data-visualization">Data Visualization</h4>
 <ul>
-<li>Bringing together data from multiple scientists and expedition legs</li>
-<li>Making sure units and formats match across all datasets</li>
-<li>Fixing inconsistent species names and identifications</li>
-<li>Adding information from site logs and measurements (when available)</li>
-<li>Creating clean, complete data tables for each station and observation</li>
-</ul>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<li>Create <strong>maps, summary plots, and interactive visualizations</strong> to reveal spatial and temporal patterns.</li>
+<li>Generate summary statistics for key ecological metrics:
 <ul>
-<li>Finding and fixing unusual values or errors</li>
-<li>Comparing data across different methods to spot inconsistencies</li>
-<li>Verifying species identifications with our reference lists</li>
-<li>Keeping clear records of any changes made to the original data</li>
-<li>Creating maps and plots to visually check patterns</li>
-<li>Running method-specific checks for known issues</li>
-</ul>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<ul>
-<li>Connecting observations to their proper site, region, and expedition</li>
-<li>Including details about how each survey was conducted</li>
-<li>Adding environmental information like temperature, depth, and weather</li>
-<li>Linking data to relevant photos and video highlights</li>
-<li>Making sure dates and times are recorded consistently</li>
-</ul>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<ul>
-<li>Using consistent file names like <code>PLW_2023_fish_observations.csv</code></li>
-<li>Creating standardized table layouts that work across all expeditions</li>
-<li>Using the same column types and formats across methods</li>
-<li>Properly marking missing data and true zero counts</li>
-<li>Creating both detailed observation tables and summary statistics tables</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="database-storage" class="level4">
-<h4 class="anchored" data-anchor-id="database-storage">Database Storage</h4>
-<p>The final stage prepares all data for storage in our central database:</p>
-<ul>
-<li><strong>Formatting for Storage</strong>
-<ul>
-<li>Converting data to database-friendly formats</li>
-<li>Using standard field names across all datasets</li>
-<li>Connecting species IDs to our taxonomic database</li>
-<li>Making sure number and text fields are properly formatted</li>
+<li><strong>Biomass</strong>, <strong>species richness</strong>, <strong>diversity indices</strong>, and <strong>trophic composition</strong>.</li>
 </ul></li>
-<li><strong>Final Quality Checks</strong>
-<ul>
-<li>Verifying data at multiple stages (field, expedition, database)</li>
-<li>Checking consistency across different methods</li>
-<li>Comparing with historical data ranges</li>
-<li>Documenting any quality concerns</li>
-</ul></li>
-<li><strong>Documentation</strong>
-<ul>
-<li>Recording all processing decisions</li>
-<li>Tracking original data sources</li>
-<li>Versioning all processing scripts</li>
-<li>Linking with expedition details and methods</li>
-</ul></li>
+<li>Visualize <strong>ecological gradients</strong> across depth, region, and habitat types.</li>
+<li>Explore <strong>habitat-specific assemblages</strong> and species distributions to detect community shifts.</li>
 </ul>
-<p>This systematic approach ensures that all data collected during expeditions is transformed into high-quality, analysis-ready formats that can be used both for immediate research questions and long-term scientific studies.</p>
+</section>
+<section id="contextual-analysis-and-ecological-inference" class="level4">
+<h4 class="anchored" data-anchor-id="contextual-analysis-and-ecological-inference">Contextual Analysis and Ecological Inference</h4>
+<ul>
+<li>Compare findings across <strong>regions</strong>, <strong>depth strata</strong>, and <strong>time periods</strong> to identify ecological shifts.</li>
+<li>Integrate results from multiple survey methods to build a comprehensive view of ecosystem dynamics.</li>
+<li>Contextualize observations with known baselines, historical data, and previous expeditions.</li>
+<li>Detect <strong>range extensions</strong>, <strong>new records</strong>, and <strong>unusual species aggregations</strong>.</li>
+</ul>
+</section>
+<section id="conservation-insights" class="level4">
+<h4 class="anchored" data-anchor-id="conservation-insights">Conservation Insights</h4>
+<p>During EDA, we explicitly explore key indicators that reflect ecosystem health, resilience, and human impact. This stage is conservation-driven, aiming to identify both risks and successes:</p>
+<section id="ecosystem-health-indicators" class="level5">
+<h5 class="anchored" data-anchor-id="ecosystem-health-indicators"><strong>Ecosystem Health Indicators</strong></h5>
+<ul>
+<li>Assess <strong>reef health</strong>, <strong>predator biomass ratios</strong>, and <strong>trophic balance</strong> as indicators of ecosystem stability.</li>
+<li>Identify <strong>keystone species</strong> and their relative abundance to understand ecosystem structure.</li>
+</ul>
+</section>
+<section id="overfishing-evidence" class="level5">
+<h5 class="anchored" data-anchor-id="overfishing-evidence"><strong>Overfishing Evidence</strong></h5>
+<ul>
+<li>Detect declines in critical species, particularly <strong>large-bodied predators</strong> and <strong>apex species</strong>.</li>
+<li>Monitor shifts in <strong>size structure</strong> and <strong>age classes</strong>, signaling fishing pressure.</li>
+</ul>
+</section>
+<section id="climate-change-impacts" class="level5">
+<h5 class="anchored" data-anchor-id="climate-change-impacts"><strong>Climate Change Impacts</strong></h5>
+<ul>
+<li>Look for signs of <strong>coral bleaching</strong>, <strong>range shifts</strong>, and changes in <strong>species composition</strong>.</li>
+<li>Investigate <strong>sensitive species loss</strong>.</li>
+</ul>
+</section>
+<section id="habitat-degradation" class="level5">
+<h5 class="anchored" data-anchor-id="habitat-degradation"><strong>Habitat Degradation</strong></h5>
+<ul>
+<li>Explore shifts in <strong>benthic cover</strong>, including <strong>macroalgae dominance</strong>, <strong>cyanobacteria blooms</strong>, and reductions in <strong>coral cover</strong>.</li>
+<li>Identify areas with increasing <strong>sedimentation</strong> or evidence of <strong>physical damage</strong> (e.g., fishing lines).</li>
+</ul>
+</section>
+<section id="conservation-success-signals" class="level5">
+<h5 class="anchored" data-anchor-id="conservation-success-signals"><strong>Conservation Success Signals</strong></h5>
+<ul>
+<li>Highlight regions with <strong>high biomass</strong>, <strong>top predator abundance</strong>, and <strong>balanced trophic structures</strong>.</li>
+<li>Identify <strong>MPA effectiveness</strong> by comparing protected versus unprotected areas.</li>
+</ul>
+</section>
+<section id="critical-habitat-mapping" class="level5">
+<h5 class="anchored" data-anchor-id="critical-habitat-mapping"><strong>Critical Habitat Mapping</strong></h5>
+<ul>
+<li>Map species <strong>home ranges</strong>, <strong>migration corridors</strong>, and <strong>nursery areas</strong>.</li>
+<li>Identify <strong>biodiversity hotspots</strong> and regions of ecological significance for conservation planning.</li>
+<li>Investigate industrial fishing activity to assess current threats and barriers for protection</li>
+</ul>
 
 
 <!-- -->
 
+</section>
 </section>
 </section>
 </section>
@@ -2228,7 +2268,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>To ensure seamless data integration, all methods follow standardized protocols including uniform taxonomic references, consistent metadata structures, shared spatial hierarchies, and compatible statistical approaches. This standardization facilitates robust cross-method analyses that reveal critical ecological relationships and functions.</span>
 <span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Spatial Hierarchy</span></span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Shared Spatial Hierarchy</span></span>
 <span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="Hierarchical spatial structure"}</span>
 <span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a></span>
@@ -2263,7 +2303,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Sampling model</span></span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Consistent Sampling model</span></span>
 <span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a>The table below outlines the spatial sampling structure for each method in the Pristine Seas Science Database. It defines the hierarchical relationship from sites to observations, ensuring clarity and consistency across protocols.</span>
 <span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a></span>
@@ -2347,7 +2387,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb2-260"><a href="#cb2-260" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-261"><a href="#cb2-261" aria-hidden="true" tabindex="-1"></a><span class="fu">## General Data Worklow</span></span>
 <span id="cb2-262"><a href="#cb2-262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-263"><a href="#cb2-263" aria-hidden="true" tabindex="-1"></a>The diagram below shows how information flows from collection in the field through processing and analysis to final integration in our database.</span>
+<span id="cb2-263"><a href="#cb2-263" aria-hidden="true" tabindex="-1"></a>The diagram below illustrates the journey of field data from initial collection to its final integration within our database. This structured workflow ensures that data collected from diverse locations and methods is processed and stored consistently. As our network of collaborating researchers grows, maintaining this standardization is crucial—not only for ease of analysis but also to safeguard the scientific integrity of our collective work.</span>
 <span id="cb2-264"><a href="#cb2-264" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-267"><a href="#cb2-267" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
 <span id="cb2-268"><a href="#cb2-268" aria-hidden="true" tabindex="-1"></a><span class="in">flowchart LR</span></span>
@@ -2386,186 +2426,199 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb2-301"><a href="#cb2-301" aria-hidden="true" tabindex="-1"></a><span class="in">    style Database fill:#F6C141,color:#000000</span></span>
 <span id="cb2-302"><a href="#cb2-302" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb2-303"><a href="#cb2-303" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-304"><a href="#cb2-304" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Collection </span></span>
+<span id="cb2-304"><a href="#cb2-304" aria-hidden="true" tabindex="-1"></a><span class="fu">### Field Collection</span></span>
 <span id="cb2-305"><a href="#cb2-305" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-306"><a href="#cb2-306" aria-hidden="true" tabindex="-1"></a>Field data collection is the foundation of our scientific process. Each method has specific protocols detailed in its respective section, but all follow these core principles:</span>
+<span id="cb2-306"><a href="#cb2-306" aria-hidden="true" tabindex="-1"></a>Field collection is the foundation of our scientific process. Every observation is documented following standardized protocols to ensure that data is consistent and reliable. We emphasize:</span>
 <span id="cb2-307"><a href="#cb2-307" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-308"><a href="#cb2-308" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Standard fieldbooks** designed specifically for each method</span>
-<span id="cb2-309"><a href="#cb2-309" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Consistent information recording** across all observations (site IDs, coordinates, date/time, observers)</span>
-<span id="cb2-310"><a href="#cb2-310" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Common terminology** for habitat types, substrate categories, and species classifications</span>
-<span id="cb2-311"><a href="#cb2-311" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Photo documentation** to supplement written observations</span>
-<span id="cb2-312"><a href="#cb2-312" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Consistent sampling approaches** to ensure comparability across sites</span>
+<span id="cb2-308"><a href="#cb2-308" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Standardized fieldbooks** specifically designed for each method, ensuring structured and error-free data collection.</span>
+<span id="cb2-309"><a href="#cb2-309" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Consistent recording** of site IDs, coordinates, date, time, and observer names for traceability.</span>
+<span id="cb2-310"><a href="#cb2-310" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Common terminology** for habitat types, substrates, and species to maintain comparability across sites.</span>
+<span id="cb2-311"><a href="#cb2-311" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Photo documentation** as visual evidence to complement written records.</span>
+<span id="cb2-312"><a href="#cb2-312" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Systematic sampling methods** that allow data to be compared confidently across different regions.</span>
 <span id="cb2-313"><a href="#cb2-313" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-314"><a href="#cb2-314" aria-hidden="true" tabindex="-1"></a><span class="fu">### Daily Data Entry</span></span>
+<span id="cb2-314"><a href="#cb2-314" aria-hidden="true" tabindex="-1"></a>These protocols not only enhance the reliability of our own analysis but also make our data easily understandable and usable by other researchers working with us.</span>
 <span id="cb2-315"><a href="#cb2-315" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-316"><a href="#cb2-316" aria-hidden="true" tabindex="-1"></a>Data are entered into digital formats as soon as possible after collection:</span>
+<span id="cb2-316"><a href="#cb2-316" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Entry</span></span>
 <span id="cb2-317"><a href="#cb2-317" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-318"><a href="#cb2-318" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Same-day entry while observations are fresh in memory</span>
-<span id="cb2-319"><a href="#cb2-319" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Method-specific fieldbooks with built-in error checking and autocomplete features</span>
-<span id="cb2-320"><a href="#cb2-320" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Standard folder structure and file naming: <span class="in">`[ISO3]_[YEAR]_[METHOD]_fieldbook.xlsx`</span></span>
-<span id="cb2-321"><a href="#cb2-321" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Work directly on the ship's NAS for automatic backup</span>
-<span id="cb2-322"><a href="#cb2-322" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Daily review by the data manager to catch potential issues</span>
-<span id="cb2-323"><a href="#cb2-323" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-324"><a href="#cb2-324" aria-hidden="true" tabindex="-1"></a><span class="fu">### Media Management </span></span>
+<span id="cb2-318"><a href="#cb2-318" aria-hidden="true" tabindex="-1"></a>Once collected, data is entered into digital formats as soon as possible to prevent loss of detail and reduce errors. Our main practices include:</span>
+<span id="cb2-319"><a href="#cb2-319" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-320"><a href="#cb2-320" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Same-day data entry** to keep information fresh and accurate.</span>
+<span id="cb2-321"><a href="#cb2-321" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Fieldbooks with built-in error checks** to minimize typos and formatting mistakes.</span>
+<span id="cb2-322"><a href="#cb2-322" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Standardized file naming:** <span class="in">`[ISO3]_[YEAR]_[METHOD]_fieldbook.xlsx`</span> for easy identification.</span>
+<span id="cb2-323"><a href="#cb2-323" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Real-time backups** on the ship's storage system (NAS) to prevent data loss.</span>
+<span id="cb2-324"><a href="#cb2-324" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Daily review by a data manager** to spot errors early and maintain data quality.</span>
 <span id="cb2-325"><a href="#cb2-325" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-326"><a href="#cb2-326" aria-hidden="true" tabindex="-1"></a>Photos and videos serve as both scientific evidence and powerful tools for communicating our work. Consistent management ensures these visual assets remain accessible, properly labeled, and scientifically valuable.</span>
+<span id="cb2-326"><a href="#cb2-326" aria-hidden="true" tabindex="-1"></a>This structured approach ensures that as more researchers join our efforts, everyone has access to clean, well-organized data that is easy to interpret and integrate across projects. It is our commitment to scientific rigor and transparency.</span>
 <span id="cb2-327"><a href="#cb2-327" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-328"><a href="#cb2-328" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="simple" title="Photo Management Best Practices"}</span>
-<span id="cb2-329"><a href="#cb2-329" aria-hidden="true" tabindex="-1"></a>Good photo management is essential for documenting our scientific work.</span>
-<span id="cb2-330"><a href="#cb2-330" aria-hidden="true" tabindex="-1"></a>Follow these three key practices:</span>
+<span id="cb2-328"><a href="#cb2-328" aria-hidden="true" tabindex="-1"></a><span class="fu">### Media Management</span></span>
+<span id="cb2-329"><a href="#cb2-329" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-330"><a href="#cb2-330" aria-hidden="true" tabindex="-1"></a>Photos and videos serve as both scientific evidence and powerful tools for communicating our work. Consistent management ensures these visual assets remain accessible, properly labeled, and scientifically valuable.</span>
 <span id="cb2-331"><a href="#cb2-331" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-332"><a href="#cb2-332" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Organize by Station**: Keep all photos in folders organized by station ID so they can be easily found later</span>
-<span id="cb2-333"><a href="#cb2-333" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-334"><a href="#cb2-334" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Select Best Images**: Create a collection of high-quality, labeled photos showing species, notable observations, and habitats for our reference library and reports</span>
+<span id="cb2-332"><a href="#cb2-332" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="simple" title="Photo Management Best Practices"}</span>
+<span id="cb2-333"><a href="#cb2-333" aria-hidden="true" tabindex="-1"></a>Good photo management is essential for documenting our scientific work.</span>
+<span id="cb2-334"><a href="#cb2-334" aria-hidden="true" tabindex="-1"></a>Follow these three key practices:</span>
 <span id="cb2-335"><a href="#cb2-335" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-336"><a href="#cb2-336" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Use Consistent Names**: Follow our standard naming approach for folders and important images</span>
-<span id="cb2-337"><a href="#cb2-337" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Folders**: <span class="in">`[ISO3]-[YEAR]-[METHOD]-[STATION_ID]`</span>  </span>
-<span id="cb2-338"><a href="#cb2-338" aria-hidden="true" tabindex="-1"></a>     Examples: </span>
-<span id="cb2-339"><a href="#cb2-339" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Quadrats: <span class="in">`data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/`</span></span>
-<span id="cb2-340"><a href="#cb2-340" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Fish: <span class="in">`data/fish/photos/PLW-2023-uvs-001-20m/`</span></span>
-<span id="cb2-341"><a href="#cb2-341" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Inverts: <span class="in">`data/benthos/inverts/photos/PLW-2023-uvs-001-10m/`</span></span>
-<span id="cb2-342"><a href="#cb2-342" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Birds: <span class="in">`data/birds/photos/PLW-2023-birds-001/`</span></span>
-<span id="cb2-343"><a href="#cb2-343" aria-hidden="true" tabindex="-1"></a>   </span>
-<span id="cb2-344"><a href="#cb2-344" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Selected Images**: <span class="in">`[ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[DESCRIPTION].jpg`</span>  </span>
-<span id="cb2-345"><a href="#cb2-345" aria-hidden="true" tabindex="-1"></a>     Examples: </span>
-<span id="cb2-346"><a href="#cb2-346" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Birds: <span class="in">`media/science-collection/birds/PLW_2023_birds_001_frigatebird.jpg`</span></span>
-<span id="cb2-347"><a href="#cb2-347" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Fish: <span class="in">`media/science-collection/fish/PLW_2023_uvs_001_20m_acanthurus_lineatus.jpg`</span></span>
-<span id="cb2-348"><a href="#cb2-348" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Submersible: <span class="in">`media/science-collection/sub/PLW_2023_sub_08_gorgonian_fan.jpg`</span></span>
-<span id="cb2-349"><a href="#cb2-349" aria-hidden="true" tabindex="-1"></a>   </span>
-<span id="cb2-350"><a href="#cb2-350" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Field Photos**: Only selected highlights need complete labels; other field photos can remain as-is if stored in properly labeled station folders  </span>
-<span id="cb2-351"><a href="#cb2-351" aria-hidden="true" tabindex="-1"></a>     Examples: </span>
-<span id="cb2-352"><a href="#cb2-352" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Quadrats: <span class="in">`data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/q3_IMG0042.jpg`</span></span>
-<span id="cb2-353"><a href="#cb2-353" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Birds: <span class="in">`data/birds/photos/PLW-2023-birds-001/canon_2023-08-01_12-00-00.jpg`</span></span>
-<span id="cb2-354"><a href="#cb2-354" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-355"><a href="#cb2-355" aria-hidden="true" tabindex="-1"></a>Save all photos to the NAS daily. The data manager will transfer everything to Google Drive after the expedition.</span>
-<span id="cb2-356"><a href="#cb2-356" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-357"><a href="#cb2-357" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-358"><a href="#cb2-358" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="simple" title="Video Footage Best Practices"}</span>
-<span id="cb2-359"><a href="#cb2-359" aria-hidden="true" tabindex="-1"></a>Managing footage from remote cameras (BRUVS, deep-sea cameras, ROV, submersible) requires organization to make the most of these valuable recordings.</span>
-<span id="cb2-360"><a href="#cb2-360" aria-hidden="true" tabindex="-1"></a>Follow these key practices:</span>
+<span id="cb2-336"><a href="#cb2-336" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Organize by Station**: Keep all photos in folders organized by station ID so they can be easily found later</span>
+<span id="cb2-337"><a href="#cb2-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-338"><a href="#cb2-338" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Select Best Images**: Create a collection of high-quality, labeled photos showing species, notable observations, and habitats for our reference library and reports</span>
+<span id="cb2-339"><a href="#cb2-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-340"><a href="#cb2-340" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Use Consistent Names**: Follow our standard naming approach for folders and important images</span>
+<span id="cb2-341"><a href="#cb2-341" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Folders**: <span class="in">`[ISO3]-[YEAR]-[METHOD]-[STATION_ID]`</span>  </span>
+<span id="cb2-342"><a href="#cb2-342" aria-hidden="true" tabindex="-1"></a>     Examples: </span>
+<span id="cb2-343"><a href="#cb2-343" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Quadrats: <span class="in">`data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/`</span></span>
+<span id="cb2-344"><a href="#cb2-344" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Fish: <span class="in">`data/fish/photos/PLW-2023-uvs-001-20m/`</span></span>
+<span id="cb2-345"><a href="#cb2-345" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Inverts: <span class="in">`data/benthos/inverts/photos/PLW-2023-uvs-001-10m/`</span></span>
+<span id="cb2-346"><a href="#cb2-346" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Birds: <span class="in">`data/birds/photos/PLW-2023-birds-001/`</span></span>
+<span id="cb2-347"><a href="#cb2-347" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb2-348"><a href="#cb2-348" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Selected Images**: <span class="in">`[ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[DESCRIPTION].jpg`</span>  </span>
+<span id="cb2-349"><a href="#cb2-349" aria-hidden="true" tabindex="-1"></a>     Examples: </span>
+<span id="cb2-350"><a href="#cb2-350" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Birds: <span class="in">`media/science-collection/birds/PLW_2023_birds_001_frigatebird.jpg`</span></span>
+<span id="cb2-351"><a href="#cb2-351" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Fish: <span class="in">`media/science-collection/fish/PLW_2023_uvs_001_20m_acanthurus_lineatus.jpg`</span></span>
+<span id="cb2-352"><a href="#cb2-352" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Submersible: <span class="in">`media/science-collection/sub/PLW_2023_sub_08_gorgonian_fan.jpg`</span></span>
+<span id="cb2-353"><a href="#cb2-353" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb2-354"><a href="#cb2-354" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Field Photos**: Only selected highlights need complete labels; other field photos can remain as-is if stored in properly labeled station folders  </span>
+<span id="cb2-355"><a href="#cb2-355" aria-hidden="true" tabindex="-1"></a>     Examples: </span>
+<span id="cb2-356"><a href="#cb2-356" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Quadrats: <span class="in">`data/benthos/recruits/quadrats/PLW-2023-uvs-001-20m/q3_IMG0042.jpg`</span></span>
+<span id="cb2-357"><a href="#cb2-357" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Birds: <span class="in">`data/birds/photos/PLW-2023-birds-001/canon_2023-08-01_12-00-00.jpg`</span></span>
+<span id="cb2-358"><a href="#cb2-358" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-359"><a href="#cb2-359" aria-hidden="true" tabindex="-1"></a>Save all photos to the NAS daily. The data manager will transfer everything to Google Drive after the expedition.</span>
+<span id="cb2-360"><a href="#cb2-360" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb2-361"><a href="#cb2-361" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-362"><a href="#cb2-362" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Use a Central Highlights Folder**: Save all important video clips and screenshots to the appropriate method's highlights folder</span>
-<span id="cb2-363"><a href="#cb2-363" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Create a highlights subfolder for each method: <span class="in">`/[method]/highlights/`</span></span>
-<span id="cb2-364"><a href="#cb2-364" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Examples:</span>
-<span id="cb2-365"><a href="#cb2-365" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Seabed BRUVS: <span class="in">`sbruv/highlights/`</span></span>
-<span id="cb2-366"><a href="#cb2-366" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Pelagic BRUVS: <span class="in">`pbruv/highlights/`</span></span>
-<span id="cb2-367"><a href="#cb2-367" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>ROV: <span class="in">`rov/highlights/`</span></span>
-<span id="cb2-368"><a href="#cb2-368" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Submersible: <span class="in">`sub/highlights/`</span></span>
-<span id="cb2-369"><a href="#cb2-369" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Deep-sea cameras: <span class="in">`deepsea/highlights/`</span></span>
-<span id="cb2-370"><a href="#cb2-370" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-371"><a href="#cb2-371" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Name Files Consistently**: Use our standard format for all highlight files</span>
-<span id="cb2-372"><a href="#cb2-372" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Standard Format**: <span class="in">`[ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[DEPTH]_[DESCRIPTION].mp4`</span></span>
-<span id="cb2-373"><a href="#cb2-373" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Examples**:</span>
-<span id="cb2-374"><a href="#cb2-374" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Seabed BRUVS: <span class="in">`FJI_2025_sbruv_001_40m_grouper_school.mp4`</span></span>
-<span id="cb2-375"><a href="#cb2-375" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Pelagic BRUVS: <span class="in">`FJI_2025_pbruv_003_silky_shark.mp4`</span></span>
-<span id="cb2-376"><a href="#cb2-376" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>ROV: <span class="in">`FJI_2025_rov_002_350m_soft_coral_garden.mp4`</span></span>
-<span id="cb2-377"><a href="#cb2-377" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Submersible: <span class="in">`FJI_2025_sub_005_800m_deep_reef_community.mp4`</span></span>
-<span id="cb2-378"><a href="#cb2-378" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Deep-sea camera: <span class="in">`FJI_2025_dscm004_1200m_cusk_eel.mp4`</span></span>
-<span id="cb2-379"><a href="#cb2-379" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-380"><a href="#cb2-380" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Use Standard File Formats**: Make sure everyone can open and view your files</span>
-<span id="cb2-381"><a href="#cb2-381" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Video Clips**: Save as <span class="in">`.mp4`</span> format for all video highlights</span>
-<span id="cb2-382"><a href="#cb2-382" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Screenshots**: Save as <span class="in">`.jpg`</span> format for all still images</span>
-<span id="cb2-383"><a href="#cb2-383" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Clip Length**: Keep highlight clips between 10-60 seconds</span>
-<span id="cb2-384"><a href="#cb2-384" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Resolution**: Maintain 1080p resolution when possible</span>
-<span id="cb2-385"><a href="#cb2-385" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-386"><a href="#cb2-386" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Include Important Details**: Make sure others can understand what they're seeing</span>
-<span id="cb2-387"><a href="#cb2-387" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Include depth information for all depth-related methods</span>
-<span id="cb2-388"><a href="#cb2-388" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Use descriptive names that indicate content (species, behavior, habitat)</span>
-<span id="cb2-389"><a href="#cb2-389" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Note the time code from original footage when possible</span>
-<span id="cb2-390"><a href="#cb2-390" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>For unusual observations, create a simple text file with additional notes</span>
-<span id="cb2-391"><a href="#cb2-391" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-392"><a href="#cb2-392" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Capture These Key Moments**:</span>
-<span id="cb2-393"><a href="#cb2-393" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Diversity and MaxN**: Footage showing multiple species or high numbers</span>
-<span id="cb2-394"><a href="#cb2-394" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Behaviors**: Interesting activities like feeding, schooling, or cleaning</span>
-<span id="cb2-395"><a href="#cb2-395" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Habitats**: Good examples of different habitat types</span>
-<span id="cb2-396"><a href="#cb2-396" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Notable Finds**: Rare species, unusual interactions, or new records</span>
-<span id="cb2-397"><a href="#cb2-397" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-398"><a href="#cb2-398" aria-hidden="true" tabindex="-1"></a>Save all highlight files to the NAS daily. The data manager will transfer everything to Google Drive after the expedition.</span>
-<span id="cb2-399"><a href="#cb2-399" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-400"><a href="#cb2-400" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-401"><a href="#cb2-401" aria-hidden="true" tabindex="-1"></a>While more detailed guidelines can be found in the <span class="co">[</span><span class="ot">Media Library</span><span class="co">](../media-library/organization.qmd)</span> section, these practices ensure that our photos and videos are properly organized and can be easily connected to our scientific observations.</span>
+<span id="cb2-362"><a href="#cb2-362" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="simple" title="Video Footage Best Practices"}</span>
+<span id="cb2-363"><a href="#cb2-363" aria-hidden="true" tabindex="-1"></a>Managing footage from remote cameras (BRUVS, deep-sea cameras, ROV, submersible) requires organization to make the most of these valuable recordings.</span>
+<span id="cb2-364"><a href="#cb2-364" aria-hidden="true" tabindex="-1"></a>Follow these key practices:</span>
+<span id="cb2-365"><a href="#cb2-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-366"><a href="#cb2-366" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Use a Central Highlights Folder**: Save all important video clips and screenshots to the appropriate method's highlights folder</span>
+<span id="cb2-367"><a href="#cb2-367" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Examples:</span>
+<span id="cb2-368"><a href="#cb2-368" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Seabed BRUVS: <span class="in">`sbruv/highlights/`</span></span>
+<span id="cb2-369"><a href="#cb2-369" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Pelagic BRUVS: <span class="in">`pbruv/highlights/`</span></span>
+<span id="cb2-370"><a href="#cb2-370" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>ROV: <span class="in">`rov/highlights/`</span></span>
+<span id="cb2-371"><a href="#cb2-371" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Submersible: <span class="in">`sub/highlights/`</span></span>
+<span id="cb2-372"><a href="#cb2-372" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Deep-sea cameras: <span class="in">`deepsea/highlights/`</span></span>
+<span id="cb2-373"><a href="#cb2-373" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-374"><a href="#cb2-374" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Name Files Consistently**: Use our standard format for all highlight files</span>
+<span id="cb2-375"><a href="#cb2-375" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Standard Format**: <span class="in">`[ISO3]_[YEAR]_[METHOD]_[STATION_ID]_[DEPTH]_[DESCRIPTION].mp4`</span></span>
+<span id="cb2-376"><a href="#cb2-376" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Examples**:</span>
+<span id="cb2-377"><a href="#cb2-377" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Seabed BRUVS: <span class="in">`FJI_2025_sbruv_001_40m_grouper_school.mp4`</span></span>
+<span id="cb2-378"><a href="#cb2-378" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Pelagic BRUVS: <span class="in">`FJI_2025_pbruv_003_silky_shark.mp4`</span></span>
+<span id="cb2-379"><a href="#cb2-379" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>ROV: <span class="in">`FJI_2025_rov_002_350m_soft_coral_garden.mp4`</span></span>
+<span id="cb2-380"><a href="#cb2-380" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Submersible: <span class="in">`FJI_2025_sub_005_800m_deep_reef_community.mp4`</span></span>
+<span id="cb2-381"><a href="#cb2-381" aria-hidden="true" tabindex="-1"></a><span class="ss">     - </span>Deep-sea camera: <span class="in">`FJI_2025_dscm004_1200m_cusk_eel.mp4`</span></span>
+<span id="cb2-382"><a href="#cb2-382" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-383"><a href="#cb2-383" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Use Standard File Formats**: Make sure everyone can open and view your files</span>
+<span id="cb2-384"><a href="#cb2-384" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Video Clips**: Save as <span class="in">`.mp4`</span> format for all video highlights</span>
+<span id="cb2-385"><a href="#cb2-385" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Screenshots**: Save as <span class="in">`.jpg`</span> format for all still images</span>
+<span id="cb2-386"><a href="#cb2-386" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Clip Length**: Keep highlight clips between 10-60 seconds</span>
+<span id="cb2-387"><a href="#cb2-387" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Resolution**: Maintain 1080p resolution</span>
+<span id="cb2-388"><a href="#cb2-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-389"><a href="#cb2-389" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Include Important Details**: Make sure others can understand what they're seeing</span>
+<span id="cb2-390"><a href="#cb2-390" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Include depth information for all depth-related methods</span>
+<span id="cb2-391"><a href="#cb2-391" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Use descriptive names that indicate content (species, behavior, habitat)</span>
+<span id="cb2-392"><a href="#cb2-392" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Note the time code from original footage when possible</span>
+<span id="cb2-393"><a href="#cb2-393" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-394"><a href="#cb2-394" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Capture These Key Moments**:</span>
+<span id="cb2-395"><a href="#cb2-395" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Diversity and MaxN**: Footage showing multiple species or high numbers</span>
+<span id="cb2-396"><a href="#cb2-396" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Behaviors**: Interesting activities like feeding, schooling, or cleaning</span>
+<span id="cb2-397"><a href="#cb2-397" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Habitats**: Good examples of different habitat types</span>
+<span id="cb2-398"><a href="#cb2-398" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Notable Finds**: Rare species, unusual interactions, or new records</span>
+<span id="cb2-399"><a href="#cb2-399" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-400"><a href="#cb2-400" aria-hidden="true" tabindex="-1"></a>Save all highlight files to the NAS daily. The data manager will transfer everything to Google Drive after the expedition.</span>
+<span id="cb2-401"><a href="#cb2-401" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb2-402"><a href="#cb2-402" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-403"><a href="#cb2-403" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Processing</span></span>
+<span id="cb2-403"><a href="#cb2-403" aria-hidden="true" tabindex="-1"></a>While more detailed guidelines can be found in the <span class="co">[</span><span class="ot">Media Library</span><span class="co">](../media-library/organization.qmd)</span> section, these practices ensure that our photos and videos are properly organized and can be easily connected to our scientific observations.</span>
 <span id="cb2-404"><a href="#cb2-404" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-405"><a href="#cb2-405" aria-hidden="true" tabindex="-1"></a>Each method follows a specific workflow that turns raw observations into clean, analysis-ready data while ensuring scientific accuracy. While specific details vary by method, all follow a common framework to ensure consistency and quality.</span>
+<span id="cb2-405"><a href="#cb2-405" aria-hidden="true" tabindex="-1"></a><span class="fu">### Processing Pipeline</span></span>
 <span id="cb2-406"><a href="#cb2-406" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-407"><a href="#cb2-407" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Processing Documentation</span></span>
+<span id="cb2-407"><a href="#cb2-407" aria-hidden="true" tabindex="-1"></a>We use method-specific standardized scripts (<span class="in">`pipeline_[method].qmd`</span>) to transform raw field observations into clean, analysis-ready datasets. Although each method follows a unique pipeline, the overall structure remains consistent, ensuring data integrity, traceability, and seamless integration into the **Pristine Seas Science Database**.</span>
 <span id="cb2-408"><a href="#cb2-408" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-409"><a href="#cb2-409" aria-hidden="true" tabindex="-1"></a>All data processing steps are documented and implemented through standardized scripts:</span>
-<span id="cb2-410"><a href="#cb2-410" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-411"><a href="#cb2-411" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**`pipeline_[method].qmd`**: Transforms raw data into clean, analysis-ready tables</span>
-<span id="cb2-412"><a href="#cb2-412" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Records each step in the cleaning process</span>
-<span id="cb2-413"><a href="#cb2-413" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Tracks where each piece of data came from</span>
-<span id="cb2-414"><a href="#cb2-414" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Performs method-specific calculations</span>
-<span id="cb2-415"><a href="#cb2-415" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Creates standardized output files ready for our database</span>
-<span id="cb2-416"><a href="#cb2-416" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-417"><a href="#cb2-417" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**`eda_[method].qmd`**: Explores and analyzes the processed data</span>
-<span id="cb2-418"><a href="#cb2-418" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Creates consistent analyses across expeditions</span>
-<span id="cb2-419"><a href="#cb2-419" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Generates standard graphs and visualizations</span>
-<span id="cb2-420"><a href="#cb2-420" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Documents method-specific analysis considerations</span>
-<span id="cb2-421"><a href="#cb2-421" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Enables others to reproduce analyses exactly</span>
-<span id="cb2-422"><a href="#cb2-422" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-423"><a href="#cb2-423" aria-hidden="true" tabindex="-1"></a><span class="fu">### Standard Processing Steps</span></span>
-<span id="cb2-424"><a href="#cb2-424" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-425"><a href="#cb2-425" aria-hidden="true" tabindex="-1"></a>While each method has unique requirements, all processing workflows include these core steps:</span>
-<span id="cb2-426"><a href="#cb2-426" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-427"><a href="#cb2-427" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
-<span id="cb2-428"><a href="#cb2-428" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-429"><a href="#cb2-429" aria-hidden="true" tabindex="-1"></a><span class="fu">## Combining Data</span></span>
-<span id="cb2-430"><a href="#cb2-430" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Bringing together data from multiple scientists and expedition legs</span>
-<span id="cb2-431"><a href="#cb2-431" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Making sure units and formats match across all datasets</span>
-<span id="cb2-432"><a href="#cb2-432" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fixing inconsistent species names and identifications</span>
-<span id="cb2-433"><a href="#cb2-433" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Adding information from site logs and measurements (when available)</span>
-<span id="cb2-434"><a href="#cb2-434" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Creating clean, complete data tables for each station and observation</span>
-<span id="cb2-435"><a href="#cb2-435" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-436"><a href="#cb2-436" aria-hidden="true" tabindex="-1"></a><span class="fu">## Quality Checks</span></span>
-<span id="cb2-437"><a href="#cb2-437" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Finding and fixing unusual values or errors</span>
-<span id="cb2-438"><a href="#cb2-438" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Comparing data across different methods to spot inconsistencies</span>
-<span id="cb2-439"><a href="#cb2-439" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Verifying species identifications with our reference lists</span>
-<span id="cb2-440"><a href="#cb2-440" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keeping clear records of any changes made to the original data</span>
-<span id="cb2-441"><a href="#cb2-441" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Creating maps and plots to visually check patterns</span>
-<span id="cb2-442"><a href="#cb2-442" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Running method-specific checks for known issues</span>
+<span id="cb2-409"><a href="#cb2-409" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Data Ingestion and Harmonization</span></span>
+<span id="cb2-410"><a href="#cb2-410" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Data Ingestion:** Gather and merge raw field data from multiple expedition legs and contributors.</span>
+<span id="cb2-411"><a href="#cb2-411" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Standardization:** Apply consistent field names, units, and formats to match database schema.</span>
+<span id="cb2-412"><a href="#cb2-412" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Spatial Context:** Harmonize geographic data across the established hierarchy:</span>
+<span id="cb2-413"><a href="#cb2-413" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Region → Subregion → Locality → Site → Station**</span>
+<span id="cb2-414"><a href="#cb2-414" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Terminology Alignment:** Enforce consistent language for **habitats**, **strata**, and **exposure types**.</span>
+<span id="cb2-415"><a href="#cb2-415" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-416"><a href="#cb2-416" aria-hidden="true" tabindex="-1"></a><span class="fu">#### QA/QC</span></span>
+<span id="cb2-417"><a href="#cb2-417" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-418"><a href="#cb2-418" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Sampling Effort Verification:** Assess completeness and alignment with sampling protocols.</span>
+<span id="cb2-419"><a href="#cb2-419" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Exploratory Visualizations:** Generate maps and plots to visually inspect patterns.</span>
+<span id="cb2-420"><a href="#cb2-420" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Spatial and Temporal Validation:** Check station alignment and method overlap across regions.</span>
+<span id="cb2-421"><a href="#cb2-421" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Data Completeness Assessment:** Identify missing values and ensure records are logically complete.</span>
+<span id="cb2-422"><a href="#cb2-422" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Outlier and Anomaly Detection:** Flag improbable values and check for inconsistencies.</span>
+<span id="cb2-423"><a href="#cb2-423" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Protocol Deviation Documentation:** Record any departures from standard field protocols.</span>
+<span id="cb2-424"><a href="#cb2-424" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Decision Logging:** Maintain structured logs of all processing steps and adjustments.</span>
+<span id="cb2-425"><a href="#cb2-425" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-426"><a href="#cb2-426" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Taxonomic Validation</span></span>
+<span id="cb2-427"><a href="#cb2-427" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-428"><a href="#cb2-428" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Species Identification Checks:** Cross-reference observed taxa with the **Pristine Seas Taxonomic Database**.</span>
+<span id="cb2-429"><a href="#cb2-429" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Resolve Inconsistencies:** Correct synonyms, misidentifications, and hierarchical misalignments.</span>
+<span id="cb2-430"><a href="#cb2-430" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Harmonize Across Regions:** Ensure consistent naming and classification throughout the dataset.</span>
+<span id="cb2-431"><a href="#cb2-431" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-432"><a href="#cb2-432" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Ecological Metric Calculation</span></span>
+<span id="cb2-433"><a href="#cb2-433" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-434"><a href="#cb2-434" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Compute key ecological indicators at relevant spatial scales:</span>
+<span id="cb2-435"><a href="#cb2-435" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Biomass (`g/m²`)**</span>
+<span id="cb2-436"><a href="#cb2-436" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Species Richness**</span>
+<span id="cb2-437"><a href="#cb2-437" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Diversity Indices (e.g., Shannon, Simpson)** </span>
+<span id="cb2-438"><a href="#cb2-438" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Trophic Composition**</span>
+<span id="cb2-439"><a href="#cb2-439" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**MaxN (Maximum Number Observed Simultaneously)**</span>
+<span id="cb2-440"><a href="#cb2-440" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Generate summary tables at multiple ecological and political levels:</span>
+<span id="cb2-441"><a href="#cb2-441" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Taxa → Station → Site → Subregion → Region**</span>
+<span id="cb2-442"><a href="#cb2-442" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Produce both detailed observation-level tables and summary statistics for downstream analyses.</span>
 <span id="cb2-443"><a href="#cb2-443" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-444"><a href="#cb2-444" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adding Context</span></span>
-<span id="cb2-445"><a href="#cb2-445" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Connecting observations to their proper site, region, and expedition</span>
-<span id="cb2-446"><a href="#cb2-446" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Including details about how each survey was conducted</span>
-<span id="cb2-447"><a href="#cb2-447" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Adding environmental information like temperature, depth, and weather</span>
-<span id="cb2-448"><a href="#cb2-448" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Linking data to relevant photos and video highlights</span>
-<span id="cb2-449"><a href="#cb2-449" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Making sure dates and times are recorded consistently</span>
-<span id="cb2-450"><a href="#cb2-450" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-451"><a href="#cb2-451" aria-hidden="true" tabindex="-1"></a><span class="fu">## Final Formatting</span></span>
-<span id="cb2-452"><a href="#cb2-452" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Using consistent file names like <span class="in">`PLW_2023_fish_observations.csv`</span></span>
-<span id="cb2-453"><a href="#cb2-453" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Creating standardized table layouts that work across all expeditions</span>
-<span id="cb2-454"><a href="#cb2-454" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Using the same column types and formats across methods</span>
-<span id="cb2-455"><a href="#cb2-455" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Properly marking missing data and true zero counts</span>
-<span id="cb2-456"><a href="#cb2-456" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Creating both detailed observation tables and summary statistics tables</span>
-<span id="cb2-457"><a href="#cb2-457" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-458"><a href="#cb2-458" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-459"><a href="#cb2-459" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-460"><a href="#cb2-460" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-461"><a href="#cb2-461" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Database Storage</span></span>
+<span id="cb2-444"><a href="#cb2-444" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Output Standardization and Database Integration</span></span>
+<span id="cb2-445"><a href="#cb2-445" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-446"><a href="#cb2-446" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**File Naming Convention:** Apply a consistent format for traceability:</span>
+<span id="cb2-447"><a href="#cb2-447" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="in">`[ISO3]_[YEAR]_[METHOD]_[TYPE].csv`</span></span>
+<span id="cb2-448"><a href="#cb2-448" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Examples: <span class="in">`PLW_2023_fish_observations.csv`</span>, <span class="in">`FJI_2025_coral_cover.csv`</span></span>
+<span id="cb2-449"><a href="#cb2-449" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Database Upload:** Load processed and validated datasets into the **Pristine Seas Science Database**.</span>
+<span id="cb2-450"><a href="#cb2-450" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Media Linkage:** Attach relevant photos and video highlights for cross-referencing.</span>
+<span id="cb2-451"><a href="#cb2-451" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-452"><a href="#cb2-452" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploratory Data Analysis (EDA)</span></span>
+<span id="cb2-453"><a href="#cb2-453" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-454"><a href="#cb2-454" aria-hidden="true" tabindex="-1"></a>The **Exploratory Data Analysis (EDA)** stage transforms standardized datasets into actionable insights that inform scientific reports and conservation strategies. During this phase, we go beyond surface-level exploration to actively seek indicators of ecosystem health, conservation effectiveness, and environmental threats. Analyses are performed in **`eda_[method].qmd`**, with a strong emphasis on generating meaningful ecological narratives and identifying conservation priorities.</span>
+<span id="cb2-455"><a href="#cb2-455" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-456"><a href="#cb2-456" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Data Visualization</span></span>
+<span id="cb2-457"><a href="#cb2-457" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create **maps, summary plots, and interactive visualizations** to reveal spatial and temporal patterns.</span>
+<span id="cb2-458"><a href="#cb2-458" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Generate summary statistics for key ecological metrics:</span>
+<span id="cb2-459"><a href="#cb2-459" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>**Biomass**, **species richness**, **diversity indices**, and **trophic composition**.</span>
+<span id="cb2-460"><a href="#cb2-460" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Visualize **ecological gradients** across depth, region, and habitat types.</span>
+<span id="cb2-461"><a href="#cb2-461" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Explore **habitat-specific assemblages** and species distributions to detect community shifts.</span>
 <span id="cb2-462"><a href="#cb2-462" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-463"><a href="#cb2-463" aria-hidden="true" tabindex="-1"></a>The final stage prepares all data for storage in our central database:</span>
-<span id="cb2-464"><a href="#cb2-464" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-465"><a href="#cb2-465" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Formatting for Storage**</span>
-<span id="cb2-466"><a href="#cb2-466" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Converting data to database-friendly formats</span>
-<span id="cb2-467"><a href="#cb2-467" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Using standard field names across all datasets</span>
-<span id="cb2-468"><a href="#cb2-468" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Connecting species IDs to our taxonomic database</span>
-<span id="cb2-469"><a href="#cb2-469" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Making sure number and text fields are properly formatted</span>
-<span id="cb2-470"><a href="#cb2-470" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-471"><a href="#cb2-471" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Final Quality Checks**</span>
-<span id="cb2-472"><a href="#cb2-472" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Verifying data at multiple stages (field, expedition, database)</span>
-<span id="cb2-473"><a href="#cb2-473" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Checking consistency across different methods</span>
-<span id="cb2-474"><a href="#cb2-474" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Comparing with historical data ranges</span>
-<span id="cb2-475"><a href="#cb2-475" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Documenting any quality concerns</span>
-<span id="cb2-476"><a href="#cb2-476" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-477"><a href="#cb2-477" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Documentation**</span>
-<span id="cb2-478"><a href="#cb2-478" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Recording all processing decisions</span>
-<span id="cb2-479"><a href="#cb2-479" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Tracking original data sources</span>
-<span id="cb2-480"><a href="#cb2-480" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Versioning all processing scripts</span>
-<span id="cb2-481"><a href="#cb2-481" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Linking with expedition details and methods</span>
-<span id="cb2-482"><a href="#cb2-482" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-483"><a href="#cb2-483" aria-hidden="true" tabindex="-1"></a>This systematic approach ensures that all data collected during expeditions is transformed into high-quality, analysis-ready formats that can be used both for immediate research questions and long-term scientific studies.</span>
+<span id="cb2-463"><a href="#cb2-463" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Contextual Analysis and Ecological Inference</span></span>
+<span id="cb2-464"><a href="#cb2-464" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Compare findings across **regions**, **depth strata**, and **time periods** to identify ecological shifts.</span>
+<span id="cb2-465"><a href="#cb2-465" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Integrate results from multiple survey methods to build a comprehensive view of ecosystem dynamics.</span>
+<span id="cb2-466"><a href="#cb2-466" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Contextualize observations with known baselines, historical data, and previous expeditions.</span>
+<span id="cb2-467"><a href="#cb2-467" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Detect **range extensions**, **new records**, and **unusual species aggregations**.</span>
+<span id="cb2-468"><a href="#cb2-468" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-469"><a href="#cb2-469" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Conservation Insights</span></span>
+<span id="cb2-470"><a href="#cb2-470" aria-hidden="true" tabindex="-1"></a>During EDA, we explicitly explore key indicators that reflect ecosystem health, resilience, and human impact. This stage is conservation-driven, aiming to identify both risks and successes:</span>
+<span id="cb2-471"><a href="#cb2-471" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-472"><a href="#cb2-472" aria-hidden="true" tabindex="-1"></a><span class="fu">##### **Ecosystem Health Indicators**</span></span>
+<span id="cb2-473"><a href="#cb2-473" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Assess **reef health**, **predator biomass ratios**, and **trophic balance** as indicators of ecosystem stability.</span>
+<span id="cb2-474"><a href="#cb2-474" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Identify **keystone species** and their relative abundance to understand ecosystem structure.</span>
+<span id="cb2-475"><a href="#cb2-475" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-476"><a href="#cb2-476" aria-hidden="true" tabindex="-1"></a><span class="fu">##### **Overfishing Evidence**</span></span>
+<span id="cb2-477"><a href="#cb2-477" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Detect declines in critical species, particularly **large-bodied predators** and **apex species**.</span>
+<span id="cb2-478"><a href="#cb2-478" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Monitor shifts in **size structure** and **age classes**, signaling fishing pressure.</span>
+<span id="cb2-479"><a href="#cb2-479" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-480"><a href="#cb2-480" aria-hidden="true" tabindex="-1"></a><span class="fu">##### **Climate Change Impacts**</span></span>
+<span id="cb2-481"><a href="#cb2-481" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Look for signs of **coral bleaching**, **range shifts**, and changes in **species composition**.</span>
+<span id="cb2-482"><a href="#cb2-482" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Investigate **sensitive species loss**.</span>
+<span id="cb2-483"><a href="#cb2-483" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-484"><a href="#cb2-484" aria-hidden="true" tabindex="-1"></a><span class="fu">##### **Habitat Degradation**</span></span>
+<span id="cb2-485"><a href="#cb2-485" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Explore shifts in **benthic cover**, including **macroalgae dominance**, **cyanobacteria blooms**, and reductions in **coral cover**.</span>
+<span id="cb2-486"><a href="#cb2-486" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Identify areas with increasing **sedimentation** or evidence of **physical damage** (e.g., fishing lines).</span>
+<span id="cb2-487"><a href="#cb2-487" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-488"><a href="#cb2-488" aria-hidden="true" tabindex="-1"></a><span class="fu">##### **Conservation Success Signals**</span></span>
+<span id="cb2-489"><a href="#cb2-489" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Highlight regions with **high biomass**, **top predator abundance**, and **balanced trophic structures**.</span>
+<span id="cb2-490"><a href="#cb2-490" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Identify **MPA effectiveness** by comparing protected versus unprotected areas.</span>
+<span id="cb2-491"><a href="#cb2-491" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-492"><a href="#cb2-492" aria-hidden="true" tabindex="-1"></a><span class="fu">##### **Critical Habitat Mapping**</span></span>
+<span id="cb2-493"><a href="#cb2-493" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Map species **home ranges**, **migration corridors**, and **nursery areas**.</span>
+<span id="cb2-494"><a href="#cb2-494" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Identify **biodiversity hotspots** and regions of ecological significance for conservation planning.</span>
+<span id="cb2-495"><a href="#cb2-495" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Investigate industrial fishing activity to assess current threats and barriers for protection</span>
+<span id="cb2-496"><a href="#cb2-496" aria-hidden="true" tabindex="-1"></a></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

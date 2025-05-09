@@ -141,7 +141,7 @@ Our field research strategically integrates multiple assessment methods to provi
 
 To ensure seamless data integration, all methods follow standardized protocols including uniform taxonomic references, consistent metadata structures, shared spatial hierarchies, and compatible statistical approaches. This standardization facilitates robust cross-method analyses that reveal critical ecological relationships and functions.
 
-#### Spatial Hierarchy
+#### Shared Spatial Hierarchy
 
 ::: {.callout-note title="Hierarchical spatial structure"}
 
@@ -176,7 +176,7 @@ This allows for analyses at multiple scales while maintaining clear relationship
 
 :::
 
-#### Sampling model
+#### Consistent Sampling model
 
 The table below outlines the spatial sampling structure for each method in the Pristine Seas Science Database. It defines the hierarchical relationship from sites to observations, ensuring clarity and consistency across protocols.
 
@@ -260,7 +260,7 @@ The Pristine Seas Science Database serves as the central repository for this int
 
 ## General Data Worklow
 
-The diagram below shows how information flows from collection in the field through processing and analysis to final integration in our database.
+The diagram below illustrates the journey of field data from initial collection to its final integration within our database. This structured workflow ensures that data collected from diverse locations and methods is processed and stored consistently. As our network of collaborating researchers grows, maintaining this standardization is crucial—not only for ease of analysis but also to safeguard the scientific integrity of our collective work.
 
 ```{mermaid}
 flowchart LR
@@ -299,27 +299,31 @@ flowchart LR
     style Database fill:#F6C141,color:#000000
 ```
 
-### Data Collection 
+### Field Collection
 
-Field data collection is the foundation of our scientific process. Each method has specific protocols detailed in its respective section, but all follow these core principles:
+Field collection is the foundation of our scientific process. Every observation is documented following standardized protocols to ensure that data is consistent and reliable. We emphasize:
 
-  - **Standard fieldbooks** designed specifically for each method
-  - **Consistent information recording** across all observations (site IDs, coordinates, date/time, observers)
-  - **Common terminology** for habitat types, substrate categories, and species classifications
-  - **Photo documentation** to supplement written observations
-  - **Consistent sampling approaches** to ensure comparability across sites
+- **Standardized fieldbooks** specifically designed for each method, ensuring structured and error-free data collection.
+- **Consistent recording** of site IDs, coordinates, date, time, and observer names for traceability.
+- **Common terminology** for habitat types, substrates, and species to maintain comparability across sites.
+- **Photo documentation** as visual evidence to complement written records.
+- **Systematic sampling methods** that allow data to be compared confidently across different regions.
 
-### Daily Data Entry
+These protocols not only enhance the reliability of our own analysis but also make our data easily understandable and usable by other researchers working with us.
 
-Data are entered into digital formats as soon as possible after collection:
+### Data Entry
 
-  - Same-day entry while observations are fresh in memory
-  - Method-specific fieldbooks with built-in error checking and autocomplete features
-  - Standard folder structure and file naming: `[ISO3]_[YEAR]_[METHOD]_fieldbook.xlsx`
-  - Work directly on the ship's NAS for automatic backup
-  - Daily review by the data manager to catch potential issues
+Once collected, data is entered into digital formats as soon as possible to prevent loss of detail and reduce errors. Our main practices include:
 
-### Media Management 
+- **Same-day data entry** to keep information fresh and accurate.
+- **Fieldbooks with built-in error checks** to minimize typos and formatting mistakes.
+- **Standardized file naming:** `[ISO3]_[YEAR]_[METHOD]_fieldbook.xlsx` for easy identification.
+- **Real-time backups** on the ship's storage system (NAS) to prevent data loss.
+- **Daily review by a data manager** to spot errors early and maintain data quality.
+
+This structured approach ensures that as more researchers join our efforts, everyone has access to clean, well-organized data that is easy to interpret and integrate across projects. It is our commitment to scientific rigor and transparency.
+
+### Media Management
 
 Photos and videos serve as both scientific evidence and powerful tools for communicating our work. Consistent management ensures these visual assets remain accessible, properly labeled, and scientifically valuable.
 
@@ -358,7 +362,6 @@ Managing footage from remote cameras (BRUVS, deep-sea cameras, ROV, submersible)
 Follow these key practices:
 
 1. **Use a Central Highlights Folder**: Save all important video clips and screenshots to the appropriate method's highlights folder
-   - Create a highlights subfolder for each method: `/[method]/highlights/`
    - Examples:
      - Seabed BRUVS: `sbruv/highlights/`
      - Pelagic BRUVS: `pbruv/highlights/`
@@ -379,13 +382,12 @@ Follow these key practices:
    - **Video Clips**: Save as `.mp4` format for all video highlights
    - **Screenshots**: Save as `.jpg` format for all still images
    - **Clip Length**: Keep highlight clips between 10-60 seconds
-   - **Resolution**: Maintain 1080p resolution when possible
+   - **Resolution**: Maintain 1080p resolution
 
 4. **Include Important Details**: Make sure others can understand what they're seeing
    - Include depth information for all depth-related methods
    - Use descriptive names that indicate content (species, behavior, habitat)
    - Note the time code from original footage when possible
-   - For unusual observations, create a simple text file with additional notes
 
 5. **Capture These Key Moments**:
    - **Diversity and MaxN**: Footage showing multiple species or high numbers
@@ -398,84 +400,93 @@ Save all highlight files to the NAS daily. The data manager will transfer everyt
 
 While more detailed guidelines can be found in the [Media Library](../media-library/organization.qmd) section, these practices ensure that our photos and videos are properly organized and can be easily connected to our scientific observations.
 
-### Data Processing
+### Processing Pipeline
 
-Each method follows a specific workflow that turns raw observations into clean, analysis-ready data while ensuring scientific accuracy. While specific details vary by method, all follow a common framework to ensure consistency and quality.
+We use method-specific standardized scripts (`pipeline_[method].qmd`) to transform raw field observations into clean, analysis-ready datasets. Although each method follows a unique pipeline, the overall structure remains consistent, ensuring data integrity, traceability, and seamless integration into the **Pristine Seas Science Database**.
 
-#### Processing Documentation
+#### Data Ingestion and Harmonization
+- **Data Ingestion:** Gather and merge raw field data from multiple expedition legs and contributors.
+- **Standardization:** Apply consistent field names, units, and formats to match database schema.
+- **Spatial Context:** Harmonize geographic data across the established hierarchy:
+  - **Region → Subregion → Locality → Site → Station**
+- **Terminology Alignment:** Enforce consistent language for **habitats**, **strata**, and **exposure types**.
 
-All data processing steps are documented and implemented through standardized scripts:
+#### QA/QC
 
-1. **`pipeline_[method].qmd`**: Transforms raw data into clean, analysis-ready tables
-   - Records each step in the cleaning process
-   - Tracks where each piece of data came from
-   - Performs method-specific calculations
-   - Creates standardized output files ready for our database
+- **Sampling Effort Verification:** Assess completeness and alignment with sampling protocols.
+- **Exploratory Visualizations:** Generate maps and plots to visually inspect patterns.
+- **Spatial and Temporal Validation:** Check station alignment and method overlap across regions.
+- **Data Completeness Assessment:** Identify missing values and ensure records are logically complete.
+- **Outlier and Anomaly Detection:** Flag improbable values and check for inconsistencies.
+- **Protocol Deviation Documentation:** Record any departures from standard field protocols.
+- **Decision Logging:** Maintain structured logs of all processing steps and adjustments.
 
-2. **`eda_[method].qmd`**: Explores and analyzes the processed data
-   - Creates consistent analyses across expeditions
-   - Generates standard graphs and visualizations
-   - Documents method-specific analysis considerations
-   - Enables others to reproduce analyses exactly
+#### Taxonomic Validation
 
-### Standard Processing Steps
+- **Species Identification Checks:** Cross-reference observed taxa with the **Pristine Seas Taxonomic Database**.
+- **Resolve Inconsistencies:** Correct synonyms, misidentifications, and hierarchical misalignments.
+- **Harmonize Across Regions:** Ensure consistent naming and classification throughout the dataset.
 
-While each method has unique requirements, all processing workflows include these core steps:
+#### Ecological Metric Calculation
 
-::: {.panel-tabset}
+- Compute key ecological indicators at relevant spatial scales:
+  - **Biomass (`g/m²`)**
+  - **Species Richness**
+  - **Diversity Indices (e.g., Shannon, Simpson)** 
+  - **Trophic Composition**
+  - **MaxN (Maximum Number Observed Simultaneously)**
+- Generate summary tables at multiple ecological and political levels:
+  - **Taxa → Station → Site → Subregion → Region**
+- Produce both detailed observation-level tables and summary statistics for downstream analyses.
 
-## Combining Data
-- Bringing together data from multiple scientists and expedition legs
-- Making sure units and formats match across all datasets
-- Fixing inconsistent species names and identifications
-- Adding information from site logs and measurements (when available)
-- Creating clean, complete data tables for each station and observation
+#### Output Standardization and Database Integration
 
-## Quality Checks
-- Finding and fixing unusual values or errors
-- Comparing data across different methods to spot inconsistencies
-- Verifying species identifications with our reference lists
-- Keeping clear records of any changes made to the original data
-- Creating maps and plots to visually check patterns
-- Running method-specific checks for known issues
+- **File Naming Convention:** Apply a consistent format for traceability:
+  - `[ISO3]_[YEAR]_[METHOD]_[TYPE].csv`
+  - Examples: `PLW_2023_fish_observations.csv`, `FJI_2025_coral_cover.csv`
+- **Database Upload:** Load processed and validated datasets into the **Pristine Seas Science Database**.
+- **Media Linkage:** Attach relevant photos and video highlights for cross-referencing.
 
-## Adding Context
-- Connecting observations to their proper site, region, and expedition
-- Including details about how each survey was conducted
-- Adding environmental information like temperature, depth, and weather
-- Linking data to relevant photos and video highlights
-- Making sure dates and times are recorded consistently
+### Exploratory Data Analysis (EDA)
 
-## Final Formatting
-- Using consistent file names like `PLW_2023_fish_observations.csv`
-- Creating standardized table layouts that work across all expeditions
-- Using the same column types and formats across methods
-- Properly marking missing data and true zero counts
-- Creating both detailed observation tables and summary statistics tables
+The **Exploratory Data Analysis (EDA)** stage transforms standardized datasets into actionable insights that inform scientific reports and conservation strategies. During this phase, we go beyond surface-level exploration to actively seek indicators of ecosystem health, conservation effectiveness, and environmental threats. Analyses are performed in **`eda_[method].qmd`**, with a strong emphasis on generating meaningful ecological narratives and identifying conservation priorities.
 
-:::
+#### Data Visualization
+- Create **maps, summary plots, and interactive visualizations** to reveal spatial and temporal patterns.
+- Generate summary statistics for key ecological metrics:
+  - **Biomass**, **species richness**, **diversity indices**, and **trophic composition**.
+- Visualize **ecological gradients** across depth, region, and habitat types.
+- Explore **habitat-specific assemblages** and species distributions to detect community shifts.
 
+#### Contextual Analysis and Ecological Inference
+- Compare findings across **regions**, **depth strata**, and **time periods** to identify ecological shifts.
+- Integrate results from multiple survey methods to build a comprehensive view of ecosystem dynamics.
+- Contextualize observations with known baselines, historical data, and previous expeditions.
+- Detect **range extensions**, **new records**, and **unusual species aggregations**.
 
-#### Database Storage
+#### Conservation Insights
+During EDA, we explicitly explore key indicators that reflect ecosystem health, resilience, and human impact. This stage is conservation-driven, aiming to identify both risks and successes:
 
-The final stage prepares all data for storage in our central database:
+##### **Ecosystem Health Indicators**
+- Assess **reef health**, **predator biomass ratios**, and **trophic balance** as indicators of ecosystem stability.
+- Identify **keystone species** and their relative abundance to understand ecosystem structure.
 
-- **Formatting for Storage**
-  - Converting data to database-friendly formats
-  - Using standard field names across all datasets
-  - Connecting species IDs to our taxonomic database
-  - Making sure number and text fields are properly formatted
+##### **Overfishing Evidence**
+- Detect declines in critical species, particularly **large-bodied predators** and **apex species**.
+- Monitor shifts in **size structure** and **age classes**, signaling fishing pressure.
 
-- **Final Quality Checks**
-  - Verifying data at multiple stages (field, expedition, database)
-  - Checking consistency across different methods
-  - Comparing with historical data ranges
-  - Documenting any quality concerns
+##### **Climate Change Impacts**
+- Look for signs of **coral bleaching**, **range shifts**, and changes in **species composition**.
+- Investigate **sensitive species loss**.
 
-- **Documentation**
-  - Recording all processing decisions
-  - Tracking original data sources
-  - Versioning all processing scripts
-  - Linking with expedition details and methods
+##### **Habitat Degradation**
+- Explore shifts in **benthic cover**, including **macroalgae dominance**, **cyanobacteria blooms**, and reductions in **coral cover**.
+- Identify areas with increasing **sedimentation** or evidence of **physical damage** (e.g., fishing lines).
 
-This systematic approach ensures that all data collected during expeditions is transformed into high-quality, analysis-ready formats that can be used both for immediate research questions and long-term scientific studies.
+##### **Conservation Success Signals**
+- Highlight regions with **high biomass**, **top predator abundance**, and **balanced trophic structures**.
+- Identify **MPA effectiveness** by comparing protected versus unprotected areas.
+
+##### **Critical Habitat Mapping**
+- Map species **home ranges**, **migration corridors**, and **nursery areas**.
+- Identify **biodiversity hotspots** and regions of ecological significance for conservation planning.

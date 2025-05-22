@@ -23,5 +23,8 @@ library(gt)
 
 ## Introduction
 
+Best method ever! 
+
+Sincerely, Turd 
 
 ## Method Overview

@@ -194,6 +194,8 @@ All habitat types and exposure levels must be recorded using the controlled voca
 
 #### Habitat types
 
+This vocabulary standardizes the classification of benthic environments encountered during underwater visual surveys. It includes coral reef zones, temperate habitats, and other dominant seafloor types relevant to ecological analysis.
+
 ::: {.callout-note title="Habitats"}
 
 **`Habitat`**
@@ -212,6 +214,8 @@ All habitat types and exposure levels must be recorded using the controlled voca
 :::
 
 #### Exposure
+
+This classification describes the hydrodynamic setting of a site, based on relative exposure to wave energy, swell, or current. It helps interpret ecological patterns linked to environmental forcing.
 
 ::: {.callout-note title="Exposure"}
 

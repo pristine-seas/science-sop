@@ -205,6 +205,7 @@ This vocabulary standardizes the classification of benthic environments encounte
 - **`reef_flat`** — Horizontal shallow zone near the crest  
 - **`patch_reef`** — Isolated reef outcrop within lagoon or sand plain  
 - **`pinnacle_reef`** — Steep-sided, often isolated coral structures  
+- **`bank`** — Flat-topped offshore feature with reef or rocky habitat
 - **`rocky_reef`** — Non-coral reef formed from rock, with reef biota  
 - **`reef_pavement`** — Flat, low-relief hard-bottom reef surface  
 - **`channel_pass`** — Channel through reef system with strong flow  

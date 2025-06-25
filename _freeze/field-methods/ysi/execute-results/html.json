@@ -1,9 +1,11 @@
 {
-  "hash": "889aa4bab478678d5208f6bea8a3945b",
+  "hash": "a260667718a4bca525bbabd8310b8b72",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"YSI\"\nsubtitle: \"\"\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    toc-location: right\nexecute:\n  echo: true\n  warning: false\n  message: false\n---\n\n\n\n\n## Introduction\n\n\n## Method Overview",
-    "supporting": [],
+    "markdown": "---\ntitle: \"YSI\"\nsubtitle: \"\"\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    toc-location: right\nexecute:\n  echo: true\n  warning: false\n  message: false\n---\n\n\n\n\n## Introduction\n\nBest method ever! \n\nSincerely, Turd \n\n## Method Overview",
+    "supporting": [
+      "ysi_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

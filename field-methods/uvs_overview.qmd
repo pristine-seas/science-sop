@@ -192,34 +192,58 @@ Daily records include:
 
 All habitat types and exposure levels must be recorded using the controlled vocabulary specified below. This standardization is critical for understanding ecological patterns, enabling comparisons across sites, and assessing habitat-specific community structure and condition.
 
+#### Habitat types
 
-::: {.callout-note title="Controlled vocabulary"}
+::: {.callout-note title="Habitats"}
 
-**`habitat`**
+**`Habitat`**
 
-- *fore reef* — Outer reef slope exposed to ocean swell.
-- *back reef* — Sheltered zone behind the reef crest  
-- *fringing reef* — Reef growing directly from the shoreline  
-- *patch reef* — Isolated reef outcrop within a lagoon or sandy area  
-- *reef flat* — Shallow, flat reef section, often exposed at low tide  
-- *channel* — Natural break or passage between reef structures  
-- *seagrass* — Vegetated, soft-bottom habitat dominated by seagrasses  
-- *rocky reef* — Reef formed by consolidated rock  
-- *other* — Habitat not captured by the above categories  
+- **`fore_reef`** — Seaward-facing outer slope of coral reef  
+- **`back_reef`** — Lagoon-facing side behind the reef crest  
+- **`reef_flat`** — Horizontal shallow zone near the crest  
+- **`patch_reef`** — Isolated reef outcrop within lagoon or sand plain  
+- **`pinnacle_reef`** — Steep-sided, often isolated coral structures  
+- **`rocky_reef`** — Non-coral reef formed from rock, with reef biota  
+- **`reef_pavement`** — Flat, low-relief hard-bottom reef surface  
+- **`channel_pass`** — Channel through reef system with strong flow  
+- **`wall`** — Vertical or steep reef drop-off  
+- **`kelp_forest`** — Dense canopy-forming macroalgae habitat  
+- **`seagrass`** — Dominant seagrass bed habitat  
+:::
 
-**`exposure`**
+#### Exposure
 
-- *windward* — Facing prevailing winds and swell  
-- *leeward* — Sheltered from prevailing winds  
-- *lagoon* — Within an enclosed or semi-enclosed reef lagoon  
-- *other* — Exposure type not described above  
+::: {.callout-note title="Exposure"}
+
+**`Exposure`**
+
+- **`windward`** — Exposed to prevailing swell or wind; typically high wave energy and surge  
+- **`leeward`** — Sheltered side of reef or island protected from prevailing swell  
+- **`lagoon`** — Located inside a reef or atoll, generally protected from direct wave action  
+- **`channel`** — Within a reef pass or surge channel; often features strong tidal currents  
+- **`sheltered`** — Protected from wave energy by a bay or other geomorphic feature  
+- **`exposed`** — Generally high energy due to wave or swell exposure; used where windward/leeward doesn’t apply  
+- **`unknown`** — Exposure not determined or insufficient data to classify   
 
 :::
 
-### Method - specific fielbooks
+#### Protection
 
+The dive team lead is responsible for recording the protection status of each UVS site in the fieldbook. This information is critical for evaluating the conservation context of survey data and assessing MPA effectiveness, particularly for small local MPAs. We record protection status using two fields:
+
+- **`in_mpa`**: Indicates whether the site is within a protected area (e.g., MPA, no-take zone) or not.
+- **`mpa_notes`**: A free-text field to specify the MPA name, protection type (e.g., no-take, seasonal closure), and any local or jurisdictional notes.
 
 ### Photographic records
+
+Photographic documentation is a core component of the UVS methodology. It provides visual evidence to support species identification, habitat classification, and ecological assessments.
+
+Each diver is responsible for capturing clear, high-quality images and delivering two outputs:
+
+- **Complete photo set**: All images, organized in folders by station ID, following standard file naming conventions.
+- **Curated selection**: A subset of the best images, labeled with species names, habitat types, or notable observations. These images are intended for reference libraries, reports, and outreach materials.
+
+Refer to the Media Management section for detailed guidance on file naming conventions, metadata standards, and best practices for imagery organization and submission.
 
 ### Quality Assurance Procedures
 

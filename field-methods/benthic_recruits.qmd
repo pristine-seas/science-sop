@@ -62,7 +62,7 @@ The coral recruit survey is conducted by t specialized diver as part of the thre
 
 1. **Deployment coordination**:
    - The recruit survey utilizes the same 50 m transect line deployed for the LPI survey
-   - Begin at the 0 m mark and proceed along the transect
+   - Begin at the 45 m mark and proceed along the transect towards the start.
 
 2. **Quadrat placement**:
    - Place the quadrat on the substrate at each 5 m interval along the transect (0, 5, 10, ..., 40, and 45 m marks)
@@ -77,8 +77,8 @@ The coral recruit survey is conducted by t specialized diver as part of the thre
 4. **Quadrat examination**:
    - Systematically search the entire quadrat area in a consistent pattern
    - Focus on colonies ≤5 cm maximum diameter with distinct tissue and skeletal boundaries
+   - Use the edge of dive slate marked in cm to measure sizes
    - Exclude fragments or remnants of larger colonies
-   - Use a small ruler or calipers for accurate size measurements
 
 5. **Data recording**:
    - For each juvenile coral within the quadrat:
@@ -130,21 +130,6 @@ Apply standard adult coral identification criteria where applicable, enabling ge
 :::
 
 Throughout this process, photographic documentation supports field identifications, allowing for post-dive verification and consultation with coral taxonomy specialists when necessary. This systematic approach acknowledges the practical limitations of field identification while maximizing taxonomic precision at each developmental stage.
-
-### Reference Database
-
-Coral recruit identification employs direct taxonomic identification in the field and post expedition. The Pristine Seas Database maintains a comprehensive `taxonomy.corals` reference table that serves as the taxonomic backbone for all coral-related analyses:
-
-- **Taxonomic identifiers**: AphiaID (WoRMS) as the primary key, accepted scientific names
-- **Taxonomic classification**: Complete hierarchy from order to species
-- **Growth morphology**: Primary growth forms (branching, massive, encrusting, etc.)
-- **Life history strategies**: Classification following Darling et al. (2012) (competitive, weedy, stress-tolerant, generalist)
-- **Reproductive modes**: Brooding vs. broadcast spawning, sexual vs. asexual
-- **Conservation status**: IUCN categorization and population trends
-
-Additional trait data planned for future integration includes thermal tolerance thresholds, symbiont specificity, calcification rates, and connectivity metrics. This growing trait database will enhance our ability to interpret recruitment patterns in the context of environmental change and reef resilience.
-
-This reference system enables direct integration of field observations with standardized taxonomy, supporting sophisticated ecological analyses while maintaining compatibility with global biodiversity databases.
 
 ## Data Workflow
 

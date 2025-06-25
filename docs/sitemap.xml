@@ -1,75 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sop.pristine-seas.org/index.html</loc>
-    <lastmod>2025-05-08T17:54:13.213Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/collaborative-infra/index.html</loc>
-    <lastmod>2025-05-07T19:33:49.029Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/collaborative-infra/google_drive.html</loc>
-    <lastmod>2025-05-05T19:10:37.222Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/collaborative-infra/drive.html</loc>
-    <lastmod>2025-05-07T15:19:41.485Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/collaborative-infra/github.html</loc>
-    <lastmod>2025-05-07T16:10:51.149Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/collaborative-infra/zotero.html</loc>
-    <lastmod>2025-05-07T18:49:49.017Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/collaborative-infra/bigquery.html</loc>
-    <lastmod>2025-05-08T18:30:00.627Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/field-methods/index.html</loc>
-    <lastmod>2025-05-09T20:19:24.363Z</lastmod>
-  </url>
-  <url>
     <loc>https://sop.pristine-seas.org/field-methods/uvs_overview.html</loc>
-    <lastmod>2025-05-08T19:17:51.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/field-methods/benthic_lpi.html</loc>
-    <lastmod>2025-05-09T18:08:27.885Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/collaborative-infra/argo_NAS.html</loc>
-    <lastmod>2025-05-07T19:19:39.857Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/field-methods/fish_blt.html</loc>
-    <lastmod>2025-05-07T20:54:56.722Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/field-methods/inverts.html</loc>
-    <lastmod>2025-05-07T20:56:37.882Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/field-methods/benthic_overview.html</loc>
-    <lastmod>2025-05-08T19:08:56.432Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/field-methods/benthic_inverts.html</loc>
-    <lastmod>2025-05-09T18:07:37.852Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sop.pristine-seas.org/field-methods/benthic_recruits.html</loc>
-    <lastmod>2025-05-09T17:59:07.870Z</lastmod>
+    <lastmod>2025-06-25T19:24:44.656Z</lastmod>
   </url>
   <url>
     <loc>https://sop.pristine-seas.org/field-methods/uvs_fish_blt.html</loc>
     <lastmod>2025-05-09T17:58:38.541Z</lastmod>
   </url>
   <url>
+    <loc>https://sop.pristine-seas.org/field-methods/index.html</loc>
+    <lastmod>2025-06-25T19:33:59.628Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/field-methods/benthic_inverts.html</loc>
+    <lastmod>2025-06-25T19:41:16.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/collaborative-infra/bigquery.html</loc>
+    <lastmod>2025-05-08T18:30:00.627Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/collaborative-infra/argo_NAS.html</loc>
+    <lastmod>2025-05-07T19:19:39.857Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/collaborative-infra/zotero.html</loc>
+    <lastmod>2025-05-07T18:49:49.017Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/collaborative-infra/github.html</loc>
+    <lastmod>2025-05-07T16:10:51.149Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/collaborative-infra/index.html</loc>
+    <lastmod>2025-05-07T19:33:49.029Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/collaborative-infra/drive.html</loc>
+    <lastmod>2025-05-07T15:19:41.485Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/index.html</loc>
+    <lastmod>2025-06-25T19:27:09.666Z</lastmod>
+  </url>
+  <url>
     <loc>https://sop.pristine-seas.org/field-methods/ysi.html</loc>
-    <lastmod>2025-05-09T14:24:01.700Z</lastmod>
+    <lastmod>2025-06-25T19:24:52.834Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/field-methods/benthic_recruits.html</loc>
+    <lastmod>2025-06-25T19:47:42.811Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sop.pristine-seas.org/field-methods/benthic_lpi.html</loc>
+    <lastmod>2025-05-09T18:08:27.885Z</lastmod>
   </url>
 </urlset>

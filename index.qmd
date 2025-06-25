@@ -37,7 +37,7 @@ Our team uses a diverse set of integrated scientific methods to study marine eco
 
 -   Benthic surveys to quantify bottom types and invertebrates
 -   Reef fish surveys to document fish communities
--   Environmental DNA (eDNA) to assess overall biodiversity
+-   Environmental DNA (eDNA) to assess overall biodiversity and to support the detection of cryptic and rare species
 -   Baited Remote Underwater Video Systems (BRUVS) to quantify predatory species
 -   Seabird and marine mammal surveys
 -   Deep water surveys using ROVs, submersibles, and drop-cameras

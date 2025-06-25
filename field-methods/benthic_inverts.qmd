@@ -51,25 +51,23 @@ The recruit/invertebrate specialist completes the coral recruit survey first, fo
 ::: {.callout-note appearance="simple" title="**Invertebrate Survey Specifications**"}
 - **Transect dimensions**: 50 m × 1 m (50 m²)
 - **Search width**: 1 m along one side of the transect line
-- **Direction**: From end (50 m) to start (0 m) of the transect
+- **Direction**: From start (0 m) to end (50 m) of the transect
 - **Depth strata**: Typically 10 m and 20 m (matching other benthic methods)
 - **Timing**: Conducted after completing coral recruit quadrats
-- **Duration**: 15-20 minutes per transect (standardized effort)
 :::
 
 
 ### Collection Procedure
 
 1. **Initial preparation**:
-   - After completing the coral recruit quadrats, return to the end of the transect
-   - Prepare data slate with invertebrate recording sheets
-   - Ensure measuring tools are accessible
-
+   - After completing the coral recruit quadrats, return to the start of the transect
+   - Prepare slate with data sheet and measuring guides
+   
 2. **Survey execution**:
-   - Begin at the 50 m mark and work toward the 0 m mark
+   - Begin at the 0 m mark and work toward the 50 m mark
    - Systematically search 1 m along one side of the transect line
-   - Maintain a consistent search speed to standardize effort
    - Scan substrate, crevices, and undersides of structures
+   - Maintain a consistent search speed
 
 3. **Data recording**:
    - Identify all motile invertebrates to species level and count them
@@ -86,20 +84,6 @@ The recruit/invertebrate specialist completes the coral recruit survey first, fo
    - Note any deviations from standard protocol
    - Document search time and any interruptions
    - Record habitat and substrate characteristics that might affect invertebrate distributions
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Measurement Protocols
 
@@ -253,8 +237,6 @@ Field teams utilize multiple resources to support accurate species identificatio
 - **Expert consultation**: Review of challenging identifications by taxonomic specialists
 :::
 
-
-
 ## Ecological Classifications
 
 Invertebrates are classified according to several functional frameworks to enable ecological interpretation beyond simple taxonomic groupings.
@@ -264,20 +246,31 @@ Invertebrates are classified according to several functional frameworks to enabl
 We categorize invertebrates into functional feeding groups that reflect their ecological roles:
 
 :::: {.columns style="display: flex; flex-wrap: wrap;"}
+
 ::: {.column width="50%" style="padding: 0.5em;"}
 <div style="background-color: #D5F5E3; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #2ECC71;">
-<strong>Herbivores/Detritivores</strong><br>
+<strong>Herbivores / Detritivores</strong><br>
 Consume algae, detritus, or plant material<br>
 <em>Examples: Many sea urchins, some sea cucumbers</em>
 </div>
 :::
+
 ::: {.column width="50%" style="padding: 0.5em;"}
-<div style="background-color: #D4E6F1; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #3498DB;">
-<strong>Filter/Suspension Feeders</strong><br>
-Extract particles from water column<br>
-<em>Examples: Giant clams, feather stars, fan worms</em>
+<div style="background-color: #D6EAF8; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #5DADE2;">
+<strong>Active Suspension Feeders</strong><br>
+Filter feeders that actively generate a feeding current<br>
+<em>Examples: Sponges, bivalves, bryozoans, tunicates</em>
 </div>
 :::
+
+::: {.column width="50%" style="padding: 0.5em;"}
+<div style="background-color: #EBF5FB; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #2980B9;">
+<strong>Passive Suspension Feeders</strong><br>
+Rely on ambient water flow to capture particles<br>
+<em>Examples: Crinoids, gorgonians, dendrochirotid sea cucumbers</em>
+</div>
+:::
+
 ::: {.column width="50%" style="padding: 0.5em;"}
 <div style="background-color: #FCF3CF; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #F1C40F;">
 <strong>Deposit Feeders</strong><br>
@@ -285,13 +278,15 @@ Process sediment for organic material<br>
 <em>Examples: Many sea cucumbers, some sea stars</em>
 </div>
 :::
+
 ::: {.column width="50%" style="padding: 0.5em;"}
 <div style="background-color: #FADBD8; color: black; padding: 0.7em; border-radius: 5px; border-left: 10px solid #E74C3C;">
 <strong>Predators</strong><br>
 Consume other animals<br>
-<em>Examples: COTS, many gastropods, octopus</em>
+<em>Examples: Crown-of-thorns starfish, many gastropods, octopus</em>
 </div>
 :::
+
 ::::
 
 ### Resource Categories

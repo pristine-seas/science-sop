@@ -419,7 +419,6 @@ We use method-specific standardized scripts (`pipeline_[method].qmd`) to transfo
 - **Data Completeness Assessment:** Identify missing values and ensure records are logically complete.
 - **Outlier and Anomaly Detection:** Flag improbable values and check for inconsistencies.
 - **Protocol Deviation Documentation:** Record any departures from standard field protocols.
-- **Decision Logging:** Maintain structured logs of all processing steps and adjustments.
 
 #### Taxonomic Validation
 

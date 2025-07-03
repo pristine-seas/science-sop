@@ -35,18 +35,7 @@ The method provides standardized measurements of fish diversity, relative abunda
 
 Seabed BRUVS employ stereo-camera systems with standardized bait to attract and record fish, operating as autonomous underwater observatories. This approach provides relative abundance estimates and precise length measurements for all observed taxa
 
-### Core Methodology
-
-The fundamental measurement unit in BRUVS surveys is **MaxN** (Maximum Number): the highest count of individuals of a given species observed simultaneously in a single video frame during the entire deployment. MaxN provides a conservative, standardized abundance index that accounts for individual fish moving in and out of the camera's field of view.
-
-**MaxN advantages:**
-
-- Eliminates double-counting of the same individuals
-- Provides consistent abundance estimates across different deployment conditions
-- Enables robust comparisons between sites, regions, and time periods
-- Remains conservative when fish behavior varies
-
-### Key Features
+### Features
 
 - **Habitat versatility**: Effective from shallow mangroves to deep reefs (5-70+ m)
 - **Substrate adaptability**: Functions on sand, mud, rubble, coral, and rocky bottoms
@@ -56,13 +45,16 @@ The fundamental measurement unit in BRUVS surveys is **MaxN** (Maximum Number): 
 - **Standardized bait**: Consistent attraction stimulus across deployments
 - **Extended observation**: Captures species with different response times to bait attraction
 
-::: {.callout-note appearance="simple" title="**Seabed BRUVS Specifications**"}
-- **Deployment duration**: Minimum 60 minutes (standard protocol)
-- **Camera configuration**: Stereo setup with 80 cm separation, 8° convergence
-- **Bait standard**: 1 kg crushed oily fish in perforated canister
-- **Depth range**: 5-70+ meters depending on conditions
-- **Replication**: Up to 9 deployments per day, 3 rigs per round
-:::
+### Key metric
+
+The fundamental measurement unit in BRUVS surveys is **MaxN** (Maximum Number): the highest count of individuals of a given species observed simultaneously in a single video frame during the entire deployment. MaxN provides a conservative, standardized abundance index that accounts for individual fish moving in and out of the camera's field of view.
+
+- Eliminates double-counting of the same individuals
+- Provides consistent abundance estimates across different deployment conditions
+- Enables robust comparisons between sites, regions, and time periods
+- Remains conservative when fish behavior varies
+
+
 
 ## Field Implementation
 
@@ -135,22 +127,12 @@ BRUVS deployment sites are strategically selected to maximize habitat coverage w
 - **Habitat diversity**: Sample seagrass beds, channels, sandy flats, and deep coral formations
 - **Geographic coverage**: Expand total survey area, particularly for large islands or atolls
 
-**Critical Deployment Factors:**
-
-::: {.callout-important appearance="simple" title="**Slope Assessment**"}
-Substrate slope is the most critical factor determining deployment success:
+**Critical Deployment Factors:** Substrate slope is the most critical factor determining deployment success
 
 - **Optimal slope**: Mild or steep but with ledges or stable substrate
 - **Assessment method**: Depth sounder and direct visual reconnaissance when possible
 - **Risk indicators**: Steep dropoffs, strong down-slope currents
 - **Backup planning**: Alternative sites identified for each planned deployment
-:::
-
-**Optimal Camera Positioning:**
-
-- **Frame orientation**: Stable positioning with camera bar level
-- **Field of view**: Bottom third captures substrate, upper two-thirds records water column
-- **Bait visibility**: Attractant clearly visible and centered in camera field
 
 ### Deployment Procedure
 
@@ -205,7 +187,14 @@ Substrate slope is the most critical factor determining deployment success:
    - Lower rig steadily to seabed maintaining orientation
    - Monitor descent to ensure optimal landing position
    - Record GPS coordinates and confirm deployment depth
-   
+
+::: {.callout-tip appearance="simple" title="**Optimal Camera Positioning**"}   
+
+- **Frame orientation**: Stable positioning with camera bar level
+- **Field of view**: Bottom third captures substrate, upper two-thirds records water column
+- **Bait visibility**: Attractant clearly visible and centered in camera field
+:::
+
 5. **Final Documentation**:
 
    - Mark precise deployment waypoint
@@ -240,7 +229,7 @@ After the 60-minute soak period, systematic recovery maintains data quality and 
 
 Upon completion of all deployments, systematic data handling and equipment maintenance ensure operational continuity and data integrity.
 
-**Equipment Care and Reset:**
+##### Equipment Care and Reset
 
 - **Immediate rinse**: Thoroughly rinse all equipment with fresh water to prevent salt corrosion
   - Winch system and battery connections
@@ -249,7 +238,7 @@ Upon completion of all deployments, systematic data handling and equipment maint
 - **Camera handling**: Carefully remove cameras and SD cards from all systems
 - **Transit preparation**: Secure all equipment for vessel movement and weather protection
 
-**Data Transfer Protocol:**
+##### Data Transfer Protocol
 
 ::: {.callout-important appearance="simple" title="**Steps to prevent data loss**"}
 1. **Primary transfer**: Copy video files to hard drives using standardized structure:
@@ -264,7 +253,7 @@ Upon completion of all deployments, systematic data handling and equipment maint
 :::
 
 
-**Video Quality Assessment and Highlights:**
+##### Video Quality Assessment and Highlights
 
 Conduct preliminary video review to assess deployment success and extract notable footage:
 
@@ -281,7 +270,7 @@ Conduct preliminary video review to assess deployment success and extract notabl
     - `PLW_2023_sbruv_001_45m_grey_reef_shark.mp4`
     - `PLW_2023_sbruv_003_25m_grouper_feeding.mp4`
     
-**Next-Day Preparation:**
+##### Next-Day Preparation
 
 Prepare equipment and materials for continued operations:
 

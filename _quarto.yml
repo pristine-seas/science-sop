@@ -103,7 +103,16 @@ website:
                 href: field-methods/uvs_fish_blt.qmd
               - text: "Environmental (YSI)"
                 href: field-methods/ysi.qmd
+          - section: "eDNA"
+            href: field-methods/edna_intro.qmd
+            collapsible: true
+            contents:
+              - text: "Shallow Water"
+                href: field-methods/edna_shallow.qmd
+              - text: "Deep-Sea"
+                href: field-methods/edna_deep.qmd      
           - section: "BRUVS"
+            href: field-methods/bruvs_intro.qmd
             collapsible: true
             contents:
               - text: "Seabed"
@@ -120,14 +129,6 @@ website:
                 href: field-methods/submersible.qmd
               - text: "Deep-Sea Cameras"
                 href: field-methods/drop_cameras.qmd
-          - section: "eDNA"
-            href: field-methods/edna_shallow.qmd
-            collapsible: true
-            contents:
-              - text: "Shallow Water"
-                href: field-methods/edna_shallow.qmd
-              - text: "Deep-Sea"
-                href: field-methods/edna_deep.qmd
           - text: "Seabirds"
             href: field-methods/seabirds.qmd
           - text: "Other"

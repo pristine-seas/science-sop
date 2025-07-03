@@ -790,35 +790,55 @@
     "href": "index.html",
     "title": "Pristine Seas Science Team SOP",
     "section": "",
-    "text": "Living Document\n\n\n\nThis SOP is maintained collaboratively and updated regularly. Last updated: June 25, 2025."
+    "text": "Living Document\n\n\n\nThis SOP is maintained collaboratively and updated regularly. Last updated: July 03, 2025.",
+    "crumbs": [
+      "Home",
+      "Pristine Seas Science Team SOP"
+    ]
   },
   {
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "Pristine Seas Science Team SOP",
     "section": "Introduction",
-    "text": "Introduction\nWelcome to the Pristine Seas Science Team Standard Operating Procedures (SOP). This document serves as the comprehensive guide for conducting scientific research across Pristine Seas expeditions and projects. It establishes standardized protocols, workflows, and best practices to ensure consistency, reproducibility, and quality in all research activities.\n\nOur Mission\nPristine Seas works to explore, document, and protect vital places in the ocean. As the scientific foundation of this mission, our team conducts rigorous research to assess marine ecosystems and provide the evidence needed to support conservation efforts.\n\n\nCore Research Methods\nOur team uses a diverse set of integrated scientific methods to study marine ecosystems:\n\nBenthic surveys to quantify bottom types and invertebrates\nReef fish surveys to document fish communities\nEnvironmental DNA (eDNA) to assess overall biodiversity and to support the detection of cryptic and rare species\nBaited Remote Underwater Video Systems (BRUVS) to quantify predatory species\nSeabird and marine mammal surveys\nDeep water surveys using ROVs, submersibles, and drop-cameras\n\nExplore our methods →\n\n\nPurpose of this SOP\nThis SOP provides:\n\nCollaborative practices to enhance team efficiency\nStandardized protocols for data collection across expeditions\nData management workflows for organizing and storing data\nAnalytical frameworks for consistent data processing and analysis\n\nThe SOP ensures that our scientific practices meet the highest standards of rigor, transparency, and reproducibility. By following these guidelines, we produce reliable data that can inform conservation decisions and contribute to our understanding of marine ecosystems."
+    "text": "Introduction\nWelcome to the Pristine Seas Science Team Standard Operating Procedures (SOP). This document serves as the comprehensive guide for conducting scientific research across Pristine Seas expeditions and projects. It establishes standardized protocols, workflows, and best practices to ensure consistency, reproducibility, and quality in all research activities.\n\nOur Mission\nPristine Seas works to explore, document, and protect vital places in the ocean. As the scientific foundation of this mission, our team conducts rigorous research to assess marine ecosystems and provide the evidence needed to support conservation efforts.\n\n\nCore Research Methods\nOur team uses a diverse set of integrated scientific methods to study marine ecosystems:\n\nBenthic surveys to quantify bottom types and invertebrates\nReef fish surveys to document fish communities\nEnvironmental DNA (eDNA) to assess overall biodiversity and to support the detection of cryptic and rare species\nBaited Remote Underwater Video Systems (BRUVS) to quantify predatory species\nSeabird and marine mammal surveys\nDeep water surveys using ROVs, submersibles, and drop-cameras\n\nExplore our methods →\n\n\nPurpose of this SOP\nThis SOP provides:\n\nCollaborative practices to enhance team efficiency\nStandardized protocols for data collection across expeditions\nData management workflows for organizing and storing data\nAnalytical frameworks for consistent data processing and analysis\n\nThe SOP ensures that our scientific practices meet the highest standards of rigor, transparency, and reproducibility. By following these guidelines, we produce reliable data that can inform conservation decisions and contribute to our understanding of marine ecosystems.",
+    "crumbs": [
+      "Home",
+      "Pristine Seas Science Team SOP"
+    ]
   },
   {
     "objectID": "index.html#core-principles",
     "href": "index.html#core-principles",
     "title": "Pristine Seas Science Team SOP",
     "section": "Core Principles",
-    "text": "Core Principles\nThe Pristine Seas Science Team is guided by these fundamental principles in all our work:\n\n\n\nScientific Excellence\n\nCuriosity\nRigor\nPeer review\nImpact driven\n\n\n\n\nOpen Science\n\nReproducibilty\nTransparency\nFAIR data principles\n\n\n\n\nCollaborative Research\n\nInterdisciplinary approaches\nLocal scientist engagement\nBroad partner network"
+    "text": "Core Principles\nThe Pristine Seas Science Team is guided by these fundamental principles in all our work:\n\n\n\nScientific Excellence\n\nCuriosity\nRigor\nPeer review\nImpact driven\n\n\n\n\nOpen Science\n\nReproducibilty\nTransparency\nFAIR data principles\n\n\n\n\nCollaborative Research\n\nInterdisciplinary approaches\nLocal scientist engagement\nBroad partner network",
+    "crumbs": [
+      "Home",
+      "Pristine Seas Science Team SOP"
+    ]
   },
   {
     "objectID": "index.html#collaborative-framework",
     "href": "index.html#collaborative-framework",
     "title": "Pristine Seas Science Team SOP",
     "section": "Collaborative Framework",
-    "text": "Collaborative Framework\nThe Pristine Seas Science Team works across an integrated set of platforms:\n\n\n\n\n\n\n\n GitHub\n\n\n\nVersion control for code, analysis, and documentation\n\n\n\n\n\n\n\n\n Google Drive\n\n\n\nCollaborative document editing and data storage\n\n\n\n\n\n\n\n\n Zotero\n\n\n\nReference management and bibliography\n\n\n\n\n\n\n\n\n\n\n BigQuery\n\n\n\nCentralized database for expedition data\n\n\n\n\n\n\n\n\n Argo NAS\n\n\n\nAt-sea hub for collaborative work\n\n\n\nLearn more about our collaborative tools →"
+    "text": "Collaborative Framework\nThe Pristine Seas Science Team works across an integrated set of platforms:\n\n\n\n\n\n\n\n GitHub\n\n\n\nVersion control for code, analysis, and documentation\n\n\n\n\n\n\n\n\n Google Drive\n\n\n\nCollaborative document editing and data storage\n\n\n\n\n\n\n\n\n Zotero\n\n\n\nReference management and bibliography\n\n\n\n\n\n\n\n\n\n\n BigQuery\n\n\n\nCentralized database for expedition data\n\n\n\n\n\n\n\n\n Argo NAS\n\n\n\nAt-sea hub for collaborative work\n\n\n\nLearn more about our collaborative tools →",
+    "crumbs": [
+      "Home",
+      "Pristine Seas Science Team SOP"
+    ]
   },
   {
     "objectID": "index.html#get-started",
     "href": "index.html#get-started",
     "title": "Pristine Seas Science Team SOP",
     "section": "Get Started",
-    "text": "Get Started\nReady to dive in? Explore these key sections:\n\n\nExpedition Planning\nPrepare for successful field research with comprehensive planning guidelines\n\n\nField Methods\nStandardized protocols for all Pristine Seas research methods\n\n\nData Science\nData workflows, R package documentation, and analysis standards\n\n\n\nMedia Library\nProtocols for media collection, organization, and metadata requirements"
+    "text": "Get Started\nReady to dive in? Explore these key sections:\n\n\nExpedition Planning\nPrepare for successful field research with comprehensive planning guidelines\n\n\nField Methods\nStandardized protocols for all Pristine Seas research methods\n\n\nData Science\nData workflows, R package documentation, and analysis standards\n\n\n\nMedia Library\nProtocols for media collection, organization, and metadata requirements",
+    "crumbs": [
+      "Home",
+      "Pristine Seas Science Team SOP"
+    ]
   },
   {
     "objectID": "field-methods/ysi.html",

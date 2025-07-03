@@ -107,19 +107,19 @@ website:
             collapsible: true
             contents:
               - text: "Seabed"
-                href: field-methods/seabed-bruvs.qmd
+                href: field-methods/seabed_bruvs.qmd
               - text: "Mid-water"
-                href: field-methods/pelagic-bruvs.qmd
+                href: field-methods/pelagic_bruvs.qmd
           - section: "Deep-Sea"
             href: field-methods/rov-surveys.qmd
             collapsible: true
             contents:
               - text: "ROV Surveys"
-                href: field-methods/rov-surveys.qmd
+                href: field-methods/rov_surveys.qmd
               - text: "Submersible Surveys"
                 href: field-methods/submersible.qmd
               - text: "Deep-Sea Cameras"
-                href: field-methods/drop-cameras.qmd
+                href: field-methods/drop_cameras.qmd
           - section: "eDNA"
             href: field-methods/edna_shallow.qmd
             collapsible: true

@@ -45,17 +45,17 @@ website:
           - text: "eDNA"
             href: field-methods/edna.qmd
           - text: "Seabed BRUVS"
-            href: field-methods/seabed-bruvs.qmd
+            href: field-methods/seabed_bruvs.qmd
           - text: "Pelagic BRUVS"
-            href: field-methods/pelagic-bruvs.qmd
-          - text: "Seabird & Mammals"
-            href: field-methods/seabird-mammals.qmd
+            href: field-methods/pelagic_bruvs.qmd
+          - text: "Seabirds"
+            href: field-methods/seabirds.qmd
           - text: "ROV Surveys"
-            href: field-methods/rov-surveys.qmd
+            href: field-methods/rov_surveys.qmd
           - text: "Submersible Surveys"
             href: field-methods/submersible.qmd
           - text: "Deep Sea Cameras"
-            href: field-methods/drop-cameras.qmd
+            href: field-methods/dropcams.qmd
       - text: "Expedition Planning"
         href: expedition-planning/index.qmd
       - text: "Media Library"
@@ -73,6 +73,9 @@ website:
     style: "floating"
     search: true
     contents:
+      - section: "Home"
+        contents:
+          - index.qmd
       - section: "Collaborative Infrastructure"
         collapsible: true
         contents:
@@ -101,12 +104,11 @@ website:
               - text: "Environmental (YSI)"
                 href: field-methods/ysi.qmd
           - section: "BRUVS"
-            href: field-methods/seabed-bruvs.qmd
             collapsible: true
             contents:
               - text: "Seabed"
                 href: field-methods/seabed-bruvs.qmd
-              - text: "Pelagic"
+              - text: "Mid-water"
                 href: field-methods/pelagic-bruvs.qmd
           - section: "Deep-Sea"
             href: field-methods/rov-surveys.qmd

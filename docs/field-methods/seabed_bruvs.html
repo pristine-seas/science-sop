@@ -936,33 +936,33 @@ Habitats
 <div class="callout-body-container callout-body">
 <p><strong>Primary Habitat Types</strong></p>
 <ul>
-<li><strong><code>fore_reef</code></strong> — Seaward-facing outer slope of coral reef<br>
+<li><strong><code>fore_reef</code></strong> — Seaward-facing outer slope of coral reef; typically steep and wave-exposed<br>
 </li>
-<li><strong><code>back_reef</code></strong> — Lagoon-facing side behind the reef crest<br>
+<li><strong><code>reef_flat</code></strong> — Horizontal shallow zone at or near the reef crest; often exposed at low tide<br>
 </li>
-<li><strong><code>lagoon</code></strong> — Protected interior waters within reef systems<br>
+<li><strong><code>back_reef</code></strong> — Sheltered zone just landward of the crest, with coral and rubble patches<br>
 </li>
-<li><strong><code>patch_reef</code></strong> — Isolated reef outcrop within lagoon or sand plain<br>
+<li><strong><code>lagoon</code></strong> — Protected interior waters behind reef crest; may include sand, seagrass, or patch reefs<br>
 </li>
-<li><strong><code>channel_pass</code></strong> — Channel through reef system with strong flow<br>
+<li><strong><code>patch_reef</code></strong> — Isolated coral outcrop within lagoon or sand plain; detached from main reef structure<br>
 </li>
-<li><strong><code>reef_flat</code></strong> — Horizontal shallow zone near the crest<br>
+<li><strong><code>channel_pass</code></strong> — Natural channel through reef with strong tidal flow and scoured bottom<br>
 </li>
-<li><strong><code>pinnacle_reef</code></strong> — Steep-sided, often isolated coral structures</li>
-<li><strong><code>rocky_reef</code></strong> — Non-coral reef formed from rock, with reef biota<br>
+<li><strong><code>pinnacle</code></strong> — Steep-sided, isolated coral or rocky structure rising from deeper water<br>
 </li>
-<li><strong><code>sand_flat</code></strong> — Open sandy areas with minimal structure<br>
+<li><strong><code>rocky_reef</code></strong> — Non-coral reef formed from exposed rock, often supporting reef biota<br>
 </li>
-<li><strong><code>seagrass</code></strong> — Dominant seagrass bed habitat</li>
-<li><strong><code>estuary</code></strong> — Brackish water areas where rivers meet the sea<br>
+<li><strong><code>sand_flat</code></strong> — Open sandy areas with minimal relief or structure<br>
 </li>
-<li><strong><code>mangrove</code></strong> — Mangrove-associated marine areas<br>
+<li><strong><code>seagrass</code></strong> — Area dominated by seagrass cover, typically low relief and soft bottom<br>
 </li>
-<li><strong><code>kelp_forest</code></strong> — Dense canopy-forming macroalgae habitat<br>
+<li><strong><code>mangrove</code></strong> — Subtidal or shallow zone adjacent to mangrove roots, often muddy<br>
 </li>
-<li><strong><code>seamount</code></strong> — Isolated underwater mountains/peaks<br>
+<li><strong><code>estuary</code></strong> — Brackish coastal habitat where freshwater mixes with seawater<br>
 </li>
-<li><strong><code>bank</code></strong> — Flat-topped offshore feature with reef or rocky habitat<br>
+<li><strong><code>kelp_forest</code></strong> — Dense macroalgal canopy habitat (temperate or subtropical)<br>
+</li>
+<li><strong><code>bank</code></strong> — Submerged, flat-topped offshore reef or rocky platform<br>
 </li>
 </ul>
 </div>
@@ -979,19 +979,21 @@ Bottom Types
 <div class="callout-body-container callout-body">
 <p><strong><code>Bottom_Type</code></strong></p>
 <ul>
-<li><strong><code>rock</code></strong> — Solid bedrock, boulders, consolidated hard surfaces<br>
+<li><strong><code>rock</code></strong> — Solid bedrock, boulders, or consolidated hard substrate<br>
 </li>
-<li><strong><code>coral</code></strong> — Living or dead coral framework structures<br>
+<li><strong><code>hard_coral</code></strong> — Framework-forming stony corals (live or dead); includes massive, branching, and plate forms<br>
 </li>
-<li><strong><code>sand</code></strong> — Sandy sediments (all grain sizes)<br>
+<li><strong><code>soft_coral</code></strong> — Flexible non-skeletal cnidarians (e.g., gorgonians, sea fans, Xeniids)<br>
 </li>
-<li><strong><code>mud</code></strong> — Fine muddy/silty sediments<br>
+<li><strong><code>rubble</code></strong> — Loose coral fragments, shell hash, and broken reef material<br>
 </li>
-<li><strong><code>gravel</code></strong> — Loose rock fragments, pebbles, cobble<br>
+<li><strong><code>gravel</code></strong> — Loose rock fragments, pebbles, or cobble (non-biogenic)<br>
 </li>
-<li><strong><code>mixed</code></strong> — Combination of hard and soft substrates (no single type &gt;75%)<br>
+<li><strong><code>sand</code></strong> — Sandy sediments, including coarse or fine grains<br>
 </li>
-<li><strong><code>rubble</code></strong> — Loose fragments (coral rubble, shell hash, broken material)<br>
+<li><strong><code>mud</code></strong> — Fine-grained, silty or muddy sediments<br>
+</li>
+<li><strong><code>mixed</code></strong> — No single bottom type dominates (&gt;75%); heterogeneous seafloor<br>
 </li>
 </ul>
 </div>
@@ -2030,275 +2032,274 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="Habitats"}</span>
 <span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>**Primary Habitat Types**</span>
 <span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`fore_reef`** — Seaward-facing outer slope of coral reef  </span>
-<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`back_reef`** — Lagoon-facing side behind the reef crest  </span>
-<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`lagoon`** — Protected interior waters within reef systems  </span>
-<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`patch_reef`** — Isolated reef outcrop within lagoon or sand plain  </span>
-<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`channel_pass`** — Channel through reef system with strong flow  </span>
-<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`reef_flat`** — Horizontal shallow zone near the crest  </span>
-<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`pinnacle_reef`** — Steep-sided, often isolated coral structures</span>
-<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`rocky_reef`** — Non-coral reef formed from rock, with reef biota  </span>
-<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`sand_flat`** — Open sandy areas with minimal structure  </span>
-<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`seagrass`** — Dominant seagrass bed habitat </span>
-<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`estuary`** — Brackish water areas where rivers meet the sea  </span>
-<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`mangrove`** — Mangrove-associated marine areas  </span>
-<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`kelp_forest`** — Dense canopy-forming macroalgae habitat  </span>
-<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`seamount`** — Isolated underwater mountains/peaks  </span>
-<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`bank`** — Flat-topped offshore feature with reef or rocky habitat  </span>
-<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="Bottom Types"}</span>
-<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>**`Bottom_Type`**</span>
-<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`rock`** — Solid bedrock, boulders, consolidated hard surfaces  </span>
-<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`coral`** — Living or dead coral framework structures  </span>
-<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`sand`** — Sandy sediments (all grain sizes)  </span>
-<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`mud`** — Fine muddy/silty sediments  </span>
-<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`gravel`** — Loose rock fragments, pebbles, cobble  </span>
-<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`mixed`** — Combination of hard and soft substrates (no single type &gt;75%)  </span>
-<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`rubble`** — Loose fragments (coral rubble, shell hash, broken material)  </span>
-<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`fore_reef`** — Seaward-facing outer slope of coral reef; typically steep and wave-exposed  </span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`reef_flat`** — Horizontal shallow zone at or near the reef crest; often exposed at low tide  </span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`back_reef`** — Sheltered zone just landward of the crest, with coral and rubble patches  </span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`lagoon`** — Protected interior waters behind reef crest; may include sand, seagrass, or patch reefs  </span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`patch_reef`** — Isolated coral outcrop within lagoon or sand plain; detached from main reef structure  </span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`channel_pass`** — Natural channel through reef with strong tidal flow and scoured bottom  </span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`pinnacle`** — Steep-sided, isolated coral or rocky structure rising from deeper water  </span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`rocky_reef`** — Non-coral reef formed from exposed rock, often supporting reef biota  </span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`sand_flat`** — Open sandy areas with minimal relief or structure  </span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`seagrass`** — Area dominated by seagrass cover, typically low relief and soft bottom  </span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`mangrove`** — Subtidal or shallow zone adjacent to mangrove roots, often muddy  </span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`estuary`** — Brackish coastal habitat where freshwater mixes with seawater  </span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`kelp_forest`** — Dense macroalgal canopy habitat (temperate or subtropical)  </span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`bank`** — Submerged, flat-topped offshore reef or rocky platform  </span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="Bottom Types"}</span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a>**`Bottom_Type`**</span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`rock`** — Solid bedrock, boulders, or consolidated hard substrate  </span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`hard_coral`** — Framework-forming stony corals (live or dead); includes massive, branching, and plate forms  </span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`soft_coral`** — Flexible non-skeletal cnidarians (e.g., gorgonians, sea fans, Xeniids)  </span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`rubble`** — Loose coral fragments, shell hash, and broken reef material  </span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`gravel`** — Loose rock fragments, pebbles, or cobble (non-biogenic)  </span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`sand`** — Sandy sediments, including coarse or fine grains  </span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`mud`** — Fine-grained, silty or muddy sediments  </span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**`mixed`** — No single bottom type dominates (&gt;75%); heterogeneous seafloor  </span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a><span class="fu">### Video Analysis</span></span>
-<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>Video footage undergoes systematic analysis by our collaborating partners at the University of Western Australia (UWA) and the University of the South Pacific (Fiji) using EventMeasure software. All video is processed up to a 60-minute cutoff following standard protocols to identify each individual animal to the lowest possible taxonomic resolution, record the maximum number of each taxa observed in a single video frame (MaxN), and generate length estimates based on stereo-photogrammetric measurements of fork length.</span>
-<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a><span class="al">![Illustration of BRUVS system deployment showing how the stereo cameras and bait attract sharks, rays, and other predatory fish](../assets/illustrations/seabed_bruvs_panel.jpg)</span>{fig-alt="BRUVS measurments" fig-align="center" width="60%"}</span>
-<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a>Video-based identification presents unique opportunities and challenges compared to diver-based surveys:</span>
-<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Repeated observation**: Fish can be observed multiple times throughout deployment</span>
-<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Detailed examination**: Pause, replay, and zoom capabilities enable careful species examination</span>
-<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Collaborative identification**: Multiple taxonomic experts can review challenging identifications</span>
-<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Permanent record**: Video provides lasting evidence for taxonomic verification</span>
-<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Annotation protocol</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a><span class="fu">### Video Analysis</span></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a>Video footage undergoes systematic analysis by our collaborating partners at the University of Western Australia (UWA) and the University of the South Pacific (Fiji) using EventMeasure software. All video is processed up to a 60-minute cutoff following standard protocols to identify each individual animal to the lowest possible taxonomic resolution, record the maximum number of each taxa observed in a single video frame (MaxN), and generate length estimates based on stereo-photogrammetric measurements of fork length.</span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a><span class="al">![Illustration of BRUVS system deployment showing how the stereo cameras and bait attract sharks, rays, and other predatory fish](../assets/illustrations/seabed_bruvs_panel.jpg)</span>{fig-alt="BRUVS measurments" fig-align="center" width="60%"}</span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a>Video-based identification presents unique opportunities and challenges compared to diver-based surveys:</span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Repeated observation**: Fish can be observed multiple times throughout deployment</span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Detailed examination**: Pause, replay, and zoom capabilities enable careful species examination</span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Collaborative identification**: Multiple taxonomic experts can review challenging identifications</span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Permanent record**: Video provides lasting evidence for taxonomic verification</span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Annotation protocol</span></span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Species Coverage</span></span>
-<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>BRUVS surveys specifically target and excel at documenting predatory fish assemblages:</span>
-<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
-<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a><span class="fu">## Primary Targets {.bg-primary .text-white}</span></span>
-<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a>**Sharks and Rays (Elasmobranchs)**</span>
-<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>All shark species: reef sharks, pelagic visitors, deep-water species</span>
-<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Rays and skates: stingrays, eagle rays, manta rays</span>
-<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Excellent detection due to strong bait response and distinctive morphology</span>
-<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a>**Large Predatory Teleosts**</span>
-<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Groupers (Epinephelidae): critical reef predators, strong bait attraction</span>
-<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Snappers (Lutjanidae): important commercial species, reliable BRUVS targets</span>
-<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Jacks and Trevallies (Carangidae): mobile predators, well-documented by BRUVS</span>
-<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a><span class="fu">## Secondary Targets {.bg-secondary .text-white}</span></span>
-<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a>**Medium-sized Predators and Mesopredators**</span>
-<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Emperors (Lethrinidae): important in Indo-Pacific reef systems</span>
-<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wrasses (Labridae): larger species attracted to bait</span>
-<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Triggerfishes (Balistidae): territorial species common around BRUVS</span>
-<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a>**Commercial Species**</span>
-<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Barracuda (Sphyraenidae): attracted to bait and fish activity</span>
-<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Surgeonfish (Acanthuridae): larger species occasionally recorded</span>
-<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Parrotfish (Scaridae): opportunistic visitors to bait</span>
-<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a><span class="fu">## Other Records {.bg-info .text-white}</span></span>
-<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a>**Small Reef Fish**</span>
-<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Various families recorded opportunistically</span>
-<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Generally undersampled compared to diver surveys</span>
-<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Useful for community completeness</span>
-<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a>**Invertebrates**</span>
-<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Large crustaceans: lobsters, large crabs</span>
-<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cephalopods: octopus, squid occasionally recorded</span>
-<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Species Coverage</span></span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a>BRUVS surveys specifically target and excel at documenting predatory fish assemblages:</span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a><span class="fu">## Primary Targets {.bg-primary .text-white}</span></span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a>**Sharks and Rays (Elasmobranchs)**</span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>All shark species: reef sharks, pelagic visitors, deep-water species</span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Rays and skates: stingrays, eagle rays, manta rays</span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Excellent detection due to strong bait response and distinctive morphology</span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a>**Large Predatory Teleosts**</span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Groupers (Epinephelidae): critical reef predators, strong bait attraction</span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Snappers (Lutjanidae): important commercial species, reliable BRUVS targets</span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Jacks and Trevallies (Carangidae): mobile predators, well-documented by BRUVS</span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a><span class="fu">## Secondary Targets {.bg-secondary .text-white}</span></span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a>**Medium-sized Predators and Mesopredators**</span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Emperors (Lethrinidae): important in Indo-Pacific reef systems</span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wrasses (Labridae): larger species attracted to bait</span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Triggerfishes (Balistidae): territorial species common around BRUVS</span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a>**Commercial Species**</span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Barracuda (Sphyraenidae): attracted to bait and fish activity</span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Surgeonfish (Acanthuridae): larger species occasionally recorded</span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Parrotfish (Scaridae): opportunistic visitors to bait</span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a><span class="fu">## Other Records {.bg-info .text-white}</span></span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>**Small Reef Fish**</span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Various families recorded opportunistically</span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Generally undersampled compared to diver surveys</span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Useful for community completeness</span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a>**Invertebrates**</span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Large crustaceans: lobsters, large crabs</span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cephalopods: octopus, squid occasionally recorded</span>
+<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a><span class="fu">### Processing Pipeline</span></span>
-<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a>Raw fieldbook data and video annotations are integrated and processed through standardized R scripts that validate data, calculate metrics, and generate analysis-ready datasets.</span>
-<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 1. Data Integration and QA/QC</span></span>
-<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a>**File Consolidation:**</span>
-<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Merge deployment metadata with video analysis results</span>
-<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Standardize taxonomic names using reference database</span>
-<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Validate spatial and temporal data consistency</span>
-<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a>**Quality Control Checks:**</span>
-<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Review video quality ratings and exclude failed deployments (rating &lt; 3)</span>
-<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Flag deployments with incomplete metadata</span>
-<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Validate MaxN calculations for internal consistency</span>
-<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Check length measurements against known species ranges</span>
-<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 2. Taxonomic Standardization</span></span>
-<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a>**PS Database Integration:**</span>
-<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Map taxa to accepted scientific names via <span class="in">`taxonomy.fish`</span></span>
-<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Assign trophic groups and functional classifications</span>
-<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add length-weight relationships for biomass calculations</span>
-<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Flag new records or range extensions for verification</span>
-<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 3. Ecological Metric Calculation</span></span>
-<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a>**Community Structure Metrics:**</span>
-<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Species richness**: Total number of taxa per deployment</span>
-<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Shannon diversity**: Account for both richness and evenness</span>
-<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Simpson diversity**: Emphasize dominant species</span>
-<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Functional diversity**: Based on trophic and ecological groups</span>
-<span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>**Abundance and Biomass:**</span>
-<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**MaxN summaries**: Species-specific abundance indices by deployment</span>
-<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Biomass estimates**: Length-based calculations using allometric relationships</span>
-<span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Trophic structure**: Proportional abundance/biomass by functional group</span>
-<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Size spectra**: Community size distributions and mean body sizes</span>
-<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a>**Conservation Metrics:**</span>
-<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Shark abundance**: Critical ecosystem health indicator</span>
-<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**IUCN threat status**: Proportion of threatened species</span>
-<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Commercial species**: Abundance of fishery target species</span>
-<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Apex predator ratio**: Proportion of top predators in community</span>
-<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 4. Database Integration</span></span>
-<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a>Processed data are formatted for ingestion into the Pristine Seas Science Database:</span>
-<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**sbruv.stations**: Station-level metadata and summary statistics</span>
-<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**sbruv.observations**: Individual-level records with taxonomic classification and MaxN</span>
-<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**sbruv.maxN_by_taxa**: Station-level metadata and summary statistics</span>
-<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a>These standardized outputs enable consistent analysis across expeditions while preserving connections to original observations.</span>
-<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploratory Data Analysis</span></span>
-<span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a>Comprehensive EDA examines BRUVS data through multiple ecological lenses, focusing on predator communities and ecosystem health indicators.</span>
-<span id="cb1-507"><a href="#cb1-507" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-508"><a href="#cb1-508" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Community Analysis</span></span>
-<span id="cb1-509"><a href="#cb1-509" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-510"><a href="#cb1-510" aria-hidden="true" tabindex="-1"></a>**Diversity Patterns:**</span>
-<span id="cb1-511"><a href="#cb1-511" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-512"><a href="#cb1-512" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Species accumulation curves to assess sampling adequacy</span>
-<span id="cb1-513"><a href="#cb1-513" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Alpha diversity comparisons across habitats and protection levels</span>
-<span id="cb1-514"><a href="#cb1-514" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Beta diversity analysis to understand community turnover</span>
-<span id="cb1-515"><a href="#cb1-515" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Indicator species analysis for habitat association</span>
-<span id="cb1-516"><a href="#cb1-516" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-517"><a href="#cb1-517" aria-hidden="true" tabindex="-1"></a>**Assembly Structure:**</span>
-<span id="cb1-518"><a href="#cb1-518" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-519"><a href="#cb1-519" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multivariate analyses (NMDS, cluster analysis) of species assemblages</span>
-<span id="cb1-520"><a href="#cb1-520" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Functional group composition across environmental gradients</span>
-<span id="cb1-521"><a href="#cb1-521" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Size spectrum analysis to detect fishing impacts</span>
-<span id="cb1-522"><a href="#cb1-522" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-523"><a href="#cb1-523" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Ecological Assessment</span></span>
-<span id="cb1-524"><a href="#cb1-524" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-525"><a href="#cb1-525" aria-hidden="true" tabindex="-1"></a>**Predator Community Health:**</span>
-<span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-527"><a href="#cb1-527" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Shark abundance as ecosystem health indicator</span>
-<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Top predator biomass ratios and trophic pyramid structure</span>
-<span id="cb1-529"><a href="#cb1-529" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mean body size trends indicating fishing pressure</span>
-<span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Apex predator presence/absence patterns</span>
-<span id="cb1-531"><a href="#cb1-531" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a>**Conservation Insights:**</span>
-<span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Threatened species occurrence and abundance</span>
-<span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Commercial species population status</span>
-<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Comparison with reference values</span>
-<span id="cb1-537"><a href="#cb1-537" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Identification of hotspots and critical habitats</span>
-<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-539"><a href="#cb1-539" aria-hidden="true" tabindex="-1"></a>**Environmental Relationships:**</span>
-<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-541"><a href="#cb1-541" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Depth-related community changes</span>
-<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Habitat-specific assemblage patterns</span>
-<span id="cb1-543"><a href="#cb1-543" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Current and exposure effects on community structure</span>
-<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Distance-to-protection relationships</span>
-<span id="cb1-545"><a href="#cb1-545" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Cross-Method Integration</span></span>
-<span id="cb1-547"><a href="#cb1-547" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a>**Complementary Survey Analysis:**</span>
-<span id="cb1-549"><a href="#cb1-549" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>BRUVS vs. UVS fish community comparisons</span>
-<span id="cb1-551"><a href="#cb1-551" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>eDNA validation of species presence</span>
-<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Benthic habitat relationships with fish assemblages</span>
-<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a>**Ecosystem Connectivity:**</span>
-<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mobile predator movement patterns between sites</span>
-<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Nursery-adult habitat connectivity</span>
-<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Spillover effects from protected areas</span>
-<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Regional biogeographic patterns</span>
-<span id="cb1-559"><a href="#cb1-559" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-560"><a href="#cb1-560" aria-hidden="true" tabindex="-1"></a><span class="fu">## Limitations</span></span>
-<span id="cb1-561"><a href="#cb1-561" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-562"><a href="#cb1-562" aria-hidden="true" tabindex="-1"></a>While seabed BRUVS provide valuable standardized data on predatory fish assemblages, several methodological limitations should be acknowledged when interpreting results.</span>
-<span id="cb1-563"><a href="#cb1-563" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-564"><a href="#cb1-564" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Sampling Bias</span></span>
-<span id="cb1-565"><a href="#cb1-565" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-566"><a href="#cb1-566" aria-hidden="true" tabindex="-1"></a>**Bait Attraction Variability:** Fish responses to bait vary significantly among species and individuals. Some species show strong positive attraction, others exhibit active avoidance, and territorial species may exclude other fish from the immediate area around the bait.</span>
-<span id="cb1-567"><a href="#cb1-567" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-568"><a href="#cb1-568" aria-hidden="true" tabindex="-1"></a>**Size and Behavioral Bias:** Larger, more aggressive predators may dominate bait areas, potentially excluding smaller individuals or species. This can lead to underestimation of juvenile abundance and species that are less competitive around bait.</span>
-<span id="cb1-569"><a href="#cb1-569" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-570"><a href="#cb1-570" aria-hidden="true" tabindex="-1"></a>**Temporal Coverage:** Standard 60-minute deployments provide only a brief snapshot of fish community activity. Species with different temporal activity patterns (dawn/dusk activity, tidal influences) may be missed or underrepresented.</span>
-<span id="cb1-571"><a href="#cb1-571" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-572"><a href="#cb1-572" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Technical Limitations</span></span>
-<span id="cb1-573"><a href="#cb1-573" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-574"><a href="#cb1-574" aria-hidden="true" tabindex="-1"></a>**Environmental Dependency:** Successful deployments require suitable sea conditions and stable substrate. Steep slopes, strong currents, poor visibility, or equipment failure can result in partial or complete data loss.</span>
-<span id="cb1-575"><a href="#cb1-575" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-576"><a href="#cb1-576" aria-hidden="true" tabindex="-1"></a>**Detection Limitations:** MaxN provides minimum abundance estimates as individuals moving in and out of the camera's field of view may not be detected simultaneously. Video quality affects species identification accuracy, particularly for smaller or more cryptic species.</span>
-<span id="cb1-577"><a href="#cb1-577" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-578"><a href="#cb1-578" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Methodological Considerations</span></span>
-<span id="cb1-579"><a href="#cb1-579" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-580"><a href="#cb1-580" aria-hidden="true" tabindex="-1"></a>**Observer Effect Elimination vs. Limited Behavior:** While BRUVS eliminate diver effects, they may not capture natural feeding behaviors, territorial interactions, or species that don't respond to bait stimulus.</span>
-<span id="cb1-581"><a href="#cb1-581" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-582"><a href="#cb1-582" aria-hidden="true" tabindex="-1"></a>**Community Representation:** BRUVS excel at documenting predatory fish but systematically underrepresent small-bodied species, herbivores, and planktivores compared to visual surveys.</span>
-<span id="cb1-583"><a href="#cb1-583" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-584"><a href="#cb1-584" aria-hidden="true" tabindex="-1"></a>**Standardization Challenges:** Variations in bait type, quantity, freshness, and local availability may affect comparability between deployments and regions.</span>
-<span id="cb1-585"><a href="#cb1-585" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-586"><a href="#cb1-586" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Mitigation Strategies</span></span>
-<span id="cb1-587"><a href="#cb1-587" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-588"><a href="#cb1-588" aria-hidden="true" tabindex="-1"></a>**Complementary Methods:** We integrate BRUVS with UVS, eDNA, and other techniques to provide comprehensive ecosystem assessment that accounts for each method's strengths and biases.</span>
-<span id="cb1-589"><a href="#cb1-589" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-590"><a href="#cb1-590" aria-hidden="true" tabindex="-1"></a>**Standardized Protocols:** Protocols for equipment preparation, deployment procedures, and data analysis ensure valid comparisons across sites and time periods.</span>
-<span id="cb1-591"><a href="#cb1-591" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-592"><a href="#cb1-592" aria-hidden="true" tabindex="-1"></a>**Quality Control:** Multiple deployment replication, video quality assessment, and expert taxonomic review address technical and analytical sources of error.</span>
-<span id="cb1-593"><a href="#cb1-593" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-594"><a href="#cb1-594" aria-hidden="true" tabindex="-1"></a>**Appropriate Interpretation:** Results are interpreted within the context of method-specific limitations, focusing on questions that BRUVS are well-suited to address: predator abundance, community structure, and fishing impacts.</span>
-<span id="cb1-595"><a href="#cb1-595" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-596"><a href="#cb1-596" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
-<span id="cb1-597"><a href="#cb1-597" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-598"><a href="#cb1-598" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cappo M, Harvey E, Malcolm H, Speare P (2003) Potential of video techniques to monitor diversity, abundance and size of fish in studies of Marine Protected Areas. In: Beumer JP, Grant A, Smith DC (eds) Aquatic Protected Areas-what works best and how do we know? World Aquaculture Society, Baton Rouge, Louisiana, pp 455-464</span>
-<span id="cb1-599"><a href="#cb1-599" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-600"><a href="#cb1-600" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cappo M, Speare P, De'ath G (2004) Comparison of baited remote underwater video stations (BRUVS) and prawn (shrimp) trawls for assessments of fish biodiversity in inter-reefal areas of the Great Barrier Reef Marine Park. Journal of Experimental Marine Biology and Ecology 302(2):123-152</span>
-<span id="cb1-601"><a href="#cb1-601" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-602"><a href="#cb1-602" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Harvey ES, Shortis MR (1995) A system for stereo-video measurement of sub-tidal organisms. Marine Technology Society Journal 29(4):10-22</span>
-<span id="cb1-603"><a href="#cb1-603" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-604"><a href="#cb1-604" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Harvey ES, Fletcher D, Shortis MR, Kendrick GA (2004) A comparison of underwater visual distance estimates made by scuba divers and a stereo-video system: implications for underwater visual census of reef fish abundance. Marine and Freshwater Research 55(6):573-580</span>
-<span id="cb1-605"><a href="#cb1-605" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-606"><a href="#cb1-606" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Langlois T, Goetze J, Bond T, Monk J, Abesamis RA, Asher J, Barrett N, Bernard ATF, Bouchet PJ, Birt MJ, Cappo M, Currey-Randall LM, Driessen D, Fairclough DV,-Fullwood LAF, Gibbons BA, Gill DA, Harasti D, Heupel MR, Hicks J, Holmes TH, Huveneers C, Ierodiaconou D, Jordan A, Knott NA, Lindfield S, Malcolm HA, McLean D, Meekan M, Miller D, Mitchell PJ, Newman SJ, Radford B, Rolim FA, Saunders BJ, Stowar M, Smith ANH, Travers MJ, Wakefield CB, Whitmarsh SK, Williams J, Harvey ES (2020) A field and video annotation guide for baited remote underwater stereo‐video surveys of demersal fish assemblages. Methods in Ecology and Evolution 11(11):1401-1409</span>
-<span id="cb1-607"><a href="#cb1-607" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-608"><a href="#cb1-608" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>McLean DL, Harvey ES, Fairclough DV, Newman SJ (2010) Large decline in the abundance of a targeted tropical lethrinid in areas open and closed to fishing. Marine Ecology Progress Series 418:189-199</span>
-<span id="cb1-609"><a href="#cb1-609" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-610"><a href="#cb1-610" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Murphy HM, Jenkins GP (2010) Observational methods used in marine spatial monitoring of fishes and associated habitats: a review. Marine and Freshwater Research 61(2):236-252</span>
-<span id="cb1-611"><a href="#cb1-611" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-612"><a href="#cb1-612" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Santana-Garcon J, Newman SJ, Langlois TJ, Harvey ES (2014) Effects of a spatial closure on highly mobile fish species: an assessment using pelagic stereo-BRUVs. Journal of Experimental Marine Biology and Ecology 460:153-161</span>
-<span id="cb1-613"><a href="#cb1-613" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-614"><a href="#cb1-614" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Watson DL, Harvey ES, Anderson MJ, Kendrick GA (2005) A comparison of temperate reef fish assemblages recorded by three underwater stereo‐video techniques. Marine Biology 148(2):415-425</span>
-<span id="cb1-615"><a href="#cb1-615" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-616"><a href="#cb1-616" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Whitmarsh SK, Fairweather PG, Huveneers C (2017) What is Big BRUVver up to? Methods and uses of baited underwater video. Reviews in Fish Biology and Fisheries 27(1):53-73</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a><span class="fu">### Processing Pipeline</span></span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a>Raw fieldbook data and video annotations are integrated and processed through standardized R scripts that validate data, calculate metrics, and generate analysis-ready datasets.</span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 1. Data Integration and QA/QC</span></span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a>**File Consolidation:**</span>
+<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Merge deployment metadata with video analysis results</span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Standardize taxonomic names using reference database</span>
+<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Validate spatial and temporal data consistency</span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a>**Quality Control Checks:**</span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Review video quality ratings and exclude failed deployments (rating &lt; 3)</span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Flag deployments with incomplete metadata</span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Validate MaxN calculations for internal consistency</span>
+<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Check length measurements against known species ranges</span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 2. Taxonomic Standardization</span></span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a>**PS Database Integration:**</span>
+<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Map taxa to accepted scientific names via <span class="in">`taxonomy.fish`</span></span>
+<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Assign trophic groups and functional classifications</span>
+<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add length-weight relationships for biomass calculations</span>
+<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Flag new records or range extensions for verification</span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 3. Ecological Metric Calculation</span></span>
+<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a>**Community Structure Metrics:**</span>
+<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Species richness**: Total number of taxa per deployment</span>
+<span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Shannon diversity**: Account for both richness and evenness</span>
+<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Simpson diversity**: Emphasize dominant species</span>
+<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Functional diversity**: Based on trophic and ecological groups</span>
+<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a>**Abundance and Biomass:**</span>
+<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**MaxN summaries**: Species-specific abundance indices by deployment</span>
+<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Biomass estimates**: Length-based calculations using allometric relationships</span>
+<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Trophic structure**: Proportional abundance/biomass by functional group</span>
+<span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Size spectra**: Community size distributions and mean body sizes</span>
+<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a>**Conservation Metrics:**</span>
+<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Shark abundance**: Critical ecosystem health indicator</span>
+<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**IUCN threat status**: Proportion of threatened species</span>
+<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Commercial species**: Abundance of fishery target species</span>
+<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Apex predator ratio**: Proportion of top predators in community</span>
+<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 4. Database Integration</span></span>
+<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a>Processed data are formatted for ingestion into the Pristine Seas Science Database:</span>
+<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**sbruv.stations**: Station-level metadata and summary statistics</span>
+<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**sbruv.observations**: Individual-level records with taxonomic classification and MaxN</span>
+<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**sbruv.maxN_by_taxa**: Station-level metadata and summary statistics</span>
+<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a>These standardized outputs enable consistent analysis across expeditions while preserving connections to original observations.</span>
+<span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploratory Data Analysis</span></span>
+<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a>Comprehensive EDA examines BRUVS data through multiple ecological lenses, focusing on predator communities and ecosystem health indicators.</span>
+<span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-507"><a href="#cb1-507" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Community Analysis</span></span>
+<span id="cb1-508"><a href="#cb1-508" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-509"><a href="#cb1-509" aria-hidden="true" tabindex="-1"></a>**Diversity Patterns:**</span>
+<span id="cb1-510"><a href="#cb1-510" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-511"><a href="#cb1-511" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Species accumulation curves to assess sampling adequacy</span>
+<span id="cb1-512"><a href="#cb1-512" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Alpha diversity comparisons across habitats and protection levels</span>
+<span id="cb1-513"><a href="#cb1-513" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Beta diversity analysis to understand community turnover</span>
+<span id="cb1-514"><a href="#cb1-514" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Indicator species analysis for habitat association</span>
+<span id="cb1-515"><a href="#cb1-515" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-516"><a href="#cb1-516" aria-hidden="true" tabindex="-1"></a>**Assembly Structure:**</span>
+<span id="cb1-517"><a href="#cb1-517" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-518"><a href="#cb1-518" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multivariate analyses (NMDS, cluster analysis) of species assemblages</span>
+<span id="cb1-519"><a href="#cb1-519" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Functional group composition across environmental gradients</span>
+<span id="cb1-520"><a href="#cb1-520" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Size spectrum analysis to detect fishing impacts</span>
+<span id="cb1-521"><a href="#cb1-521" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-522"><a href="#cb1-522" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Ecological Assessment</span></span>
+<span id="cb1-523"><a href="#cb1-523" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-524"><a href="#cb1-524" aria-hidden="true" tabindex="-1"></a>**Predator Community Health:**</span>
+<span id="cb1-525"><a href="#cb1-525" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Shark abundance as ecosystem health indicator</span>
+<span id="cb1-527"><a href="#cb1-527" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Top predator biomass ratios and trophic pyramid structure</span>
+<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mean body size trends indicating fishing pressure</span>
+<span id="cb1-529"><a href="#cb1-529" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Apex predator presence/absence patterns</span>
+<span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-531"><a href="#cb1-531" aria-hidden="true" tabindex="-1"></a>**Conservation Insights:**</span>
+<span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Threatened species occurrence and abundance</span>
+<span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Commercial species population status</span>
+<span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Comparison with reference values</span>
+<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Identification of hotspots and critical habitats</span>
+<span id="cb1-537"><a href="#cb1-537" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a>**Environmental Relationships:**</span>
+<span id="cb1-539"><a href="#cb1-539" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Depth-related community changes</span>
+<span id="cb1-541"><a href="#cb1-541" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Habitat-specific assemblage patterns</span>
+<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Current and exposure effects on community structure</span>
+<span id="cb1-543"><a href="#cb1-543" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Distance-to-protection relationships</span>
+<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-545"><a href="#cb1-545" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Cross-Method Integration</span></span>
+<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-547"><a href="#cb1-547" aria-hidden="true" tabindex="-1"></a>**Complementary Survey Analysis:**</span>
+<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-549"><a href="#cb1-549" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>BRUVS vs. UVS fish community comparisons</span>
+<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>eDNA validation of species presence</span>
+<span id="cb1-551"><a href="#cb1-551" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Benthic habitat relationships with fish assemblages</span>
+<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a>**Ecosystem Connectivity:**</span>
+<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mobile predator movement patterns between sites</span>
+<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Nursery-adult habitat connectivity</span>
+<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Spillover effects from protected areas</span>
+<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Regional biogeographic patterns</span>
+<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-559"><a href="#cb1-559" aria-hidden="true" tabindex="-1"></a><span class="fu">## Limitations</span></span>
+<span id="cb1-560"><a href="#cb1-560" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-561"><a href="#cb1-561" aria-hidden="true" tabindex="-1"></a>While seabed BRUVS provide valuable standardized data on predatory fish assemblages, several methodological limitations should be acknowledged when interpreting results.</span>
+<span id="cb1-562"><a href="#cb1-562" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-563"><a href="#cb1-563" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Sampling Bias</span></span>
+<span id="cb1-564"><a href="#cb1-564" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-565"><a href="#cb1-565" aria-hidden="true" tabindex="-1"></a>**Bait Attraction Variability:** Fish responses to bait vary significantly among species and individuals. Some species show strong positive attraction, others exhibit active avoidance, and territorial species may exclude other fish from the immediate area around the bait.</span>
+<span id="cb1-566"><a href="#cb1-566" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-567"><a href="#cb1-567" aria-hidden="true" tabindex="-1"></a>**Size and Behavioral Bias:** Larger, more aggressive predators may dominate bait areas, potentially excluding smaller individuals or species. This can lead to underestimation of juvenile abundance and species that are less competitive around bait.</span>
+<span id="cb1-568"><a href="#cb1-568" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-569"><a href="#cb1-569" aria-hidden="true" tabindex="-1"></a>**Temporal Coverage:** Standard 60-minute deployments provide only a brief snapshot of fish community activity. Species with different temporal activity patterns (dawn/dusk activity, tidal influences) may be missed or underrepresented.</span>
+<span id="cb1-570"><a href="#cb1-570" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-571"><a href="#cb1-571" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Technical Limitations</span></span>
+<span id="cb1-572"><a href="#cb1-572" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-573"><a href="#cb1-573" aria-hidden="true" tabindex="-1"></a>**Environmental Dependency:** Successful deployments require suitable sea conditions and stable substrate. Steep slopes, strong currents, poor visibility, or equipment failure can result in partial or complete data loss.</span>
+<span id="cb1-574"><a href="#cb1-574" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-575"><a href="#cb1-575" aria-hidden="true" tabindex="-1"></a>**Detection Limitations:** MaxN provides minimum abundance estimates as individuals moving in and out of the camera's field of view may not be detected simultaneously. Video quality affects species identification accuracy, particularly for smaller or more cryptic species.</span>
+<span id="cb1-576"><a href="#cb1-576" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-577"><a href="#cb1-577" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Methodological Considerations</span></span>
+<span id="cb1-578"><a href="#cb1-578" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-579"><a href="#cb1-579" aria-hidden="true" tabindex="-1"></a>**Observer Effect Elimination vs. Limited Behavior:** While BRUVS eliminate diver effects, they may not capture natural feeding behaviors, territorial interactions, or species that don't respond to bait stimulus.</span>
+<span id="cb1-580"><a href="#cb1-580" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-581"><a href="#cb1-581" aria-hidden="true" tabindex="-1"></a>**Community Representation:** BRUVS excel at documenting predatory fish but systematically underrepresent small-bodied species, herbivores, and planktivores compared to visual surveys.</span>
+<span id="cb1-582"><a href="#cb1-582" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-583"><a href="#cb1-583" aria-hidden="true" tabindex="-1"></a>**Standardization Challenges:** Variations in bait type, quantity, freshness, and local availability may affect comparability between deployments and regions.</span>
+<span id="cb1-584"><a href="#cb1-584" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-585"><a href="#cb1-585" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Mitigation Strategies</span></span>
+<span id="cb1-586"><a href="#cb1-586" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-587"><a href="#cb1-587" aria-hidden="true" tabindex="-1"></a>**Complementary Methods:** We integrate BRUVS with UVS, eDNA, and other techniques to provide comprehensive ecosystem assessment that accounts for each method's strengths and biases.</span>
+<span id="cb1-588"><a href="#cb1-588" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-589"><a href="#cb1-589" aria-hidden="true" tabindex="-1"></a>**Standardized Protocols:** Protocols for equipment preparation, deployment procedures, and data analysis ensure valid comparisons across sites and time periods.</span>
+<span id="cb1-590"><a href="#cb1-590" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-591"><a href="#cb1-591" aria-hidden="true" tabindex="-1"></a>**Quality Control:** Multiple deployment replication, video quality assessment, and expert taxonomic review address technical and analytical sources of error.</span>
+<span id="cb1-592"><a href="#cb1-592" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-593"><a href="#cb1-593" aria-hidden="true" tabindex="-1"></a>**Appropriate Interpretation:** Results are interpreted within the context of method-specific limitations, focusing on questions that BRUVS are well-suited to address: predator abundance, community structure, and fishing impacts.</span>
+<span id="cb1-594"><a href="#cb1-594" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-595"><a href="#cb1-595" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
+<span id="cb1-596"><a href="#cb1-596" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-597"><a href="#cb1-597" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cappo M, Harvey E, Malcolm H, Speare P (2003) Potential of video techniques to monitor diversity, abundance and size of fish in studies of Marine Protected Areas. In: Beumer JP, Grant A, Smith DC (eds) Aquatic Protected Areas-what works best and how do we know? World Aquaculture Society, Baton Rouge, Louisiana, pp 455-464</span>
+<span id="cb1-598"><a href="#cb1-598" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-599"><a href="#cb1-599" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cappo M, Speare P, De'ath G (2004) Comparison of baited remote underwater video stations (BRUVS) and prawn (shrimp) trawls for assessments of fish biodiversity in inter-reefal areas of the Great Barrier Reef Marine Park. Journal of Experimental Marine Biology and Ecology 302(2):123-152</span>
+<span id="cb1-600"><a href="#cb1-600" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-601"><a href="#cb1-601" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Harvey ES, Shortis MR (1995) A system for stereo-video measurement of sub-tidal organisms. Marine Technology Society Journal 29(4):10-22</span>
+<span id="cb1-602"><a href="#cb1-602" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-603"><a href="#cb1-603" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Harvey ES, Fletcher D, Shortis MR, Kendrick GA (2004) A comparison of underwater visual distance estimates made by scuba divers and a stereo-video system: implications for underwater visual census of reef fish abundance. Marine and Freshwater Research 55(6):573-580</span>
+<span id="cb1-604"><a href="#cb1-604" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-605"><a href="#cb1-605" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Langlois T, Goetze J, Bond T, Monk J, Abesamis RA, Asher J, Barrett N, Bernard ATF, Bouchet PJ, Birt MJ, Cappo M, Currey-Randall LM, Driessen D, Fairclough DV,-Fullwood LAF, Gibbons BA, Gill DA, Harasti D, Heupel MR, Hicks J, Holmes TH, Huveneers C, Ierodiaconou D, Jordan A, Knott NA, Lindfield S, Malcolm HA, McLean D, Meekan M, Miller D, Mitchell PJ, Newman SJ, Radford B, Rolim FA, Saunders BJ, Stowar M, Smith ANH, Travers MJ, Wakefield CB, Whitmarsh SK, Williams J, Harvey ES (2020) A field and video annotation guide for baited remote underwater stereo‐video surveys of demersal fish assemblages. Methods in Ecology and Evolution 11(11):1401-1409</span>
+<span id="cb1-606"><a href="#cb1-606" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-607"><a href="#cb1-607" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>McLean DL, Harvey ES, Fairclough DV, Newman SJ (2010) Large decline in the abundance of a targeted tropical lethrinid in areas open and closed to fishing. Marine Ecology Progress Series 418:189-199</span>
+<span id="cb1-608"><a href="#cb1-608" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-609"><a href="#cb1-609" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Murphy HM, Jenkins GP (2010) Observational methods used in marine spatial monitoring of fishes and associated habitats: a review. Marine and Freshwater Research 61(2):236-252</span>
+<span id="cb1-610"><a href="#cb1-610" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-611"><a href="#cb1-611" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Santana-Garcon J, Newman SJ, Langlois TJ, Harvey ES (2014) Effects of a spatial closure on highly mobile fish species: an assessment using pelagic stereo-BRUVs. Journal of Experimental Marine Biology and Ecology 460:153-161</span>
+<span id="cb1-612"><a href="#cb1-612" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-613"><a href="#cb1-613" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Watson DL, Harvey ES, Anderson MJ, Kendrick GA (2005) A comparison of temperate reef fish assemblages recorded by three underwater stereo‐video techniques. Marine Biology 148(2):415-425</span>
+<span id="cb1-614"><a href="#cb1-614" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-615"><a href="#cb1-615" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Whitmarsh SK, Fairweather PG, Huveneers C (2017) What is Big BRUVver up to? Methods and uses of baited underwater video. Reviews in Fish Biology and Fisheries 27(1):53-73</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

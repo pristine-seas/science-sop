@@ -200,18 +200,17 @@ This vocabulary standardizes the classification of benthic environments encounte
 
 **`Habitat`**
 
+- **`wall`** — Vertical or very steep reef drop-off  
 - **`fore_reef`** — Seaward-facing outer slope of coral reef  
-- **`back_reef`** — Lagoon-facing side behind the reef crest  
 - **`reef_flat`** — Horizontal shallow zone near the crest  
+- **`back_reef`** — Lagoon-facing side behind the reef crest
 - **`patch_reef`** — Isolated reef outcrop within lagoon or sand plain  
-- **`pinnacle_reef`** — Steep-sided, often isolated coral structures  
-- **`bank`** — Flat-topped offshore feature with reef or rocky habitat
-- **`rocky_reef`** — Non-coral reef formed from rock, with reef biota  
-- **`reef_pavement`** — Flat, low-relief hard-bottom reef surface  
 - **`channel_pass`** — Channel through reef system with strong flow  
-- **`wall`** — Vertical or steep reef drop-off  
-- **`kelp_forest`** — Dense canopy-forming macroalgae habitat  
+- **`pinnacle`** — Steep-sided, often isolated coral structures  
+- **`rocky_reef`** — Non-coral reef formed from rock, with reef biota  
 - **`seagrass`** — Dominant seagrass bed habitat  
+- **`kelp_forest`** — Dense canopy-forming macroalgae habitat  
+- **`bank`** — Flat-topped offshore feature with reef or rocky habitat
 :::
 
 #### Exposure

@@ -345,34 +345,33 @@ All deployments are classified using standardized vocabularies for ecological an
 ::: {.callout-note title="Habitats"}
 **Primary Habitat Types**
 
-- **`fore_reef`** — Seaward-facing outer slope of coral reef  
-- **`back_reef`** — Lagoon-facing side behind the reef crest  
-- **`lagoon`** — Protected interior waters within reef systems  
-- **`patch_reef`** — Isolated reef outcrop within lagoon or sand plain  
-- **`channel_pass`** — Channel through reef system with strong flow  
-- **`reef_flat`** — Horizontal shallow zone near the crest  
-- **`pinnacle_reef`** — Steep-sided, often isolated coral structures
-- **`rocky_reef`** — Non-coral reef formed from rock, with reef biota  
-- **`sand_flat`** — Open sandy areas with minimal structure  
-- **`seagrass`** — Dominant seagrass bed habitat 
-- **`estuary`** — Brackish water areas where rivers meet the sea  
-- **`mangrove`** — Mangrove-associated marine areas  
-- **`kelp_forest`** — Dense canopy-forming macroalgae habitat  
-- **`seamount`** — Isolated underwater mountains/peaks  
-- **`bank`** — Flat-topped offshore feature with reef or rocky habitat  
+- **`fore_reef`** — Seaward-facing outer slope of coral reef; typically steep and wave-exposed  
+- **`reef_flat`** — Horizontal shallow zone at or near the reef crest; often exposed at low tide  
+- **`back_reef`** — Sheltered zone just landward of the crest, with coral and rubble patches  
+- **`lagoon`** — Protected interior waters behind reef crest; may include sand, seagrass, or patch reefs  
+- **`patch_reef`** — Isolated coral outcrop within lagoon or sand plain; detached from main reef structure  
+- **`channel_pass`** — Natural channel through reef with strong tidal flow and scoured bottom  
+- **`pinnacle`** — Steep-sided, isolated coral or rocky structure rising from deeper water  
+- **`rocky_reef`** — Non-coral reef formed from exposed rock, often supporting reef biota  
+- **`sand_flat`** — Open sandy areas with minimal relief or structure  
+- **`seagrass`** — Area dominated by seagrass cover, typically low relief and soft bottom  
+- **`mangrove`** — Subtidal or shallow zone adjacent to mangrove roots, often muddy  
+- **`estuary`** — Brackish coastal habitat where freshwater mixes with seawater  
+- **`kelp_forest`** — Dense macroalgal canopy habitat (temperate or subtropical)  
+- **`bank`** — Submerged, flat-topped offshore reef or rocky platform  
 :::
-
 
 ::: {.callout-note title="Bottom Types"}
 **`Bottom_Type`**
 
-- **`rock`** — Solid bedrock, boulders, consolidated hard surfaces  
-- **`coral`** — Living or dead coral framework structures  
-- **`sand`** — Sandy sediments (all grain sizes)  
-- **`mud`** — Fine muddy/silty sediments  
-- **`gravel`** — Loose rock fragments, pebbles, cobble  
-- **`mixed`** — Combination of hard and soft substrates (no single type >75%)  
-- **`rubble`** — Loose fragments (coral rubble, shell hash, broken material)  
+- **`rock`** — Solid bedrock, boulders, or consolidated hard substrate  
+- **`hard_coral`** — Framework-forming stony corals (live or dead); includes massive, branching, and plate forms  
+- **`soft_coral`** — Flexible non-skeletal cnidarians (e.g., gorgonians, sea fans, Xeniids)  
+- **`rubble`** — Loose coral fragments, shell hash, and broken reef material  
+- **`gravel`** — Loose rock fragments, pebbles, or cobble (non-biogenic)  
+- **`sand`** — Sandy sediments, including coarse or fine grains  
+- **`mud`** — Fine-grained, silty or muddy sediments  
+- **`mixed`** — No single bottom type dominates (>75%); heterogeneous seafloor  
 :::
 
 

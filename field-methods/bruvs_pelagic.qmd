@@ -1,0 +1,331 @@
+---
+title: "Pelagic BRUVS"
+subtitle: "Quantifying open-ocean predator assemblages"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(gt)
+```
+
+## Introduction
+
+Pelagic BRUVS provide standardized assessment of open-ocean predator communities in the vast mid-water realm. Deployed as floating systems at standardized depths, these units target highly mobile species that inhabit the water column—including pelagic sharks, tunas, billfish, dolphins, and other apex predators that traverse oceanic basins and aggregate around underwater topographic features.
+
+![Pelagic BRUVS longline formation showing five mid-water systems deployed in coordinated array](../assets/illustrations/pelagic_bruvs.jpg){fig-alt="Pelagic BRUVS longline deployment" fig-align="center" width="50%"}
+
+## Method Specifications
+
+### Equipment Configuration
+
+**Mid-Water Frame Design:**
+
+- **Camera bar**: 80 cm carbon fiber housing for stereo cameras
+- **Bait arm**: 1 m horizontal pole positioning attractant within camera view  
+- **Stabilization weight**: 2.5 kg suspended beneath frame for upright orientation
+- **Surface connection**: 10 m line to surface buoy
+
+**Longline System:**
+
+- **Set configuration**: Five rigs per deployment set
+- **Rig spacing**: 200 m separation for a longline spanning 1000 m
+- **Surface markers**: VHF transmitter and AIS beacon for set recovery
+
+### Deployment Specifications
+
+::: {.callout-note appearance="simple" title="**Pelagic BRUVS Protocol**"}
+- **Deployment depth**: 10 m below surface (standardized across all sets)
+- **Soak time**: Minimum 120 minutes continuous recording
+- **Set configuration**: Five rigs per longline deployment
+- **Daily effort**: 1-2 five-rig sets per day weather permitting
+- **Habitat coverage**: Target oceanic features and open-water environments
+:::
+
+## Field Implementation
+
+### Site Selection Strategy
+
+**Oceanic Coverage Approach:**
+
+- **Offshore sampling**: Access open-ocean environments beyond coastal survey limits
+- **Topographic targeting**: Focus on seamounts, ridges, and oceanic islands
+- **Current systems**: Sample oceanographic features, channels, and convergence points
+- **Complementary coverage**: Extend total ecosystem assessment to pelagic realm
+
+**Critical Deployment Factors:** Sea conditions and drift patterns
+
+- **Optimal conditions**: Moderate sea state (≤3 m swell) with predictable drift
+- **Assessment methods**: Weather forecasting and real-time sea state evaluation
+- **Risk indicators**: Deteriorating weather, strong currents, shipping traffic
+
+### Operations Workflow
+
+**Daily Schedule:**
+
+- **Morning deployment** (7 AM - 1 PM): Primary window for 2 sets of 5-rig deployments during optimal conditions
+- **Afternoon options**: Data processing, equipment maintenance, or second set if conditions allow
+- **Evening preparation**: Video review, battery charging, next-day planning
+
+**Team Structure:**
+
+- **RHIB operations**: Most deployments conducted from rigid hull inflatable boat (RHIB)
+- **Core crew**: Team lead, boat driver, and ideally one additional crew member
+- **Vessel coordination**: Regular communication with main research vessel
+- **Safety priority**: Operations dependent on favorable weather and sea conditions
+
+### Deployment Procedure
+
+#### Pre-Deployment
+
+**Daily Preparation:**
+
+- Assemble five complete pelagic BRUVS rigs
+- Install fresh batteries and empty SD cards in all cameras
+- Prepare fresh bait canisters for each rig
+- Prepare 5 buckets of 200m line for longline deployment
+- Attach VHF transmitter and AIS beacon to marker buoy
+
+#### Deployment Execution
+
+1. **Environmental Assessment**: Evaluate sea conditions, current, and drift patterns
+
+2. **Sequential Deployment**:
+   - Begin deployment upwind/up-current to account for vessel and longline drift
+   - Deploy first rig with end marker and AIS beacon
+   - Continue along planned track deploying rigs at 200 m intervals
+   - Complete set with final rig and VHF transmitter
+
+3. **System Activation**:
+   - Power on cameras before deployment
+   - Perform stereo synchronization with calibration board
+   - Record deployment metadata (date, station ID, rig ID)
+
+4. **Drift Monitoring**:
+   - Track set position using AIS beacon
+   - Monitor VHF transmitter signal strength
+   - Record environmental conditions and drift rate
+
+#### Recovery Operations
+
+After 120-minute soak period:
+
+1. **Set location** using VHF direction finding and AIS beacon
+2. **Sequential recovery** retrieving rigs in reverse deployment order
+3. **Equipment management**: Power down cameras, secure bait containers, swap batteries
+
+### Post-Deployment
+
+Upon completion of all deployments, systematic data handling and equipment maintenance ensure operational continuity and data integrity.
+
+##### Equipment Care and Reset
+
+- **Immediate rinse**: Thoroughly rinse all equipment with fresh water to prevent salt corrosion
+  - Longline hardware and recovery systems
+  - BRUVS frames and attachment points
+  - Bait containers and deployment gear
+- **Camera handling**: Carefully remove cameras and SD cards from all systems
+- **Transit preparation**: Secure all equipment for vessel movement and weather protection
+
+##### Data Transfer
+
+::: {.callout-important appearance="simple" title="**Steps to prevent data loss**"}
+1. **Primary transfer**: Copy video files to hard drives using standardized structure:
+   - Left camera: `pbruv/deployments/[station_id]-L/`
+   - Right camera: `pbruv/deployments/[station_id]-R/`
+   - Example: `pbruv/deployments/FJI-2025-pbruv-001-L/`
+
+2. **Verification**: Confirm successful file transfer by checking file sizes and playback
+3. **Backup**: Create secondary copy on portable drive
+4. **Card clearing**: Format SD cards only after verifying both primary and backup copies
+5. **Metadata entry**: Complete deployment records in digital fieldbooks immediately
+:::
+
+#### Review and Quality Control
+
+#### Next-Day Preparation
+
+Prepare equipment and materials for continued operations:
+
+- **Power management**: Place all batteries on overnight charging
+- **Weather monitoring**: Assess forecast for deployment windows
+- **Planning review**: Confirm next day's deployment sites and vessel schedule
+
+### End-of-Expedition
+
+Comprehensive end-of-expedition protocols ensure data preservation and equipment readiness for future operations.
+
+**Data Verification and Archival:**
+
+::: {.callout-note appearance="simple" title="**Data Preservation Checklist**"}
+- **Complete backup verification**: Ensure all video files exist in multiple secure locations
+- **Fieldbook completion**: Finalize all deployment metadata and quality assessments
+- **Highlight compilation**: Create expedition highlight folder and reel for scientific and outreach use
+:::
+
+**Equipment Maintenance and Storage:**
+
+Prepare all BRUVS components for storage and future expeditions:
+
+- **Deep cleaning**: Thorough freshwater rinse, lubrication, and inspection of all components
+- **Inventory update**: Verify equipment conditions and note replacement needs
+- **Storage preparation**: Properly pack and protect equipment for transport and storage
+
+## Data Workflow
+
+### Field Data Entry
+
+Comprehensive field data collection ensures deployment success and enables ecological interpretation. All observations are recorded during deployment and recovery operations, then transferred to standardized digital fieldbooks on the same day to preserve accuracy and prevent data loss.
+
+The `ISO3_YEAR_pbruvs_fieldbook.xlsx` serves as the primary repository for all deployment metadata and operational records:
+
+::: {.callout-note appearance="simple" title="**Fieldbook Components**"}
+- **Readme**: Expedition overview, data collection protocols, quality standards, and fieldbook instructions
+- **Deployments**: Complete set records with spatial, temporal, environmental, and equipment metadata
+:::
+
+#### Essential Metadata
+
+**Spatial and Temporal Documentation:**
+
+- **GPS coordinates**: WGS84 decimal degrees for set start, end, and individual rig positions
+- **Deployment timing**: Precise start and end times for accurate soak duration calculation
+- **Site hierarchy**: Consistent naming following region → subregion → locality structure
+
+**Environmental Conditions:**
+
+- **Habitat**: Primary habitat type using standardized vocabulary (oceanic, neritic, etc.)
+- **Exposure**: Wave energy classification (windward, leeward, sheltered, exposed)
+
+::: {.callout-note title="Pelagic Habitats"}
+**Habitats**
+
+- **`oceanic`** — Open ocean waters beyond continental shelf edge
+- **`neritic`** — Waters over continental shelf but away from immediate coastal influence  
+- **`coastal`** — Coastal waters (1-2 km from shore)
+- **`seamount`** — Deployments over or adjacent to underwater mountains and ridges
+- **`lagoon`** — Large atoll lagoons or enclosed oceanic basins
+- **`channel`** — Deep water passages between islands or oceanic features
+:::
+
+**Equipment and Configuration:**
+
+- **Identifiers**: Unique station and rig identifiers
+- **Bait specifications**: Type and quantity
+
+This systematic metadata collection ensures data integrity, enables quality control assessment, and provides essential context for video analysis and ecological interpretation.
+
+#### Quality Assessment
+
+::: {.callout-note appearance="minimal" title="**Video Quality Rating Scale**"}
+Rate overall footage usability on a 5-point scale:
+
+- **Excellent (5)** — Perfect footage from both cameras, optimal positioning and lighting
+- **Good (4)** — Usable footage with minor issues (slight positioning problems, brief obstructions)
+- **Fair (3)** — Analyzable despite significant problems (single camera functioning, partial obstructions)
+- **Poor (2)** — Barely usable due to major issues (poor orientation, significant positioning problems)
+- **Failed (1)** — No analyzable footage (equipment failure, complete obstruction, lost deployment)
+
+This assessment determines inclusion in subsequent analyses and helps track equipment performance.
+:::
+
+### Video Annotation
+
+Pelagic BRUVS footage undergoes systematic analysis with 120-minute processing cutoff to accommodate longer response times of pelagic species to bait attraction. The annotation workflow follows the standardized protocols detailed in the [BRUVS Overview](bruvs_overview.qmd), with pelagic deployments processed by our collaborating partners at the University of Western Australia and University of the South Pacific using EventMeasure software.
+
+#### Target Species
+
+Pelagic BRUVS target the open-ocean species outlined in the [BRUVS Overview](bruvs_overview.qmd), with particular effectiveness for:
+
+**Pelagic Sharks:**
+
+- Blue sharks, silky sharks, oceanic whitetip
+- Shortfin mako and other pelagic hunters
+- Occasional deep-water species
+
+**Large Pelagic Teleosts:**
+
+- Tunas (yellowfin, bigeye, albacore)
+- Billfish (marlins, sailfish, spearfish)
+- Dolphinfish and wahoo
+
+**Charismatic Megafauna:**
+
+- Dolphins and small whales
+- Large rays and devil rays
+- Sea turtles
+
+This pelagic focus complements seabed BRUVS, which target reef-associated species like reef sharks, groupers, and snappers.
+
+### Processing Pipeline
+
+**Data Integration:**
+
+- Merge set and individual rig metadata with video analysis results
+- Standardize taxonomy using Pristine Seas fish reference database
+- Calculate community metrics and conservation indicators at both rig and set levels
+
+**Key Outputs:**
+
+1. **pbruv.sites**: Set-level metadata and environmental conditions
+2. **pbruv.stations**: Individual rig deployment details and rig-specific metrics
+3. **pbruv.maxN**: Species abundance by rig and aggregated by set
+
+### Analytical Applications
+
+**Pelagic Community Assessment:**
+
+- Species richness and diversity in open-ocean environments
+- Apex predator abundance patterns
+- Oceanic megafauna distribution and behavior
+
+**Oceanographic Relationships:**
+
+- Species associations with seamounts and underwater topography
+- Current and oceanographic feature influences on predator distribution
+
+**Conservation Applications:**
+
+- Documentation of threatened pelagic species (IUCN Red List)
+- Assessment of high seas biodiversity
+- Evaluation of pelagic MPA effectiveness
+- Identification of critical pelagic habitats
+
+**Cross-Method Integration:**
+
+- Comparison with seabed BRUVS for species connectivity
+- Integration with seabird surveys for predator-prey relationships
+- Correlation with oceanographic data for habitat modeling
+
+## Limitations
+
+**Deployment Constraints:**
+
+- Operations limited to favorable sea conditions
+- Equipment vulnerability to loss in rough weather
+- Limited by vessel capabilities and offshore access
+
+**Species Detection:**
+
+- Longer response times require extended deployments
+- High mobility of pelagic species may result in brief encounters
+- Species detectability varies with oceanographic conditions
+
+**Environmental Variability:**
+
+- Open-ocean environments show high spatial and temporal variability
+- Seasonal migrations affect species encounter rates
+- Oceanographic conditions influence bait plume dispersal
+
+These limitations are addressed through careful site selection, weather monitoring, extended deployment times, and integration with complementary survey methods to provide comprehensive assessment of pelagic ecosystems.

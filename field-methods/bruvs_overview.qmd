@@ -1,0 +1,194 @@
+---
+title: "BRUVS Overview"
+subtitle: "Baited Remote Underwater Video Systems for marine predator assessment"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(gt)
+```
+
+## Introduction
+
+Baited Remote Underwater Video Systems (BRUVS) are autonomous underwater observatories that use standardized bait to attract and record marine predators. As completely passive sampling tools, BRUVS eliminate observer effects that influence fish behavior during diver-based surveys, providing unbiased observations of species that typically avoid human presence—particularly sharks, rays, large groupers, and other apex predators.
+
+BRUVS technology enables systematic assessment of predator communities across diverse marine environments, from shallow coral reefs to deep oceanic waters. The widespread adoption of BRUVS methods globally has created an extensive database of reference points for comparative analysis (MacNeil et al. 2020), enabling robust assessment of ecosystem health across biogeographic regions.
+
+The Pristine Seas Science Team employs two complementary BRUVS approaches: **seabed deployments** for demersal and reef-associated predators, and **pelagic deployments** for open-ocean species.
+
+![BRUVS stereo camera system showing the fundamental components shared across all deployments](../assets/illustrations/bruvs_stereo_system.jpg){fig-alt="BRUVS stereo camera configuration" fig-align="center" width="60%"}
+
+## Core Technology
+
+### Stereo Camera System
+
+All BRUVS deployments utilize standardized stereo camera configurations that enable both species identification and precise length measurements:
+
+**Camera Configuration:**
+
+- **Two synchronized cameras**: GoPro Hero in waterproof housings
+- **Stereo separation**: 80 cm distance between camera centers
+- **Convergence angle**: 8° inward angle toward bait for optimal stereo overlap
+- **Recording settings**: 1080p at 25-30 fps for stereo-photogrammetric analysis
+- **Synchronization**: Time-synchronized start for accurate stereo measurements
+
+**Photogrammetric Capability:**
+
+The stereo camera setup enables precise length measurements of fish using triangulation principles. When the same fish appears in both camera views simultaneously, specialized software can calculate fork length measurements with accuracy comparable to physical measurement.
+
+### Bait Protocol
+
+Standardized bait ensures consistent attraction across all BRUVS deployments while maintaining ecological relevance:
+
+**Bait Specifications:**
+
+- **Quantity**: 1 kg crushed oily fish per deployment
+- **Species**: Sardines, tuna, mackerel, or locally available oily fish
+- **Preparation**: Fresh bait crushed on deployment day for maximum scent dispersal
+- **Container**: Perforated PVC canister allowing scent release
+- **Positioning**: 1 m horizontal distance from camera bar within field of view
+
+**Attraction Mechanism:**
+
+Crushed oily fish creates both visual and olfactory attractants. The scent plume disperses through water currents, potentially attracting fish from distances of several hundred meters, while the visible bait provides a focal point for camera recording once fish arrive.
+
+## Key Metric: MaxN
+
+The fundamental measurement unit across all BRUVS surveys is **MaxN** (Maximum Number): the highest count of individuals of a given species observed simultaneously in a single video frame during the entire deployment.
+
+### Why MaxN?
+
+MaxN provides several critical advantages for standardized predator assessment:
+
+- **Eliminates double-counting**: Accounts for individual fish moving in and out of camera view
+- **Conservative abundance estimate**: Provides minimum abundance rather than inflated counts
+- **Standardized comparison**: Enables robust comparisons across sites, regions, and time periods
+- **Behavioral independence**: Remains consistent regardless of fish movement patterns
+
+### MaxN Calculation
+
+For each species during video analysis:
+
+1. Count individuals visible in every video frame
+2. Record the maximum count achieved in any single frame
+3. This maximum becomes the MaxN value for that species at that deployment
+
+## Video Analysis Workflow
+
+### Annotation Protocol
+
+All BRUVS footage undergoes systematic analysis using EventMeasure software following standardized protocols:
+
+**Analysis Standards:**
+
+- **Duration**: Complete footage analysis up to 60-minute cutoff (seabed) or 120-minute cutoff (pelagic)
+- **Taxonomic identification**: Species-level identification when possible, otherwise lowest defensible taxonomic level
+- **MaxN recording**: Maximum simultaneous count for each species
+- **Length measurement**: Stereo-photogrammetric measurements of fork length when both cameras capture the same individual
+
+![Illustration of BRUVS system deployment showing how the stereo cameras and bait attract sharks, rays, and other predatory fish](../assets/illustrations/seabed_bruvs_panel.jpg){fig-alt="BRUVS measurments" fig-align="center" width="60%"}
+
+**Quality Control:**
+
+- **Multiple reviewers**: Challenging identifications verified by taxonomic experts
+- **Permanent record**: Digital footage provides lasting evidence for future verification
+
+### Species Coverage
+
+BRUVS surveys excel at documenting predatory fish assemblages:
+
+**Primary Targets:**
+
+- **Sharks and Rays**: All elasmobranch species, from reef sharks to pelagic visitors
+- **Large Predatory Teleosts**: Groupers, snappers, jacks, barracuda, tunas
+- **Apex Predators**: Species at the top of marine food webs
+- **Cryptic Predators**: Moray eels and other species that emerge from crevices to investigate bait
+
+**Secondary Records:**
+
+- **Medium-sized Predators**: Emperors, larger wrasses, triggerfishes
+- **Commercial Species**: Important fishery targets attracted to bait
+- **Charismatic Megafauna**: Marine mammals, sea turtles, and large rays
+- **Opportunistic Visitors**: Small reef fish and invertebrates recorded incidentally
+
+## Integration with Pristine Seas Methods
+
+BRUVS surveys provide critical ecosystem information that complements other Pristine Seas assessment methods:
+
+### Habitat and Depth Extension
+
+**Beyond Diver Limits:**
+
+- Access deeper waters (>30 m) not safely surveyable by SCUBA
+- Survey high-energy environments unsuitable for diver operations
+- Sample remote offshore locations impractical for ship-based diving
+
+**Habitat Diversity:**
+
+- Seabed BRUVS: Reef slopes, sandy flats, channels, and benthic environments
+- Pelagic BRUVS: Open ocean, seamounts, neritic waters, and pelagic habitats
+
+### Behavioral Advantages
+
+**Elimination of Diver Effects:**
+
+- Document natural predator behavior without human disturbance
+- Record species that actively avoid divers (many sharks, large groupers)
+- Capture feeding behaviors and species interactions
+
+**Extended Observation:**
+
+- Longer deployment times reveal species with different response patterns
+
+### Conservation Assessment
+
+**Ecosystem Health Indicators:**
+
+- **Shark abundance**: Critical indicator of reef ecosystem integrity
+- **Predator biomass**: Assessment of trophic pyramid structure
+- **Apex predator presence**: Indication of ecosystem completeness
+
+**Fishing Impact Detection:**
+
+- Size structure analysis reveals fishing pressure effects
+- Comparison of predator abundance across protection levels
+- Documentation of recovery patterns in protected areas
+
+## Data Products
+
+BRUVS surveys generate standardized datasets that integrate seamlessly with the Pristine Seas Science Database:
+
+### Core Outputs
+
+1. **Deployment metadata**: Location, depth, environmental conditions, equipment details
+2. **Species observations**: MaxN values, taxonomic identification, length measurements
+3. **Community metrics**: Species richness, diversity indices, functional group composition
+4. **Conservation indicators**: Threatened species occurrence, commercial species abundance
+
+### Analysis Applications
+
+**Comparative Assessment:**
+
+- Cross-site comparisons of predator abundance and diversity
+- Regional patterns in apex predator communities
+- Temporal trends in ecosystem health indicators
+
+**Conservation Planning:**
+
+- Identification of predator hotspots for protection prioritization
+- Assessment of MPA effectiveness through predator recovery
+- Documentation of critical habitats for mobile species
+
+The standardized BRUVS approach enables robust scientific assessment of marine predator communities while providing practical tools for evidence-based conservation and fisheries management.

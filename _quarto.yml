@@ -44,10 +44,13 @@ website:
             href: field-methods/uvs_fish_blt.qmd
           - text: "eDNA"
             href: field-methods/edna.qmd
-          - text: "Seabed BRUVS"
-            href: field-methods/seabed_bruvs.qmd
-          - text: "Pelagic BRUVS"
-            href: field-methods/pelagic_bruvs.qmd
+          - text: "BRUVS"
+            href: field-methods/bruvs_overview.qmd
+            menu:
+              - text: "Seabed"
+                href: field-methods/bruvs_seabed.qmd
+              - text: "Pelagic"
+                href: field-methods/bruvs_pelagic.qmd
           - text: "Seabirds"
             href: field-methods/seabirds.qmd
           - text: "ROV Surveys"
@@ -73,9 +76,8 @@ website:
     style: "floating"
     search: true
     contents:
-      - section: "Home"
-        contents:
-          - index.qmd
+      - text: "Home"
+        href: index.qmd
       - section: "Collaborative Infrastructure"
         collapsible: true
         contents:
@@ -112,13 +114,13 @@ website:
               - text: "Deep-Sea"
                 href: field-methods/edna_deep.qmd      
           - section: "BRUVS"
-            href: field-methods/bruvs_intro.qmd
+            href: field-methods/bruvs_overview.qmd
             collapsible: true
             contents:
               - text: "Seabed"
-                href: field-methods/seabed_bruvs.qmd
-              - text: "Mid-water"
-                href: field-methods/pelagic_bruvs.qmd
+                href: field-methods/bruvs_seabed.qmd
+              - text: "Pelagic"
+                href: field-methods/bruvs_pelagic.qmd
           - section: "Deep-Sea"
             href: field-methods/rov-surveys.qmd
             collapsible: true

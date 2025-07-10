@@ -1,0 +1,339 @@
+---
+title: "Seabed BRUVS"
+subtitle: "Quantifying demersal and reef-associated predator assemblages"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(gt)
+```
+
+## Introduction
+
+Seabed BRUVS provide standardized assessment of demersal and reef-associated predator communities across diverse coastal marine environments. Deployed directly on the seafloor, these systems effectively sample fish assemblages from shallow mangrove channels to deep reef slopes, documenting species that are closely associated with benthic habitats and bottom structures.
+
+This method complements underwater visual surveys by accessing deeper waters, eliminating diver effects on fish behavior, and providing extended observation periods. Seabed BRUVS are particularly effective for quantifying reef sharks, rays, groupers, snappers, and other predators that form the backbone of reef ecosystem trophic structure.
+
+![Seabed BRUVS deployment showing the stereo camera configuration positioned on a coral reef slope](../assets/illustrations/seabed_bruvs.jpg){fig-alt="Seabed BRUVS on reef slope" fig-align="center" width="50%"}
+
+## Method Specifications
+
+### Equipment Configuration
+
+**Frame Structure:**
+
+- **Camera bar**: 80 cm carbon fiber housing for stereo cameras
+- **Bait arm**: 1 m horizontal pole positioning attractant within camera view
+- **Stabilization legs**: Three weighted carbon fiber legs (2 kg each) creating stable tripod base
+- **Surface connection**: Marker buoy with 30-100 m line, scope adjusted for deployment depth
+
+**Lighting System:**
+
+- **Shallow deployments (≤30 m)**: Natural light sufficient
+- **Deep deployments (>30 m)**: Two 2600 lumen LED lights mounted on camera bar
+- **Positioning**: Lights angled to illuminate bait area without creating backscatter
+
+### Deployment Specifications
+
+::: {.callout-note appearance="simple" title="**Seabed BRUVS Protocol**"}
+- **Deployment depth**: 5-70+ m depending on site characteristics
+- **Soak time**: Minimum 60 minutes continuous recording
+- **Daily effort**: 1-2 three-rig sets per day using small boat operations
+- **Site spacing**: Minimum 1km between deployments
+- **Habitat coverage**: Prioritize extension beyond diver survey limits
+:::
+
+## Field Implementation
+
+### Site Selection Strategy
+
+**Habitat Extension Approach:**
+
+- **Complement diver surveys**: Access environments beyond SCUBA limits (>20 m)
+- **Depth gradient sampling**: Survey deeper reef slopes and channels
+- **Habitat diversity**: Include sandy flats, seagrass beds, and deep coral formations
+- **Geographic expansion**: Increase total survey coverage for large study areas
+
+**Critical Deployment Factors:** Substrate slope
+
+- **Optimal conditions**: Stable substrate with mild to moderately steep slope
+- **Assessment methods**: Depth sounder reconnaissance and visual verification when possible
+- **Risk indicators**: Steep drop-offs, unstable rubble, strong down-slope currents
+- **Contingency planning**: Backup sites identified for each planned deployment
+
+### Operations Workflow
+
+**Daily Schedule:**
+
+- **Morning deployment** (7 AM - 12 PM): Primary window for 1-2 three-rig runs
+- **Afternoon options**: Additional deployments OR equipment maintenance and data processing
+- **Evening preparation**: Battery charging, bait preparation, next-day planning
+
+**Team Structure:**
+
+- **Small boat crew**: 2-3 person team including boat operator and BRUVS specialists
+- **Independence**: Autonomous operations separate from main research vessel
+- **Communication**: Regular check-ins within radio/satellite communication range
+
+### Deployment Procedure
+
+#### Pre-Deployment
+
+**Daily Preparation:**
+
+- Install fresh batteries and empty SD cards
+- Clean camera lenses and housings thoroughly
+- Prepare fresh bait in perforated canisters (crushed oily fish)
+- Verify deployment lines have appropriate scope (1.5-2x target depth)
+- Attach LED lights for deployments >30 m depth
+
+#### Deployment Execution
+
+1. **Site Assessment**: Evaluate depth, current, and substrate conditions
+
+2. **System Preparation**:
+
+   - Connect deployment line and surface buoy
+   - Attach fresh bait canister with even distribution
+   - Power on cameras and verify recording status
+
+3. **Stereo Synchronization**:
+
+   - Record deployment metadata (date, station ID, rig number)
+   - Present calibration board to both cameras
+   - Perform hand claps for synchronization
+
+4. **Seafloor Deployment**:
+   - Lower rig steadily maintaining proper orientation
+   - Monitor descent to ensure optimal landing position
+   - Record GPS coordinates and confirm deployment depth
+
+#### Recovery Operations
+
+After 60-minute soak period:
+
+1. **Careful approach** to minimize disturbance and entangling risk
+2. **Winch-assisted retrieval** using electric winch system for controlled ascent
+3. **Equipment shutdown**: Turn off cameras and lights, discard used bait
+4. **Rapid reset**: Swap batteries and SD cards (or cameras) for next deployment cycle
+
+### Post-Deployment
+
+Upon completion of all deployments, systematic data handling and equipment maintenance ensure operational continuity and data integrity.
+
+##### Equipment Care and Reset
+
+- **Immediate rinse**: Thoroughly rinse all equipment with fresh water to prevent salt corrosion
+  - Winch system and battery connections
+  - BRUVS frames and attachment points
+  - Bait containers and deployment lines
+- **Camera handling**: Carefully remove cameras and SD cards from all systems
+- **Transit preparation**: Secure all equipment for vessel movement and weather protection
+
+##### Data Transfer
+
+::: {.callout-important appearance="simple" title="**Steps to prevent data loss**"}
+1. **Primary transfer**: Copy video files to hard drives using standardized structure:
+   - Left camera: `sbruv/deployments/[station_id]-L/`
+   - Right camera: `sbruv/deployments/[station_id]-R/`
+   - Example: `sbruv/deployments/FJI-2025-sbruv-001-L/`
+
+2. **Verification**: Confirm successful file transfer by checking file sizes and playback
+3. **Backup**: Create secondary copy on portable drive
+4. **Card clearing**: Format SD cards only after verifying both primary and backup copies
+5. **Metadata entry**: Complete deployment records in digital fieldbooks immediately
+:::
+
+#### Review and Quality Control
+
+#### Next-Day Preparation
+
+Prepare equipment and materials for continued operations:
+
+- **Power management**: Place all batteries on overnight charging
+- **Bait preparation**: Transfer frozen bait to thaw for next day's operations
+- **Planning review**: Confirm next day's deployment sites and logistics
+
+### End-of-Expedition
+
+Comprehensive end-of-expedition protocols ensure data preservation and equipment readiness for future operations.
+
+**Data Verification and Archival:**
+
+::: {.callout-note appearance="simple" title="**Data Preservation Checklist**"}
+- **Complete backup verification**: Ensure all video files exist in multiple secure locations
+- **Fieldbook completion**: Finalize all deployment metadata and quality assessments
+- **Highlight compilation**: Create expedition highlight folder and reel for scientific and outreach use
+:::
+
+**Equipment Maintenance and Storage:**
+
+Prepare all BRUVS components for storage and future expeditions:
+
+- **Deep cleaning**: Thorough freshwater rinse, lubrication, and inspection of all components
+- **Inventory update**: Verify equipment conditions and note replacement needs
+- **Storage preparation**: Properly pack and protect equipment for transport and storage
+
+## Data Workflow
+
+### Field Data Entry
+
+Comprehensive field data collection ensures deployment success and enables ecological interpretation. All observations are recorded during deployment and recovery operations, then transferred to standardized digital fieldbooks on the same day to preserve accuracy and prevent data loss.
+
+The `ISO3_YEAR_sbruvs_fieldbook.xlsx` serves as the primary repository for all deployment metadata and operational records:
+
+::: {.callout-note appearance="simple" title="**Fieldbook Components**"}
+- **Readme**: Expedition overview, data collection protocols, quality standards, and fieldbook instructions
+- **Deployments**: Complete deployment records with spatial, temporal, environmental, and equipment metadata
+:::
+
+#### Essential Metadata
+
+**Spatial and Temporal Documentation:**
+- **GPS coordinates**: WGS84 decimal degrees for deployment and recovery positions
+- **Deployment timing**: Precise start and end times for accurate soak duration calculation
+- **Depth measurements**: Actual bottom depth confirmed during deployment
+- **Site hierarchy**: Consistent naming following region → subregion → locality structure
+
+**Environmental Conditions:**
+- **Habitat**: Primary habitat type using standardized vocabulary (fore_reef, lagoon, etc.)
+- **Exposure**: Wave energy classification (windward, leeward, sheltered, exposed)
+- **Bottom type**: Dominant substrate (rock, hard_coral, sand, rubble, mixed)
+
+::: {.callout-note title="Seabed Habitats"}
+**Habitats**
+
+- **`fore_reef`** — Seaward-facing outer slope; typically steep and wave-exposed  
+- **`reef_flat`** — Horizontal shallow zone at or near reef crest  
+- **`back_reef`** — Sheltered zone landward of crest with coral and rubble patches  
+- **`lagoon`** — Protected interior waters; may include patch reefs  
+- **`patch_reef`** — Isolated coral outcrop within lagoon or sand plain  
+- **`channel_pass`** — Natural channel with strong tidal flow  
+- **`pinnacle`** — Steep-sided isolated structure rising from deeper water  
+- **`rocky_reef`** — Non-coral reef supporting reef biota  
+- **`sand_flat`** — Open sandy areas with minimal relief  
+- **`seagrass`** — Seagrass-dominated low-relief habitat  
+- **`mangrove`** — Subtidal zone adjacent to mangrove roots  
+
+**Bottom type**
+
+- **`rock`** — Solid bedrock, boulders, consolidated hard substrate  
+- **`hard_coral`** — Live or dead framework-forming stony corals  
+- **`soft_coral`** — Flexible non-skeletal cnidarians  
+- **`rubble`** — Loose coral fragments and broken reef material  
+- **`sand`** — Sandy sediments of various grain sizes  
+- **`mud`** — Fine-grained silty or muddy sediments  
+- **`mixed`** — No single substrate type dominates (>75%)  
+:::
+
+**Equipment and Configuration:**
+
+- **Rig identification**: Unique rig and camera ID numbers for tracking and maintenance
+- **Bait specifications**: Type, quantity, and preparation method
+- **Lighting configuration**: LED attachment for deep deployments (>30 m)
+
+This systematic metadata collection ensures data integrity, enables quality control assessment, and provides essential context for video analysis and ecological interpretation.
+
+#### Quality Assessment
+
+::: {.callout-note appearance="minimal" title="**Video Quality Rating Scale**"}
+Rate overall footage usability on a 5-point scale:
+
+- **Excellent (5)** — Perfect footage from both cameras, optimal positioning and lighting
+- **Good (4)** — Usable footage with minor issues (slight positioning problems, brief obstructions)
+- **Fair (3)** — Analyzable despite significant problems (single camera functioning, partial obstructions)
+- **Poor (2)** — Barely usable due to major issues (poor orientation, significant positioning problems)
+- **Failed (1)** — No analyzable footage (equipment failure, complete obstruction, lost deployment)
+
+This assessment determines inclusion in subsequent analyses and helps track equipment performance.
+:::
+
+### Video Annotation
+
+Seabed BRUVS footage undergoes systematic analysis with 60-minute processing cutoff. Analysis focuses on species identification, MaxN calculation, and length measurement for all visible taxa. The annotation workflow follows the standardized protocols detailed in the [BRUVS Overview](bruvs_overview.qmd), with seabed deployments processed by our collaborating partners at the University of Western Australia and University of the South Pacific using EventMeasure software.
+
+#### Target Species
+
+Seabed BRUVS target the demersal and reef-associated species outlined in the [BRUVS Overview](bruvs_overview.qmd), with particular effectiveness for:
+
+**Benthic Specialists:**
+
+- Reef sharks (grey reef, blacktip, whitetip reef)
+- Bottom-dwelling rays and guitarfishes  
+- Nurse sharks and wobbegongs
+
+**Reef-Associated Predators:**
+
+- Groupers and large serranids
+- Snappers and emperors (particularly Indo-Pacific)
+- Moray eels emerging from crevices
+
+This demersal focus complements pelagic BRUVS, which target open-ocean species like blue sharks, tunas, and billfish.
+
+### Processing Pipeline
+
+**Data Integration:**
+
+- Merge deployment metadata with video analysis results
+- Standardize taxonomy using Pristine Seas fish reference database
+- Calculate community metrics and conservation indicators
+
+**Key Outputs:**
+
+1. **sbruv.stations**: Station-level metadata and summary statistics
+2. **sbruv.maxN**: Species abundance by station for analysis
+
+### Analytical Applications
+
+**Community Assessment:**
+
+- Species richness and diversity patterns across habitats
+- Functional group composition and trophic structure
+- Size spectrum analysis for fishing impact detection
+
+**Conservation Insights:**
+
+- Shark abundance as ecosystem health indicator
+- Threatened species occurrence and abundance
+- Commercial species population assessment
+- MPA effectiveness evaluation through predator recovery
+
+**Ecosystem Integration:**
+
+- Comparison with UVS fish surveys for method validation
+- Correlation with benthic habitat structure from LPI surveys  
+- Integration with eDNA results for community completeness
+
+## Limitations
+
+**Environmental Dependencies:**
+
+- Deployment success requires suitable substrate and sea conditions
+- Strong currents or steep slopes can result in equipment loss
+- Video quality affects identification accuracy, particularly in deep or turbid water
+
+**Sampling Bias:**
+
+- Bait attraction varies among species and individuals
+- Large, aggressive predators may exclude smaller species from bait area
+- 60-minute deployments provide limited temporal coverage relative to pelagic species response times
+
+**Community Representation:**
+
+- Method optimized for predatory fish; systematically underrepresents herbivores and planktivores
+- Focus on bait-responsive species may miss important community components
+- Cryptic species detection depends on their willingness to emerge from shelter
+
+These limitations are addressed through integration with complementary survey methods, standardized protocols, and appropriate interpretation of results within the context of method-specific capabilities.

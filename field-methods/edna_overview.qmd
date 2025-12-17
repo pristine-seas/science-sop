@@ -1,0 +1,28 @@
+---
+title: "edna_nearshore"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(gt)
+```
+
+## Introduction
+
+Environmental DNA (eDNA) is cellular material naturally released from organisms into the marine environment. Sources of eDNA include feces, mucus, gametes, urine, and skin cells. In the ocean, eDNA is diluted and distributed by currents, waves, wind, and other hydrological processes. It may persist for a couple of days suspended in the water column, traveling a few meters to tens of kilometers, or it may rapidly degrade depending on surrounding abiotic and biotic conditions, such as prolonged exposure to sunlight, acidity, temperature, and the presence of microbes or enzymes that metabolize cellular material (Andruszkiewicz et al., 2017; Collins et al., 2018; Harrison et al., 2019). When water is filtered, the cellular material within the collected water becomes trapped on a filter membrane. That filter membrane is then processed to extract, amplify, and sequence the collected DNA. DNA sequences function like fingerprints—they are typically unique to individual organisms. By comparing the recovered sequences to established databases that house “fingerprints” of numerous species, the collected DNA can be identified. eDNA has revolutionized our ability to determine the presence and distribution of aquatic organisms.
+
+![eDNA overview](../assets/illustrations/edna_nearshore.jpg){fig-alt="eDNA is everywhere" fig-align="center" width="80%"}
+
+## Method Overview

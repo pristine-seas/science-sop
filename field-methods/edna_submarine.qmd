@@ -1,0 +1,42 @@
+---
+title: "edna_offshore"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+#| include: false
+library(tidyverse)
+library(here)
+library(knitr)
+library(gt)
+```
+
+## Introduction
+
+Submarine collections....
+
+![Submarine System](../assets/images/SubmarineSystem.JPG) {fig-alt="Aquatics Labs Multipuffer System on Argonauta" fig-align="center" width="80%"}
+
+## Method Overview
+
+## Implementation
+
+### Water Collection
+
+### Water Filtration
+
+### Filter Preservation
+
+## Lab and Informatic Processing
+
+Samples are shipped to Wilderlab for laboratory and informatic processing - https://wilderlab.co/
+
+## 

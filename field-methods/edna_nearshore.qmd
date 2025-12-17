@@ -27,9 +27,13 @@ Environmental DNA (eDNA) is cellular material naturally released from organisms 
 
 ## Implementation
 
-### Water Collection 
+### Water Collection
 
-### Water Filtration 
+### Water Filtration
+
+![eDNA Pump Setup](../assets/images/Argo_edna_setup.JPG){fig-alt="eDNA pump system" fig-align="center" width="80%"}
+
+![Inflow and outflow](../assets/images/edna_pump_ports.JPG){fig-alt="Inflow and Outflow tubes" fig-align="center" width="80%"}
 
 ### Filter Preservation
 
